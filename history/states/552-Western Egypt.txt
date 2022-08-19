@@ -1,0 +1,25 @@
+
+state={
+	id=552
+	name="STATE_552"
+	manpower = 18539
+	resources={
+		steel=15
+		oil=25
+	}
+	state_category = wasteland
+
+	history={
+		owner = AFR
+		buildings = {
+			infrastructure = 0
+		}
+
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		992 1143 2064 7216 10127 10869 12099 12764 12816 7079 9989 11967 5078 12033 12091 7148 10097  
+	}
+}

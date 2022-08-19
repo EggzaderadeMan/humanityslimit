@@ -1,0 +1,23 @@
+state=
+{
+	id=456
+	name="STATE_456" # Aswan
+	manpower = 4224516
+	resources={
+		rations=3
+	}
+	state_category = rural
+	
+	history = {
+		owner = AFR
+		buildings = {
+			infrastructure = 2
+		}
+
+		add_core_of = EGY
+
+	}
+	provinces={
+		1028 1068 1151 7030 7073 7144 10028 11974 12044 12071 12771 7117 10031 1206 
+	}
+}

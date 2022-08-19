@@ -1,0 +1,35 @@
+state={
+
+	id=775
+
+	name="STATE_775" # BET - Borkou-Ennedi-Tibesti region
+	resources = {
+		oil=15
+	}
+
+
+	state_category = wasteland
+
+	history={
+
+		owner = DRO
+		add_core_of = DRO
+		buildings = {
+
+			infrastructure = 0
+
+		}
+
+	}
+
+
+	provinces={
+
+		1956 5136 10893
+
+	}
+
+	manpower=18744
+
+	buildings_max_level_factor=1.000
+}

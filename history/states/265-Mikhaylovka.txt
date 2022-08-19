@@ -1,0 +1,25 @@
+
+state={
+	id=265
+	name="STATE_265"
+	manpower = 468781
+	resources={
+		rations=9
+	}
+	state_category = rural
+
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SSR
+		victory_points = {
+			487 1
+		}
+	}
+
+	provinces={
+		487 518 544 579 3539 3582 6454 6563 6602 9436 9502 11423 11451 11485 11512 
+	}
+}

@@ -1,0 +1,39 @@
+
+state={
+
+	id=772
+
+	name="STATE_772" # Middle Congo (Brazzaville)
+	resources = {
+		rubber=8
+		oil=15
+		rations=2
+	}
+
+	manpower = 746415
+
+	
+state_category = pastoral
+
+	history={
+
+		owner = DRO
+		add_core_of = DRO
+
+		buildings = {
+
+			infrastructure = 2
+
+		}
+
+
+	}
+
+
+	provinces={
+
+		2192 3109 6008 12975 11012 
+ 
+	}
+
+}

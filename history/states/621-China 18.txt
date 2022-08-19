@@ -1,0 +1,28 @@
+state={
+	id=621
+	name="STATE_621"
+	resources = {
+		steel=35
+		rations=4
+		noble=25
+	}
+
+	history={
+		owner = NME
+		add_core_of = NME
+		add_core_of = SIN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2087 4525 7048 7631 10424 10629 12331 12403 12609 12880 
+	}
+	manpower=1583700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

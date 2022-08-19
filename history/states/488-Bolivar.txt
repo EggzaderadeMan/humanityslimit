@@ -1,0 +1,30 @@
+
+state={
+	id=488
+	name="STATE_488"
+	manpower = 245642
+	resources={
+		steel=10
+		oil=20
+		aluminium=20
+		rubber=6
+		rations=2
+	}
+	state_category = pastoral
+
+	history={
+		owner = SOA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOA
+		victory_points = {
+			10879 1
+		}
+	}
+
+	provinces={
+		1981 5317 7915 8050 10736 10849 10879 
+	}
+}

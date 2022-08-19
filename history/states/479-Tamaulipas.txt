@@ -1,0 +1,36 @@
+
+state={
+	id=479
+	name="STATE_479"
+	manpower = 1032988
+	
+	state_category = town
+
+	resources={
+		rations=10
+	}
+	
+	history={
+		owner = CHR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			6785 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CHR
+		victory_points = {
+			5015 5
+		}
+		victory_points = {
+			12782 1 
+		}
+
+	}
+
+	provinces={
+		5015 13088 2042 12369 6785 6987 12782 
+	}
+	
+}

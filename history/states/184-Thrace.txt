@@ -1,0 +1,32 @@
+
+state={
+	id=184
+	name="STATE_184"
+	manpower = 382500
+
+	state_category = rural
+
+	resources={
+		aluminium=10
+		rations=2
+	}
+
+	history={
+		victory_points = {
+			11905 1 
+		}
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+		add_core_of = ORO
+	}
+
+	provinces={
+		9791 9930 11774 11905 6990 
+	}
+
+	local_supplies=9.0 
+}

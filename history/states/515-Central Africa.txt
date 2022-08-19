@@ -1,0 +1,26 @@
+state={
+	id=515
+	name="STATE_515"
+	resources={
+		rations=29
+	}
+	
+	state_category = pastoral
+	impassable = yes
+
+	history={
+		owner = DRO
+		add_core_of = DRO
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		7939 4913 10917 
+	}
+	manpower=1456356
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,29 @@
+heavy_radiation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.75
+	state_resources_factor = -0.75
+	state_production_speed_buildings_factor = -0.50
+	resistance_growth = -0.50
+	attrition = 0.4
+	supply_consumption_factor = 0.3
+	army_org_regain = -0.20
+}
+
+light_radiation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.20
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.15
+	resistance_growth = -0.20
+	attrition = 0.2
+	supply_consumption_factor = 0.1
+	army_org_regain = -0.10
+}

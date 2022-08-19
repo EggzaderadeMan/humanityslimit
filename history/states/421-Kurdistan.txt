@@ -1,0 +1,22 @@
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 780278
+	resources={
+		rations=7
+	}
+	state_category = rural
+
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PER
+		owner = UNC
+	}
+
+	provinces={
+		829 4943 5050 5098 9816 10774 12773 
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=611
+	name="STATE_611" # South Chahar
+	manpower = 1470000
+	resources = {
+		chromium=5
+		rations=6
+	}
+	state_category = pastoral
+
+	history={
+		owner = SIN
+		add_core_of = NME
+		add_core_of = SIN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		828 952 1137 1489 1590 6904 9776 10397 7158 
+	}
+}

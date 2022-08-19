@@ -1,0 +1,26 @@
+
+state={
+	id=503
+	name="STATE_503"
+	manpower = 1922700
+	resources={
+		steel=10
+		oil=20
+		aluminium=10
+		rations=28
+	}
+	state_category = rural
+
+	history={
+		owner = SOA
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+		}
+		add_core_of = SOA
+	}
+
+	provinces={
+		1529 2109 4533 4548 4587 5156 5178 8181 8239 10405 12466 
+	}
+}

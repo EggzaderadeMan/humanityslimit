@@ -1,0 +1,28 @@
+
+state={
+	id=475
+	name="STATE_475"
+	manpower = 805874
+	resources={
+		rations=6
+		noble=3
+	}
+	state_category = rural
+
+	history={
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEX
+		owner = UNC
+
+		victory_points = {
+			1900 3
+		}
+	}
+
+	provinces={
+		1900 12753 12867 
+	}
+	
+}

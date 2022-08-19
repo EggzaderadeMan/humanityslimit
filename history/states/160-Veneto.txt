@@ -1,0 +1,36 @@
+state={
+	id=160
+	name="STATE_160"
+	resources={
+		rations=3
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = NSD
+		victory_points = {
+			11584 10 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 3
+			11584 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = RIT
+
+	}
+
+	provinces={
+		628 3604 3657 6656 9613 11584 
+	}
+	manpower=3963151
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=323
+	name="STATE_323"
+	manpower = 5573791
+	
+	state_category = town
+	resources={
+		rations=7
+	}
+	history={
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1 
+		}
+		victory_points = {
+			4987 3 
+		}
+		add_core_of = TIB
+		add_core_of = NEP
+		add_core_of = DEH
+		owner = UNC
+	}
+
+	provinces={
+		4386 4987 5310 7374 
+	}
+}

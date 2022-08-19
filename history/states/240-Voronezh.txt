@@ -1,0 +1,25 @@
+
+state={
+	id=240
+	name="STATE_240" # Belgorod
+	manpower = 1364537
+	resources={
+		rations=8
+	}
+	state_category = town
+
+	history={
+		victory_points = {
+			9449 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SSR
+		owner = UNC
+	}
+
+	provinces={
+		473 534 3492 6432 6481 6517 6577 9424 9449 9489 9518 11439 11500 
+	}
+}

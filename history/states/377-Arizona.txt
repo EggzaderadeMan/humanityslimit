@@ -1,0 +1,31 @@
+
+state={
+	id=377
+	name="STATE_377"
+	manpower = 435572
+	
+	state_category = rural
+	
+	resources={
+		oil=20
+		rations=10
+	}
+
+	history={
+		owner = CHR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = CHR
+		victory_points = {
+			853 3 
+		}
+
+	}
+
+	provinces={
+		853 1793 3834 4796 7920 8115 10783 11814 12720 12791 3867 3883 5044 8070 10914 
+	}
+}

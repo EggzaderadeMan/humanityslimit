@@ -1,0 +1,22 @@
+
+state={
+	id=565
+	name="STATE_565" # Bodaybo
+	manpower = 195325
+	state_category = rural
+	resources={
+		tungsten=10
+	}
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NME
+		owner = UNC
+	}
+
+	provinces={
+		7854 1761 10583 4868 12538 4795 1666 4762 
+	}
+}

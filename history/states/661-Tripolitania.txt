@@ -1,0 +1,22 @@
+state={
+	id=661
+	name="STATE_661"
+	manpower = 17617
+	resources = {
+		oil=15
+		rations=1
+	}
+	state_category = wasteland
+	
+	history={
+		owner = AFR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LBA
+	}
+	
+	provinces={
+		1174 4051 4117 4176 10037 11940 12009 
+	}
+}

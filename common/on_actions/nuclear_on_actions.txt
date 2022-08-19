@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					state = 593
+				}
+				add_dynamic_modifier = { modifier = light_radiation }
+			}
+			every_state = {
+				limit = {
+					state = 326
+				}
+				add_dynamic_modifier = { modifier = heavy_radiation }
+			}
+		}
+	}
+}

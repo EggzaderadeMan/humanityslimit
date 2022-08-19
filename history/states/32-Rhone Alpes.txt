@@ -1,0 +1,29 @@
+
+state={
+	id=32
+	name="STATE_32" 
+	manpower = 1007500
+	
+	state_category = town
+	
+	resources={
+		tungsten=15
+	}
+
+	history={
+		owner = NFS
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			3768 1 
+		}
+		add_claim_by = RIT
+		add_core_of = FRA
+		add_core_of = OCT
+	}
+
+	provinces={
+		762 780 3589 3768 6784 11713 9728 
+	}
+}

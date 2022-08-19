@@ -1,0 +1,33 @@
+
+state={
+	id=534
+	name="STATE_534" # Hokuriku
+	manpower = 1933000
+	resources={
+		steel=10
+		chromium=4
+		rations=1
+	}
+	state_category = city
+
+	history={
+		owner = JPF
+		add_core_of = JPF
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			fuel_silo = 1
+		}
+		
+		victory_points = {
+			1117 10
+		}
+
+
+	}
+
+	provinces={
+		1117 9952 10128 11930 11989 12007 
+	}
+}

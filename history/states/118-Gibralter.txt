@@ -1,0 +1,44 @@
+state=
+{
+	id=118
+	name="STATE_118"
+	manpower=21372
+	
+	state_category = rural
+
+	resources={
+		rations=1
+		steel=10
+	}
+
+	history={
+		owner = AFR
+		victory_points = { 4135 10 }
+		victory_points = {
+			1048 3
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			4135 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
+			9979 = {
+				naval_base = 2
+
+			}
+			1048 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = AFR
+		add_core_of = SPR
+	}
+	provinces={
+		4135 7153 9979 10009 13228 10094 1048 
+	}
+
+	local_supplies=0.0 
+}

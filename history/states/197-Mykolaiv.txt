@@ -1,0 +1,26 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 896311
+	resources={
+		rations=6
+	}
+	state_category = rural
+
+	history={
+		victory_points = {
+			11683 3
+		}
+		owner = RMA
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+		}
+		add_core_of = RMA
+	}
+
+	provinces={
+		3755 6597 11546 11683 
+	}
+}

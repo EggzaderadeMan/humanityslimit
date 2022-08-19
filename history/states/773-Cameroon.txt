@@ -1,0 +1,49 @@
+
+state={
+
+	id=773
+
+	name="STATE_773" # Cameroon
+	resources = {
+		rubber=7
+		aluminium=10
+		rations=20
+	}
+
+	manpower = 2945782
+
+	
+state_category = rural
+
+
+	history={
+
+		owner = DRO
+		add_core_of = DRO
+		victory_points = {
+
+			2080 1
+
+		}
+
+		buildings = {
+
+			infrastructure = 3
+
+			industrial_complex = 1
+
+			air_base = 1
+
+		}
+
+
+	}
+
+
+	provinces={
+
+		2080 5036 5054 
+ 
+	}
+
+}

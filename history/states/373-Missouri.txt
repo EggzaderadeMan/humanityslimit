@@ -1,0 +1,31 @@
+
+state={
+	id=373
+	name="STATE_373"
+	manpower = 3629365
+	
+	state_category = large_city
+	
+	resources={
+		steel=15
+		rations=3
+	}
+
+
+	history={
+		owner = AMK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+		}
+		add_core_of = AMK
+		victory_points = {
+			10370 1 
+		}
+
+	}
+
+	provinces={
+		1534 1564 4449 4540 10370 12346 12463 9802 
+	}
+}

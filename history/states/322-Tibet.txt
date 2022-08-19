@@ -1,0 +1,26 @@
+state={
+	id=322
+	name="STATE_322"
+	impassable = yes
+
+	resources={
+		chromium=10
+		noble=36
+	}
+
+	history={
+		owner = UNC
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	provinces={
+		2010 2093 5011 8068 10755 1961 5094 8029 12784 1991 12807 10825 10910 12892 8037 
+	}
+	manpower=1722000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

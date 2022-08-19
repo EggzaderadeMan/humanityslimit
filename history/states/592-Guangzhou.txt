@@ -1,0 +1,37 @@
+state={
+	id=592
+	name="STATE_592"
+	manpower = 17835200
+	state_category = city
+	resources={
+		tungsten=20
+		steel=20
+		rations=6
+	}
+
+	history={
+		add_core_of = SIN
+		owner = UNC
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			1047 5
+		}
+	}
+
+	provinces={
+		1047 1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 
+	}
+}
+

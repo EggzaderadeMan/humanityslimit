@@ -1,0 +1,8 @@
+has_fuhrer_mana = {
+	OR = {
+		any_owned_state = {
+   	 		is_coastal = yes
+		}
+    		any_neighbor_country = { tag = UNC }
+	}
+}

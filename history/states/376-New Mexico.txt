@@ -1,0 +1,32 @@
+
+state={
+	id=376
+	name="STATE_376"
+	manpower = 423316
+	
+	state_category = rural
+	
+	resources={
+		oil=15
+		tungsten=24
+		rations=9
+	}
+
+
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = CHR
+		owner = UNC
+		victory_points = {
+			4975 1
+		}
+	}
+
+	provinces={
+		1972 2102 4975 10642 10645 10867 12552 12684 850 6897 7747 7821 10573 12765 
+	}
+	
+}

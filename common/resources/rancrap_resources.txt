@@ -1,0 +1,13 @@
+resources = {
+	rations = {
+		icon_frame = 7
+		cic = 0.0625
+		convoys = 0.01
+	}
+
+	noble = {
+		icon_frame = 8
+		cic = 0.125
+		convoys = 0.01
+	}
+}

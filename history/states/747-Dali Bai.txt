@@ -1,0 +1,25 @@
+state={
+	id=747
+	name="STATE_747"
+	resources = {
+		rubber=10
+		rations=5
+	}
+	provinces={
+		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 12363 7562 1566 1607 1170 4210 2061 7400 7603 4654 7909 4175 7647 12317 7974 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		add_core_of = SIN
+		owner = UNC
+		victory_points = {
+			7965 3 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+}

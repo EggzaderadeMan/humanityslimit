@@ -1,0 +1,25 @@
+
+state={
+	id=764
+	name="STATE_764"
+	manpower = 585579
+	resources = {
+		rations=2
+	}
+	state_category = rural
+
+	history={
+		owner = RMA
+		controller = RMA
+
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MAG
+		add_core_of = RMA
+	}
+
+	provinces={
+		614 3614 6643 11787
+	}
+}

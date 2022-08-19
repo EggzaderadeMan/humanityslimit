@@ -1,0 +1,36 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	resources={
+		aluminium=5
+		rations=2
+	}
+
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 5
+
+		}
+		victory_points = {
+			11586 15 
+		}
+		add_core_of = ORO
+		add_core_of = SER
+
+	}
+
+	provinces={
+		797 3609 3956 3984 6634 9599 11583 11586 982 11741 11580 
+	}
+	manpower=1279121
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=4.0 
+}

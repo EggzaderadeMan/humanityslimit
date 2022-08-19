@@ -1,0 +1,24 @@
+
+state={
+	id=494
+	name="STATE_494"
+	manpower = 735826
+	resources={
+		rations=1
+		noble=10
+	}
+	state_category = rural
+	
+
+	history={
+		owner = SOA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOA
+	}
+
+	provinces={
+		2212 2226 5166 8160 8191 10940 
+	}
+}

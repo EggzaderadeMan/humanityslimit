@@ -1,0 +1,29 @@
+state={
+	id=582
+	name="STATE_582"
+	resources={
+		steel=10
+		oil=14
+		aluminium=20
+		chromium=25
+	}
+
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = SSR
+		victory_points = {
+			10256 3
+		}
+	}
+
+	provinces={
+		1334 4265 4311 7300 7328 7401 10185 10256 
+	}
+	manpower=1044991
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

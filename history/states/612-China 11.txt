@@ -1,0 +1,27 @@
+
+state={
+	id=612
+	name="STATE_612" # Chahar
+	manpower = 566000
+	resources = {
+		steel=25
+		chromium=15
+	}
+	state_category = rural
+
+	history={
+		owner = NME
+		add_core_of = NME
+		add_core_of = SIN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11752 3
+		}
+	}
+
+	provinces={
+		1551 1608 1796 1811 1871 4222 4555 7578 7648 10363 10372 12348 12448 12554 4495 7674 7545 11752 4612 6988 10499 
+	}
+}

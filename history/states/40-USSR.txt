@@ -1,0 +1,27 @@
+
+state={
+	id=40
+	name="STATE_40" # Barnaul
+	manpower = 2107451
+	resources={
+		rations=7
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = SSR
+		victory_points = {
+			1794 1
+		}
+	}
+
+	provinces={
+		1297 1794 1797 10537 10546 11410 12613 4670 12616 10202 7708 
+	}
+}

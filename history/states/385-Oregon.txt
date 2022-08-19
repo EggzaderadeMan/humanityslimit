@@ -1,0 +1,25 @@
+
+state={
+	id=385
+	name="STATE_385"
+	manpower = 953785
+	resources={
+		chromium=50
+	}
+	state_category = town
+
+	history={
+		owner = CHR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
+		}
+		add_core_of = CHR
+
+	}
+
+	provinces={
+		505 528 4380 11495 11733 12281 
+	}
+}

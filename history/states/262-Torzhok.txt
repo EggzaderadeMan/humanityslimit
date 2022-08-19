@@ -1,0 +1,26 @@
+
+state={
+	id=262
+	name="STATE_262" # Pechora
+	manpower = 43590
+	
+	state_category = rural
+	
+	resources={
+		oil=15
+		rations=19
+	}
+
+	history={
+		owner = NRR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NRR
+	}
+
+	provinces={
+		154 6016 6177 6538 9099 9121 9230 7712 10579 6 99 108 3155 7330 11200 
+	}
+}

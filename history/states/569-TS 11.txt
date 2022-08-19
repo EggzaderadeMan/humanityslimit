@@ -1,0 +1,27 @@
+
+state={
+	id=569
+	name="STATE_569" # Kemerovo
+	manpower = 1567322
+	resources = {
+		oil=5
+		rations=8
+	}
+	state_category = town
+
+	history={
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = SSR
+		owner = UNC
+		victory_points = {
+			7757 1
+		}
+	}
+
+	provinces={
+		1369 1685 1702 1816 4665 4789 4793 7757 7822 7886 10580 10649 12631 4734 10652 7274 4866 
+	}
+}

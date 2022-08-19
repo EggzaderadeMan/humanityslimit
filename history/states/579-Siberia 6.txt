@@ -1,0 +1,22 @@
+
+state={
+	id=579
+	name="STATE_579" # Salekhard
+	manpower = 45484
+	resources = {
+		oil=25
+	}
+	state_category = wasteland
+
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SSR
+	}
+
+	provinces={
+		1664 1684 4669 7689 7738 8461 9142 
+	}
+}

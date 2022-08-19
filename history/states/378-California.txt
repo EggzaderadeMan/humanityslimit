@@ -1,0 +1,51 @@
+
+state={
+	id=378
+	name="STATE_378"
+	manpower = 5677248
+	
+	state_category = metropolis
+	
+	resources={
+		oil=86
+		aluminium=39
+		rations=7
+	}
+
+	history={
+		owner = CHR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 10
+			1562 = {
+				naval_base = 10
+			}
+			9671 = {
+				naval_base = 4
+			}
+			9814 = {
+				naval_base = 5
+			}
+			610 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CHR
+		victory_points = {
+			9814 30
+		}
+		victory_points = {
+			1562 15 
+		}
+		victory_points = {
+			9671 25
+		}
+	}
+
+	provinces={
+		610 677 768 781 823 986 1562 3644 3677 3678 3784 3840 6482 6681 6745 6757 6772 6861 6881 7517 7986 9637 9671 9730 9814 9855 10483 11658 11757 11795 11859 11876 12374 
+	}
+}

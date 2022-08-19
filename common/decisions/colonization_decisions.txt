@@ -1,0 +1,45 @@
+colonize = {
+#	available = {
+#		OR = {
+#			any_owned_state = {
+#				any_neighbor_state = {
+#					NOT = {
+#						is_owned_by = any_country
+#					}
+#				}
+#			}
+#			AND = {
+#				any_state = {
+#					is_coastal = yes
+#					NOT = {
+#						is_owned_by = any_country
+#					}
+#				}
+#				any_state = {
+#					is_owned_by = ROOT
+#				}
+#			}
+#		}
+#	always
+#	}
+	coastal_colonize = {
+		available = {
+			AND = {
+				any_state = {
+					is_coastal = yes
+					NOT = {
+						is_owned_by = any_country
+					}
+				}
+				any_state = {
+					is_coastal = yes
+					is_owned_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			
+		}
+		days_remove = 60
+	}
+}

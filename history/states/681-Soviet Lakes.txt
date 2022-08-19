@@ -1,0 +1,37 @@
+
+state={
+	id=681
+	name="STATE_681" # Cape
+	manpower = 1637178
+	resources = {
+		rations=10
+		noble=7
+	}
+	state_category = town
+
+	history={
+		owner = SUA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 1
+			12589 = {
+				naval_base = 4
+			}
+			4696 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			12589 10 
+		}
+		victory_points = {
+			4696 1 
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		10415 12419 12547 12589 12692 1833 4696 
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=758
+	name="STATE_758"
+	resources = {
+		noble=26
+	}
+	provinces={
+		10802 12801 10911 4973 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TIB
+		owner = UNC
+
+	}
+}

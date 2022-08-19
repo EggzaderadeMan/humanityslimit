@@ -1,0 +1,27 @@
+
+state={
+	id=581
+	name="STATE_581"
+	manpower = 48831
+	
+	state_category = wasteland
+	
+	resources={
+		steel=15
+		aluminium=15
+		oil=10
+	}
+
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SSR
+	}
+
+	provinces={
+		4874 7824 10216 12659 13076 198 6040 1744 4774 3169 
+	}
+}
