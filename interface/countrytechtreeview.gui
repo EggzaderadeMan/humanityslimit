@@ -3091,7 +3091,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x=950 y=412 }
+				position = { x=555 y=172 }
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
@@ -3102,7 +3102,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "atomic_research_tree"
-				position = { x=655 y=292 }
+				position = { x=600 y=172 }
 				size = { width = 680 height = 500 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
