@@ -1,0 +1,84 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1939.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+	
+		NFS = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				
+			}
+			focuses = {
+				
+			}
+		}
+		AMK = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		ENL = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+			
+		}
+		NSD = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		RIT = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				
+			}
+			focuses = {
+				
+			}			
+		}
+		JPF = {
+			history = JAP_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		SSR = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+}
