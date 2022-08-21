@@ -2,7 +2,8 @@ technologies = {
 
 	basic_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.5
+		industrial_capacity_dockyard = 0.5
 		
 		path = {
 			leads_to_tech = improved_machine_tools 
@@ -46,6 +47,8 @@ technologies = {
 	improved_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -80,9 +83,10 @@ technologies = {
 	}
 	
 	advanced_machine_tools = {
-	
-		production_factory_max_efficiency_factor = 0.1
 		
+		production_factory_start_efficiency_factor = 0.1
+		min_export = 0.1
+
 		path = {
 			leads_to_tech = assembly_line_production 
 			research_cost_coeff = 1
@@ -113,7 +117,13 @@ technologies = {
 	
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		line_change_production_efficiency_factor = -0.15
+		production_factory_max_efficiency_factor = -0.1
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		industry_air_damage_factor = -0.15
+		global_building_slots_factor = 0.2
 		
 		path = {
 			leads_to_tech = streamlined_line
@@ -145,8 +155,9 @@ technologies = {
 	
 	streamlined_line = {
 
-		production_factory_max_efficiency_factor = 0.1
-		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
 		
 		path = {
 			leads_to_tech = flexible_line
@@ -179,8 +190,8 @@ technologies = {
 
 	flexible_line = {
 
-		production_factory_max_efficiency_factor = 0.1
-		line_change_production_efficiency_factor = 0.2
+		production_factory_start_efficiency_factor = 0.15
+		production_lack_of_resource_penalty_factor = 0.30
 		
 		research_cost = 2.5
 		start_year = 1943
@@ -208,7 +219,8 @@ technologies = {
 	### Production Logistics Specialized ###	
 	specialized_production1 = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.15
+		line_change_production_efficiency_factor = 0.1
 
 		path = {
 			leads_to_tech = specialized_production2
@@ -244,7 +256,8 @@ technologies = {
 	
 	specialized_production2 = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		local_resources_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.2
 		
 		path = {
 			leads_to_tech = specialized_production3 
@@ -276,7 +289,9 @@ technologies = {
 	
 	specialized_production3 = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.1
 		
 		path = {
 			leads_to_tech = specialized_production4
@@ -308,8 +323,8 @@ technologies = {
 	
 	specialized_production4 = {
 
-		production_factory_max_efficiency_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
+		industry_repair_factor = 0.2
 		
 		path = {
 			leads_to_tech = specialized_production5
@@ -342,8 +357,8 @@ technologies = {
 
 	specialized_production5 = {
 
-		production_factory_max_efficiency_factor = 0.1
-		line_change_production_efficiency_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.25
+		line_change_production_efficiency_factor = 0.15
 		
 		research_cost = 2.5
 		start_year = 1943
@@ -371,9 +386,8 @@ technologies = {
 	###############
 	concentrated_industry = {
 
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
 		
 		path = {
 			leads_to_tech = concentrated_industry2 
@@ -442,9 +456,7 @@ technologies = {
 	
 	concentrated_industry2 = {
 
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.1
 		
 		path = {
 			leads_to_tech = concentrated_industry3 
@@ -481,12 +493,16 @@ technologies = {
 	
 	concentrated_industry3 = {
 
-		industrial_capacity_factory = 0.15
+		production_factory_efficiency_gain_factor = 0.1
+		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
 		
 		path = {
 			leads_to_tech = concentrated_industry4 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = dispersed_industry4 
 			research_cost_coeff = 1
 		}
 		
@@ -519,15 +535,19 @@ technologies = {
 	
 	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		line_change_production_efficiency_factor = 0.1
+		industry_air_damage_factor = -0.50
+		local_resources_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.25
 		
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
 		}
-		
+		XOR = {
+			dispersed_industry4
+		}
+
 		research_cost = 2
 		start_year = 1941
 		
@@ -557,9 +577,9 @@ technologies = {
 	
 	concentrated_industry5 = {
 
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.3
+		industrial_capacity_dockyard = 0.3
 		
 		research_cost = 2
 		start_year = 1943
@@ -595,12 +615,7 @@ technologies = {
 	
 	dispersed_industry = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.15
-		global_building_slots_factor = 0.2
 		
 		path = {
 			leads_to_tech = dispersed_industry2 
@@ -669,12 +684,8 @@ technologies = {
 	
 	dispersed_industry2 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		production_factory_efficiency_gain_factor = 0.15
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
 		
 		path = {
 			leads_to_tech = dispersed_industry3 
@@ -710,15 +721,16 @@ technologies = {
 	
 	dispersed_industry3 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
+		production_factory_start_efficiency_factor = 0.15
+		line_change_production_efficiency_factor = 0.05
 		global_building_slots_factor = 0.2
 		
 		path = {
 			leads_to_tech = dispersed_industry4 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = concentrated_industry4 
 			research_cost_coeff = 1
 		}
 		
@@ -751,16 +763,16 @@ technologies = {
 	
 	dispersed_industry4 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
+		production_factory_max_efficiency_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
 		
 		path = {
 			leads_to_tech = dispersed_industry5 
 			research_cost_coeff = 1
+		}
+		XOR = {
+			concentrated_industry4
 		}
 		
 		research_cost = 2
@@ -792,13 +804,8 @@ technologies = {
 	
 	dispersed_industry5 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
-		
+		production_factory_max_efficiency_factor = -0.2
+		production_factory_start_efficiency_factor = 0.2
 		
 		research_cost = 2
 		start_year = 1943
@@ -833,6 +840,7 @@ technologies = {
 		
 		production_speed_buildings_factor = 0.10
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.4
 
 		path = {
 			leads_to_tech = construction2
@@ -947,7 +955,7 @@ technologies = {
 
 	excavation2 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			leads_to_tech = excavation3
@@ -999,8 +1007,8 @@ technologies = {
 	
 	construction3 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.15
+		industry_repair_factor = 0.15
 		
 		path = {
 			leads_to_tech = construction4 
@@ -1095,11 +1103,16 @@ technologies = {
 	
 	construction4 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+		global_building_slots_factor = 0.4
 		
 		path = {
 			leads_to_tech = construction5 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = modular_construction 
 			research_cost_coeff = 1
 		}
 		
@@ -1128,7 +1141,7 @@ technologies = {
 
 	excavation4 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation5
@@ -1180,8 +1193,39 @@ technologies = {
 	
 	construction5 = {
 
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.25
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.2
+		
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 10
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	modular_construction = {
+
+		production_speed_buildings_factor = 0.20
+		industry_repair_factor = 0.30
+		conversion_cost_civ_to_mil_factor = -0.2
+		conversion_cost_mil_to_civ_factor = -0.2
 		
 		research_cost = 2
 		start_year = 1943
@@ -1210,6 +1254,7 @@ technologies = {
 	excavation5 = {
 		
 		local_resources_factor = 0.10
+		min_export = -1.0
 		
 		path = {
 			research_cost_coeff = 1
