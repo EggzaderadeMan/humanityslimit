@@ -2710,7 +2710,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
-				position = { x = 100 y = 172 }
+				position = { x = 532 y = 172 }
 				size = { width = 520 height = 800 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2733,8 +2733,8 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "construction1_tree"
-				position = { x = 894 y = 312 }
+				name = "excavation1_tree"
+				position = { x = 288 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
