@@ -2,7 +2,7 @@ technologies = {
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
-		research_speed_factor = 0.03
+		research_speed_factor = 0.20
 		
 		path = {
 			leads_to_tech = radio_detection
@@ -44,9 +44,9 @@ technologies = {
 		# 
 		enable_building = {
 			building = radar_station
-			level = 1
+			level = 6
 		}
-		coordination_bonus = 0.01
+		coordination_bonus = 0.05
 		path = {
 			leads_to_tech = radio
 			research_cost_coeff = 1
@@ -78,9 +78,8 @@ technologies = {
 
 	radio = {
 
-		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.05
-		coordination_bonus = 0.04
+		land_reinforce_rate = 0.10
+		coordination_bonus = 0.10
 		path = {
 			leads_to_tech = EMP_tech 
 			research_cost_coeff = 1
@@ -120,6 +119,8 @@ technologies = {
 
 	EMP_tech = {
 
+		## buff EW Company attack significantly
+
 		path = {
 			leads_to_tech = electronic_stability 
 			research_cost_coeff = 1
@@ -154,6 +155,9 @@ technologies = {
 	}
 	
 	electronic_stability = {
+
+		## buff EW defense significantly
+		## Upgrade Auto Tank reliability
 
 		path = {
 			leads_to_tech = quantum_computing 
@@ -194,6 +198,8 @@ technologies = {
 
 	quantum_computing = {
 
+		## Unlocks new turret with better computing
+
 		path = {
 			leads_to_tech = nano_machines 
 			research_cost_coeff = 1
@@ -232,6 +238,9 @@ technologies = {
 	}
 
 	compact_construction = {
+
+		## Unlock new scout auto turret
+		## Buff auto tank speed and breakthrough
 
 		path = {
 			leads_to_tech = nano_machines 
@@ -370,7 +379,7 @@ technologies = {
 	mechanical_computing = {
 
 		# small boost to research speed
-		research_speed_factor = 0.04
+		research_speed_factor = 0.20
 		
 		path = {
 			leads_to_tech = computing_machine 
@@ -403,7 +412,7 @@ technologies = {
 	computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.05
+		research_speed_factor = 0.10
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -446,10 +455,7 @@ technologies = {
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
-		enable_equipment_modules = {
-			stabilizer
-		}
+		research_speed_factor = 0.10
 		path = {
 			leads_to_tech = advanced_computing_machine 
 			research_cost_coeff = 1
@@ -502,7 +508,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.20
 		
 		path = {
 			leads_to_tech = world_servers 
@@ -515,12 +521,6 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 12 }
-		}
-		sub_technologies = {	## MOVE INTO NEW COMPUTING TECH
-			advanced_decryption
-		}
-		sub_technologies = {
-			advanced_encryption
 		}
 		ai_will_do = {
 			factor = 3
@@ -547,7 +547,7 @@ technologies = {
 	world_servers = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.20
 
 		research_cost = 2.5
 		start_year = 1942
@@ -589,8 +589,8 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-
-		enable_equipment_modules = { 
+		enable_equipment_modules = {
+			stabilizer
 			ship_fire_control_system_1
 		}
 		path = {
@@ -717,6 +717,22 @@ technologies = {
 			building = rocket_site
 			level = 2
 		}
+		enable_equipments = {
+			rocket_interceptor_equipment_1
+			guided_missile_equipment_1
+		}
+		rocket_artillery = {
+			soft_attack = 0.10
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.10
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.10
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.10
+		}
 		
 		path = {
 			leads_to_tech = rocket_engines 
@@ -745,15 +761,15 @@ technologies = {
 	}
 	
 	rocket_engines = {
-
-		show_equipment_icon = yes
-
-		# can build v1s/rocket planes
-		enable_equipments = {
-			rocket_interceptor_equipment_1
-			guided_missile_equipment_1
-		}
 		
+		path = {
+			leads_to_tech = improved_rocket_engines 
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			rocket_interceptor_equipment_2
+			guided_missile_equipment_2
+		}
 		rocket_artillery = {
 			soft_attack = 0.05
 		}
@@ -765,11 +781,6 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
-		}
-		
-		path = {
-			leads_to_tech = improved_rocket_engines 
-			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -795,27 +806,11 @@ technologies = {
 	}
 	
 	improved_rocket_engines = {
+		## Makes Rockets cheaper
 
-		show_equipment_icon = yes
-		
-		# can build v2s
-		
 		enable_equipments = {
-			rocket_interceptor_equipment_2
-			guided_missile_equipment_2
-		}
-		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.05
+			rocket_interceptor_equipment_3
+			guided_missile_equipment_3
 		}
 		
 		path = {
@@ -840,29 +835,8 @@ technologies = {
 		}
 	}
 	
-	advanced_rocket_engines = {
-
-		show_equipment_icon = yes
-
-		# can build ICBMs?
-		
-		enable_equipments = {
-			rocket_interceptor_equipment_3
-			guided_missile_equipment_3
-		}
-		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.05
-		}
+	advanced_rocket_engines = {	
+		## Allows Space Colonization
 		
 		path = {
 			leads_to_tech = space_travel_tech 
@@ -888,6 +862,8 @@ technologies = {
 	
 	space_travel_tech = {
 
+		## Allows Space Travel options
+
 		research_cost = 1.5
 		start_year = 1946
 		
@@ -906,6 +882,9 @@ technologies = {
 	}
 
 	satellites_tech = {
+
+		## Allows GPS
+		## Intel Bonuses
 
 		path = {
 			leads_to_tech = advanced_rocket_engines 
@@ -931,7 +910,11 @@ technologies = {
 
 	atomic_research = {
 
-		research_speed_factor = 0.04
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+		nuclear_production = 1
 		
 		path = {
 			leads_to_tech = nukes 
@@ -979,6 +962,9 @@ technologies = {
 	
 	nukes = {
 	
+		## Allows Reclamation
+		## Buffs CBRN Companies
+
 		start_year = 1945
 		research_cost = 5
 		
@@ -996,7 +982,6 @@ technologies = {
 			factor = 10
 		}
 		
-		nuclear_production = 1
 		on_research_complete = {
 			if = {
 				limit = {
@@ -1012,9 +997,10 @@ technologies = {
 	}
 
 	nuclear_reactor = {
-
-		# can build reactors
 		
+		## Allows Nuclear Engine
+		## Increase Reactor Building Slots
+
 		start_year = 1943
 		research_cost = 5
 		
@@ -1038,11 +1024,6 @@ technologies = {
 		
 		categories = {
 			nuclear
-		}
-		
-		enable_building = {
-			building = nuclear_reactor
-			level = 1
 		}
 	}
 
