@@ -209,6 +209,30 @@ WLE = {
 	color_ui = rgb { 181 230 27 }
 }
 
+GZI = {
+	color = rgb { 76 69 59 }
+	color_ui = rgb { 76 69 59 }
+}
+
+IOT = {
+	color = rgb { 28 125 108 }
+	color_ui = rgb { 28 125 108 }
+}
+
+WIN = {
+	color = rgb { 164 139 168 }
+	color_ui = rgb { 164 139 168 }
+}
+
+PES = {
+	color = rgb { 121 49 67 }
+	color_ui = rgb { 121 49 67 }
+}
+
+MGC = {
+	color = rgb { 42 115 146 }
+	color_ui = rgb { 42 115 146 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
