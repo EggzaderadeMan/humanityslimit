@@ -1912,4 +1912,329 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 
+################### MOVED TECHNOLOGIES ###############################
+	improved_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+				}
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = modern_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+				}
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+		}
+		path = {
+			leads_to_tech = advanced_oil_processing
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	improved_oil_processing = {
+		
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = advanced_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_oil
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 25
+			}
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}	
+			modifier = {
+				original_tag = GER			
+				has_war = yes
+				factor = 3
+			}		
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_oil_processing = {
+
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = modern_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_oil
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 25
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_oil_processing = {
+
+		fuel_gain_factor_from_states = 0.5
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+			cat_synth_oil
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
 }

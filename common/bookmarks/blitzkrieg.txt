@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "BLITZKRIEG_DESC"
 		date = 1939.8.14.12
 		picture = "GFX_select_date_1939"
-		default_country = "GER"
+		default_country = "DRO"
 	
 		NFS = {
 			history = FRA_BLITZKRIEG_DESC
@@ -68,6 +68,16 @@ bookmarks = {
 			}		
 		}
 		SSR = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		DRO = {
 			history = SOV_BLITZKRIEG_DESC
 			ideology = communism
 			ideas = {

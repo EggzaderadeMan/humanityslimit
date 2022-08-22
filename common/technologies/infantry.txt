@@ -1434,437 +1434,6 @@ technologies = {
 		}
 
 	}
-
-	night_vision = {
-
-		land_night_attack = 0.1
-		
-		path = {
-			leads_to_tech = night_vision2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.5
-		start_year = 1943
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			night_vision
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1946.1.1"
-			}
-		}
-	}
-	
-	night_vision2 = {
-
-		land_night_attack = 0.15	
-
-		research_cost = 2
-		start_year = 1946
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			night_vision
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1946.1.6"
-			}
-		}
-	}
-	
-	support_weapons = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1918
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 15
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons2 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1938
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1938.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons3 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1940
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1940.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons4 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1946 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
 	
 	motorised_infantry = {
 
@@ -2376,6 +1945,476 @@ technologies = {
 
 		enable_subunits = {
 			penal_battalion
+		}
+	}
+
+################### MOVED TECHNOLOGIES ##################
+	night_vision = {
+
+		land_night_attack = 0.1
+		
+		path = {
+			leads_to_tech = night_vision2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	night_vision2 = {
+
+		land_night_attack = 0.15	
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.6"
+			}
+		}
+	}
+	
+	support_weapons = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 15
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons2 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons3 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons4 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		path = {
+			leads_to_tech = support_weapons4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	improved_infantry_weapons_2 = {
+
+		enable_equipments = {
+			infantry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = advanced_infantry_weapons
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+						
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
 		}
 	}
 }
