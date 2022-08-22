@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = PES
+		add_core_of = PES
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
