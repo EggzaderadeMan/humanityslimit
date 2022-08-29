@@ -71,6 +71,10 @@ technologies = {
 			leads_to_tech = compact_SMG
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = urban_gun1
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1936
@@ -713,6 +717,83 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = 12 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+
+	basic_urban_gun = {
+		enable_equipments = {
+			urban_gun1
+		}	
+
+		path = {
+			leads_to_tech = urban_gun2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+
+	improved_urban_gun = {
+		enable_equipments = {
+			urban_gun2
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 8 }
 		}
 		
 		categories = {

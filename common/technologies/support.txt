@@ -1336,6 +1336,10 @@ technologies = {
 			signal_company
 		}
 
+		category_all_auto = {
+			breakthrough = 0.10
+		}
+
 		path = {
 			leads_to_tech = tech_signal_company2
 			research_cost_coeff = 1
@@ -1368,7 +1372,15 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.05
+			coordination_bonus = 0.05
+			recon = 3
+		}
+
+		category_all_auto = {
+			breakthrough = 0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 
 		research_cost = 1.5

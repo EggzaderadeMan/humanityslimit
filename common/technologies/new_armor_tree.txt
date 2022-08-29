@@ -845,6 +845,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_welded_armor
 			tank_cast_armor
+			slat_armor
 			armor_skirts
 		}
 

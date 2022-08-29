@@ -186,4 +186,63 @@ equipments = {
 			chromium = 1
 		}
 	}
+
+	urban_gun1 = {
+		year = 1942
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_0
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 58
+		breakthrough = 18
+
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 5
+		ap_attack = 2
+		air_attack = 0.1
+
+		reliability = 0.75
+		build_cost_ic = 0.64
+		resources = {
+			steel = 2
+		}
+#		urban = {
+#			attack = 0.15
+#			defense = 0.05
+#		}
+	}
+
+	urban_gun2 = {
+		year = 1942
+	
+		archetype = infantry_equipment
+		parent = urban_gun1
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 68
+		breakthrough = 33
+
+		#Offensive Abilities
+		soft_attack = 21
+		hard_attack = 8
+		ap_attack = 5
+		air_attack = 0.5
+		
+		reliability = 0.75
+		build_cost_ic = 0.88
+		resources = {
+			steel = 2
+			chromium = 1
+		}
+#		urban = {
+#			attack = 0.25
+#			defense = 0.15
+#		}
+	}
 }

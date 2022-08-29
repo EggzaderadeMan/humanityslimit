@@ -675,13 +675,35 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2.3
+			build_cost_ic = 1.7
 			reliability = -0.02
 			breakthrough = 8
 			defense = 4
 			recon = 4
 		}
 		xp_cost = 1
+	}
+
+	tank_slat_armor = {	## For Urban Combat
+		abbreviation = "slt"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 2
+			breakthrough = 3
+			maximum_speed = -0.8	
+		}
+#		urban = {
+#			attack = 0.15
+#			defense = 0.05
+#		}
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		add_stats = {
+			armor_value = 12
+			build_cost_ic = 2.3
+		}
 	}
 
 	sloped_armor = {
