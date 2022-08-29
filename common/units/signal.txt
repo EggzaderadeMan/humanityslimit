@@ -1,6 +1,6 @@
 sub_units = {
-	underground_strike = {
-		abbreviation = "UST"
+	signal_company = {
+		abbreviation = "SIG"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -9,6 +9,7 @@ sub_units = {
 		affects_speed = no
 
 		type = {
+			infantry
 			support
 		}
 		
@@ -30,29 +31,26 @@ sub_units = {
 		training_time = 120
 
 		#Misc Abilities
+		defense = 5
 		weight = 0.1
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 		
-		fort = {
-			attack = 0.25
-		}
-		urban = {
-			attack = 0.10
-		}
+		# Important Ability
+		initiative = 0.20
 		
-		soft_attack = 20
-		hard_attack = 5
+		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		
 		essential = {
 			support_equipment
+			motorized_equipment
 			electronic_equipment
 		}
 
 		need = {
 			support_equipment = 20
-			infantry_equipment = 30
-			electronic_equipment = 20
+			motorized_equipment = 10
+			electronic_equipment = 30
 		}
 
 	}

@@ -1,0 +1,6 @@
+﻿l_english:
+ allows_space_resources_tooltip:0 "Allows us to Sponsor Expeditions to collect Extraterrestrial Resources"
+ allows_space_travel_tooltip:0 "Allows to direct control and colonize Space Colonies"
+ allows_satellites_tooltip:0 "Allows Launching Satellites and Maintaining Satellites"
+ allows_CBRN_tooltip:0 "Allows researching CBRN Company"
+ allows_reclamation_tooltip:0 "Allows Reclamation of Radioactive States by clicking on the state"

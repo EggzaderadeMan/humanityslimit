@@ -34,17 +34,24 @@ sub_units = {
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 		
-		# Important Ability
-		#initiative = 0.20
+		soft_attack = 40
+		breakthrough = 10
 		
-		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+		plains = {
+			attack = 0.15
+		}
+		fort = {
+			attack = 0.10
+		}
 		
 		essential = {
 			support_equipment
+			electronic_equipment
 		}
 
 		need = {
 			support_equipment = 20
+			electronic_equipment = 10
 		}
 
 	}

@@ -1,0 +1,3 @@
+has_reclamation_mana = {
+	has_tech = nukes
+}

@@ -128,19 +128,19 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.1
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.1
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.1
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
+			soft_attack = 0.1
 		}
 
 		enable_equipment_modules = {
@@ -197,19 +197,19 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -485,16 +485,16 @@ technologies = {
 	rocket_artillery2 = {
 
 		rocket_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.12
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.12
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.12
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.12
 		}
 
 		path = {
@@ -530,8 +530,17 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
+		rocket_artillery = {
+			soft_attack = 0.06
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.06
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.06
+		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.3
+			soft_attack = 0.06
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher_2
@@ -1012,11 +1021,6 @@ technologies = {
 	}
 
 	antitank1 = {
-
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
 
 		enable_equipments = {
 			anti_tank_equipment_2

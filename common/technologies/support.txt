@@ -146,6 +146,10 @@ technologies = {
 			support_tech
 		}
 		
+		dependencies = {
+			satellites_tech = 1
+		}
+
 		ai_will_do = {
 			factor = 1
 
@@ -205,6 +209,10 @@ technologies = {
 		categories = {
 			support_tech
 		}
+
+		dependencies = {
+			atomic_research = 1
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -219,8 +227,24 @@ technologies = {
 
 	tech_CBRN_company2 = {
 
-		enable_subunits = {
-			CBRN_company
+		CBRN_company = {
+			forest = {
+				attack = 0.05
+				movement = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				movement = 0.05
+			}
+			urban = {
+				attack = 0.10
+				defence = 0.10
+				movement = 0.05
+			}
+			fort = {
+				attack = 0.05
+				defence = 0.05
+			}
 		}
 
 		research_cost = 2
@@ -1373,7 +1397,7 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.05
-			coordination_bonus = 0.05
+##			coordination_bonus = 0.05
 			recon = 3
 		}
 

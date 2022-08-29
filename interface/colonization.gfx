@@ -1,7 +1,7 @@
 spriteTypes = {	
 	spriteType = {
-		name = "GFX_fuhrer_mana"
-		texturefile = "gfx/colonization.dds"
+		name = "GFX_reclamation_mana"
+		texturefile = "gfx/reclamation.dds"
 		legacy_lazy_load = no
 	}
     

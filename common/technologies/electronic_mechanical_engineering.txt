@@ -41,10 +41,9 @@ technologies = {
 
 	radio_detection = {
 
-		# 
 		enable_building = {
 			building = radar_station
-			level = 6
+			level = 3
 		}
 		coordination_bonus = 0.05
 		path = {
@@ -118,9 +117,14 @@ technologies = {
 	}
 
 	EMP_tech = {
-
+		signal_company = {
+			recon = 2
+		}
 		## buff EW Company attack significantly
-
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
 		path = {
 			leads_to_tech = electronic_stability 
 			research_cost_coeff = 1
@@ -155,9 +159,12 @@ technologies = {
 	}
 	
 	electronic_stability = {
-
-		## buff EW defense significantly
-		## Upgrade Auto Tank reliability
+		signal_company = {
+			defense = 4.0
+		}
+		category_all_auto = {
+			reliability = 0.15
+		}
 
 		path = {
 			leads_to_tech = quantum_computing 
@@ -837,6 +844,9 @@ technologies = {
 	
 	advanced_rocket_engines = {	
 		## Allows Space Colonization
+		on_research_complete = {
+			custom_effect_tooltip = allows_space_resources_tooltip
+		}
 		
 		path = {
 			leads_to_tech = space_travel_tech 
@@ -863,6 +873,9 @@ technologies = {
 	space_travel_tech = {
 
 		## Allows Space Travel options
+		on_research_complete = {
+			custom_effect_tooltip = allows_space_travel_tooltip
+		}
 
 		research_cost = 1.5
 		start_year = 1946
@@ -883,8 +896,12 @@ technologies = {
 
 	satellites_tech = {
 
-		## Allows GPS
-		## Intel Bonuses
+		## Add Intel Bonuses
+
+		# Allows GPS
+		on_research_complete = {
+			custom_effect_tooltip = allows_satellites_tooltip
+		}
 
 		path = {
 			leads_to_tech = advanced_rocket_engines 
@@ -915,6 +932,9 @@ technologies = {
 			level = 1
 		}
 		nuclear_production = 1
+		on_research_complete = {
+			custom_effect_tooltip = allows_CBRN_tooltip
+		}
 		
 		path = {
 			leads_to_tech = nukes 
@@ -963,7 +983,26 @@ technologies = {
 	nukes = {
 	
 		## Allows Reclamation
-		## Buffs CBRN Companies
+		on_research_complete = {
+			custom_effect_tooltip = allows_reclamation_tooltip
+		}
+
+		CBRN_company = {
+			fort = {
+				attack = 0.05
+				defence = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+			}
+			jungle = {
+				attack = 0.05
+			}
+		}
 
 		start_year = 1945
 		research_cost = 5
@@ -998,8 +1037,13 @@ technologies = {
 
 	nuclear_reactor = {
 		
-		## Allows Nuclear Engine
-		## Increase Reactor Building Slots
+		enable_equipment_modules = {
+			tank_nuclear_engine
+		}
+		enable_building = {
+			building = nuclear_reactor
+			level = 3
+		}
 
 		start_year = 1943
 		research_cost = 5
