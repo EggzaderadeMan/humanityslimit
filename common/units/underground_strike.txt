@@ -40,6 +40,12 @@ sub_units = {
 		urban = {
 			attack = 0.10
 		}
+		mountain = {
+			attack = 0.15
+		}
+		hills = {
+			attack = 0.05
+		}
 		
 		soft_attack = 20
 		hard_attack = 5

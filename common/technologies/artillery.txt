@@ -693,7 +693,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_3
-			tank_anti_air_cannon_2
 		}
 
 		path = {
@@ -794,8 +793,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_4
-			tank_heavy_cannon_3
-			tank_anti_air_cannon_3
+			tank_anti_air_cannon_2
 			tank_auto_cannon_2
 		}
 
@@ -902,6 +900,12 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
+
+		enable_equipment_modules = {
+			tank_heavy_cannon_3
+			tank_anti_air_cannon_3
+		}
+
 
 		tech_air_damage_factor = -0.02
 
@@ -1026,7 +1030,6 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_cannon_2
 			squeezebore_adaptor
 		}
 		path = {
@@ -1191,6 +1194,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
 		}
 
 		path = {
