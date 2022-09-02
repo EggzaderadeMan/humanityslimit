@@ -26,11 +26,6 @@ state = {
 		}
 		add_core_of = RMA
 		add_core_of = UKA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces = {
