@@ -98,7 +98,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "oil_icon"
-						position = { x=0 y=2 }
+						position = { x=-30 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 1
 						#pdx_tooltip = "PRODUCTION_MATERIALS_OIL"
@@ -106,7 +106,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "oil_value"
-						position = { x = 25 y = 5 }
+						position = { x = -5 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -119,7 +119,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "rubber_icon"
-						position = { x=50 y=2 }
+						position = { x=10 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 3
 						#pdx_tooltip = "PRODUCTION_MATERIALS_RUBBER"
@@ -127,7 +127,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "rubber_value"
-						position = { x = 75 y = 5 }
+						position = { x = 35 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -140,7 +140,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "steel_icon"
-						position = { x=100 y=2 }
+						position = { x=65 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 5
 						#pdx_tooltip = "PRODUCTION_MATERIALS_STEEL"
@@ -148,7 +148,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "steel_value"
-						position = { x = 125 y = 5 }
+						position = { x = 95 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -161,7 +161,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "aluminium_icon"
-						position = { x=150 y=2 }
+						position = { x=125 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 2
 						#pdx_tooltip = "PRODUCTION_MATERIALS_ALUMINIUM"
@@ -169,7 +169,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "aluminium_value"
-						position = { x = 175 y = 5 }
+						position = { x = 155 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -182,7 +182,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "tungsten_icon"
-						position = { x=200 y=2 }
+						position = { x=180 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 4
 						#pdx_tooltip = "PRODUCTION_MATERIALS_TUNGSTEN"
@@ -190,7 +190,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "tungsten_value"
-						position = { x = 225 y = 5 }
+						position = { x = 205 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -203,7 +203,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "chromium_icon"
-						position = { x=250 y=2 }
+						position = { x=230 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 6
 						#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
@@ -211,7 +211,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "chromium_value"
-						position = { x = 275 y = 5 }
+						position = { x = 260 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -226,14 +226,14 @@ guiTypes = {
 
 					buttonType = {
 						name = "rations_icon"
-						position = { x=300 y=2 }
+						position = { x=275 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 7
 					}
 
 					instantTextboxType = {
 						name = "rations_value"
-						position = { x = 325 y = 5 }
+						position = { x = 302 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -244,14 +244,14 @@ guiTypes = {
 					}
 					buttonType = {
 						name = "noble_icon"
-						position = { x=350 y=2 }
+						position = { x=332 y=2 }
 						spriteType = "GFX_resources_strip"
 						frame = 8
 					}
 
 					instantTextboxType = {
 						name = "noble_value"
-						position = { x = 375 y = 5 }
+						position = { x = 360 y = 5 }
 						textureFile = ""
 						font = "hoi_18mbs"
 						borderSize = {x = 0 y = 0}
@@ -1334,38 +1334,6 @@ guiTypes = {
 
 			buttonType = {
 				name = "chromium_checkbox"
-				position = { x = 311 y = 1 }
-				quadTextureSprite ="GFX_generic_checkbox"
-				Orientation = "UPPER_LEFT"
-				clicksound = click_checkbox
-			}
-
-			iconType = {
-				name = "rations_icon"
-				position = { x=287 y=2 }
-				spriteType = "GFX_resources_strip"
-				frame = 7
-				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
-			}
-
-			buttonType = {
-				name = "rations_checkbox"
-				position = { x = 311 y = 1 }
-				quadTextureSprite ="GFX_generic_checkbox"
-				Orientation = "UPPER_LEFT"
-				clicksound = click_checkbox
-			}
-
-			iconType = {
-				name = "noble_icon"
-				position = { x=287 y=2 }
-				spriteType = "GFX_resources_strip"
-				frame = 8
-				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
-			}
-
-			buttonType = {
-				name = "noble_checkbox"
 				position = { x = 311 y = 1 }
 				quadTextureSprite ="GFX_generic_checkbox"
 				Orientation = "UPPER_LEFT"

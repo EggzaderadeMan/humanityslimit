@@ -1,15 +1,15 @@
+
 state={
 	id=545
-	
-	state_category = pastoral
-	resources={
-		rations=14
-		noble=11
-	}
 	name="STATE_545"
+	resources={
+		rations=14.000
+		noble=11.000
+	}
 
 	history={
-		owner = UNC
+		owner = GZI
+		add_core_of = GZI
 		buildings = {
 			infrastructure = 3
 
@@ -17,11 +17,14 @@ state={
 		victory_points = {
 			10929 1 
 		}
+
 	}
 
 	provinces={
-		1874 2151 2216 4851 7842 10929
+		1874 2120 2151 2193 2216 4851 5155 5177 5212 7842 10929 12935 
 	}
 	manpower=1171336
 	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

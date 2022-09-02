@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = PES
+		add_core_of = PES
 			victory_points = {
 			5199 1
 		}
