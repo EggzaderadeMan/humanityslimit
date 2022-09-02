@@ -2,25 +2,29 @@
 state={
 	id=541
 	name="STATE_541"
-	manpower = 462000
 	resources={
-		tungsten=25
-		rations=3
+		tungsten=25.000
+		rations=3.000
 	}
-	state_category = wasteland
 
 	history={
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			4879 1
+			4879 1 
 		}
-		add_core_of = SUA
-		owner = UNC
+		add_core_of = WIN
+		owner = WIN
+
 	}
 
 	provinces={
-		2207 2229 4879 5154 5189 7605 7770 8136 10957 10963 10978 12519 12921 13217 1509 4528 5203 10442 
+	 2207 2229 4528 4879 5154 5189 7605 8136 8202 10957 10963 10978 12391 12921 12985 
 	}
+	manpower=462000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

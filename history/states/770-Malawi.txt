@@ -1,13 +1,15 @@
+
 state={
 	id=770
 	name="STATE_770"
-	resources = {
-		rations=14
+	resources={
+		rations=14.000
 	}
 
 	history={
-		owner = UNC
-			victory_points = {
+		owner = PES
+		add_core_of = PES
+		victory_points = {
 			12986 1 
 		}
 		buildings = {
@@ -18,9 +20,10 @@ state={
 	}
 
 	provinces={
-		2255 12908 12986 13209 
+		2255 12950 12986 13209 
 	}
 	manpower=1603975
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }

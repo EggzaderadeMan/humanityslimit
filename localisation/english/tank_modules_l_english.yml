@@ -428,7 +428,7 @@
  heavy_tank_amphibious_chassis_desc:0 "A heavy tank equipped with floatation devices and a propeller."
  
  tank_nuclear_engine:0 "Nuclear Engine"
- tank_nuclear_engine:0 "An engine powered by a compact Thorium reactor which doesn't need explosive and limited oil to run"
+ tank_nuclear_engine_desc:0 "An engine powered by a compact Thorium reactor which doesn't need explosive and limited oil to run"
  tank_composite_armor:0 "Composite Armor"
  tank_composite_armor_desc:0 "A combination of a hard polymer layer over a squishy coushining layer over a flexible steel layer, allowing the armor to absorb a combination of penetrative projetiles and HEAT projectiles"
  tank_nano_integrated_armor:0 "Nano-Integrated Armor"
