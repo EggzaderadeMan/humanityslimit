@@ -1,0 +1,35 @@
+
+state={
+	id=837
+	name="STATE_837"
+
+	resources={
+		rations=5
+		noble=16
+	}
+
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 1
+			8245 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			8245 1 
+		}
+
+	}
+
+	provinces={
+		1688 7900 8245 10566 
+	}
+	manpower=234000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

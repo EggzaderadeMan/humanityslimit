@@ -8,8 +8,8 @@ state={
 	
 	resources={
 		steel=25
-		chromium=40
-		rations=9
+		chromium=25
+		rations=7
 		noble=21
 	}
 

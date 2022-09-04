@@ -3,6 +3,11 @@ state={
 	id=708
 	name="STATE_708"
 
+	resources={
+		tungsten=5
+		rations=2
+	}
+
 	history={
 		owner = IOT
 		add_core_of = IOT

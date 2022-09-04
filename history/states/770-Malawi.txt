@@ -3,7 +3,9 @@ state={
 	id=770
 	name="STATE_770"
 	resources={
-		rations=14.000
+		rations=7.000
+		noble=10
+		chromium=5
 	}
 
 	history={
@@ -20,7 +22,7 @@ state={
 	}
 
 	provinces={
-		2255 12950 12986 13209 
+		191 1846 2255 5221 10594 10930 12950 12986 13173 13209 
 	}
 	manpower=1603975
 	buildings_max_level_factor=1.000

@@ -5,26 +5,31 @@ state={
 	manpower = 378000
 	
 	resources={
-		rations=1
+		rations=2
 	}
 
 	state_category = rural
 
 	history={
-		victory_points = {
-			11597 1
-		}
-		owner = RMA
+		victory_points = { 11597 1 }
+		victory_points = { 657 3 }
+		owner = ORO
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 1
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
 		}
-		add_core_of = RMA
 		add_claim_by = ORO
+		add_core_of = RMA
 	}
 
 	provinces={
-		9614 11597 
+		657 687 3076 9614 9635 11597 
 	}
 
 	local_supplies=1.0 

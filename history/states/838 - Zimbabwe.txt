@@ -1,0 +1,30 @@
+
+state={
+	id=838
+	name="STATE_838"
+	resources={
+		rations=7.000
+		noble=5.000
+		tungsten=10
+	}
+
+	history={
+		owner = GZI
+		add_core_of = GZI
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			2151 1 
+		}
+
+	}
+
+	provinces={
+		2151 2193 4851 5177 5212 7842 12935 
+	}
+	manpower=1171336
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

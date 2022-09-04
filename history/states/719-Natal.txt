@@ -5,8 +5,8 @@ state={
 	resources={
 		chromium=30
 		steel=15
-		rations=10
-		noble=38
+		rations=5
+		noble=22
 	}
 	
 	state_category = city

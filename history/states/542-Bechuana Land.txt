@@ -1,9 +1,9 @@
-
 state={
 	id=542
 	name="STATE_542"
+
 	resources={
-		rations=1.000
+		rations=3
 	}
 
 	history={
@@ -11,26 +11,15 @@ state={
 		add_core_of = PES
 		buildings = {
 			infrastructure = 1
-			8245 = {
-				naval_base = 1
-
-			}
-
 		}
 		victory_points = {
 			8214 1 
-		}
-		victory_points = {
-			10400 10 
-		}
-		victory_points = {
-			8245 1 
 		}
 
 	}
 
 	provinces={
-		1509 1580 1688 2171 2213 5106 5203 5217 7770 7900 8214 8245 10400 10442 10525 10566 10668 12519 12940 12963 13217 
+		1580 2213 5217 8214 10525 10668 12519 12963 13217 
 	}
 	manpower=234000
 	buildings_max_level_factor=1.000

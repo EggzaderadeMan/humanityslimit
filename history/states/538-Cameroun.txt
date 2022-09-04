@@ -7,6 +7,7 @@ state={
 	state_category = wasteland
 	resources={
 		rations=4
+		noble=4
 	}
 	history={
 		owner = DRO
