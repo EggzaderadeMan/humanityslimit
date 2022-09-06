@@ -1,0 +1,13 @@
+scripted_gui = {
+
+	robotpower = {
+		context_type = player_context
+		
+		window_name = "robotpower_container"
+		
+		visible = {
+            tag = DRO
+		}
+	}  
+}
+
