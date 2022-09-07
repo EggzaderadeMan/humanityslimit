@@ -2,15 +2,15 @@
 state={
 	id=275
 	name="STATE_275" # Transvaal
-	manpower = 3680363
+	manpower = 3390363
 	
 	state_category = city
 	
 	resources={
-		steel=25
-		chromium=25
-		rations=7
-		noble=21
+		steel=21.000
+		chromium=25.000
+		rations=6.000
+		noble=21.000
 	}
 
 	history={
@@ -20,11 +20,13 @@ state={
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 3
+
 		}
 		add_core_of = SUA
+
 	}
 
 	provinces={
-		5231 12064 12648 4556 
+		5231 12064 12648 
 	}
 }

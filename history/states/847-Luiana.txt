@@ -1,0 +1,22 @@
+state={
+	id=847
+	name="STATE_847"
+	provinces={
+		4735 12519 13217 
+	}
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+	manpower=1948570
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

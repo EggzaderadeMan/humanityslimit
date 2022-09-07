@@ -1,15 +1,11 @@
 
 state={
 	id=295
-	name="STATE_295" # Leopoldville
-	manpower = 3540948
-	
-	state_category = rural
-	
+	name="STATE_295"
 	resources={
-		rations=4
-		noble=12
-		chromium=4
+		rations=4.000
+		noble=12.000
+		chromium=4.000
 	}
 
 	history={
@@ -17,14 +13,21 @@ state={
 		add_core_of = PES
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
+
 		}
 		victory_points = {
 			191 1 
 		}
+
 	}
 
 	provinces={
-		1516 1731 1817 1929 1968 2024 4128 4515 7716 9986 10025 10858 12795 12896 12945 
+		1516 1731 1929 1968 2024 4128 7716 9986 10025 10858 12795 12896 12945 
 	}
+	manpower=3540948
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

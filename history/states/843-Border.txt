@@ -1,0 +1,23 @@
+state={
+	id=843
+	name="STATE_843"
+	resources={
+		rations=2.000
+	}
+	provinces={
+		5199 7872 
+	}
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=957379
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

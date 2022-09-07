@@ -2,21 +2,23 @@
 state={
 	id=836
 	name="STATE_836"
-	impassable = yes
 
 	history={
 		owner = PES
 		add_core_of = PES
 		buildings = {
 			infrastructure = 0
+
 		}
+
 	}
 
 	provinces={
-		1509 5203 7770 12940 
+		7770 12940 
 	}
 	manpower=234000
 	buildings_max_level_factor=1.000
+	impassable = yes
 	state_category=wasteland
 	local_supplies=0.000
 }

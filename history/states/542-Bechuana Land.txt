@@ -1,28 +1,38 @@
+
 state={
 	id=542
 	name="STATE_542"
-
 	resources={
-		rations=3
+		rations=3.000
 	}
 
 	history={
-		owner = PES
-		add_core_of = PES
+		owner = BWA
+		add_core_of = BWA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 3
+			10525 = {
+				bunker = 5
+			}
+
 		}
 		victory_points = {
-			8214 1 
+			10525 5 
+		}
+		PES = {
+			set_province_controller = 1580
+			set_province_controller = 12963
 		}
 
 	}
 
 	provinces={
-		1580 2213 5217 8214 10525 10668 12519 12963 13217 
+		1580 10525 12963 
 	}
 	manpower=234000
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=large_town
 	local_supplies=0.000
 }

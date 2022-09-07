@@ -1,0 +1,20 @@
+state={
+	id=848
+	name="STATE_848"
+	provinces={
+		8138 12958 
+	}
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=1453214
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

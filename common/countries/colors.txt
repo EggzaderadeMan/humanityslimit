@@ -233,6 +233,26 @@ MGC = {
 	color = rgb { 42 115 146 }
 	color_ui = rgb { 42 115 146 }
 }
+
+BWA = {
+	color = rgb { 89 213 213 }
+	color_ui = rgb { 89 213 213 }
+}
+
+CPT = {
+	color = rgb { 51 22 15 }
+	color_ui = rgb { 51 22 15 }
+}
+
+LES = {
+	color = rgb { 130 124 87 }
+	color_ui = rgb { 130 124 87 }
+}
+
+NGO = {
+	color = rgb { 51 12 82 }
+	color_ui = rgb { 51 12 82 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

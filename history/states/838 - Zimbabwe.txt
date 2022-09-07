@@ -3,9 +3,9 @@ state={
 	id=838
 	name="STATE_838"
 	resources={
-		rations=7.000
+		rations=4.000
 		noble=5.000
-		tungsten=10
+		tungsten=5.000
 	}
 
 	history={
@@ -13,6 +13,8 @@ state={
 		add_core_of = GZI
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
+
 		}
 		victory_points = {
 			2151 1 
@@ -21,10 +23,10 @@ state={
 	}
 
 	provinces={
-		2151 2193 4851 5177 5212 7842 12935 
+		2151 4851 7842 
 	}
 	manpower=1171336
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

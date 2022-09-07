@@ -4,18 +4,16 @@ state={
 	name="STATE_544"
 	resources={
 		tungsten=5.000
-		aluminium=25.000
-		rations=10.000
+		aluminium=5.000
+		rations=6.000
 	}
 
 	history={
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			2123 = {
-				naval_base = 2
-
-			}
+			industrial_complex = 2
+			dockyard = 2
+			arms_factory = 1
 
 		}
 		add_core_of = IOT
@@ -24,10 +22,10 @@ state={
 	}
 
 	provinces={
-		2123 2159 2180 2202 2217 5164 8182 8201 10845 10972 12944 12908 12971 
+		2159 2202 2217 8182 8201 10972 12944 
 	}
-	manpower=4125000
+	manpower=3125000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 	local_supplies=0.000
 }

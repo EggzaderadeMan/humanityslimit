@@ -1,0 +1,26 @@
+state={
+	id=846
+	name="STATE_846"
+	provinces={
+		2213 5217 8214 10668 
+	}
+	resources={
+		rations=1.000
+	}
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			8214 1 
+		}
+
+	}
+	manpower=549370
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
