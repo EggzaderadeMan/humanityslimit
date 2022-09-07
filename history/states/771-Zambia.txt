@@ -1,29 +1,31 @@
+
 state={
 	id=771
-	name="STATE_771" # Zambia
-	
-	state_category = rural
-
+	name="STATE_771"
 	resources={
-		rations=11
-		noble=5
+		rations=11.000
+		noble=5.000
 	}
 
 	history={
 		owner = PES
 		add_core_of = PES
-			victory_points = {
-			5199 1
+		victory_points = {
+			5199 1 
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 
 		}
+
 	}
 
 	provinces={
-		697 5199 7872 10538 12504 12677 
+		697 10538 12504 12677 
 	}
 	manpower=1380089
 	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

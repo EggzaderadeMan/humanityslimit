@@ -1,0 +1,21 @@
+state={
+	id=845
+	name="STATE_845"
+	provinces={
+		1509 5203 
+	}
+	history={
+		owner = PES
+		add_core_of = PES
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=145624
+	state_category = wasteland
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

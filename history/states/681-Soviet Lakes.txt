@@ -1,13 +1,11 @@
 
 state={
 	id=681
-	name="STATE_681" # Cape
-	manpower = 1637178
-	resources = {
-		rations=10
-		noble=7
+	name="STATE_681"
+	resources={
+		rations=7.000
+		noble=7.000
 	}
-	state_category = town
 
 	history={
 		owner = SUA
@@ -15,23 +13,24 @@ state={
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 1
-			12589 = {
-				naval_base = 4
-			}
 			4696 = {
 				naval_base = 2
+
 			}
-		}
-		victory_points = {
-			12589 10 
+
 		}
 		victory_points = {
 			4696 1 
 		}
-		add_core_of = SAF
+		add_core_of = SUA
+
 	}
 
 	provinces={
-		10415 10442 12419 12547 12589 12692 1833 4696 
+		1833 4696 10415 10442 12419 12547 12692 
 	}
+	manpower=1637178
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

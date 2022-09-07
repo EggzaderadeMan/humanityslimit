@@ -45,6 +45,38 @@ if = {
 		mtg_transport = 1
 	}
 }
+declare_war_on = {
+		target = NGO
+		type = annex_everything
+}
+declare_war_on = {
+		target = BWA
+		type = annex_everything
+}
+declare_war_on = {
+		target = CPT
+		type = annex_everything
+}
+declare_war_on = {
+		target = LES
+		type = annex_everything
+}
+declare_war_on = {
+		target = WIN
+		type = annex_everything
+}
+declare_war_on = {
+		target = SUA
+		type = annex_everything
+}
+declare_war_on = {
+		target = GZI
+		type = annex_everything
+}
+declare_war_on = {
+		target = IOT
+		type = annex_everything
+}
 
 
 set_convoys = 25

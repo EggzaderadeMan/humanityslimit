@@ -2,10 +2,9 @@
 state={
 	id=708
 	name="STATE_708"
-
 	resources={
-		tungsten=5
-		rations=2
+		tungsten=5.000
+		rations=2.000
 	}
 
 	history={
@@ -13,13 +12,9 @@ state={
 		add_core_of = IOT
 		add_core_of = MGS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			13072 = {
 				naval_base = 1
-
-			}
-			5222 = {
-				naval_base = 2
 
 			}
 
@@ -28,7 +23,7 @@ state={
 	}
 
 	provinces={
-		5128 5222 8188 13072 
+		13072 
 	}
 	manpower=126703
 	buildings_max_level_factor=1.000

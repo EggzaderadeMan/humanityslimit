@@ -1,0 +1,26 @@
+state={
+	id=851
+	name="STATE_851"
+	provinces={
+		10845 
+	}
+	resources={
+		aluminium=4.000
+		rations=2.000
+	}
+	history={
+		owner = NGO
+		add_core_of = NGO
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+
+		}
+
+	}
+	manpower=163495
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
