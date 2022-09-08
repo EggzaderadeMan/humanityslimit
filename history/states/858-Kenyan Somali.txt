@@ -1,0 +1,24 @@
+state=
+{
+	id=858
+	name="STATE_858"
+	manpower = 1028895
+	resources={
+		rations=9
+	}
+	state_category = rural
+	
+	history={
+		add_core_of = ETH
+		owner = UNC
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			12941 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces=
+	{  11014 10976 6020 10761 12927 8133 12941 	}
+}

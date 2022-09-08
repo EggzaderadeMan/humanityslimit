@@ -6,7 +6,7 @@ state={
 	name="STATE_778" # Upper Volta
 	resources = {
 		steel=35
-		rations=14
+		rations=10
 	}
 
 	manpower = 3186184
@@ -34,7 +34,7 @@ state={
 
 	provinces={
 
-		7983 8071 10836 12851
+		10836 12851
 
 	}
 

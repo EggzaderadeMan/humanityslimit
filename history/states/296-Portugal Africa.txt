@@ -6,7 +6,8 @@ state={
 	
 	state_category = enclave
 	resources={
-		rations=1
+		rations=4
+		aluminium=15
 	}
 	history={
 		owner = UNC
@@ -22,6 +23,6 @@ state={
 	}
 
 	provinces={
-		12747 12891 
+		12747 12802 12858 12891 
 	}
 }

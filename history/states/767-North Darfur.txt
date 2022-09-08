@@ -6,9 +6,6 @@ state=
 	name="STATE_767" # North Darfur
 
 	manpower = 8143
-	resources = {
-		rations=1
-	}
 	
 state_category = wasteland
 
@@ -28,7 +25,7 @@ state_category = wasteland
 
 	provinces={
 
-		7987 8103 10900 1473 8128 4902 
+		7987 8103 10900 8128 4902 
 	}
 
 }

@@ -1971,7 +1971,7 @@
 1970;9;66;55;land;false;mountain;6
 1971;9;66;160;land;false;plains;6
 1972;9;69;20;land;false;mountain;2
-1973;9;69;75;land;false;mountain;7
+1973;9;69;75;land;true;mountain;7
 1974;9;69;225;land;false;forest;5
 1975;9;72;40;land;false;plains;5
 1976;9;72;190;land;false;hills;6
@@ -2092,7 +2092,7 @@
 2091;9;195;175;land;false;hills;6
 2092;9;198;90;land;false;plains;6
 2093;9;198;140;land;false;desert;6
-2094;9;198;195;land;true;forest;5
+2094;9;198;195;land;false;forest;5
 2095;9;201;55;land;true;mountain;7
 2096;9;201;160;land;false;plains;5
 2097;9;201;205;land;false;urban;7
@@ -12832,7 +12832,7 @@
 12831;177;138;67;land;false;mountain;6
 12832;177;138;172;land;true;mountain;7
 12833;177;141;32;land;true;desert;2
-12834;177;141;87;land;true;forest;5
+12834;177;141;87;land;false;forest;5
 12835;177;141;137;land;false;mountain;2
 12836;177;144;52;land;false;desert;5
 12837;177;144;202;land;false;mountain;6

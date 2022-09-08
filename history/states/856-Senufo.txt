@@ -1,0 +1,28 @@
+
+state={
+
+	id=856
+
+	name="STATE_856" # Upper Volta
+	resources = {
+		rations=7
+	}
+
+	manpower = 3186184
+
+	state_category = pastoral
+
+	history={
+		owner = UNC
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+
+	provinces={
+		8065 8071 
+	}
+
+}

@@ -7,7 +7,7 @@ state={
 
 	manpower = 543817
 	resources = {
-		rations=20
+		rations=5
 	}
 	
 	state_category = pastoral

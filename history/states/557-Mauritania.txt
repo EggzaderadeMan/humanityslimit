@@ -4,8 +4,7 @@ state={
 	name="STATE_557" # Mauritania
 	manpower = 225000
 	resources={
-		steel=10
-		rations=1
+		rations=3
 	}
 	state_category = pastoral
 
@@ -21,6 +20,6 @@ state={
 	}
 
 	provinces={
-		5034 5077 7992 8058 10814
+		5034 5077 8058 
 	}
 }

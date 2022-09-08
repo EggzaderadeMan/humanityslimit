@@ -5,7 +5,7 @@ state={
 	state_category = rural
 	resources={
 		oil=10
-		rations=27
+		rations=22
 	}
 	history={
 		owner = DRO

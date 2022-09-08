@@ -4,8 +4,7 @@ state=
 	name="STATE_550"
 	manpower = 600600
 	resources={
-		tungsten=10
-		rations=3
+		tungsten=16
 	}
 	state_category = rural
 	
@@ -13,18 +12,12 @@ state=
 	{
 		add_core_of = ETH
 		owner = UNC
-		victory_points = {
-			12766 1
-		}
 		buildings = {
 			infrastructure = 4
 			air_base = 3
-			12766 = {
-				naval_base = 3
-			}
 		}
 	}
 	provinces={
-		5017 5047 5091 8043 12723 12766
+		2088 5017 5047 10902 12723 
 	}
 }

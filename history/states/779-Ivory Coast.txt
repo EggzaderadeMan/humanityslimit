@@ -4,24 +4,19 @@ state={
 	name="STATE_779" # Ivory Coast
 	manpower = 3850734
 	resources = {
-		rubber=6
-		rations=10
+		rubber=9
+		rations=6
+		aluminium=60
 	}
 	state_category = pastoral
 	history={
 		owner = UNC
-		victory_points = {
-			10803 1
-		}
 		buildings = {
 			infrastructure = 3
-			10803 = {
-				naval_base = 1
-			}
 		}
 	}
 
 	provinces={
-		5013 5070 8065 8122 10762 10803
+		2094 5039 5070 8006 10762 
 	}
 }

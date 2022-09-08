@@ -3,7 +3,7 @@ state={
 	name="STATE_700"
 	manpower = 1768500
 	resources = {
-		rations=5
+		rations=3
 	}
 	state_category = pastoral
 	
@@ -23,6 +23,6 @@ state={
 	}
 	
 	provinces={
-		2038 2094 
+		2038 
 	}
 }

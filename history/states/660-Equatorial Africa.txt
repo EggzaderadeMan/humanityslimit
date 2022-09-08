@@ -6,7 +6,7 @@ state={
 	
 	state_category = pastoral
 	resources={
-		rations=6
+		rations=36
 	}
 	history={
 		owner = DRO

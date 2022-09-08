@@ -2,9 +2,9 @@ state={
 	id=274
 	name="STATE_274"
 	resources={
-		aluminium=20
+		aluminium=7
 		rubber=5
-		rations=10
+		rations=8
 		noble=29
 	}
 
@@ -13,19 +13,24 @@ state={
 		victory_points = {
 			10862 1 
 		}
+		victory_points = {
+			10803 1
+		}
 		buildings = {
 			infrastructure = 2
 			10862 = {
 				naval_base = 2
 
 			}
-
+			10803 = {
+				naval_base = 1
+			}
 		}
 
 	}
 
 	provinces={
-		8039 8096 10862 12742 12787 
+		5013 8039 8122 10803 10862 12742 12787 
 	}
 	manpower=3163600
 	buildings_max_level_factor=1.000

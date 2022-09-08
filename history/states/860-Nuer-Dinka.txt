@@ -1,0 +1,28 @@
+
+state={
+	id=860
+	name="STATE_860"
+	manpower = 3694293
+	resources={
+		tungsten=10
+		oil=8
+		rations=27
+	}
+	state_category = rural
+	
+	
+	history={
+		owner = UNC
+		victory_points = {
+			2096 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		4033 7912 10877 12744 12800 12887 10859 
+	}
+}

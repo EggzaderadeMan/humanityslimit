@@ -10,7 +10,7 @@ state={
 		steel=30
 		tungsten=15
 		oil=25
-		rations=110
+		rations=52
 	}
 	history={
 		owner = DRO

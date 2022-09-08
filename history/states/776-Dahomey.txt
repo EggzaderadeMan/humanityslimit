@@ -6,7 +6,7 @@ state={
 	name="STATE_776" # Benin/Dahomey
 	resources = {
 		tungsten=10
-		rations=8
+		rations=51
 	}
 
 	manpower = 1351563
