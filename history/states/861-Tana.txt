@@ -1,11 +1,11 @@
 state=
 {
-	id=271
-	name="STATE_271"
+	id=861
+	name="STATE_861"
 	manpower = 10000000
 	resources={
-		tungsten=15
-		rations=18
+		tungsten=10
+		rations=22
 	}
 	
 	state_category = town
@@ -17,24 +17,14 @@ state=
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 1
-			12766 = {
-				naval_base = 3
-			}
 		}
 		victory_points = { 
-			5010 5 
-		}
-		victory_points = { 
-			7980 1.0 
-		}
-		victory_points = {
-			12766 1
+			1984 1.0 
 		}
 		add_core_of = ETH
 		owner = UNC
 	}
 
 	provinces=
-	{
-2009 2072 5010 5041 5091 5097 7944 7980 8043 12766 12856 	}
+	{ 1984 2040 4918 4954 12862 13137  	}
 }
