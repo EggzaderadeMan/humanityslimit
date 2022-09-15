@@ -1,0 +1,491 @@
+JUD_three_year_plan = {
+	JUD_land_of_manna = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+
+		cost = 25
+		days_remove = 60
+		days_re_enable = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
+			add_timed_idea = {
+				idea = JUD_three_year_plan_manna
+				days = 60
+			}
+		}
+		remove_effect = {
+			add_resource = {
+				type = rations
+				amount = 3
+				state = 680
+			}
+			add_resource = {
+				type = rations
+				amount = 8
+				state = 453
+			}
+			add_resource = {
+				type = rations
+				amount = 8
+				state = 455
+			}
+		}
+	}
+	JUD_new_universities_of_tel_aviv = d		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+
+		fire_only_once = yes
+		cost = 25
+		days_remove = 180
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		complete_effect = {
+			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
+			add_timed_idea = {
+				idea = JUD_three_year_plan_education
+				days = 180
+			}
+		}
+		remove_effect = {
+			add_research_slot = 1
+		}
+	}
+	JUD_entrepreneurship = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+
+		cost = 25
+		days_remove = 60
+		days_re_enable = 180
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
+			add_timed_idea = {
+				idea = JUD_three_year_plan_entrepreneurship
+				days = 60
+			}
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
+		}
+	}
+	JUD_bonds_for_national_defense = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+
+		cost = 50
+		days_remove = 60
+		days_re_enable = 180
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
+			add_timed_idea = {
+				idea = JUD_three_year_plan_national_defense
+				days = 60
+			}
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = military_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_war_support = 0.02
+		}
+	}
+}
+JUD_prepare_armed_forces = {
+	JUD_command_structure_reorganization = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+		}
+
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+
+		available = {
+			command_power > 50
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_command_structure_reorganization_idea
+				days = 120
+			}
+			add_command_power = -50
+		}
+		remove_effect = {
+			add_ideas = JUD_complete_command_communication
+		}
+	}
+	JUD_veteran_training_duty = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+		}
+
+		cost = 50
+		days_remove = 180
+
+		available = {
+			command_power > 10
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_veteran_training_duty_idea
+				days = 180
+			}
+			add_command_power = -10
+		}
+	}
+	JUD_volunteer_arms_production = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+		}
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			has_war_support > 0.50
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.60
+				}
+				add_timed_idea = {
+					idea = JUD_volunteer_arms_production_1
+					days = 120
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_war_support < 0.80
+					}
+					add_timed_idea = {
+						idea = JUD_volunteer_arms_production_2
+						days = 120
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_war_support < 1.00
+						}
+						add_timed_idea = {
+							idea = JUD_volunteer_arms_production_3
+							days = 120
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = JUD_volunteer_arms_production_tooltip
+		}
+	}
+}
+JUD_prepare_to_cross_the_nile = {
+	JUD_beni_suef_supply = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_cross_the_nile
+		}
+
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_improving_supply
+				days = 60
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					457 = {
+						supply_node < 2
+					}
+				}
+				457 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 7188
+					}
+				}
+				build_railway = { path = { 7011 12004 4143 7188 } }
+			}
+			else = {
+				build_railway = { 
+					level = 2
+					path = { 7011 12004 4143 7188 } 
+				}
+			}
+			add_to_variable = { JUD_preparation_for_war = 1 }
+		}
+	}
+	JUD_tel_aviv_supply = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_cross_the_nile
+		}
+
+		cost = 25
+		days_remove = 60
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			454 = {
+				naval_base < 10
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_improving_supply
+				days = 60
+			}
+		}
+		remove_effect = {
+			454 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 4206
+				}
+			}
+			build_railway = { path = { 1086 4206 } }
+			add_to_variable = { JUD_preparation_for_war = 1 }
+		}
+	}
+	JUD_lower_egypt_defensive_works = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_cross_the_nile
+		}
+
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_improving_supply
+				days = 60
+			}
+		}
+		remove_effect = {
+			446 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			447 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			add_to_variable = { JUD_preparation_for_war = 1 }
+		}
+	}
+	JUD_upper_egypt_defensive_works = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_cross_the_nile
+		}
+
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = JUD_improving_supply
+				days = 60
+			}
+		}
+		remove_effect = {
+			457 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			add_to_variable = { JUD_preparation_for_war = 1 }
+		}
+	}
+	JUD_declare_war = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = JUD_cross_the_nile
+		}
+
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			check_variable = {
+				var = JUD_preparation_for_war
+				value = 2
+				compare = greater_than
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = JUD_required_preparations
+			declare_war_on = {
+				target = AFR
+				type = annex_everything
+			}
+		}
+	}
+}
+JUD_fighting_anti_semitism = {
+	JUD_politically_divide_rebels = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		}
+
+		cost = 30
+		days_remove = 50
+
+		available = {
+			any_state = {
+				has_dynamic_modifier = { modifier = coordinated_anti_israeli_organization }
+			}
+		}
+		complete_effect = {
+			random_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = coordinated_anti_israeli_organization }
+				}
+				remove_dynamic_modifier = { modifier = coordinated_anti_israeli_organization }
+				add_dynamic_modifier = { modifier = egyptian_liberation_movement_rebels }
+			}
+		}
+	}
+	JUD_capture_rebel_leaders = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		}
+
+		cost = 10
+		days_remove = 40
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 350
+			}
+			any_state = {
+				has_dynamic_modifier = { modifier = egyptian_liberation_movement_rebels }
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -350
+			}
+			random_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = egyptian_liberation_movement_rebels }
+				}
+				remove_dynamic_modifier = { modifier = egyptian_liberation_movement_rebels }
+				add_dynamic_modifier = { modifier = afrikakorps_elements }
+			}
+		}
+	}
+	JUD_raid_rommelist_bases = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 350
+			}
+			any_state = {
+				has_dynamic_modifier = { modifier = afrikakorps_elements }
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -350
+			}
+			random_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = afrikakorps_elements }
+				}
+				remove_dynamic_modifier = { modifier = afrikakorps_elements }
+			}
+		}
+	}
+}

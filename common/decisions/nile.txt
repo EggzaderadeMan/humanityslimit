@@ -1,0 +1,773 @@
+nile_influence = {
+	AFR_khartoum_leverage_1 = {	## arming enemies in idle
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 549 }
+		}
+
+		cost = leverage_cost
+		fire_only_once = no
+		days_remove = 15
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 400
+			}
+			## tooltip = nile_leverage_not_at_max
+			check_variable = {
+				var = khartoum_AFR_leverage
+				value = 2
+				compare = less_than
+			}
+			NOT = { has_global_flag = khartoum_pressured }
+		}
+		complete_effect = {
+			add_to_variable = { khartoum_AFR_arms = 400 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_KHA
+			add_to_variable = { khartoum_AFR_leverage = 1 }
+			custom_effect_tooltip = nile_increases_leverage
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_khartoum_leverage_2 = {	## embargo and isolate
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 549 }
+		}
+
+		cost = leverage_cost
+		fire_only_once = no
+		days_remove = 25
+
+		available = {
+			AND = {
+				check_variable = {
+					var = nuer_AFR_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = tana_AFR_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			NOT = { has_global_flag = khartoum_pressured }
+			## tooltip = nile_isolate_requirements
+		}
+		complete_effect = {
+			DRO = {
+				add_timed_idea = {
+					idea = nile_isolation
+					days = 25
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_KHA
+			if = {
+				limit = {
+					check_variable = {
+						var = khartoum_JUD_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { khartoum_JUD_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_allegiance
+			}
+			else = {
+				subtract_from_variable = { khartoum_JUD_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = khartoum_AFR_leverage
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { khartoum_AFR_leverage = 1 }
+				custom_effect_tooltip = nile_increases_leverage
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_khartoum_allegiance_1 = {	## sending economic support
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 549 }
+		}
+
+		cost = allegiance_cost
+		fire_only_once = no
+		days_remove = 15
+
+		available = {
+			check_variable = {
+				var = khartoum_AFR_allegiance
+				value = 2
+				compare = less_than
+			}
+			## tooltip = nile_allegiance_not_at_max
+			NOT = { has_global_flag = khartoum_pressured }
+		}
+		complete_effect = {
+			AFR = {
+				add_timed_idea = {
+					idea = nile_sending_economic_support
+					days = 30
+				}
+			}
+			DRO = {
+				add_timed_idea = {
+					idea = nile_recieving_economic_support
+					days = 30
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_KHA
+			add_to_variable = { khartoum_AFR_allegiance = 1 }
+			custom_effect_tooltip = nile_increases_allegiance
+			DRO = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_khartoum_allegiance_2 = {	## supporting political policy and enforcing ban on judaist parties
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 549 }
+		}
+
+		cost = 35
+		fire_only_once = no
+		days_remove = 35
+
+		available = {
+			check_variable = {
+				var = khartoum_AFR_allegiance
+				value = 0
+				compare = greater_than
+			}
+			OR = {
+				check_variable = {
+					var = khartoum_JUD_allegiance
+					value = 0
+					compare = greater_than
+				}
+				check_variable = {
+					var = khartoum_JUD_leverage
+					value = 0
+					compare = greater_than
+				}
+			}
+			NOT = { has_global_flag = khartoum_pressured }
+			## tooltip = nile_JUD_both_influence
+		}
+		complete_effect = {
+			DRO = {
+				add_timed_idea = {
+					idea = nile_banned_political_activity
+					days = 35
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_KHA
+			if = {
+				limit = {
+					check_variable = {
+						var = khartoum_JUD_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { khartoum_JUD_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_allegiance
+			}
+			else = {
+				subtract_from_variable = { khartoum_JUD_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = khartoum_AFR_allegiance
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { khartoum_AFR_allegiance = 1 }
+				custom_effect_tooltip = nile_increases_allegiance
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_khartoum_pressure = {	## starts civil wars, puppets, annexations, alliances
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			tag = AFR
+			OR = {
+				has_completed_focus = AFR_the_nil_wars
+				has_completed_focus = AFR_nazi_reclamation
+				has_completed_focus = AFR_deutscher_nil
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 549 }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+
+		available = {
+			OR = {
+				check_variable = {
+					var = khartoum_AFR_allegiance
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = khartoum_AFR_leverage
+					value = 2
+					compare = equals
+				}
+			}
+			## tooltip = nile_pressure_conditions
+			NOT = { has_global_flag = khartoum_pressured }
+			OR = {
+				has_completed_focus = AFR_the_nil_wars
+				has_completed_focus = AFR_nazi_reclamation
+				has_completed_focus = AFR_deutscher_nil
+			}
+		}
+		complete_effect = {
+			set_global_flag = khartoum_pressured
+			JUD = {
+				add_political_power = 35
+				 ### gets events saying that AFR is pressuring a nation, so they can react
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_pressure_JUD
+			# if AFR Hi Lev, Lo Aleg, and JUD Lo Lev, Lo Aleg, AFR PUPPETS
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = khartoum_AFR_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = khartoum_AFR_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+						AND = {
+							check_variable = {
+								var = khartoum_JUD_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_JUD_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				AFR = { puppet = DRO }
+			}
+			# if AFR Lo Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ALLIES AND PARTY CHANGE
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = khartoum_AFR_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_AFR_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = khartoum_JUD_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_JUD_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				DRO = {
+					set_politics = {
+						ruling_party = fascism
+					}
+					give_guarantee = AFR
+				}
+				AFR = { give_guarantee = DRO }
+			}
+			# if AFR Med Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ALLIES
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = khartoum_AFR_leverage
+								value = 1
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_AFR_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = khartoum_JUD_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_JUD_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				DRO = { give_guarantee = AFR }
+				AFR = { give_guarantee = DRO }
+			}
+			# if AFR Hi Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ANNEX
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = khartoum_AFR_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = khartoum_AFR_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = khartoum_JUD_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = khartoum_JUD_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				AFR = {
+					annex_country = {
+						target = DRO
+						transfer_troops = yes
+					}
+				}
+			}
+			# if AFR Hi, and JUD Hi, CIVIL WAR, with tags set based on Annex, Puppet, Ally
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							check_variable = {
+								var = khartoum_AFR_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = khartoum_AFR_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						OR = {
+							check_variable = {
+								var = khartoum_JUD_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = khartoum_JUD_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+					}
+				}
+				DRO = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = khartoum_JUD_arms
+					}
+					start_civil_war = {
+						ideology = fascism
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = khartoum_JUD_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = khartoum_JUD_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = JUD_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = khartoum_JUD_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = khartoum_JUD_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = JUD_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = khartoum_JUD_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = khartoum_JUD_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = khartoum_AFR_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = khartoum_AFR_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = JUD_annex
+					}
+				}
+				every_country_with_original_tag = {
+					limit = {
+						NOT = { has_country_flag = JUD_puppet }
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = khartoum_AFR_arms
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = khartoum_AFR_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = khartoum_AFR_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = AFR_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = khartoum_AFR_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = khartoum_AFR_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = AFR_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = khartoum_AFR_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = khartoum_AFR_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = khartoum_JUD_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = khartoum_JUD_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = AFR_annex
+					}
+				}
+				 ### If JUD and AFR both want to annex, all out war starts
+				if = {
+					limit = {
+						AND = {
+							AND = {
+								check_variable = {
+									var = khartoum_AFR_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = khartoum_AFR_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+							AND = {
+								check_variable = {
+									var = khartoum_JUD_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = khartoum_JUD_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+					}
+					AFR = {
+						declare_war_on = {
+							target = JUD
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = DRO
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

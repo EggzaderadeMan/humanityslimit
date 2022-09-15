@@ -1,0 +1,33 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			## 0 is Low, 1 is Med, 2 is High
+			set_variable = { khartoum_AFR_leverage = 1 }
+			set_variable = { khartoum_AFR_allegiance = 0 }
+			set_variable = { khartoum_AFR_arms = 0 }
+			set_variable = { khartoum_JUD_leverage = 0 }
+			set_variable = { khartoum_JUD_allegiance = 1 }
+			set_variable = { khartoum_JUD_arms = 0 }
+			set_variable = { tana_AFR_leverage = 0 }
+			set_variable = { tana_AFR_allegiance = 0 }
+			set_variable = { tana_AFR_arms = 0 }
+			set_variable = { tana_JUD_leverage = 0 }
+			set_variable = { tana_JUD_allegiance = 0 }
+			set_variable = { tana_JUD_arms = 0 }
+			set_variable = { nuer_AFR_leverage = 0 }
+			set_variable = { nuer_AFR_allegiance = 0 }
+			set_variable = { nuer_AFR_arms = 0 }
+			set_variable = { nuer_JUD_leverage = 0 }
+			set_variable = { nuer_JUD_allegiance = 0 }
+			set_variable = { nuer_JUD_arms = 0 }
+			set_variable = { solomon_AFR_leverage = 0 }
+			set_variable = { solomon_AFR_allegiance = 0 }
+			set_variable = { solomon_AFR_arms = 0 }
+			set_variable = { solomon_JUD_leverage = 0 }
+			set_variable = { solomon_JUD_allegiance = 1 }
+			set_variable = { solomon_JUD_arms = 0 }
+			set_variable = { leverage_cost = 15 }
+			set_variable = { allegiance_cost = 25 }
+		}
+	}
+}

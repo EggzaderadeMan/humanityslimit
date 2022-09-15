@@ -1,0 +1,1450 @@
+focus_tree = {
+	id = afrikakorps_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AFR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 55 y = 1500 }
+
+	focus = {
+		id = AFR_forming_a_new_generalship
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 0
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		mutually_exclusive = {
+			focus = AFR_continue_the_kempf_generalship
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AFR_army_command_in_competition
+				days = 360
+			}
+			add_timed_idea = {
+				idea = AFR_forming_a_new_generalship_idea
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = AFR_reassign_generalfeldmarschallwest
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 2
+		cost = 4
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			AND = {
+				NOT = { has_completed_focus = AFR_promote_italian_leadership }
+				NOT = { has_completed_focus = AFR_the_crass_alfons_norbert }
+			}
+		}
+		prerequisite = {
+			focus = AFR_forming_a_new_generalship
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = extends_mission_timer
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AFR_feldmarschallwest_army_chief_1
+			show_ideas_tooltip = AFR_feldmarschallwest_air_chief_1
+			show_ideas_tooltip = AFR_feldmarschallwest_advisor_1
+			show_ideas_tooltip = AFR_feldmarschallwest_advisor_2
+		}
+	}
+	focus = {
+		id = AFR_promote_italian_leadership
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = AFR_forming_a_new_generalship
+		}
+		mutually_exclusive = {
+			focus = AFR_the_crass_alfons_norbert
+		}
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AFR_italian_army_chief_1
+			show_ideas_tooltip = AFR_italian_army_chief_2
+			show_ideas_tooltip = AFR_italian_army_chief_3
+		}
+	}
+	focus = {
+		id = AFR_spirit_of_the_soldier
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_promote_italian_leadership
+		}
+		completion_reward = {
+			add_ideas = AFR_spirit_of_the_soldier_idea
+		}
+	}
+	focus = {
+		id = AFR_engineer_corps_of_egypt
+
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_promote_italian_leadership
+		}
+		completion_reward = {
+			build_railway = {
+				path = { 12044 7073 1028 12771 8105 }
+			}
+			build_railway = {
+				path = { 1071 10127 7216 7144 }
+			}
+			552 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			452 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 1071
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						owner = { tag = AFR }
+						is_core_of = EGY
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = construction_battalions
+				}
+			}	
+		}
+	}
+	focus = {
+		id = AFR_promote_religious_diversity
+
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_spirit_of_the_soldier
+			focus = AFR_root_out_conservative_opposition
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = AFR_aryanism_2
+				}
+				remove_ideas = AFR_aryanism_2
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = AFR_aryanism_1
+					add_idea = AFR_aryanism_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFR_the_close_quarters_battle
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_spirit_of_the_soldier
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = AFR_the_close_quarters_battle
+				ahead_reduction = 2.0
+				uses = 1
+				technology = compact_SMG
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = tunesisch_koMPF
+		}
+	}
+	focus = {
+		id = AFR_the_nil_wars
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_engineer_corps_of_egypt
+		}
+		prerequisite = {
+			focus = AFR_spirit_of_the_soldier
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlocks_nile_pressure
+			add_ideas = the_nil_wars
+
+			 #JUD = { ### Give Event to Judea about Nile Wars, and enable decisions for Judea
+			 #	add_ideas = the_nil_wars
+			 #}
+		}
+	}
+	focus = {
+		id = AFR_the_forgeries_of_africa
+
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_engineer_corps_of_egypt
+		}
+		completion_reward = {
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = AFR_alloy_refinery
+				bonus = 1
+				uses = 1
+				technology = alloy_processing
+			}
+		}
+	}
+	focus = {
+		id = AFR_north_african_unity
+
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_promote_religious_diversity
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = AFR_mending_wounds
+		}
+	}
+	focus = {
+		id = AFR_support_egyptian_liberation_movement
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_promote_religious_diversity
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = AFR_anti_israeli_partisans
+		}
+	}
+	focus = {
+		id = AFR_solomons_reclamation
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_nil_wars
+		}
+		completion_reward = {
+			 ### gives event to Kingdom of Solomon for the options, agree to neutrality, agree to attack Judea, decline and warn Israel (and possibly helps Solomon ally with Israel)
+		}
+	}
+	focus = {
+		id = AFR_third_crossing_of_the_nile
+
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			 ### Not available until Nil Wars are done or dormant for long enough
+		}
+		prerequisite = {
+			focus = AFR_the_nil_wars
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JUD
+			}
+		}
+	}
+	focus = {
+		id = AFR_economic_liberation
+
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_forgeries_of_africa
+		}
+		completion_reward = {
+			461 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			459 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			 ### decisions: Unlocks investment in certain areas to increase compliance
+		}
+	}
+	focus = {
+		id = AFR_dwindling_cultism
+
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_north_african_unity
+		}
+		completion_reward = {
+			 ### decisions: unlocks removing opposition to religious changes
+		}
+	}
+	focus = {
+		id = AFR_liberating_parade_of_egypt
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			EGY = {
+				all_core_state = {
+					controller = { tag = AFR }
+				}
+			}
+		}
+		prerequisite = {
+			focus = AFR_support_egyptian_liberation_movement
+		}
+		prerequisite = {
+			focus = AFR_third_crossing_of_the_nile
+			focus = AFR_solomons_reclamation
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+				add_resistance = -10
+			}
+			custom_effect_tooltip = win_nile_war
+			set_variable = { khartoum_AFR_leverage = 2 }
+			set_variable = { khartoum_AFR_allegiance = 2 }
+			set_variable = { khartoum_JUD_leverage = 0 }
+			set_variable = { khartoum_JUD_allegiance = 0 }
+			set_variable = { tana_AFR_leverage = 2 }
+			set_variable = { tana_AFR_allegiance = 2 }
+			set_variable = { tana_JUD_leverage = 0 }
+			set_variable = { tana_JUD_allegiance = 0 }
+			set_variable = { nuer_AFR_leverage = 2 }
+			set_variable = { nuer_AFR_allegiance = 2 }
+			set_variable = { nuer_JUD_leverage = 0 }
+			set_variable = { nuer_JUD_allegiance = 0 }
+			set_variable = { solomon_AFR_leverage = 2 }
+			set_variable = { solomon_AFR_allegiance = 2 }
+			set_variable = { solomon_JUD_leverage = 0 }
+			set_variable = { solomon_JUD_allegiance = 0 }
+		}
+	}
+	focus = {
+		id = AFR_antifundamentalist_education
+
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_economic_liberation
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AFR_antifundamentalist_education_idea
+				days = 720
+			}
+		}
+	}
+	focus = {
+		id = AFR_african_reconciliation_campaign
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 6
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_dwindling_cultism
+		}
+		prerequisite = {
+			focus = AFR_liberating_parade_of_egypt
+		}
+		prerequisite = {
+			focus = AFR_antifundamentalist_education
+		}
+		completion_reward = {
+			 ### decisions: unlocks reducing resistance, root out extremist groups, and eventually core
+		}
+	}
+	focus = {
+		id = AFR_soft_heart_of_rommel
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 7
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_dwindling_cultism
+		}
+		prerequisite = {
+			focus = AFR_african_reconciliation_campaign
+		}
+		completion_reward = {
+			 set_politics = {
+			 	ruling_party = neutrality
+			 }
+			 ### makes African Reconciliation decisions easier
+			 ### changes focus tree/new opportunities
+		}
+	}
+	 ########################## ALFONS NORBERT BRANCH ##########################################
+	focus = {
+		id = AFR_the_crass_alfons_norbert
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = AFR_promote_italian_leadership
+		}
+		prerequisite = {
+			focus = AFR_forming_a_new_generalship
+		}
+		completion_reward = {
+			add_ideas = AFR_possy_of_norbert
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AFR_norbert_army_chief_1
+			show_ideas_tooltip = AFR_norbert_advisor_1
+			show_ideas_tooltip = AFR_norbert_advisor_2
+			show_ideas_tooltip = AFR_norbert_advisor_3
+		}
+	}
+	focus = {
+		id = AFR_the_tripolitan_nobility
+
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_crass_alfons_norbert
+		}
+		completion_reward = {
+			add_political_power = 100
+			 ### decisions: unlocks influencing nobles for a change of government
+		}
+	}
+	focus = {
+		id = AFR_new_sicherheitspolizei
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_crass_alfons_norbert
+		}
+		completion_reward = {
+			add_political_power = 50
+			 ### decisions: unlocks deadly crackdowns and riot-fighting events
+			 ### decisions: unlocks reducing the power of generalfeldmarschallwest
+		}
+	}
+	focus = {
+		id = AFR_blood_market_of_egypt
+
+		icon = GFX_goal_generic_construction
+		x = 16
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_crass_alfons_norbert
+		}
+		completion_reward = {
+			add_ideas = AFR_blood_market_of_egypt_idea
+			every_state = {
+				limit = {
+					AND = {
+						owner = { tag = AFR }
+						is_core_of = EGY
+					}
+				}
+				add_dynamic_modifier = { modifier = blood_market_of_egypt }
+			}
+		}
+	}
+	focus = {
+		id = AFR_loyal_administration
+
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_tripolitan_nobility
+		}
+		prerequisite = {
+			focus = AFR_new_sicherheitspolizei
+		}
+		completion_reward = {
+			add_political_power = 50
+			 ### makes decisions to influence nobles much easier
+		}
+	}
+	focus = {
+		id = AFR_cultivation_of_a_military_elite
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_new_sicherheitspolizei
+		}
+		completion_reward = {
+			army_experience = 30
+			add_ideas = AFR_cultivation_of_a_military_elite_idea
+			add_tech_bonus = {
+				name = AFR_military_elite
+				bonus = 1
+				uses = 2
+				category = marine_tech
+				category = mountaineers_tech
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = AFR_nazi_reclamation
+
+		icon = GFX_goal_generic_construction
+		x = 16
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_blood_market_of_egypt
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					AND = {
+						owner = { tag = AFR }
+						NOT = {
+							is_core_of = AFR
+						}
+					}
+				}
+				add_resistance = 0.20
+				add_compliance = 0.05
+				AFR = { add_stability = -0.01 }
+			}
+			custom_effect_tooltip = unlocks_nile_pressure
+		}
+	}
+	focus = {
+		id = AFR_SHEP_rommelism
+
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_loyal_administration
+		}
+		completion_reward = {
+			 ### adds religious support
+			 swap_ideas = {
+			 	remove_idea = AFR_cult_of_rommel
+			 	add_idea = AFR_cult_of_rommel_shep
+			 }
+		}
+	}
+	focus = {
+		id = AFR_national_vengeance
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_loyal_administration
+		}
+		prerequisite = {
+			focus = AFR_cultivation_of_a_military_elite
+		}
+		prerequisite = {
+			focus = AFR_nazi_reclamation
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JUD
+			}
+		}
+	}
+	focus = {
+		id = AFR_the_new_cult_of_nazism
+
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_SHEP_rommelism
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AFR_cult_of_rommel_shep
+				add_idea = AFR_cult_of_rommel_nazism
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = AFR_campaign_of_the_nile
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_national_vengeance
+		}
+		completion_reward = {
+			### decisions: allows declaring war on nile nations
+		}
+	}
+	focus = {
+		id = AFR_military_security_of_the_new_reich
+
+		icon = GFX_goal_generic_construction
+		x = 13
+		y = 6
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_new_cult_of_nazism
+		}
+		prerequisite = {
+			focus = AFR_campaign_of_the_nile
+		}
+		completion_reward = {
+			 ### Success depends on noble influence from decisions
+			 ### changes ideology
+			 ### changes focus tree/new opportunities
+			 ### removes decisions for influencing nobles
+		}
+	}
+############################## CONTINUE THE KEMPF GENERALSHIP ###################################
+	focus = {
+		id = AFR_continue_the_kempf_generalship
+
+		icon = GFX_goal_generic_construction
+		x = 20
+		y = 0
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		mutually_exclusive = {
+			focus = AFR_forming_a_new_generalship
+		}
+		completion_reward = {
+			add_ideas = AFR_command_disobedience
+			add_political_power = -100
+			add_stability = 0.10
+			 ### Set a tigher mission for reconquering Egypt
+		}
+	}
+	focus = {
+		id = AFR_get_religious_support
+
+		icon = GFX_goal_generic_construction
+		x = 18
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_continue_the_kempf_generalship
+		}
+		completion_reward = {
+			 ### Increases mission timer for reconquering Egypt
+			 ### increase religious support
+			 add_political_power = 50
+		}
+	}
+	focus = {
+		id = AFR_assemble_advisors_for_egypt
+
+		icon = GFX_goal_generic_construction
+		x = 20
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_continue_the_kempf_generalship
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_command_power = 50
+			remove_ideas = AFR_command_disobedience
+		}
+	}
+	focus = {
+		id = AFR_deutscher_nil
+
+		icon = GFX_goal_generic_construction
+		x = 22
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_continue_the_kempf_generalship
+		}
+		completion_reward = {
+			build_railway = {
+				path = { 12044 7073 1028 12771 8105 }
+			}
+			build_railway = {
+				path = { 1071 10127 7216 7144 }
+			}
+			552 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			452 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 1071
+				}
+			}
+			 ### significantly reduces cost for influencing nile nations
+			 ### allows you to pressure nile nations you influenced
+		}
+	}
+	focus = {
+		id = AFR_culture_of_leadership
+
+		icon = GFX_goal_generic_construction
+		x = 18
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_get_religious_support
+		}
+		prerequisite = {
+			focus = AFR_assemble_advisors_for_egypt
+		}
+		completion_reward = {
+			add_ideas = AFR_culture_of_leadership_idea
+		}
+	}
+	focus = {
+		id = AFR_assembling_stockpile
+
+		icon = GFX_goal_generic_construction
+		x = 20
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_assemble_advisors_for_egypt
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AFR_stopgap_equipment
+				days = 210
+			}
+			add_timed_idea = {
+				idea = AFR_emergency_equipment_confiscation
+				days = 90
+			}
+			add_stability = -0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 200
+				producer = AFR
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+				producer = AFR
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 200
+				producer = AFR
+			}
+		}
+	}
+	focus = {
+		id = AFR_deescalate_mobilisation
+
+		icon = GFX_goal_generic_construction
+		x = 22
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_assemble_advisors_for_egypt
+		}
+		completion_reward = {
+			add_ideas = AFR_deescalate_mobilisation_idea
+		}
+	}
+	focus = {
+		id = AFR_regain_the_initiative
+
+		icon = GFX_goal_generic_construction
+		x = 19
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_culture_of_leadership
+		}
+		prerequisite = {
+			focus = AFR_assembling_stockpile
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JUD
+			}
+		}
+	}
+	focus = {
+		id = AFR_no_civilian_pain_in_war
+
+		icon = GFX_goal_generic_construction
+		x = 22
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_deescalate_mobilisation
+		}
+		completion_reward = {
+			448 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas = volunteer_only
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = AFR_deception_of_bergfalk
+
+		icon = GFX_goal_generic_construction
+		x = 18
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = AFR_deliberation_of_kempf
+		}
+		prerequisite = {
+			focus = AFR_regain_the_initiative
+		}
+		completion_reward = {
+			AFR_ademaro_bergfalk = {
+				promote_leader = yes
+			}
+			add_ideas = AFR_in_the_spirit_of_bergfalk
+		}
+	}
+	focus = {
+		id = AFR_deliberation_of_kempf
+
+		icon = GFX_goal_generic_construction
+		x = 20
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = AFR_deception_of_bergfalk
+		}
+		prerequisite = {
+			focus = AFR_regain_the_initiative
+		}
+		completion_reward = {
+			AFR_malisande_kempf = {
+				promote_leader = yes
+			}
+			add_ideas = AFR_in_the_spirit_of_kempf
+		}
+	}
+	focus = {
+		id = AFR_egyptian_integration_department
+
+		icon = GFX_goal_generic_construction
+		x = 22
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_no_civilian_pain_in_war
+		}
+		completion_reward = {
+			 ### decisions: unlocks intregrating egypt and pacify rebels
+		}
+	}
+	focus = {
+		id = AFR_reincarnation_of_the_generalship_spirit
+
+		icon = GFX_goal_generic_construction
+		x = 19
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_eight_council_for_the_tollergeistmensch
+		}
+		prerequisite = {
+			focus = AFR_deception_of_bergfalk
+			focus = AFR_deliberation_of_kempf
+		}
+		completion_reward = {
+			 ### unlocks focus tree/new opporunities
+			 ### creates full religious support
+			 swap_ideas = {
+			 	remove_idea = AFR_cult_of_rommel
+			 	add_idea = AFR_cult_of_rommel_generalship
+			 }
+		}
+	}
+	focus = {
+		id = AFR_generals_rule_no_more
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			 ### if war is lost
+			 ### low enough religious and noble support
+		}
+		completion_reward = {
+			 ### civil war
+		}
+	}
+############################### CULT OF ROMMEL BRANCH ##################################
+	focus = {
+		id = AFR_cult_of_rommel_reformation
+
+		icon = GFX_goal_generic_construction
+		x = 27
+		y = 0
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		completion_reward = {
+			 ### decisions: unlocks garnering support for religious reform
+			 add_political_power = 120
+		}
+	}
+	focus = {
+		id = AFR_the_pontifex_of_kairuan
+
+		icon = GFX_goal_generic_construction
+		x = 24
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_cult_of_rommel_reformation
+		}
+		completion_reward = {
+			 ### decisions: unlocks using religious power for bonuses (holidays, donations, proclamations)
+		}
+	}
+	focus = {
+		id = AFR_retract_presumption_of_great_spirit_aryanism
+
+		icon = GFX_goal_generic_construction
+		x = 27
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_cult_of_rommel_reformation
+		}
+		completion_reward = {
+			 ### lose religious support
+			 add_political_power = -150
+			 add_ideas = AFR_cult_in_chaos
+		}
+	}
+	focus = {
+		id = AFR_redeclare_geistkrieg_and_kreuzzug
+
+		icon = GFX_goal_generic_construction
+		x = 31
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_cult_of_rommel_reformation
+		}
+		completion_reward = {
+			 ### add significant religious support
+			 ### decisions: unlock geistkrieg and kreuzzug
+			add_political_power = 75
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = AFR_eight_council_for_the_tollergeistmensch
+
+		icon = GFX_goal_generic_construction
+		x = 24
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_pontifex_of_kairuan
+		}
+		completion_reward = {
+			add_political_power = 50
+			 ### adds more religious support
+			add_timed_idea = {
+				idea = AFR_national_examination
+				days = 120
+			}
+			 #### WILL BE MUCH EASIER IF EIGHT COUNCIL IS UNSUCCESSFUL FOR A WHILE, OTHERWISE, BAD DEBUFFS ####
+		}
+	}
+	focus = {
+		id = AFR_the_retention_of_rommelism
+
+		icon = GFX_goal_generic_construction
+		x = 26
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_retract_presumption_of_great_spirit_aryanism
+		}
+		completion_reward = {
+			 ### adds back some religious support
+			 swap_ideas = {
+			 	remove_idea = AFR_doctrine_of_perpetual_impurity_1
+			 	add_idea = AFR_doctrine_of_perpetual_impurity_2
+			 }
+		}
+	}
+	focus = {
+		id = AFR_the_loyal_colonial_spirit
+
+		icon = GFX_goal_generic_construction
+		x = 28
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_retract_presumption_of_great_spirit_aryanism
+		}
+		completion_reward = {
+			 ### adds back some religious support
+			 swap_ideas = {
+			 	remove_idea = AFR_aryanism_1
+			 	add_idea = AFR_aryanism_2
+			 }
+		}
+	}
+	focus = {
+		id = AFR_rommelkorp_kreuzzug
+
+		icon = GFX_goal_generic_construction
+		x = 30
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = AFR_volunteerist_campaigns
+		}
+		prerequisite = {
+			focus = AFR_redeclare_geistkrieg_and_kreuzzug
+		}
+		completion_reward = {
+			add_ideas = AFR_rommelkorp
+		}
+	}
+	focus = {
+		id = AFR_volunteerist_campaigns
+
+		icon = GFX_goal_generic_construction
+		x = 32
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = AFR_rommelkorp_kreuzzug
+		}
+		prerequisite = {
+			focus = AFR_redeclare_geistkrieg_and_kreuzzug
+		}
+		completion_reward = {
+			 ### decisions: unlocks support indepedent campaigns
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = AFR_the_great_works_of_baida
+
+		icon = GFX_goal_generic_construction
+		x = 24
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_eight_council_for_the_tollergeistmensch
+		}
+		completion_reward = {
+			451 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			 ### adds religious support
+			 ### decisions: Unlocks Great Works
+		}
+	}
+	focus = {
+		id = AFR_root_out_conservative_opposition
+
+		icon = GFX_goal_generic_construction
+		x = 27
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = AFR_the_retention_of_rommelism
+		}
+		prerequisite = {
+			focus = AFR_the_loyal_colonial_spirit
+		}
+		completion_reward = {
+			add_political_power = 50
+			 ### Unlocks decisions to remove opposition and fully regain religious support
+		}
+	}
+	focus = {
+		id = AFR_the_proclamations
+
+		icon = GFX_goal_generic_construction
+		x = 31
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			## has completed at least two crusades
+		}
+		prerequisite = {
+			focus = AFR_rommelkorp_kreuzzug
+			focus = AFR_volunteerist_campaigns
+		}
+		completion_reward = {
+			add_ideas = AFR_the_proclamations_idea
+			add_political_power = 100
+			 ### adds religious support
+		}
+	}
+}

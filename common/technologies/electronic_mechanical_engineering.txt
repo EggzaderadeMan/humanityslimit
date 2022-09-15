@@ -18,7 +18,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 2158
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 0 }
@@ -55,6 +55,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2158
 		
 		folder = {
 			name = electronics_folder
@@ -84,6 +85,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2159
 		
 		folder = {
 			name = electronics_folder
@@ -118,7 +120,7 @@ technologies = {
 
 	EMP_tech = {
 		signal_company = {
-			recon = 2
+			soft_attack = 0.20
 		}
 		## buff EW Company attack significantly
 		enable_building = {
@@ -130,6 +132,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2160
 		
 		folder = {
 			name = electronics_folder
@@ -175,6 +178,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2161
 		
 		folder = {
 			name = electronics_folder
@@ -216,6 +220,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2163
 		
 		folder = {
 			name = electronics_folder
@@ -254,6 +259,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2162
 		
 		folder = {
 			name = electronics_folder
@@ -289,6 +295,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2165
 		
 		folder = {
 			name = electronics_folder
@@ -324,6 +331,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.75
+		start_year = 2164
 		
 		folder = {
 			name = electronics_folder
@@ -355,6 +363,7 @@ technologies = {
 	ss_nano_machines = {
 
 		research_cost = 1.75
+		start_year = 2167
 		
 		folder = {
 			name = electronics_folder
@@ -400,6 +409,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
+		start_year = 2159
 		
 		folder = {
 			name = electronics_folder
@@ -430,7 +440,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1938
+		start_year = 2160
 		
 		folder = {
 			name = electronics_folder
@@ -478,7 +488,7 @@ technologies = {
 			improved_encryption
 		}
 		research_cost = 2.5
-		start_year = 1940
+		start_year = 2162
 		
 		folder = {
 			name = electronics_folder
@@ -523,7 +533,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1942
+		start_year = 2164
 		
 		folder = {
 			name = electronics_folder
@@ -557,7 +567,7 @@ technologies = {
 		research_speed_factor = 0.20
 
 		research_cost = 2.5
-		start_year = 1942
+		start_year = 2166
 		
 		folder = {
 			name = electronics_folder
@@ -605,6 +615,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
+		start_year = 2159
 		
 		folder = {
 			name = electronics_folder
@@ -647,9 +658,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
+		start_year = 2161
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
@@ -686,12 +696,10 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_fire_control_system_3
 		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
 		
 		research_cost = 1
-		
+		start_year = 2163
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 10 }
@@ -751,7 +759,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 2158
 		
 		folder = {
 			name = electronics_folder
@@ -791,7 +799,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1944
+		start_year = 2159
 		
 		folder = {
 			name = electronics_folder
@@ -826,7 +834,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1945
+		start_year = 2160
 		
 		folder = {
 			name = electronics_folder
@@ -854,7 +862,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 2163
 		
 		folder = {
 			name = electronics_folder
@@ -878,7 +886,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 2164
 		
 		folder = {
 			name = electronics_folder
@@ -909,7 +917,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 2159
 		
 		folder = {
 			name = electronics_folder
@@ -941,7 +949,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
+		start_year = 2158
 		research_cost = 5
 		
 		folder = {
@@ -1004,7 +1012,7 @@ technologies = {
 			}
 		}
 
-		start_year = 1945
+		start_year = 2160
 		research_cost = 5
 		
 		path = {
@@ -1045,7 +1053,7 @@ technologies = {
 			level = 3
 		}
 
-		start_year = 1943
+		start_year = 2162
 		research_cost = 5
 		
 		folder = {
