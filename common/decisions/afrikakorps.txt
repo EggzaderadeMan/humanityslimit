@@ -200,6 +200,7 @@ AFR_economic_liberation_decisions = {
 					NOT = { is_core_of = AFR }
 				}
 				add_extra_state_shared_building_slots = 1
+				add_compliance = 10
 			}
 		}
 	}
@@ -234,6 +235,7 @@ AFR_economic_liberation_decisions = {
 					level = 1
 					instant_build = yes
 				}
+				add_compliance = 10
 			}
 		}
 	}
@@ -272,6 +274,7 @@ AFR_economic_liberation_decisions = {
 					level = 1
 					instant_build = yes
 				}
+				add_compliance = 10
 			}
 		}
 	}
@@ -358,6 +361,157 @@ AFR_religious_support_decisions = {
 					custom_effect_tooltip = AFR_decreases_religious_support_10
 				}
 			}
+		}
+	}
+}
+AFR_reduce_extremist_cultism = {
+	AFR_discredit_old_theologists = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_dwindling_cultism
+		}
+
+		cost = 30
+		days_remove = 270
+		days_re_enable = 90
+
+		available = {
+			check_variable = {
+				var = AFR_religious_support
+				value = 10
+				compare = greater_than
+			}
+			check_variable = {
+				var = cult_extremism
+				value = 0
+				compare = greater_than
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = cult_extremism_tooltip
+			subtract_from_variable = { AFR_religious_support = 10 }
+			custom_effect_tooltip = AFR_decreases_religious_support_10
+			subtract_from_variable = { cult_extremism = 3 }
+			custom_effect_tooltip = AFR_decreases_cult_extremism_3
+		}
+		remove_effect = {
+			add_to_variable = { AFR_religious_support = 7 }
+			custom_effect_tooltip = AFR_increases_religious_support_7
+			add_political_power = 20
+		}
+	}
+	AFR_recognize_non_aryan_talent = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_dwindling_cultism
+		}
+
+		cost = 15
+		days_remove = 60
+		days_re_enable = 30
+
+		available = {
+			check_variable = {
+				var = AFR_religious_support
+				value = 5
+				compare = greater_than
+			}
+			check_variable = {
+				var = cult_extremism
+				value = 0
+				compare = greater_than
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = cult_extremism_tooltip
+			subtract_from_variable = { AFR_religious_support = 5 }
+			custom_effect_tooltip = AFR_decreases_religious_support_5
+			subtract_from_variable = { cult_extremism = 1 }
+			custom_effect_tooltip = AFR_decreases_cult_extremism_1
+		}
+		remove_effect = {
+			add_to_variable = { AFR_religious_support = 1 }
+			custom_effect_tooltip = AFR_increases_religious_support
+		}
+	}
+	AFR_political_directive_religious_conformity = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_dwindling_cultism
+		}
+
+		cost = 125
+		fire_only_once = yes
+
+		available = {
+			check_variable = {
+				var = cult_extremism
+				value = 0
+				compare = greater_than
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = cult_extremism_tooltip
+			subtract_from_variable = { cult_extremism = 3 }
+			custom_effect_tooltip = AFR_decreases_cult_extremism_3
+		}
+	}
+}
+AFR_african_reconciliation_decisions = {
+	AFR_new_local_governor = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_african_reconciliation_campaign
+		}
+
+		cost = 75
+		days_remove = 10
+
+		available = {
+			any_state = {
+				compliance > 40
+			}
+			check_variable = {
+				var = cult_extremism
+				value = 4
+				compare = less_than
+			}
+			check_variable = {
+				var = AFR_government_separation
+				value = 79
+				compare = greater_than
+			}
+		}
+
+		remove_effect = {
+			random_state = {
+				limit = {
+					owner = AFR
+					NOT = { is_core_of = AFR }
+					compliance > 40
+				}
+				add_core_of = AFR
+				add_political_power = 90
+			}
+		}
+	}
+	AFR_north_african_unity = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_african_reconciliation_campaign
+		}
+
+		cost = 50
+		days_remove = 10
+
+		available = {
+			## certain states are cores in North Africa
+		}
+
+		remove_effect = {
+			add_stability = 0.15
+			## cores the rest of North Africa, including unowned states
 		}
 	}
 }

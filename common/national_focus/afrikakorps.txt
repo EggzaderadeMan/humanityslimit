@@ -428,7 +428,9 @@ focus_tree = {
 			focus = AFR_north_african_unity
 		}
 		completion_reward = {
+			set_variable = { cult_extremism = 12 }
 			 ### decisions: unlocks removing opposition to religious changes
+			}
 		}
 	}
 	focus = {

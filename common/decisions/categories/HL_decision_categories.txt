@@ -70,3 +70,17 @@ AFR_religious_support_decisions = {
 		has_completed_focus = AFR_cult_of_rommel_reformation
 	}
 }
+AFR_reduce_extremist_cultism = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_dwindling_cultism
+	}
+}
+AFR_african_reconciliation_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_african_reconciliation_campaign
+	}
+}
