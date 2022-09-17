@@ -369,6 +369,146 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		AFR_religious_donations_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		AFR_support_policy_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		AFR_honor_rommel_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		AFR_industrial_promises_1 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		AFR_industrial_promises_2 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				conversion_cost_civ_to_mil_factor = -0.20
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		AFR_industrial_promises_3 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				conversion_cost_civ_to_mil_factor = -0.30
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		AFR_political_promises_1 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				political_advisor_cost_factor = -0.10
+				materiel_manufacturer_cost_factor = -0.10
+				naval_manufacturer_cost_factor = -0.10
+				aircraft_manufacturer_cost_factor = -0.10
+				tank_manufacturer_cost_factor = -0.10
+				industrial_concern_cost_factor = -0.10
+			}
+		}
+		AFR_political_promises_2 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.30
+				political_advisor_cost_factor = -0.20
+				materiel_manufacturer_cost_factor = -0.20
+				naval_manufacturer_cost_factor = -0.20
+				aircraft_manufacturer_cost_factor = -0.20
+				tank_manufacturer_cost_factor = -0.20
+				industrial_concern_cost_factor = -0.20
+			}
+		}
+		AFR_political_promises_3 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.50
+				political_advisor_cost_factor = -0.30
+				materiel_manufacturer_cost_factor = -0.30
+				naval_manufacturer_cost_factor = -0.30
+				aircraft_manufacturer_cost_factor = -0.30
+				tank_manufacturer_cost_factor = -0.30
+				industrial_concern_cost_factor = -0.30
+			}
+		}
+		AFR_influence_promises_1 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy_factor = -0.05
+				experience_gain_air_factor = -0.05
+				experience_gain_army_factor = -0.05
+				resistance_target = 0.02
+				command_power_gain = 0.15
+				military_leader_cost_factor = -0.15
+				political_power_gain = 0.10
+			}
+		}
+		AFR_influence_promises_2 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy_factor = -0.10
+				experience_gain_air_factor = -0.10
+				experience_gain_army_factor = -0.10
+				resistance_target = 0.04
+				command_power_gain = 0.30
+				military_leader_cost_factor = -0.30
+				political_power_gain = 0.20
+			}
+		}
+		AFR_influence_promises_3 = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy_factor = -0.15
+				experience_gain_air_factor = -0.15
+				experience_gain_army_factor = -0.15
+				resistance_target = 0.06
+				command_power_gain = 0.50
+				military_leader_cost_factor = -0.50
+				political_power_gain = 0.30
+			}
+		}
 	}
 	materiel_manufacturer = {
 		designer = yes

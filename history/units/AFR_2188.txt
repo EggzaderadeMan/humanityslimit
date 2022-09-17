@@ -134,7 +134,10 @@ units = {
 		location = 1130
 		division_template = "Panzertruppe Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "AFR" version_name = "Rommel III-B" }
+		}
 	}
 	division = {
 		division_name = {
@@ -145,6 +148,9 @@ units = {
 		division_template = "Panzertruppe Division"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "AFR" version_name = "Rommel II" }
+		}
 	}
 	division = {
 		division_name = {
@@ -155,6 +161,9 @@ units = {
 		division_template = "Panzergrenadier Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			modern_tank_destroyer_chassis_1 = { owner = "AFR" version_name = "Cheruskerfürst I" }
+		}
 	}
 	division = {
 		division_name = {
@@ -164,7 +173,10 @@ units = {
 		location = 1068
 		division_template = "Panzergrenadier Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			modern_tank_destroyer_chassis_1 = { owner = "AFR" version_name = "Cheruskerfürst I" }
+		}
 	}
 	division = {
 		division_name = {

@@ -154,39 +154,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-
-		containerWindowType = {
-			name = "robotpower_container"
-			position = { x= 319 y = 5}
-			clipping = no
-			size = { width=57 height=24 }
-			Orientation = UPPER_LEFT
-
-			iconType ={
-				name ="robotpower_value_bg"
-				spriteType = "GFX_generic_box_96"
-				position = { x = 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-			}
-
-			iconType ={
-				name ="robotpower_icon"
-				spriteType = "GFX_manpower_icon"
-				position = { x= 2 y = -2 }
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name ="robotpower_value"
-				position = { x= 33 y = 3 }
-				font = "hoi_18mbs"
-				text = "robotpower_value"
-				format = center
-				maxWidth = 57
-				maxHeight = 24
-				fixedsize = yes
-			}
-		}	
 		
 		iconType ={
 			name ="sability_value_bg"

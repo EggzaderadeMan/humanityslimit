@@ -33,6 +33,7 @@ JUD_fighting_anti_semitism = {
 
 	visible = {
 		AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		tag = JUD
 	}
 }
 JUD_three_year_plan = {
@@ -82,5 +83,58 @@ AFR_african_reconciliation_decisions = {
 
 	visible = {
 		has_completed_focus = AFR_african_reconciliation_campaign
+		check_variable = {
+			var = completed_north_african_unity
+			value = 1
+			compare = equals
+		}
+	}
+}
+AFR_kairuan_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_pontifex_of_kairuan
+	}
+}
+AFR_baida_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_great_works_of_baida
+	}
+}
+AFR_upper_class_support = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_tripolitan_nobility
+		NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+	}
+}
+AFR_sicherheitspolizei_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_new_sicherheitspolizei
+		check_variable = {
+			var = SHEP_decisions_done
+			value = 3
+			compare = less_than
+		}
+	}
+}
+AFR_geistkrieg = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_volunteerist_campaigns
+	}
+}
+AFR_kreuzzug = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_rommelkorp_kreuzzug
 	}
 }

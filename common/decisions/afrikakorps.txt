@@ -34,7 +34,7 @@ AFR_mending_wounds = {
 				add_resistance = -3
 			}
 			add_to_variable = { AFR_government_separation = 12 }
-			custom_effect_tooltip = increases_government_seperation_by_12
+			custom_effect_tooltip = increases_government_separation_by_12
 		}
 	}
 	AFR_closing_local_loopholes = {
@@ -68,7 +68,7 @@ AFR_mending_wounds = {
 			}
 			add_political_power = 50
 			add_to_variable = { AFR_government_separation = 5 }
-			custom_effect_tooltip = increases_government_seperation_by_5
+			custom_effect_tooltip = increases_government_separation_by_5
 		}
 	}
 	AFR_excommunicate_unchanging_religious_leaders = {
@@ -463,36 +463,54 @@ AFR_african_reconciliation_decisions = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = AFR_african_reconciliation_campaign
+			check_variable = {
+				var = completed_north_african_unity
+				value = 1
+				compare = equals
+			}
 		}
 
-		cost = 75
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_soft_heart_of_rommel
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_new_local_governor_icon
+
+		cost = 50
 		days_remove = 10
 
 		available = {
 			any_state = {
 				compliance > 40
 			}
-			check_variable = {
-				var = cult_extremism
-				value = 4
-				compare = less_than
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_soft_heart_of_rommel
+				}
+				add_political_power = -20
 			}
-			check_variable = {
-				var = AFR_government_separation
-				value = 79
-				compare = greater_than
+			else = {
+				add_political_power = -40
 			}
 		}
-
 		remove_effect = {
 			random_state = {
 				limit = {
-					owner = AFR
+					owner = { tag = AFR }
 					NOT = { is_core_of = AFR }
 					compliance > 40
+					is_on_continent = africa
 				}
 				add_core_of = AFR
-				add_political_power = 90
 			}
 		}
 	}
@@ -500,9 +518,14 @@ AFR_african_reconciliation_decisions = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = AFR_african_reconciliation_campaign
+			check_variable = {
+				var = completed_north_african_unity
+				value = 1
+				compare = equals
+			}
 		}
 
-		cost = 50
+		cost = 75
 		days_remove = 10
 
 		available = {
@@ -511,7 +534,453 @@ AFR_african_reconciliation_decisions = {
 
 		remove_effect = {
 			add_stability = 0.15
+			set_variable = { completed_north_african_unity = 1 }
 			## cores the rest of North Africa, including unowned states
+		}
+	}
+}
+AFR_kairuan_decisions = {
+	AFR_religious_donations = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_pontifex_of_kairuan
+		}
+
+		cost = 20
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			add_ideas = AFR_religious_donations_idea
+		}
+		remove_effect = {
+			remove_ideas = AFR_religious_donations_idea
+		}
+	}
+	AFR_support_policy = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_pontifex_of_kairuan
+		}
+
+		cost = 20
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			add_ideas = AFR_support_policy_idea
+		}
+		remove_effect = {
+			remove_ideas = AFR_support_policy_idea
+		}
+	}
+	AFR_honor_rommel = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_pontifex_of_kairuan
+		}
+
+		cost = 10
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			add_ideas = AFR_honor_rommel_idea
+		}
+		remove_effect = {
+			remove_ideas = AFR_honor_rommel_idea
+		}
+	}
+}
+AFR_baida_decisions = {
+	AFR_the_great_temple_for_pilgrims = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_great_works_of_baida
+		}
+
+		cost = 25
+		days_remove = 180
+		fire_only_once = yes
+
+		remove_effect = {
+			451 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	AFR_the_cyrenaica_line = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_great_works_of_baida
+		}
+
+		cost = 25
+		days_remove = 90
+		days_re_enable = 90
+
+		available = {
+			NOT = {
+				OR = {
+					has_railway_level = {
+						state = 450
+						level = 4
+					}
+					has_railway_level = {
+						state = 450
+						level = 5
+					}
+					450 = {
+						infrastructure > 4
+					}
+				}
+			}
+			check_variable = {
+				var = baida_works_in_progress
+				value = 0
+				compare = equals
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = baida_works_tooltip
+			set_variable = { baida_works_in_progress = 1 }
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					450 = {
+						infrastructure < 5 ### Can build infrastructure
+					}
+				}
+				450 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_railway_level = {	### Can build railway
+								state = 450
+								level = 4
+							}
+							has_railway_level = {
+								state = 450
+								level = 5
+							}
+						}
+					}
+				}
+				build_railway = {
+					level = 2
+					path = { 11954 10123 12094 4151 1204 7082 9992 1130 4136 10120 7079 9989 10061 11910 1071 }
+				}
+			}
+		}
+	}
+	AFR_the_arsenal_of_tobruk = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_great_works_of_baida
+		}
+
+		cost = 25
+		days_remove = 180
+		days_re_enable = 180
+
+		available = {
+			check_variable = {
+				var = baida_works_in_progress
+				value = 0
+				compare = equals
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = baida_works_tooltip
+			set_variable = { baida_works_in_progress = 1 }
+		}
+		remove_effect = {
+			set_variable = { baida_works_in_progress = 0 }
+			451 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	AFR_real_estate_development_and_the_baida_construction_team = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_great_works_of_baida
+		}
+
+		cost = 25
+		days_remove = 180
+		days_re_enable = 180
+
+		available = {
+			check_variable = {
+				var = baida_works_in_progress
+				value = 0
+				compare = equals
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = baida_works_tooltip
+			set_variable = { baida_works_in_progress = 1 }
+		}
+		remove_effect = {
+			set_variable = { baida_works_in_progress = 0 }
+			451 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+AFR_upper_class_support = {
+	AFR_contracts_to_protect_family_wealth = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_tripolitan_nobility
+			NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				has_political_power > 49
+			}
+			else = {
+				has_political_power > 74
+			}
+		}
+		custom_cost_text = decision_cost_upper_class_contracts_icon
+
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				add_political_power = -50
+			}
+			else = {
+				add_political_power = -75
+			}
+			custom_effect_tooltip = AFR_upper_class_support_tooltip
+		}
+		remove_effect = {
+			add_to_variable = { AFR_upper_class_support = 2 }
+			custom_effect_tooltip = increases_upper_class_support_2
+		}
+	}
+	AFR_promise_industrial_control_after_coup = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_tripolitan_nobility
+			NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = decision_cost_upper_class_promises_icon
+
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -50
+			}
+			custom_effect_tooltip = AFR_upper_class_support_tooltip
+		}
+		remove_effect = {
+			add_to_variable = { AFR_upper_class_support = 1 }
+			custom_effect_tooltip = increases_upper_class_support
+			custom_effect_tooltip = AFR_industrial_promise_warning
+			add_to_variable = { industrial_promise = 1 }
+		}
+	}
+	AFR_promise_political_immunity_after_coup = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_tripolitan_nobility
+			NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = decision_cost_upper_class_promises_icon
+
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -50
+			}
+			custom_effect_tooltip = AFR_upper_class_support_tooltip
+		}
+		remove_effect = {
+			add_to_variable = { AFR_upper_class_support = 1 }
+			custom_effect_tooltip = increases_upper_class_support
+			custom_effect_tooltip = AFR_political_promise_warning
+			add_to_variable = { political_promise = 1 }
+		}
+	}
+	AFR_promise_influence_in_SHEP = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_the_tripolitan_nobility
+			NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = decision_cost_upper_class_promises_icon
+
+		days_remove = 90
+		days_re_enable = 90
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AFR_loyal_administration
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -50
+			}
+			custom_effect_tooltip = AFR_upper_class_support_tooltip
+		}
+		remove_effect = {
+			add_to_variable = { AFR_upper_class_support = 1 }
+			custom_effect_tooltip = increases_upper_class_support
+			custom_effect_tooltip = AFR_influence_promise_warning
+			add_to_variable = { influence_promise = 1 }
+		}
+	}
+}
+AFR_sicherheitspolizei_decisions = {
+	AFR_increase_SHEPs_jurisdiction_over_generalfeldmarschallwest = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_new_sicherheitspolizei
+			check_variable = {
+				var = SHEP_decisions_done
+				value = 3
+				compare = less_than
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			add_to_variable = { SHEP_decisions_done = 1 }
+			add_stability = -0.05
+		}
+	}
+	AFR_start_national_security_intelligence = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_new_sicherheitspolizei
+			check_variable = {
+				var = SHEP_decisions_done
+				value = 3
+				compare = less_than
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_to_variable = { SHEP_decisions_done = 1 }
+			add_stability = -0.05
+		}
+	}
+	AFR_increase_scope_of_security_raids = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_new_sicherheitspolizei
+			check_variable = {
+				var = SHEP_decisions_done
+				value = 3
+				compare = less_than
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_to_variable = { SHEP_decisions_done = 1 }
+			add_stability = -0.10
 		}
 	}
 }

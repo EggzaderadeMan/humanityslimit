@@ -407,6 +407,7 @@ JUD_fighting_anti_semitism = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			tag = JUD
 		}
 
 		cost = 30
@@ -431,6 +432,7 @@ JUD_fighting_anti_semitism = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			tag = JUD
 		}
 
 		cost = 10
@@ -462,6 +464,7 @@ JUD_fighting_anti_semitism = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			tag = JUD
 		}
 
 		cost = 10

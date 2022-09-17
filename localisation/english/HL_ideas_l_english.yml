@@ -27,7 +27,12 @@
  AFR_rommelkorp:0 "Rommelkorp"
  AFR_the_proclamations_idea:0 "The Proclamations"
  AFR_government_criticisms_idea:0 "Government Criticisms"
+ AFR_cult_tax_reform_idea:0 "Cult Tax Reform"
+ AFR_religious_donations_idea:0 "Kairuan Religious Donations"
+ AFR_support_policy_idea:0 "Kairuan Political Support"
+ AFR_honor_rommel_idea:0 "Kairuan Labor Encouragement"
  tunesisch_koMPF:0 "Tunesisch koMPF"
+
  the_nil_wars:0 "The Nile Wars"
  nile_isolation:0 "Isolated and Embargoed"
  nile_recieving_economic_support:0 "Recieving Economic Support"
