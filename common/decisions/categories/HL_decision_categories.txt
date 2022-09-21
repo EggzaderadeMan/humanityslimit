@@ -138,3 +138,10 @@ AFR_kreuzzug = {
 		has_completed_focus = AFR_rommelkorp_kreuzzug
 	}
 }
+AFR_integrating_egypt = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_egyptian_integration_department
+	}
+}

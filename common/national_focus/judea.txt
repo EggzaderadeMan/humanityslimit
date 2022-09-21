@@ -45,7 +45,7 @@ focus_tree = {
 			focus = JUD_o_hear_israel
 		}
 		completion_reward = {
-			### event to chooose partriarch, david, federation leaders
+			country_event = judea.1
 			add_timed_idea = {
 				idea = JUD_the_new_politics_of_judea
 				days = 90
@@ -242,20 +242,20 @@ focus_tree = {
 			custom_effect_tooltip = win_nile_war
 			set_variable = { khartoum_AFR_leverage = 2 }
 			set_variable = { khartoum_AFR_allegiance = 2 }
-			set_variable = { khartoum_JUD_leverage = 0 }
-			set_variable = { khartoum_JUD_allegiance = 0 }
+			set_variable = { khartoum_JUD_leverage = 2 }
+			set_variable = { khartoum_JUD_allegiance = 2 }
 			set_variable = { tana_AFR_leverage = 2 }
 			set_variable = { tana_AFR_allegiance = 2 }
-			set_variable = { tana_JUD_leverage = 0 }
-			set_variable = { tana_JUD_allegiance = 0 }
+			set_variable = { tana_JUD_leverage = 2 }
+			set_variable = { tana_JUD_allegiance = 2 }
 			set_variable = { nuer_AFR_leverage = 2 }
 			set_variable = { nuer_AFR_allegiance = 2 }
-			set_variable = { nuer_JUD_leverage = 0 }
-			set_variable = { nuer_JUD_allegiance = 0 }
+			set_variable = { nuer_JUD_leverage = 2 }
+			set_variable = { nuer_JUD_allegiance = 2 }
 			set_variable = { solomon_AFR_leverage = 2 }
 			set_variable = { solomon_AFR_allegiance = 2 }
-			set_variable = { solomon_JUD_leverage = 0 }
-			set_variable = { solomon_JUD_allegiance = 0 }
+			set_variable = { solomon_JUD_leverage = 2 }
+			set_variable = { solomon_JUD_allegiance = 2 }
 		}
 	}
 	focus = {

@@ -406,7 +406,11 @@ JUD_fighting_anti_semitism = {
 	JUD_politically_divide_rebels = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
-			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			check_variable = {
+				var = AFR_partisans_discovered
+				value = 1
+				compare = equals
+			}
 			tag = JUD
 		}
 

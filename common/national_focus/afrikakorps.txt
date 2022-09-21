@@ -1093,7 +1093,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlocks_nile_pressure
-			 ### significantly reduces cost for influencing nile nations
+			set_variable = { leverage_cost = 10 }
+			set_variable = { allegiance_cost = 20 }
 			build_railway = {
 				path = { 12044 7073 1028 12771 8105 }
 			}
@@ -1311,7 +1312,7 @@ focus_tree = {
 			focus = AFR_no_civilian_pain_in_war
 		}
 		completion_reward = {
-			 ### decisions: unlocks intregrating egypt and pacify rebels
+			unlock_decision_category_tooltip = AFR_integrating_egypt
 		}
 	}
 	focus = {

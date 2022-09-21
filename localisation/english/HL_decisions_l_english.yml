@@ -14,6 +14,7 @@
  AFR_baida_decisions:0 "The Great Works of Baida"
  AFR_upper_class_support:0 "Upper Class Support"
  AFR_sicherheitspolizei_decisions:0 "Sicherheitspolizei"
+ AFR_integrating_egypt:0 "Egyptian Integration Department"
 
  AFR_khartoum_leverage_1:0 "Arming Khartoum Rebels in Idle"
  AFR_khartoum_leverage_2:0 "Embargo and Isolate Khartoum"
@@ -49,6 +50,9 @@
  AFR_increase_SHEPs_jurisdiction_over_generalfeldmarschallwest:0 "Increase SHEPs Jurisdiction Over Generalfeldmarschallwest"
  AFR_start_national_security_intelligence:0 "Start National Security Intelligence"
  AFR_increase_scope_of_security_raids:0 "Increase Scope of Security Raids"
+ AFR_make_jewish_enemies:0 "Make Jewish Enemies in Egypt"
+ AFR_punish_military_civilian_crimes:0 "Punish Military Civilian Crimes"
+ AFR_recruit_egyptian_policing_and_administrators:0 "Recruit Egyptian Police and Administrators"
 
  JUD_land_of_manna:0 "The Land of Manna"
  JUD_new_universities_of_tel_aviv:0 "New Universities of Tel Aviv"

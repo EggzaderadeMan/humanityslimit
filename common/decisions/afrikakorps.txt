@@ -128,6 +128,23 @@ AFR_anti_israeli_partisans = {
 				}
 			}
 		}
+		complete_effect = {
+			custom_effect_tooltip = AFR_partisans_can_be_discovered
+			if = {
+				limit = {
+					check_variable = {
+						var = AFR_partisans_discovered
+						value = 0
+						compare = equals
+					}
+				}
+				random = {
+					chance = 20
+					JUD = { country_event = nile.3 }
+					set_variable = { AFR_partisans_discovered = 1 }
+				}
+			}
+		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -483,7 +500,6 @@ AFR_african_reconciliation_decisions = {
 		}
 		custom_cost_text = decision_cost_new_local_governor_icon
 
-		cost = 50
 		days_remove = 10
 
 		available = {
@@ -981,6 +997,121 @@ AFR_sicherheitspolizei_decisions = {
 		complete_effect = {
 			add_to_variable = { SHEP_decisions_done = 1 }
 			add_stability = -0.10
+		}
+	}
+}
+AFR_integrating_egypt = {
+	AFR_make_jewish_enemies = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_egyptian_integration_department
+		}
+
+		cost = 45
+		fire_only_once = yes
+
+		days_remove = 90
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				add_dynamic_modifier = { modifier = AFR_jewish_enemies }
+			}
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				remove_dynamic_modifier = { modifier = AFR_jewish_enemies }
+			}
+		}
+	}
+	AFR_punish_military_civilian_crimes = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_egyptian_integration_department
+		}
+
+		cost = 65
+
+		days_remove = 60
+		days_re_enable = 60
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				add_resistance = -5
+			}
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				add_compliance = 6
+			}
+		}
+	}
+	AFR_recruit_egyptian_policing_and_administrators = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			has_completed_focus = AFR_egyptian_integration_department
+		}
+
+		cost = 50
+
+		days_remove = 60
+		days_re_enable = 60
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				add_compliance = 4
+			}
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					owner = { tag = AFR }
+					is_core_of = EGY
+				}
+				if = {
+					limit = {
+						has_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_1 }
+					}
+					remove_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_1 }
+					add_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_2 }
+				}
+				else = {
+					if = {
+						limit = {
+							has_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_2 }
+						}
+						remove_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_2 }
+						add_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_3 }
+					}
+					else = {
+						if = {
+							limit = {
+								NOT = { has_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_3 } }
+							}
+							add_dynamic_modifier = { modifier = AFR_egyptian_policing_and_administrators_1 }
+						}
+					}
+				}
+			}
 		}
 	}
 }

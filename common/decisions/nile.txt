@@ -38,15 +38,35 @@ nile_influence = {
 			highlight_state_targets = { state = 549 }
 		}
 
-		cost = leverage_cost
-		fire_only_once = no
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 9
+			}
+			else = {
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = decision_cost_leverage
+
 		days_remove = 15
 
 		available = {
-			has_equipment = {
-				infantry_equipment > 400
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_equipment = {
+					infantry_equipment > 250
+				}
 			}
-			## tooltip = nile_leverage_not_at_max
+			else = {
+				has_equipment = {
+					infantry_equipment > 400
+				}
+			}
 			check_variable = {
 				var = khartoum_AFR_leverage
 				value = 2
@@ -55,7 +75,18 @@ nile_influence = {
 			NOT = { has_global_flag = khartoum_pressured }
 		}
 		complete_effect = {
-			add_to_variable = { khartoum_AFR_arms = 400 }
+			custom_effect_tooltip = leverage_not_at_max_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -10
+				add_to_variable = { khartoum_AFR_arms = 250 }
+			}
+			else = {
+				add_political_power = -25
+				add_to_variable = { khartoum_AFR_arms = 400 }
+			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = nile_influence_amounts_KHA
@@ -105,8 +136,19 @@ nile_influence = {
 			highlight_state_targets = { state = 549 }
 		}
 
-		cost = leverage_cost
-		fire_only_once = no
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 9
+			}
+			else = {
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = decision_cost_leverage
+
 		days_remove = 25
 
 		available = {
@@ -121,11 +163,25 @@ nile_influence = {
 					value = 1
 					compare = greater_than_or_equals
 				}
+				check_variable = {
+					var = beja_AFR_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
 			}
 			NOT = { has_global_flag = khartoum_pressured }
-			## tooltip = nile_isolate_requirements
 		}
 		complete_effect = {
+			custom_effect_tooltip = nile_isolate_requirements
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -10
+			}
+			else = {
+				add_political_power = -25
+			}
 			DRO = {
 				add_timed_idea = {
 					idea = nile_isolation
@@ -205,8 +261,19 @@ nile_influence = {
 			highlight_state_targets = { state = 549 }
 		}
 
-		cost = allegiance_cost
-		fire_only_once = no
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
 		days_remove = 15
 
 		available = {
@@ -215,10 +282,19 @@ nile_influence = {
 				value = 2
 				compare = less_than
 			}
-			## tooltip = nile_allegiance_not_at_max
 			NOT = { has_global_flag = khartoum_pressured }
 		}
 		complete_effect = {
+			custom_effect_tooltip = allegiance_not_at_max_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
 			AFR = {
 				add_timed_idea = {
 					idea = nile_sending_economic_support
@@ -287,8 +363,19 @@ nile_influence = {
 			highlight_state_targets = { state = 549 }
 		}
 
-		cost = 35
-		fire_only_once = no
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
 		days_remove = 35
 
 		available = {
@@ -310,9 +397,18 @@ nile_influence = {
 				}
 			}
 			NOT = { has_global_flag = khartoum_pressured }
-			## tooltip = nile_JUD_both_influence
 		}
 		complete_effect = {
+			custom_effect_tooltip = JUD_and_AFR_influence_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
 			DRO = {
 				add_timed_idea = {
 					idea = nile_banned_political_activity
@@ -361,6 +457,10 @@ nile_influence = {
 				has_completed_focus = AFR_the_nil_wars
 				has_completed_focus = AFR_nazi_reclamation
 				has_completed_focus = AFR_deutscher_nil
+				has_global_flag = tana_pressured
+				has_global_flag = solomon_pressured
+				has_global_flag = nuer_pressured
+				has_global_flag = beja_pressured
 			}
 		}
 
@@ -385,7 +485,11 @@ nile_influence = {
 					compare = equals
 				}
 			}
-			## tooltip = nile_pressure_conditions
+			check_variable = {
+				var = AFR_pressuring
+				value = 0
+				compare = equals
+			}
 			NOT = { has_global_flag = khartoum_pressured }
 			OR = {
 				has_completed_focus = AFR_the_nil_wars
@@ -394,13 +498,12 @@ nile_influence = {
 			}
 		}
 		complete_effect = {
+			set_variable = { AFR_pressuring = 1 }
 			set_global_flag = khartoum_pressured
-			JUD = {
-				add_political_power = 35
-				 ### gets events saying that AFR is pressuring a nation, so they can react
-			}
+			DRO = { JUD = { country_event = nile.1 } }
 		}
 		remove_effect = {
+			set_variable = { AFR_pressuring = 0 }
 			custom_effect_tooltip = nile_pressure_JUD
 			# if AFR Hi Lev, Lo Aleg, and JUD Lo Lev, Lo Aleg, AFR PUPPETS
 			if = {

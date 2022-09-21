@@ -97,3 +97,31 @@ coordinated_anti_israeli_organization = {
 	resistance_target = 0.15
 	resistance_garrison_penetration_chance = 0.30
 }
+AFR_jewish_enemies = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	compliance_gain = 0.15
+}
+AFR_egyptian_policing_and_administrators_1 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.15
+}
+AFR_egyptian_policing_and_administrators_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.30
+}
+AFR_egyptian_policing_and_administrators_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.50
+}
