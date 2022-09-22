@@ -4,7 +4,7 @@ state=
 	name="STATE_118"
 	manpower=21372
 	
-	state_category = rural
+	state_category = town
 
 	resources={
 		rations=1
@@ -19,6 +19,8 @@ state=
 		}
 		buildings = {
 			infrastructure = 2
+			arms_factory = 3
+			industrial_complex = 1
 			air_base = 2
 			4135 = {
 				naval_base = 5

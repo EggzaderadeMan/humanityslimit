@@ -36,6 +36,8 @@ set_technology = {
 
 add_ideas = {
 	AFR_cult_of_rommel
+	extensive_conscription
+	war_economy
 }
 
 recruit_character = AFR_malisande_kempf
@@ -58,6 +60,7 @@ recruit_character = AFR_feldmarschallwest_advisor_1
 recruit_character = AFR_feldmarschallwest_advisor_2
 
 set_convoys = 20
+starting_train_buffer = 5
 
 set_politics = {
 	ruling_party = fascism

@@ -1,12 +1,13 @@
 state=
 {
 	id=457
-	name="STATE_457" # Arabian Desert
-	manpower = 2194
+	name="STATE_457"
+	manpower = 4320000
 	resources={
 		steel=20
+		rations=8
 	}
-	state_category = wasteland
+	state_category = rural
 	
 	history = {
 		owner = JUD
@@ -24,9 +25,8 @@ state=
 		}
 
 		add_core_of = EGY
-		add_core_of = JUD
 	}
 	provinces={
-		1064 1080 2003 4068 4910 5069 7156 9957 10126 12002 12725 12889 7188 10005 12004 4143 11999 1977 
+		1064 1080 2003 4068 4910 5069 7156 9957 10126 12002 12725 12889 7188 4143 11999 1977 
 	}
 }

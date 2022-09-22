@@ -227,7 +227,6 @@ ideas = {
 			modifier = {
 				military_leader_cost_factor = -0.50
 				max_commander_army_size = 6
-				max_marshal_army_group_size = 1
 			}
 		}
 		AFR_stopgap_equipment = {

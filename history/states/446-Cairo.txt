@@ -2,19 +2,20 @@ state=
 {
 	id=446
 	name="STATE_446"
-	manpower = 6586596
+	manpower = 16710000
 	resources={
 		oil=10
-		rations=3
+		rations=21
 	}
-	state_category = town
+	state_category = large_city
 
 	history=
 	{
 		owner = JUD
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 			air_base = 5
 		}
 		
@@ -25,14 +26,11 @@ state=
 		victory_points = {
 			3996 5
 		}
-
-
-		add_core_of = JUD
 		add_core_of = EGY
 
 	}
 
 	provinces={
-		3996 4055 7011 7164 10073 
+		3996 4055 7011 7164 10005 10073 12004 
 	}
 }

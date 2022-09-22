@@ -2,16 +2,18 @@ state=
 {
 	id=456
 	name="STATE_456" # Aswan
-	manpower = 4224516
+	manpower = 13120000
 	resources={
-		rations=3
+		rations=21
 	}
-	state_category = rural
+	state_category = city
 	
 	history = {
 		owner = AFR
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 
 		add_core_of = EGY

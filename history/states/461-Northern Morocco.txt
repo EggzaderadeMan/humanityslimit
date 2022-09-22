@@ -2,24 +2,23 @@
 state={
 	id=461
 	name="STATE_461"
-	manpower = 3197719
+	manpower = 7230000
 	resources={
 		tungsten=25
 		steel=10
 		rations=9
 	}
-	state_category = rural
+	state_category = city
 	
 	history={
 		owner = AFR
 		add_core_of = MOR
-		add_core_of = AFR
 		victory_points = {
 			7069 10 
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
 			air_base = 4
 			7069 = {
 				naval_base = 4

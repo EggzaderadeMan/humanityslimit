@@ -2,7 +2,7 @@
 state={
 	id=460
 	name="STATE_460" # Constantine
-	manpower = 2343837
+	manpower = 4560000
 	resources={
 		rations=8
 	}
@@ -11,7 +11,6 @@ state={
 	history={
 		owner = AFR
 		add_core_of = ALG
-		add_core_of = AFR
 		victory_points = {
 			7081 1 
 		}
@@ -20,6 +19,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 			7081 = {
 				naval_base = 1
 			}

@@ -2,17 +2,17 @@
 state={
 	id=455
 	name="STATE_455"
-	manpower = 932000
+	manpower = 4862000
 	resources={
 		rations=1
 	}
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = JUD
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		victory_points = {
 			7151 1 
