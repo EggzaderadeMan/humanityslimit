@@ -1,9 +1,12 @@
 state={
 	id=680
 	name="STATE_680"
-	manpower = 324110
+	manpower = 4230000
 	
-	state_category = wasteland
+	state_category = city
+	resources = {
+		rations=2
+	}
 
 	history={
 		owner = JUD
@@ -12,6 +15,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 3
 		}
 		add_core_of = SYR
 		add_core_of = JUD

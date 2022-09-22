@@ -36,6 +36,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		start_year = 2132
 
 		folder = {
 			name = artillery_folder
@@ -85,7 +86,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 2158
 
 		folder = {
 			name = artillery_folder
@@ -154,7 +155,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 2159
 
 		folder = {
 			name = artillery_folder
@@ -219,7 +220,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 2160
 
 		folder = {
 			name = artillery_folder
@@ -268,7 +269,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 2164
 
 		folder = {
 			name = artillery_folder
@@ -333,7 +334,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 2165
 
 		folder = {
 			name = artillery_folder
@@ -388,7 +389,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 2167
 
 		folder = {
 			name = artillery_folder
@@ -461,7 +462,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 2158
 
 		folder = {
 			name = artillery_folder
@@ -504,7 +505,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 2159
 
 		folder = {
 			name = artillery_folder
@@ -552,7 +553,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 2160
 
 		folder = {
 			name = artillery_folder
@@ -590,7 +591,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 2162
 
 		folder = {
 			name = artillery_folder
@@ -637,7 +638,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 2158
 
 		folder = {
 			name = artillery_folder
@@ -702,7 +703,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 2159
 
 		folder = {
 			name = artillery_folder
@@ -753,7 +754,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 2160
 
 		folder = {
 			name = artillery_folder
@@ -804,7 +805,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 2164
 
 		folder = {
 			name = artillery_folder
@@ -859,7 +860,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 2165
 
 		folder = {
 			name = artillery_folder
@@ -911,7 +912,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 2167
 
 		folder = {
 			name = artillery_folder
@@ -958,7 +959,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 2158
 
 		folder = {
 			name = artillery_folder
@@ -1039,7 +1040,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 2159
 
 		folder = {
 			name = artillery_folder
@@ -1140,7 +1141,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 2160
 
 		folder = {
 			name = artillery_folder
@@ -1204,7 +1205,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 2164
 
 		folder = {
 			name = artillery_folder
@@ -1300,7 +1301,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 2165
 
 		folder = {
 			name = artillery_folder
@@ -1394,7 +1395,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 2167
 
 		folder = {
 			name = artillery_folder

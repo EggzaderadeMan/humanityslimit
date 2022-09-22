@@ -21,6 +21,3 @@
  daily_rations_gain:0 "Daily Rations Gain"
  rations_factor:0 "Rations Gain Factor"
  rations_capacity_k:0 "Rations Capacity (K)"
-
- robotpower_value:0 "[GetRobotpowerValue]"
- robotpower_value_var:0 "[?robotpower_value]"

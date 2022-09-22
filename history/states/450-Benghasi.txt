@@ -2,11 +2,11 @@
 state={
 	id=450
 	name="STATE_450"
-	manpower = 82535
+	manpower = 1510000
 	resources={
 		rations=1
 	}
-	state_category = enclave
+	state_category = city
 
 	history={
 		owner = AFR
@@ -16,6 +16,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 1
 			air_base = 1
 			11954 = {
 				naval_base = 1

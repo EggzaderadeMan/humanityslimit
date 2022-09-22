@@ -2,22 +2,22 @@
 state={
 	id=513
 	name="STATE_513" # Tlmecen
-	manpower = 811486
+	manpower = 976000
 	resources={
 		oil=10
 		rations=8
 	}
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = AFR
 		add_core_of = ALG
-		add_core_of = AFR
 		victory_points = {
 			12034 1 
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 	}
 

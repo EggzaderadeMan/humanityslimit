@@ -1,0 +1,147 @@
+nile_influence = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		OR = {
+			original_tag = JUD
+			original_tag = AFR
+		}	
+	}
+
+	on_map_area = {
+		state = 549
+		name = AFR_nile_influence_map
+		zoom = 250
+	}
+}
+AFR_mending_wounds = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_north_african_unity
+	}
+}
+AFR_anti_israeli_partisans = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_support_egyptian_liberation_movement
+	}
+}
+JUD_fighting_anti_semitism = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		tag = JUD
+	}
+}
+JUD_three_year_plan = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = JUD_rebuilding_the_hebrew_people
+	}
+}
+JUD_prepare_armed_forces = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+	}
+}
+JUD_prepare_to_cross_the_nile = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = JUD_cross_the_nile
+	}
+}
+AFR_economic_liberation_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_economic_liberation
+	}
+}
+AFR_religious_support_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_cult_of_rommel_reformation
+	}
+}
+AFR_reduce_extremist_cultism = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_dwindling_cultism
+	}
+}
+AFR_african_reconciliation_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_african_reconciliation_campaign
+		check_variable = {
+			var = completed_north_african_unity
+			value = 1
+			compare = equals
+		}
+	}
+}
+AFR_kairuan_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_pontifex_of_kairuan
+	}
+}
+AFR_baida_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_great_works_of_baida
+	}
+}
+AFR_upper_class_support = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_the_tripolitan_nobility
+		NOT = { has_completed_focus = AFR_military_security_of_the_new_reich }
+	}
+}
+AFR_sicherheitspolizei_decisions = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_new_sicherheitspolizei
+		check_variable = {
+			var = SHEP_decisions_done
+			value = 3
+			compare = less_than
+		}
+	}
+}
+AFR_geistkrieg = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_volunteerist_campaigns
+	}
+}
+AFR_kreuzzug = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_rommelkorp_kreuzzug
+	}
+}
+AFR_integrating_egypt = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = AFR_egyptian_integration_department
+	}
+}

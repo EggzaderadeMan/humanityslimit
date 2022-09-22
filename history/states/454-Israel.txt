@@ -2,18 +2,20 @@
 state={
 	id=454
 	name="STATE_454" #Palestine
-	manpower = 933142
+	manpower = 5980000
 	resources={
 		oil=10
 		rations=1
 	}
-	state_category = rural
+	state_category = large_city
 
 	history={
 		owner = JUD
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 3
 			air_base = 2
 			4206 = {
 				naval_base = 3

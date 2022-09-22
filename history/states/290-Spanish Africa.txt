@@ -2,10 +2,10 @@
 state={
 	id=290
 	name="STATE_290"
-	manpower = 744000
+	manpower = 1210000
 	
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 		rations=7
@@ -13,12 +13,13 @@ state={
 
 	history={
 		owner = AFR
-		add_core_of = AFR
+		add_core_of = MOR
 		victory_points = {
 			9945 5 
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 			air_base = 3
 			12100 = {
 				naval_base = 3

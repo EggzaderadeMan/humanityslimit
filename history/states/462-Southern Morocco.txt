@@ -2,23 +2,23 @@
 state={
 	id=462
 	name="STATE_462"
-	manpower = 1865552
+	manpower = 4960000
 	resources={
 		tungsten=5
 		steel=10
 		rations=9
 	}
-	state_category = wasteland
+	state_category = town
 
 	history={
 		owner = AFR
 		add_core_of = MOR
-		add_core_of = AFR
 		victory_points = {
 			4108 1 
 		}
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 		}
 	}
 

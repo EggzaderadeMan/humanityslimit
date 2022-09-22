@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { khartoum_AFR_leverage = 1 }
+			set_variable = { khartoum_JUD_allegiance = 1 }
+			set_variable = { solomon_JUD_allegiance = 1 }
+			set_variable = { leverage_cost = 25 }
+			set_variable = { allegiance_cost = 40 }
+		}
+	}
+}

@@ -1,7 +1,7 @@
 state={
 	id=662
 	name="STATE_662"
-	manpower = 13213
+	manpower = 16000
 	resources = {
 		oil=25
 		rations=1
@@ -15,6 +15,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = LBA
+		add_core_of = AFR
 	}
 	
 	provinces={

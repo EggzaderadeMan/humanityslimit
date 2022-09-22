@@ -1,0 +1,66 @@
+add_namespace = nile
+
+country_event = { ### Judea when Afrikakorps influences first
+	id = nile.1
+	title = nile.1.t
+	desc = nile.1.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = nile.1.a
+		add_political_power = 35
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_global_flag = khartoum_pressured
+						has_global_flag = tana_pressured
+						has_global_flag = solomon_pressured
+						has_global_flag = nuer_pressured
+						has_global_flag = beja_pressured
+					}
+				}
+			}
+			custom_effect_tooltip = nile_influence_enabled
+		}
+	}
+}
+country_event = { ### Afrikakorps when Judea influences first
+	id = nile.2
+	title = nile.2.t
+	desc = nile.2.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = nile.2.a
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_global_flag = khartoum_pressured
+						has_global_flag = tana_pressured
+						has_global_flag = solomon_pressured
+						has_global_flag = nuer_pressured
+						has_global_flag = beja_pressured
+					}
+				}
+			}
+			custom_effect_tooltip = nile_influence_enabled
+		}
+	}
+}
+country_event = {
+	id = nile.3
+	title = nile.3.t
+	desc = nile.3.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = nile.3.a
+		add_political_power = 20
+		custom_effect_tooltip = anti_israeli_partisans_enabled
+	}
+}

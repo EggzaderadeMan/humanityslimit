@@ -4,9 +4,9 @@ state={
 	provinces={
 		12029 12473 7671 
 	}
-	manpower = 234379
+	manpower = 3020000
 	
-	state_category = enclave
+	state_category = large_town
 
 	history= {
 		owner = UNC

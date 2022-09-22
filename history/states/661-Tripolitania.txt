@@ -1,19 +1,22 @@
 state={
 	id=661
 	name="STATE_661"
-	manpower = 17617
+	manpower = 90000
 	resources = {
 		oil=15
 		rations=1
 	}
-	state_category = wasteland
+	state_category = rural
 	
 	history={
 		owner = AFR
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		add_core_of = LBA
+		add_core_of = AFR
 	}
 	
 	provinces={
