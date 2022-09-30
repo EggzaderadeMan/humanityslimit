@@ -82,6 +82,7 @@ JUD_three_year_plan = {
 		}
 		remove_effect = {
 			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -113,8 +114,9 @@ JUD_three_year_plan = {
 		}
 		remove_effect = {
 			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = military_factory
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -128,6 +130,7 @@ JUD_prepare_armed_forces = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		fire_only_once = yes
@@ -152,6 +155,7 @@ JUD_prepare_armed_forces = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		cost = 50
@@ -172,6 +176,7 @@ JUD_prepare_armed_forces = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		cost = 50
@@ -221,6 +226,7 @@ JUD_prepare_to_cross_the_nile = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_cross_the_nile
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		fire_only_once = yes
@@ -266,6 +272,7 @@ JUD_prepare_to_cross_the_nile = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_cross_the_nile
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		cost = 25
@@ -300,6 +307,7 @@ JUD_prepare_to_cross_the_nile = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_cross_the_nile
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		fire_only_once = yes
@@ -345,6 +353,7 @@ JUD_prepare_to_cross_the_nile = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_cross_the_nile
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		fire_only_once = yes
@@ -379,6 +388,7 @@ JUD_prepare_to_cross_the_nile = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_cross_the_nile
+			NOT = { has_global_flag = nilkrieg }
 		}
 
 		fire_only_once = yes
@@ -406,6 +416,7 @@ JUD_fighting_anti_semitism = {
 	JUD_politically_divide_rebels = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
+			JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 			check_variable = {
 				var = AFR_partisans_discovered
 				value = 1
@@ -436,6 +447,7 @@ JUD_fighting_anti_semitism = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 			tag = JUD
 		}
 
@@ -468,6 +480,7 @@ JUD_fighting_anti_semitism = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+			JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 			tag = JUD
 		}
 

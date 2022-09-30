@@ -111,6 +111,7 @@ AFR_anti_israeli_partisans = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = AFR_support_egyptian_liberation_movement
+			JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 		}
 
 		cost = 15
@@ -568,6 +569,8 @@ AFR_kairuan_decisions = {
 
 		complete_effect = {
 			add_ideas = AFR_religious_donations_idea
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 		}
 		remove_effect = {
 			remove_ideas = AFR_religious_donations_idea
@@ -585,6 +588,8 @@ AFR_kairuan_decisions = {
 
 		complete_effect = {
 			add_ideas = AFR_support_policy_idea
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 		}
 		remove_effect = {
 			remove_ideas = AFR_support_policy_idea
@@ -602,6 +607,8 @@ AFR_kairuan_decisions = {
 
 		complete_effect = {
 			add_ideas = AFR_honor_rommel_idea
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 		}
 		remove_effect = {
 			remove_ideas = AFR_honor_rommel_idea

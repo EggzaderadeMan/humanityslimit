@@ -191,7 +191,7 @@ focus_tree = {
 			focus = JUD_prepare_for_the_next_battle_of_egypt
 		}
 		completion_reward = {
-			### decisions: unlocks preparation decisions and declare war
+			unlock_decision_category_tooltip = JUD_prepare_to_cross_the_nile
 			build_railway = {
 				path = { 2003 12725 4910 11999 }
 			}
@@ -205,7 +205,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JUD_the_land_of_joseph
+		id = JUD_land_of_joseph
 
 		icon = GFX_goal_generic_construction
 		x = 10
@@ -226,7 +226,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			### decisions: unlocks decisions to core Egypt
+			unlock_decision_category_tooltip = JUD_integrating_egypt
 			453 = {
 				add_core_of = JUD
 			}

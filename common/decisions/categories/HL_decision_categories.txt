@@ -26,6 +26,7 @@ AFR_anti_israeli_partisans = {
 
 	visible = {
 		has_completed_focus = AFR_support_egyptian_liberation_movement
+		JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 	}
 }
 JUD_fighting_anti_semitism = {
@@ -33,6 +34,7 @@ JUD_fighting_anti_semitism = {
 
 	visible = {
 		AFR = { has_completed_focus = AFR_support_egyptian_liberation_movement }
+		JUD = { NOT = { has_completed_focus = JUD_land_of_joseph } }
 		tag = JUD
 	}
 }
@@ -48,6 +50,7 @@ JUD_prepare_armed_forces = {
 
 	visible = {
 		has_completed_focus = JUD_prepare_for_the_next_battle_of_egypt
+		NOT = { has_global_flag = nilkrieg }
 	}
 }
 JUD_prepare_to_cross_the_nile = {
@@ -55,6 +58,7 @@ JUD_prepare_to_cross_the_nile = {
 
 	visible = {
 		has_completed_focus = JUD_cross_the_nile
+		NOT = { has_global_flag = nilkrieg }
 	}
 }
 AFR_economic_liberation_decisions = {
@@ -143,5 +147,12 @@ AFR_integrating_egypt = {
 
 	visible = {
 		has_completed_focus = AFR_egyptian_integration_department
+	}
+}
+JUD_integrating_egypt = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		has_completed_focus = JUD_land_of_joseph
 	}
 }

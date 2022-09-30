@@ -1342,25 +1342,6 @@ focus_tree = {
 			 }
 		}
 	}
-	focus = {
-		id = AFR_generals_rule_no_more
-
-		icon = GFX_goal_generic_construction
-		x = 10
-		y = 5
-		cost = 10
-		ai_will_do = {
-				factor = 1
-		}
-
-		available = {
-			 ### if war is lost
-			 ### low enough religious and noble support
-		}
-		completion_reward = {
-			 ### civil war
-		}
-	}
 ############################### CULT OF ROMMEL BRANCH ##################################
 	focus = {
 		id = AFR_cult_of_rommel_reformation
@@ -1662,4 +1643,55 @@ focus_tree = {
 			custom_effect_tooltip = AFR_increases_religious_support_3
 		}
 	}
+	########################### WINNERS BRANCH #################################
+	focus = {
+		id = AFR_end_of_the_nilkrieg
+
+		icon = GFX_goal_generic_construction
+		x = 31
+		y = 3
+		cost = 10
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			always = no
+			 ### Activated by Event - If all of Egypt controlled for certain time
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	############################# LOSERS BRANCH #####################################
+	focus = {
+		id = AFR_generals_rule_no_more
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			check_variable = {
+				var = religious_support
+				value = 25
+				compare = less_than
+			}
+			check_variable = {
+				var = upper_class_support
+				value = 10
+				compare = less_than
+			}
+			 ### Activated by Event - if Core States controlled, and low RS<30, UPS<15 (if upper class focus taken)
+		}
+		completion_reward = {
+			 ### civil war
+		}
+	}
+
 }

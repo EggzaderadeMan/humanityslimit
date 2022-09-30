@@ -40,6 +40,10 @@
  AFR_military_security_tooltip:0 "§YYou need to at least §!§O15 Upper Class Support §!§Yand you need to §!§OTake All Sicherheitspolizei Decisions §!§Yto avoid a §!§RCivil War§!"
  AFR_partisans_can_be_discovered:0 "§YJudea can discover your Partisans and start rooting them out§!"
 
+ AFR_losing_nilkrieg:0 "§YYour Religious Support and Upper Class Support will determine your survivability§!"
+ afrikakorps_dissolution:0 ""
+ afrikakorps_incomplete_dissolution:0 ""
+
  unlocks_nile_pressure:0 "§YAllows influenced nations down the nile to be pressured, and taken or fought for§!"
  nile_leverage_not_at_max:0 "§BUnavailable if you have max Leverage in this country§!"
  nile_allegiance_not_at_max:0 "§BUnavailable if you have max Allegiance in this country§!"

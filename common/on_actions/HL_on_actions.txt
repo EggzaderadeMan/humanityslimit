@@ -8,4 +8,21 @@ on_actions = {
 			set_variable = { allegiance_cost = 40 }
 		}
 	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { original_tag = JUD }
+						FROM = { original_tag = AFR }
+					}
+					OR = {
+						original_tag = JUD
+						original_tag = AFR
+					}
+				}
+				set_global_flag = nilkrieg
+			}
+		}
+	}
 }

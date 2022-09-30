@@ -32,6 +32,7 @@ set_technology = {
 	early_bomber = 1
 	tactical_bomber1 = 1
 	armored_car1 = 1
+	basic_train = 1
 }
 
 add_ideas = {
@@ -60,7 +61,7 @@ recruit_character = AFR_feldmarschallwest_advisor_1
 recruit_character = AFR_feldmarschallwest_advisor_2
 
 set_convoys = 20
-starting_train_buffer = 5
+starting_train_buffer = 2
 
 set_politics = {
 	ruling_party = fascism
