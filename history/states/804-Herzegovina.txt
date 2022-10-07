@@ -20,7 +20,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = ORO
+		add_core_of = ORB
 		add_core_of = BON
 		add_core_of = HRZ
 	}

@@ -13,7 +13,7 @@ state={
 	history={
 		victory_points = { 11597 1 }
 		victory_points = { 657 3 }
-		owner = ORO
+		owner = ORB
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,7 +24,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_claim_by = ORO
+		add_claim_by = ORB
 		add_core_of = RMA
 	}
 

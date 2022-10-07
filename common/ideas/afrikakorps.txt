@@ -522,16 +522,16 @@ ideas = {
 
 			}
 			traits = { infantry_equipment_manufacturer }
-			equipment_bonus = {
-				SMG_1 = {
-					soft_attack = 0.10
-					breakthrough = 0.10
-				}
-				SMG_2 = {
-					soft_attack = 0.10
-					breakthrough = 0.10
-				}
-			}
+#			equipment_bonus = {
+#				SMG_1 = {
+#					soft_attack = 0.10
+#					breakthrough = 0.10
+#				}
+#				SMG_2 = {
+#					soft_attack = 0.10
+#					breakthrough = 0.10
+#				}
+#			}
 		}
 	}
 }

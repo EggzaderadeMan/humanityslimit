@@ -20,7 +20,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = ABA
-		add_core_of = ORO
+		add_core_of = ORB
 		add_claim_by = ATH
 
 	}

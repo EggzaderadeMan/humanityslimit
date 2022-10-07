@@ -1,0 +1,5 @@
+sub_unit_categories = {
+	category_all_auto
+	category_auto
+	category_scout_auto
+}

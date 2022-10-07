@@ -10,7 +10,7 @@ state= {
 	state_category = town
 
 	history= {
-		owner = ORO
+		owner = ORB
 		victory_points = {
 			11842 5
 		}
@@ -23,7 +23,7 @@ state= {
 			}
 		}
 		add_core_of = TUS
-		add_core_of = ORO
+		add_core_of = ORB
 	}
 	provinces=
 	{

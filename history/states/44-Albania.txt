@@ -27,7 +27,7 @@ state={
 			}
 		}
 		add_core_of = ABA
-		add_core_of = ORO
+		add_core_of = ORB
 	}
 
 	provinces={

@@ -9,7 +9,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ORO
+		owner = ORB
 		victory_points = {
 			11818 5 
 		}
@@ -28,7 +28,7 @@ state={
 
 		}
 		add_core_of = ATH
-		add_core_of = ORO
+		add_core_of = ORB
 
 	}
 	

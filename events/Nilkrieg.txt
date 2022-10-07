@@ -17,108 +17,108 @@ country_event = {	## Losing Nilkrieg
 			}
 		}
 	}
-	mean_time_to_happen = { days = 20 }
+	mean_time_to_happen = { days = 10 }
 	option = {
 		name = nilkrieg.1.a
 		custom_effect_tooltip = AFR_losing_nilkrieg
-		if = {
-			limit = {
-				MOR = { any_core_state = { controller = { tag = JUD } } }
-			}
-			JUD = { country_event = { id = nilkrieg.2 days = 1 } }				## Judea has option to declare on Morocco
-		}
-		else = {
-			every_state = {														## Morocco declares independence
-				limit = {
-					is_core_of = MOR
-				}
-				owner = { tag = MOR }
-			}
-		}
-		if = {
-			limit = {
-				ALG = { any_core_state = { controller = { tag = JUD } } }
-			}
-			JUD = { country_event = { id = nilkrieg.3 days = 1 } }				## Judea has option to declare on Algeria
-		}
-		else = {
-			every_state = {														## Algeria declares independence
-				limit = {
-					is_core_of = ALG
-				}
-				owner = { tag = ALG }
-			}
-		}
-		if = {
-			limit = {
-				EGY = { any_core_state = { controller = { tag = JUD } } }
-			}
-			JUD = { country_event = { id = nilkrieg.5 days = 1 } }				## Judea has option to declare on Egypt
-		}
-		else = {
-			every_state = {														## Egypt declares independence
-				limit = {
-					is_core_of = EGY
-				}
-				owner = { tag = EGY }
-			}
-		}
-		if = {														## Incomplete dissolution of Afrikakorps
-			limit = {
-				check_variable = {
-					var = religious_support
-					value = 30
-					compare = greater_than
-				}
-				check_variable = {
-					var = upper_class_support
-					value = 10
-					compare = greater_than
-				}
-			}
-			custom_effect_tooltip = afrikakorps_incomplete_dissolution
-			complete_national_focus = AFR_generals_rule_no_more
-			
-		}
-		else = {													## Complete dissolution of Afrikakorps
-			custom_effect_tooltip = afrikakorps_dissolution
-			if = {
-				limit = {
-					LBA = { any_core_state = { controller = { tag = JUD } } }
-				}
-				JUD = { country_event = { id = nilkrieg.4 days = 1 } }				## Judea has option to declare on Libya
-			}
-			else = {
-				every_state = {														## Libya declares independence
-					limit = {
-						is_core_of = LBA
-					}
-					owner = { tag = LBA }
-				}
-			}
-			every_state = {															## Dealing with additional territories, including Gibraltar
-				limit = {
-					NOT = {
-						is_core_of = ALG
-						is_core_of = MOR
-						is_core_of = LBA
-						is_core_of = EGY
-					}
-					owner = AFR
-				}
-				if = {
-					limit = {
-						NOT = { controller = { tag = JUD } }
-					}
-					every_country = {
-						limit = {
-							PREV = { is_core_of = THIS }
-						}
-						PREV = { owner = THIS }
-					}
-				}
-			}
-		}
+#		if = {
+#			limit = {
+#				MOR = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.2 days = 1 } }				## Judea has option to declare on Morocco
+#		}
+#		else = {
+#			every_state = {														## Morocco declares independence
+#				limit = {
+#					is_core_of = MOR
+#				}
+#				owner = { tag = MOR }
+#			}
+#		}
+#		if = {
+#			limit = {
+#				ALG = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.3 days = 1 } }				## Judea has option to declare on Algeria
+#		}
+#		else = {
+#			every_state = {														## Algeria declares independence
+#				limit = {
+#					is_core_of = ALG
+#				}
+#				owner = { tag = ALG }
+#			}
+#		}
+#		if = {
+#			limit = {
+#				EGY = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.5 days = 1 } }				## Judea has option to declare on Egypt
+#		}
+#		else = {
+#			every_state = {														## Egypt declares independence
+#				limit = {
+#					is_core_of = EGY
+#				}
+#				owner = { tag = EGY }
+#			}
+#		}
+#		if = {														## Incomplete dissolution of Afrikakorps
+#			limit = {
+#				check_variable = {
+#					var = religious_support
+#					value = 30
+#					compare = greater_than
+#				}
+#				check_variable = {
+#					var = upper_class_support
+#					value = 10
+#					compare = greater_than
+#				}
+#			}
+#			custom_effect_tooltip = afrikakorps_incomplete_dissolution
+#			complete_national_focus = AFR_generals_rule_no_more
+#			
+#		}
+#		else = {													## Complete dissolution of Afrikakorps
+#			custom_effect_tooltip = afrikakorps_dissolution
+#			if = {
+#				limit = {
+#					LBA = { any_core_state = { controller = { tag = JUD } } }
+#				}
+#				JUD = { country_event = { id = nilkrieg.4 days = 1 } }				## Judea has option to declare on Libya
+#			}
+#			else = {
+#				every_state = {														## Libya declares independence
+#					limit = {
+#						is_core_of = LBA
+#					}
+#					owner = { tag = LBA }
+#				}
+#			}
+#			every_state = {															## Dealing with additional territories, including Gibraltar
+#				limit = {
+#					NOT = {
+#						is_core_of = ALG
+#						is_core_of = MOR
+#						is_core_of = LBA
+#						is_core_of = EGY
+#					}
+#					owner = { tag = AFR }
+#				}
+#				if = {
+#					limit = {
+#						NOT = { controller = { tag = JUD } }
+#					}
+#					every_country = {
+#						limit = {
+#							PREV = { is_core_of = THIS }
+#						}
+#						PREV = { owner = THIS }
+#					}
+#				}
+#			}
+#		}
 	}
 }
 
