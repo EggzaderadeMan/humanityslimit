@@ -1,6 +1,0 @@
-technology_categories = {
-	auto
-	fortress_auto
-	scout_auto
-	battery_auto
-}
