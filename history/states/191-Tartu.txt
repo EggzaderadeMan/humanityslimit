@@ -22,7 +22,6 @@ state={
 		add_core_of = BFE
 
 	}
-	local_supplies=0.0
 
 	provinces={
 		592 6178 6408 9221 9485 

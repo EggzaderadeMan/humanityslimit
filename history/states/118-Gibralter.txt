@@ -37,7 +37,6 @@ state=
 		}
 		add_core_of = AFR
 		add_core_of = SPR
-	local_supplies=0.0
 	}
 	provinces={
 		4135 7153 9979 10009 13228 10094 1048 

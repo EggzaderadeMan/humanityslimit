@@ -28,7 +28,6 @@ state={
 			2021 3
 		}
 	}
-	local_supplies=0.0
 
 	provinces={
 		2021 8236 10773 10889 12712 

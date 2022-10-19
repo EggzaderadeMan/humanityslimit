@@ -24,7 +24,6 @@ state= {
 		}
 		add_core_of = TUS
 		add_core_of = ORB
-	local_supplies=0.0
 	}
 	provinces=
 	{

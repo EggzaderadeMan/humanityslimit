@@ -26,7 +26,6 @@ state= {
 		}
 		add_core_of = ENL
 	}
-	local_supplies=0.0
 
 	provinces= {
 		540 3422 3463 6526 9562 11406

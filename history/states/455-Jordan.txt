@@ -21,7 +21,6 @@ state={
 		add_core_of = JUD
 		add_core_of = PAL
 	}
-	local_supplies=0.0
 
 	provinces={
 		4017 4115 4574 4591 7001 7151 7170 10089 1 

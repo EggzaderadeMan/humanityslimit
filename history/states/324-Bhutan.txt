@@ -23,7 +23,6 @@ state={
 		add_core_of = TIB
 		add_core_of = BIR
 	}
-	local_supplies=0.0
 
 	provinces={
 		8010 12860 

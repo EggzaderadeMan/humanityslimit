@@ -23,7 +23,6 @@ state={
 		}
 		add_core_of = POG
 	}
-	local_supplies=0.0
 
 	provinces={
 		349 3207 3312 6282 

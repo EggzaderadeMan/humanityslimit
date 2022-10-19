@@ -30,7 +30,6 @@ state_category = pastoral
 
 	}
 
-	local_supplies=0.0
 
 	provinces={
 

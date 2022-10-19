@@ -18,7 +18,6 @@ state={
 		add_core_of = SSR
 		owner = UNC
 	}
-	local_supplies=0.0
 
 	provinces={
 		473 534 3492 6432 6481 6517 6577 9424 9449 9489 9518 11439 11500 

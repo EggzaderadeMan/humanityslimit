@@ -19,7 +19,6 @@ state={
 		add_core_of = MAG
 
 	}
-	local_supplies=0.0
 
 	provinces={
 		3743 6431 6460 6483 9425 11411 11550 

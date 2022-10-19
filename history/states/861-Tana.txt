@@ -24,7 +24,6 @@ state=
 		add_core_of = ETH
 		owner = UNC
 	}
-	local_supplies=0.0
 
 	provinces=
 	{ 1984 2040 4918 4954 12862 13137  	}

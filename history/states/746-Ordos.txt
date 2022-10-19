@@ -3,7 +3,6 @@ state={
 	name="STATE_746"
 	resources = {
 		rations=6
-	local_supplies=0.0
 	}
 	provinces={
 		1959 3427 4960 4986 10451 10854 12706 10880 12356 1458 7314 7659 

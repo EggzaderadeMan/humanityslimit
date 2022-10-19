@@ -25,7 +25,6 @@ state={
 		add_core_of = MAG
 		add_core_of = UKA
 	}
-	local_supplies=0.0
 
 	provinces={
 		438 491 536 3483 3562 9454 9468 9558 11427 11479 

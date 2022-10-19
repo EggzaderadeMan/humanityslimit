@@ -19,7 +19,6 @@ state={
 		}
 		add_core_of = IBE
 	}
-	local_supplies=0.0
 
 	provinces={
 		13071 

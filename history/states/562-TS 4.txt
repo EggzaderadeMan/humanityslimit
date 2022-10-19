@@ -15,7 +15,6 @@ state={
 		add_core_of = EAS
 		owner = UNC
 	}
-	local_supplies=0.0
 
 	provinces={
 		1714 1805 1865 4810 4881 7772 10540 10572 10598 11607 12518 12551 12650 12683 1772 

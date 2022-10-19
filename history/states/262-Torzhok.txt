@@ -19,7 +19,6 @@ state={
 		}
 		add_core_of = NRR
 	}
-	local_supplies=0.0
 
 	provinces={
 		154 6016 6177 6538 9099 9121 9230 7712 10579 6 99 108 3155 7330 11200 
