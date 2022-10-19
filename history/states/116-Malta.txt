@@ -17,6 +17,7 @@ state=
 				coastal_bunker = 1
 			}
 		}
+	local_supplies=0.0
 	}
 	provinces= { 12003 }
 }

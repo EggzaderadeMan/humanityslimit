@@ -24,6 +24,7 @@ state={
 		}
 		add_core_of = AMK
 	}
+	local_supplies=0.0
 
 	provinces={
 		1354 4360 4430 4623 7304 7361 7644 10244 

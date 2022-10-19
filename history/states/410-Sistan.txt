@@ -16,6 +16,7 @@ state={
 		add_core_of = DEH
 		owner = UNC
 	}
+	local_supplies=0.0
 
 	provinces={
 		1889 2039 2070 4891 10782 13082 

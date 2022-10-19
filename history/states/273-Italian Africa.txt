@@ -15,6 +15,7 @@ state={
 		add_core_of = EGY
 		owner = UNC
 	}
+	local_supplies=0.0
 
 	provinces={
 		1994 4191 12022 10907 12733 

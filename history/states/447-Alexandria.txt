@@ -28,6 +28,7 @@ state={
 		}
 		add_core_of = EGY
 	}
+	local_supplies=0.0
 
 	provinces={
 		4076 4145 7091 11964  

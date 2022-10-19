@@ -18,6 +18,7 @@ state={
 		add_core_of = SOA
 
 	}
+	local_supplies=0.0
 
 	provinces={
 		2142 2147 2204 8175 11010 12939 

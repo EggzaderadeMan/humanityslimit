@@ -18,6 +18,7 @@ state=
 		}
 		add_core_of = EIR
 	}
+	local_supplies=0.0
 
 	provinces=
 	{

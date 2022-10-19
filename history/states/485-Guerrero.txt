@@ -31,6 +31,7 @@ state={
 			8032 1
 		}
 	}
+	local_supplies=0.0
 
 	provinces={
 		4887 5066 8032 10730 10832 

@@ -24,6 +24,7 @@ state={
 		add_core_of = ABA
 
 	}
+	local_supplies=0.0
 
 	provinces={
 		937 6913 9809 9821 11858 

@@ -24,6 +24,7 @@ state= {
 		add_core_of = ENL
 		add_core_of = WLE
 	}
+	local_supplies=0.0
 
 	provinces=
 	{

@@ -27,6 +27,7 @@ state={
 		add_claim_by = ORB
 		add_core_of = RMA
 	}
+	local_supplies=0.0
 
 	provinces={
 		657 687 3076 9614 9635 11597 

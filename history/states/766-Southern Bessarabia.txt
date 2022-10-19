@@ -21,6 +21,7 @@ state=
 			}
 		}
 		add_core_of = RMA
+	local_supplies=0.0
 	}
 	provinces=
 	{

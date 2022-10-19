@@ -20,6 +20,7 @@ state=
 			13025 5
 		 }
 
+	local_supplies=0.0
 	}
 	provinces={
 		13025

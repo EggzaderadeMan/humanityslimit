@@ -22,6 +22,7 @@ state={
 		}
 		add_core_of = TUS
 	}
+	local_supplies=0.0
 
 	provinces={
 		1005 1119 9941 10122 11917 12013 12016 12096 

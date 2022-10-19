@@ -33,6 +33,7 @@ state=
 		add_core_of = ETH
 		owner = UNC
 	}
+	local_supplies=0.0
 
 	provinces=
 	{

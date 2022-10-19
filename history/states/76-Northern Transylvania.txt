@@ -21,6 +21,7 @@ state={
 		add_core_of = MAG
 		add_core_of = RMA
 	}
+	local_supplies=0.0
 
 	provinces={
 		711 713 727 746 3689 3696 3709 6711 6714 6731 9668 9670 9672 9685 9687 9704 11676 

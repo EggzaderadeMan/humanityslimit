@@ -24,6 +24,7 @@ state={
 		add_core_of = BON
 		add_core_of = HRZ
 	}
+	local_supplies=0.0
 
 	provinces={
 		953 6942 9894 11845 6889 3868 11816 

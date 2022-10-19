@@ -37,6 +37,7 @@ state={
 		add_core_of = NFS
 		add_core_of = OCT
 	}
+	local_supplies=0.0
 
 	provinces={
 		911 956 958 3762 3928 11834 11849 11875 11711 11877 9898 

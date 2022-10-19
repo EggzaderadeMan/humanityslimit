@@ -22,6 +22,7 @@ state={
 		add_core_of = GGM
 
 	}
+	local_supplies=0.0
 
 	provinces={
 		290 347 11247 11301 
