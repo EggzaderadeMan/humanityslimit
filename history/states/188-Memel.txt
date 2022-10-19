@@ -22,6 +22,7 @@ state=
 		add_core_of = BFE
 		add_core_of = POG
 	}
+	local_supplies=0.0
 	provinces={
 		3288 	
 	}

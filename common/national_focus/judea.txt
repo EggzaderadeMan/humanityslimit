@@ -1,0 +1,418 @@
+focus_tree = {
+	id = judea_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = JUD
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 55 y = 1500 }
+
+	focus = {
+		id = JUD_o_hear_israel
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 0
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			add_timed_idea = {
+				idea = JUD_victory_at_last
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = JUD_renew_the_covenant
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_o_hear_israel
+		}
+		completion_reward = {
+			country_event = judea.1
+			add_timed_idea = {
+				idea = JUD_the_new_politics_of_judea
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = JUD_rebuilding_the_hebrew_people
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_renew_the_covenant
+		}
+		completion_reward = {
+			custom_effect_tooltip = JUD_required_three_year_plan_decisions_focus
+			unlock_decision_category_tooltip = JUD_three_year_plan
+		}
+	}
+	focus = {
+		id = JUD_provoke_shoahite_revenge
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_rebuilding_the_hebrew_people
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = JUD_shoahite_revenge
+				days = 140
+			}
+		}
+	}
+	focus = {
+		id = JUD_allies_on_the_nile
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_provoke_shoahite_revenge
+		}
+		completion_reward = {
+			### unlocks nile influence decisions with easy allegiance
+		}
+	}
+	focus = {
+		id = JUD_solidify_jerusalem_accords
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 5
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_allies_on_the_nile
+		}
+		completion_reward = {
+			### decisions: unlocks Pressure for nile influence
+			### those who you pressure into allies join faction as well as guarantee
+			create_faction = jerusalem_accords
+		}
+	}
+	focus = {
+		id = JUD_industrial_cooperation
+
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 6
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_solidify_jerusalem_accords
+		}
+		completion_reward = {
+			### decisions: unlocks cooperative industry development
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = JUD_prepare_for_the_next_battle_of_egypt
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 6
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		available = {
+			check_variable = {
+				var = JUD_num_of_three_year_plan_decisions
+				value = 3
+				compare = greater_than
+			}
+		}
+		prerequisite = {
+			focus = JUD_solidify_jerusalem_accords
+		}
+		completion_reward = {
+			custom_effect_tooltip = JUD_required_three_year_plan_decisions
+			unlock_decision_category_tooltip = JUD_prepare_armed_forces
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = JUD_cross_the_nile
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 7
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_prepare_for_the_next_battle_of_egypt
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = JUD_prepare_to_cross_the_nile
+			build_railway = {
+				path = { 2003 12725 4910 11999 }
+			}
+			457 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = JUD_land_of_joseph
+
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 8
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_cross_the_nile
+		}
+		available = {
+			EGY = {
+				all_core_state = {
+					controller = { tag = JUD }
+				}
+			}
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = JUD_integrating_egypt
+			453 = {
+				add_core_of = JUD
+			}
+			663 = {
+				add_core_of = JUD
+			}
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+				add_compliance = 5
+			}
+			custom_effect_tooltip = win_nile_war
+			set_variable = { khartoum_AFR_leverage = 2 }
+			set_variable = { khartoum_AFR_allegiance = 2 }
+			set_variable = { khartoum_JUD_leverage = 2 }
+			set_variable = { khartoum_JUD_allegiance = 2 }
+			set_variable = { tana_AFR_leverage = 2 }
+			set_variable = { tana_AFR_allegiance = 2 }
+			set_variable = { tana_JUD_leverage = 2 }
+			set_variable = { tana_JUD_allegiance = 2 }
+			set_variable = { nuer_AFR_leverage = 2 }
+			set_variable = { nuer_AFR_allegiance = 2 }
+			set_variable = { nuer_JUD_leverage = 2 }
+			set_variable = { nuer_JUD_allegiance = 2 }
+			set_variable = { solomon_AFR_leverage = 2 }
+			set_variable = { solomon_AFR_allegiance = 2 }
+			set_variable = { solomon_JUD_leverage = 2 }
+			set_variable = { solomon_JUD_allegiance = 2 }
+		}
+	}
+	focus = {
+		id = JUD_army_of_god
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = JUD_o_hear_israel
+		}
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 2
+				category = para_tech
+				category = mountaineers_tech
+				category = marine_tech
+			}
+		}
+	}
+	focus = {
+		id = JUD_ships_of_tarshish
+
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = JUD_army_of_god
+		}
+		completion_reward = {
+			navy_experience = 35
+			553 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 792
+				}
+			}
+		}
+	}
+	focus = {
+		id = JUD_chariots_of_jehova
+
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = JUD_army_of_god
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = JUD_on_silver_wings
+
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = JUD_army_of_god
+		}
+		completion_reward = {
+			air_experience = 40
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = JUD_david_ii
+
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_renew_the_covenant
+		}
+		completion_reward = {
+			### changes leader
+		}
+	}
+	focus = {
+		id = JUD_federation
+
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_renew_the_covenant
+		}
+		completion_reward = {
+			### changes ideology
+		}
+	}
+	focus = {
+		id = JUD_patriarch
+
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 2
+		cost = 5
+		ai_will_do = {
+				factor = 1
+		}
+
+		prerequisite = {
+			focus = JUD_renew_the_covenant
+		}
+		completion_reward = {
+			### changes leader
+		}
+	}
+}

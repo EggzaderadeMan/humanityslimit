@@ -4,6 +4,7 @@ state={
 	resources = {
 		rations=17
 	}
+	local_supplies=0.0
 	provinces={
 		1976 2006 4167 4256 4295 5092 7301 7406 7418 10257 12713 
 	}

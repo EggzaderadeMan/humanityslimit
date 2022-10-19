@@ -1,0 +1,127 @@
+heavy_radiation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.75
+	state_resources_factor = -0.75
+	state_production_speed_buildings_factor = -0.50
+	resistance_growth = -0.50
+	attrition = 0.4
+	supply_consumption_factor = 0.3
+	army_org_regain = -0.20
+}
+
+light_radiation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.20
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.15
+	resistance_growth = -0.20
+	attrition = 0.2
+	supply_consumption_factor = 0.1
+	army_org_regain = -0.10
+}
+
+biological_devastation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resource_rations = -0.90
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.60
+	resistance_growth = -0.30
+	attrition = 0.05
+	supply_consumption_factor = 0.1
+}
+construction_battalions = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.2
+	production_speed_buildings_factor = 0.10
+	production_speed_infrastructure_factor = 0.15
+	production_speed_naval_base_factor = 0.10
+	production_speed_air_base_factor = 0.10
+	production_speed_bunker_factor = 0.10
+	production_speed_coastal_bunker_factor = 0.10
+	production_speed_anti_air_building_factor = 0.10
+	fortification_damage = -0.50
+}
+blood_market_of_egypt = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = -0.2
+	local_resources_factor = 0.65
+	required_garrison_factor = 0.5
+	resistance_activity = 0.25
+	resistance_target = 0.10
+	local_factories = 0.75
+}
+afrikakorps_elements = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	required_garrison_factor = 0.05
+	resistance_activity = 0.05
+	resistance_target = 0.05
+	resistance_garrison_penetration_chance = 0.05
+}
+egyptian_liberation_movement_rebels = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	required_garrison_factor = 0.15
+	resistance_activity = 0.15
+	resistance_target = 0.10
+	resistance_garrison_penetration_chance = 0.10
+}
+coordinated_anti_israeli_organization = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	required_garrison_factor = 0.20
+	resistance_activity = 0.30
+	resistance_target = 0.15
+	resistance_garrison_penetration_chance = 0.30
+}
+AFR_jewish_enemies = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	compliance_gain = 0.15
+}
+AFR_egyptian_policing_and_administrators_1 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.15
+}
+AFR_egyptian_policing_and_administrators_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.30
+}
+AFR_egyptian_policing_and_administrators_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_non_core_manpower = 0.50
+}

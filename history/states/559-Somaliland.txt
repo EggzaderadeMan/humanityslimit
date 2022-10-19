@@ -19,6 +19,7 @@ state=
 			air_base = 1
 		}
 	}
+	local_supplies=0.0
 	provinces=
 	{
 5065 8164 10928 12840 12991	}

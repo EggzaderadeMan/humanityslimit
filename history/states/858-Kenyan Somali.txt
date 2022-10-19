@@ -19,6 +19,7 @@ state=
 			}
 		}
 	}
+	local_supplies=0.0
 	provinces=
 	{  11014 10976 6020 10761 12927 8133 12941 	}
 }

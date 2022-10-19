@@ -1,0 +1,46 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+                    has_reclamation_mana = yes
+                }
+                set_variable = { reclamation_mana = 30 }
+                set_variable = { reclamation_mana_rate = 1 }
+                set_variable = { reclamation_mana_max = 50 }
+            }
+		}
+	}
+
+	on_daily = {
+		effect = {
+            if = {
+				limit = { 
+                    has_reclamation_mana = yes
+                }
+                
+                add_to_variable = { reclamation_mana = reclamation_mana_rate }
+
+			}
+				
+            clamp_variable = { var = reclamation_mana min = 0 max = reclamation_mana_max }
+
+#			if = {
+#				limit = { NOT = { check_variable = { conquering = 0 } } }
+#					
+#               add_to_variable = { conquer_day = 1 }
+#				if = {
+#					limit = { check_variable = { conquer_day = 14 } }
+#					
+#					var:conquering = {
+#						ROOT = {
+#							annex_country = { target = PREV transfer_troops = yes }
+#						}
+#					}
+#					set_variable = { conquering = 0 }
+#				}
+#			}
+		}
+	}
+}

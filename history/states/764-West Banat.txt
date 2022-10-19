@@ -19,6 +19,7 @@ state={
 		add_core_of = RMA
 	}
 
+	local_supplies=0.0
 	provinces={
 		614 3614 6643 11787
 	}

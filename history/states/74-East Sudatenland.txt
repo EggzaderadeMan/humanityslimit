@@ -22,6 +22,7 @@ state=
 		}
 		add_core_of = POG
 	}
+	local_supplies=0.0
 	provinces= {
 		421 3414 3583 6485
  	}

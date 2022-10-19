@@ -1,0 +1,233 @@
+add_namespace = nilkrieg
+
+#### Afrikakorps Losing, Judea Winning - Fall of Afrikakorps, Event for Afrikakorps to change government in chaos with enough support, Events for Judea getting involved
+
+country_event = {	## Losing Nilkrieg
+	id = nilkrieg.1
+	title = nilkrieg.1.t
+	desc = nilkrieg.1.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	trigger = {
+		tag = AFR
+		AFR = {
+			any_core_state = {
+				controller = { tag = JUD }
+			}
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = nilkrieg.1.a
+		custom_effect_tooltip = AFR_losing_nilkrieg
+#		if = {
+#			limit = {
+#				MOR = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.2 days = 1 } }				## Judea has option to declare on Morocco
+#		}
+#		else = {
+#			every_state = {														## Morocco declares independence
+#				limit = {
+#					is_core_of = MOR
+#				}
+#				owner = { tag = MOR }
+#			}
+#		}
+#		if = {
+#			limit = {
+#				ALG = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.3 days = 1 } }				## Judea has option to declare on Algeria
+#		}
+#		else = {
+#			every_state = {														## Algeria declares independence
+#				limit = {
+#					is_core_of = ALG
+#				}
+#				owner = { tag = ALG }
+#			}
+#		}
+#		if = {
+#			limit = {
+#				EGY = { any_core_state = { controller = { tag = JUD } } }
+#			}
+#			JUD = { country_event = { id = nilkrieg.5 days = 1 } }				## Judea has option to declare on Egypt
+#		}
+#		else = {
+#			every_state = {														## Egypt declares independence
+#				limit = {
+#					is_core_of = EGY
+#				}
+#				owner = { tag = EGY }
+#			}
+#		}
+#		if = {														## Incomplete dissolution of Afrikakorps
+#			limit = {
+#				check_variable = {
+#					var = religious_support
+#					value = 30
+#					compare = greater_than
+#				}
+#				check_variable = {
+#					var = upper_class_support
+#					value = 10
+#					compare = greater_than
+#				}
+#			}
+#			custom_effect_tooltip = afrikakorps_incomplete_dissolution
+#			complete_national_focus = AFR_generals_rule_no_more
+#			
+#		}
+#		else = {													## Complete dissolution of Afrikakorps
+#			custom_effect_tooltip = afrikakorps_dissolution
+#			if = {
+#				limit = {
+#					LBA = { any_core_state = { controller = { tag = JUD } } }
+#				}
+#				JUD = { country_event = { id = nilkrieg.4 days = 1 } }				## Judea has option to declare on Libya
+#			}
+#			else = {
+#				every_state = {														## Libya declares independence
+#					limit = {
+#						is_core_of = LBA
+#					}
+#					owner = { tag = LBA }
+#				}
+#			}
+#			every_state = {															## Dealing with additional territories, including Gibraltar
+#				limit = {
+#					NOT = {
+#						is_core_of = ALG
+#						is_core_of = MOR
+#						is_core_of = LBA
+#						is_core_of = EGY
+#					}
+#					owner = { tag = AFR }
+#				}
+#				if = {
+#					limit = {
+#						NOT = { controller = { tag = JUD } }
+#					}
+#					every_country = {
+#						limit = {
+#							PREV = { is_core_of = THIS }
+#						}
+#						PREV = { owner = THIS }
+#					}
+#				}
+#			}
+#		}
+	}
+}
+
+country_event = {	## Will Judea intervene in Morocco
+	id = nilkrieg.2
+	title = nilkrieg.2.t
+	desc = nilkrieg.2.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	option = {					## Leave Morocco Alone
+		name = nilkrieg.2.a
+		add_political_power = 20
+		add_stability = 0.02
+	}
+	option = {					## Declare on Morocco
+		name = nilkrieg.2.b
+		set_global_flag = judea_dissolution_interference
+		declare_war_on = {
+			target = MOR
+			type = annex_everything
+		}
+	}
+}
+country_event = {	## Will Judea intervene in Algeria
+	id = nilkrieg.3
+	title = nilkrieg.3.t
+	desc = nilkrieg.3.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	option = {					## Leave Algeria Alone
+		name = nilkrieg.3.a
+		add_political_power = 20
+		add_stability = 0.02
+	}
+	option = {					## Declare on Algeria
+		name = nilkrieg.3.b
+		set_global_flag = judea_dissolution_interference
+		declare_war_on = {
+			target = ALG
+			type = annex_everything
+		}
+	}
+}
+country_event = {	## Will Judea intervene in Libya
+	id = nilkrieg.4
+	title = nilkrieg.4.t
+	desc = nilkrieg.4.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	option = {					## Leave Libya Alone
+		name = nilkrieg.4.a
+		add_political_power = 20
+		add_stability = 0.02
+	}
+	option = {					## Declare on Libya
+		name = nilkrieg.4.b
+		set_global_flag = judea_dissolution_interference
+		declare_war_on = {
+			target = LBA
+			type = annex_everything
+		}
+	}
+}
+country_event = {	## Will Judea intervene in Egypt
+	id = nilkrieg.5
+	title = nilkrieg.5.t
+	desc = nilkrieg.5.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	option = {					## Leave Egypt Alone
+		name = nilkrieg.5.a
+		add_political_power = 20
+		add_stability = 0.02
+	}
+	option = {					## Declare on Egypt
+		name = nilkrieg.5.b
+		set_global_flag = judea_dissolution_interference
+		declare_war_on = {
+			target = EGY
+			type = annex_everything
+		}
+	}
+}
+
+#### Afrikakorps Winning, Judea Losing - Allows Judea to create/expand Defensive Faction, 
+country_event = {	## Winning Nilkrieg
+	id = nilkrieg.x
+	title = nilkrieg.x.t
+	desc = nilkrieg.x.d
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	trigger = {
+		EGY = {
+			all_core_state = {
+				controller = { tag = AFR }
+			}
+		}
+	}
+	mean_time_to_happen = { days = 20 }
+	option = {
+		name = nilkrieg.x.a
+		complete_national_focus = AFR_end_of_the_nilkrieg
+	}
+}
+
+
+#### White Peaces - Judea with Sinai, Judea with Egypt, based on Mean Times (also add decisions for Tobruk and Sinai forts, to help make these reasonable)

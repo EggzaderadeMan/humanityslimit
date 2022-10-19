@@ -15,6 +15,7 @@ state={
 		owner = UNC
 	}
 
+	local_supplies=0.0
 	provinces={
 		7259 1214 12259 12272 1420 
 	}

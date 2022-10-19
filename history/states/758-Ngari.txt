@@ -4,6 +4,7 @@ state={
 	resources = {
 		noble=26
 	}
+	local_supplies=0.0
 	provinces={
 		10802 12801 10911 4973 
 	}

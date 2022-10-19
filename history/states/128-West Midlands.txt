@@ -22,6 +22,7 @@ state={
 		set_demilitarized_zone = yes
 	}
 
+	local_supplies=0.0
 	provinces={
 		3241 3301 6301 7239 
 	}
