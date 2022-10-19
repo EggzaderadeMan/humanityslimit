@@ -29,7 +29,7 @@ state={
 
 	}
 
-
+	local_supplies=0.0
 	provinces={
 
 		2081 3123 13138 4972 4997 5028 10780 10805 

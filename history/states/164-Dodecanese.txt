@@ -23,7 +23,7 @@ state=
 			}
 		}
 		add_core_of = ATH
-	}
+	local_supplies=0.0	}
 	provinces=
 	{
 7003 10007 	}

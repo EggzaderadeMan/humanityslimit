@@ -25,7 +25,7 @@ state=
 		victory_points = {
 			7959 3
 		}
-	}
+	local_supplies=0.0	}
 	provinces={
 		7959 
 	}

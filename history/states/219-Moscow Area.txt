@@ -23,7 +23,7 @@ state={
 		add_core_of = UNC
 		owner = UNC
 	}
-
+	local_supplies=0.0
 	provinces={
 		366 401 3327 3358 3391 6290 6348 6380 6414 9282 9302 9348 11282 
 	}

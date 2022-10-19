@@ -26,7 +26,7 @@ state={
 		}
 		add_core_of = NSD
 	}
-
+	local_supplies=0.0
 	provinces={
 		514 573 3514 3535 6559 9441 9471 11481 
 	}

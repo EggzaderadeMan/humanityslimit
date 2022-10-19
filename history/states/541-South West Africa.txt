@@ -19,7 +19,7 @@ state={
 		owner = WIN
 
 	}
-
+	local_supplies=0.0
 	provinces={
 		8136 8202 10957 10978 12391 12921 12985 
 	}

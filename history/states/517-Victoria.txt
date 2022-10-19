@@ -30,7 +30,7 @@ state={
 		}
 		add_core_of = AUT
 	}
-
+	local_supplies=0.0
 	provinces={
 		1759 2155 4776 7755 7798 7811 10553 10581 10622 10637 12576 
 	}

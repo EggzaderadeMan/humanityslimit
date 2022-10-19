@@ -27,7 +27,7 @@ state={
 		}
 		add_core_of = SUA
 	}
-
+	local_supplies=0.0
 	provinces={
 		1468 1494 7576 8178 
 	}

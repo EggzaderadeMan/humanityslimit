@@ -28,7 +28,7 @@ state={
 		}
 		add_core_of = DRO
 	}
-
+	local_supplies=0.0
 	provinces={
 		2196 8183 5210 
 	}

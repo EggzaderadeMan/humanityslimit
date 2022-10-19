@@ -23,7 +23,7 @@ state={
 		add_core_of = NFS
 		add_core_of = NFR
 	}
-
+	local_supplies=0.0
 	provinces={
 		648 667 817 3652 9609 9625 11628 
 	}

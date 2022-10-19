@@ -1,6 +1,6 @@
 state={
 	id=853
-	name="STATE_853"
+	local_supplies=0.0	name="STATE_853"
 	provinces={
 		2207 2229 4879 5154 5189 7605 10963 
 	}

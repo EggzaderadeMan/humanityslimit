@@ -17,7 +17,7 @@ state = {
 		add_core_of = FER
 
 	}
-
+	local_supplies=0.0
 	provinces = {
 		4744 5264 13062 13063 13204
 	}

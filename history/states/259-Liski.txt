@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = UKA
 	}
-
+	local_supplies=0.0
 	provinces={
 		511 559 3557 6495 6507 6578 6605 9413 9519 11504 
 	}

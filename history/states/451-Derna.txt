@@ -24,7 +24,7 @@ state={
 		}
 		add_core_of = AFR
 	}
-
+	local_supplies=0.0
 	provinces={
 		1130 4136 10120 4060 7206 13078 1060 11951 
 	}

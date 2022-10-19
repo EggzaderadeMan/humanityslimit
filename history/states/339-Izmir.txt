@@ -29,7 +29,7 @@ state={
 		}
 		add_core_of = TUS
 	}
-
+	local_supplies=0.0
 	provinces={
 		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 
 	}

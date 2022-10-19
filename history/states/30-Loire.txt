@@ -24,7 +24,7 @@ state={
 		add_core_of = NFR
 		add_core_of = BRT
 	}
-
+	local_supplies=0.0
 	provinces={
 		503 527 3495 3509 3523 9478 9867 11463 11465 11613 11616 
 	}

@@ -16,7 +16,7 @@ state=
 			infrastructure = 4
 			air_base = 3
 		}
-	}
+	local_supplies=0.0	}
 	provinces={
 		2088 5017 5047 10902 12723 
 	}

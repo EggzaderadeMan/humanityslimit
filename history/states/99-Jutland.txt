@@ -26,7 +26,7 @@ state= {
 			}
 		}
 		add_core_of = NSD
-	}
+	local_supplies=0.0	}
 	provinces=
 	{
 316 332 394 399 3206 3277 3341 6235 6364 11251 	}

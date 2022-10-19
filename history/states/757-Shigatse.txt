@@ -4,7 +4,7 @@ state={
 	resources = {
 		chromium=10
 		noble=22
-	}
+	local_supplies=0.0	}
 	provinces={
 		2014 2098 4900 5033 8121 4435 7926 4994 10918 
 	}

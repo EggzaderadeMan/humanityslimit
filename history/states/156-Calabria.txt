@@ -27,7 +27,7 @@ state={
 		}
 		add_core_of = RIT
 	}
-
+	local_supplies=0.0
 	provinces={
 		3901 6979 9784 9856 9990 10027 11837 11998 12066 12098 
 	}

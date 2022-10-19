@@ -27,7 +27,7 @@ state={
 		}
 		add_core_of = KUR
 	}
-
+	local_supplies=0.0
 	provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}

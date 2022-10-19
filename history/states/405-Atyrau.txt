@@ -25,7 +25,7 @@ state = {
 		add_core_of = UZB
 
 	}
-
+	local_supplies=0.0
 	provinces = {
 		1459 4629 7682 10488 11687 
 	}
