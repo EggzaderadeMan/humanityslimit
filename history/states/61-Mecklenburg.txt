@@ -28,7 +28,7 @@ state={
 		add_core_of = NSD
 		add_core_of = POG
 	}
-	local_supplies=0.0
+
 	provinces={
 		268 293 321 9294 11276 11305 3258 3340 9388 
 	}

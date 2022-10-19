@@ -27,7 +27,7 @@ state = {
 		add_core_of = RMA
 		add_core_of = UKA
 	}
-	local_supplies=0.0
+
 	provinces = {
 		  3575 3738 9698 9714 11670 11703 
 	}

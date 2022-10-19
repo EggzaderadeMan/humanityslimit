@@ -20,7 +20,7 @@ state={
 			1900 3
 		}
 	}
-	local_supplies=0.0
+
 	provinces={
 		1900 12753 12867 
 	}

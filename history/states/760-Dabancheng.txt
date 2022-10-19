@@ -3,7 +3,7 @@ state={
 	name="STATE_760"
 	resources = {
 		chromium=20
-	local_supplies=0.0	}
+	}
 	provinces={
 		1838 4704 4843 7732 10839 12524 12598 12671 
 	}

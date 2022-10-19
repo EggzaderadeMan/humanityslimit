@@ -3,7 +3,7 @@ state={
 	name="STATE_755"
 	resources = {
 		aluminium=15
-	local_supplies=0.0	}
+	}
 	provinces={
 		2053 2099 7997 10750 10796 10834 10865 12846 12890 13146 5100 12327 5057 12776 
 	}

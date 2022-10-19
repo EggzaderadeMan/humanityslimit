@@ -15,7 +15,7 @@ state={
 			air_base = 1
 		}
 	}
-	local_supplies=0.0
+
 	provinces={
 		855 1742 1755 
 	}

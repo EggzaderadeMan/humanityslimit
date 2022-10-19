@@ -15,7 +15,7 @@ state={
 		add_core_of = KAZ
 		owner = UNC
 	}
-	local_supplies=0.0
+
 	provinces={
 		4781 4800 10531 10713 12509 7680 1779 4803 12528 12515 
 	}

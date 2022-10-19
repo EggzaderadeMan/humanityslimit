@@ -32,7 +32,7 @@ state={
 
 	}
 
-	local_supplies=0.0
+
 	provinces={
 
 		1891 1932 1969 2025 12874 12762

@@ -13,7 +13,7 @@ state={
 			infrastructure = 3
 		}
 	}
-	local_supplies=0.0
+
 	provinces={
 		1766 1970 2015 4828 5087 7949 8112 12119 
 	}

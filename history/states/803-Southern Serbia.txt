@@ -16,7 +16,7 @@ state={
 		add_core_of = ORB
 
 	}
-	local_supplies=0.0
+
 	provinces={
 		11832 11857 11868 
 	}

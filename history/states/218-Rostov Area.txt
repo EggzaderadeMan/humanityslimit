@@ -24,7 +24,7 @@ state={
 		}
 		add_core_of = UKA
 	}
-	local_supplies=0.0
+
 	provinces={
 		6445 9417 9430 11418 11434 11450 
 	}

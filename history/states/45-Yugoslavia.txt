@@ -16,7 +16,7 @@ state={
 		add_core_of = SER
 
 	}
-	local_supplies=0.0
+
 	provinces={
 		619 3617 3623 9608 9621 
 	}

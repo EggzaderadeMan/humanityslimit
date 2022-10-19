@@ -16,7 +16,7 @@ state={
 		add_core_of = NFS
 
 	}
-	local_supplies=0.0
+
 	provinces={
 		743 9710 
 	}

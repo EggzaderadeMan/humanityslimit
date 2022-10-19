@@ -18,7 +18,7 @@ state=
 		victory_points = { 6583 5 }
 		add_core_of = NSD
 	}
-	local_supplies=0.0
+
 	provinces=
 	{
 6583 	}

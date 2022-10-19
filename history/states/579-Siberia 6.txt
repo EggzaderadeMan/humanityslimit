@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = SSR
 	}
-	local_supplies=0.0
+
 	provinces={
 		1664 1684 4669 7689 7738 8461 9142 
 	}

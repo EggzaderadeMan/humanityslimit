@@ -15,7 +15,7 @@ state={
 		add_core_of = PER
 		owner = UNC
 	}
-	local_supplies=0.0
+
 	provinces={
 		829 4943 5050 5098 9816 10774 12773 
 	}

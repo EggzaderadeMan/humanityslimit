@@ -24,7 +24,7 @@ state = {
 		}
 		add_core_of = NRR
 	}
-	local_supplies=0.0
+
 	provinces = {
 		105 3147 6192 10207 11047 12530
 	}

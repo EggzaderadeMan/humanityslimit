@@ -14,7 +14,7 @@ state = {
 		add_core_of = SSR
 		add_core_of = YAM
 	}
-	local_supplies=0.0
+
 	provinces = {
 		96 1729 1757 3415 4761 7809 10536 10564 12517 12545 4733 3336 
 	}

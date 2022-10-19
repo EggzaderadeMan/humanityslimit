@@ -4,7 +4,7 @@ state={
 	resources = {
 		aluminium=5
 		rations=3
-	local_supplies=0.0	}
+	}
 	provinces={
 		1882 4536 4888 7270 10490 10817 11448 12732 12815 
 	}

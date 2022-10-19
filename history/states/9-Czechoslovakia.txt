@@ -23,7 +23,7 @@ state={
 		}
 		add_core_of = BOH
 	}
-	local_supplies=0.0
+
 	provinces={
 		445 494 583 3462 9421 9429 9569 11414 11542 11556 
 	}

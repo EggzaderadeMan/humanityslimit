@@ -18,7 +18,7 @@ state={
 		add_claim_by = ITA
 		add_core_of = NSD
 	}
-	local_supplies=0.0
+
 	provinces={
 		656 6631 6675 9598 9630 11598 11615 
 	}

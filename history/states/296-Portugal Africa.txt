@@ -21,7 +21,7 @@ state={
 			}
 		}
 	}
-	local_supplies=0.0
+
 	provinces={
 		12747 12802 12858 12891 
 	}

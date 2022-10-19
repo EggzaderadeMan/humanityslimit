@@ -17,7 +17,7 @@ state=
 		}
 		add_core_of = SLV
 		add_core_of = WPS
-	local_supplies=0.0	}
+	}
 	provinces={
 		596 665 3631 3654 6650 6672 9596 9627 }
 	

@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = DEH
 	}
-	local_supplies=0.0
+
 	provinces={
 		7316 8005 10905 12754 12884 
 	}

@@ -23,7 +23,7 @@ state = {
 		add_core_of = KHI
 
 	}
-	local_supplies=0.0
+
 	provinces = {
 		1493 1649 7618 10485
 	}

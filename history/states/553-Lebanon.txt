@@ -24,7 +24,7 @@ state={
 		add_core_of = JUD
 		add_core_of = SYR
 	}
-	local_supplies=0.0
+
 	provinces={
 		792 1108 11919 
 	}
