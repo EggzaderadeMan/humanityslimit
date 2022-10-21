@@ -958,8 +958,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 10
-			build_cost_ic = 2
+			air_defence = 12
+			build_cost_ic = 3
 			weight = 1
 		}
 		build_cost_resources = {
@@ -1007,7 +1007,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 1.5
+			air_agility = 10
+			build_cost_ic = 4.5
 			weight = 1
 		}
 
@@ -1018,8 +1019,8 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				naval_strike_targetting = 4
-				air_defence = 4
+				naval_strike_targetting = 6
+				air_defence = 6
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
@@ -1080,7 +1081,7 @@ equipment_modules = {
 			air_defence = 2
 			build_cost_ic = 12
 			weight = 7
-			night_penalty = 0.15
+			night_penalty = -0.15
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
@@ -1109,8 +1110,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 13
-			build_cost_ic = 2
+			air_defence = 15
+			build_cost_ic = 3
 			weight = 1
 		}
 		build_cost_resources = {
@@ -1125,9 +1126,11 @@ equipment_modules = {
 		category = plane_special_module_medium
 		sfx = sfx_ui_sd_module_turret
 
+		multiply_stats = {
+			build_cost_ic = -0.15
+		}
 		add_stats = {
 			air_defence = -16
-			build_cost_ic = -8
 			weight = 0
 		}
 		build_cost_resources = {
@@ -1210,7 +1213,7 @@ equipment_modules = {
 			air_defence = 4
 			build_cost_ic = 16
 			weight = 8
-			night_penalty = 0.15
+			night_penalty = -0.15
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
@@ -1239,8 +1242,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 16
-			build_cost_ic = 3
+			air_defence = 20
+			build_cost_ic = 5
 			weight = 1
 		}
 		build_cost_resources = {
@@ -1255,9 +1258,11 @@ equipment_modules = {
 		category = plane_special_module_large
 		sfx = sfx_ui_sd_module_turret
 
+		multiply_stats = {
+			build_cost_ic = -0.15
+		}
 		add_stats = {
 			air_defence = -20
-			build_cost_ic = -10
 			weight = 0
 		}
 		build_cost_resources = {
@@ -1319,8 +1324,8 @@ equipment_modules = {
 		parent = radio_navigation_1
 
 		add_stats = {
-			air_bombing = 6
-			build_cost_ic = 1.5
+			air_bombing = 8
+			build_cost_ic = 1
 			weight = 1
 			night_penalty = -0.2
 		}

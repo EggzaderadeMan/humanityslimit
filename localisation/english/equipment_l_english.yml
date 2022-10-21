@@ -26,6 +26,36 @@
  medium_airframe_desc:0 "Medium Airframe based planes"
  heavy_airframe:0 "Heavy Airframe"
  heavy_airframe_desc:0 "Heavy Airframe based planes"
+ small_helicopter_airframe:0 "Single Engine Attack Helicopter"
+ small_helicopter_airframe_0:0 "Basic Single Engine Attack Helicopter"
+ small_helicopter_airframe_1:0 "Improved Single Engine Attack Helicopter"
+ small_helicopter_airframe_2:0 "Advanced Single Engine Attack Helicopter"
+
+ small_helicopter_cas_airframe:0 "Single Engine Gunship Helicopter"
+ small_helicopter_cas_airframe_0:0 "Basic Single Engine Gunship Helicopter"
+ small_helicopter_cas_airframe_1:0 "Improved Single Engine Gunship Helicopter"
+ small_helicopter_cas_airframe_2:0 "Advanced Single Engine Gunship Helicopter"
+
+ small_helicopter_naval_bomber_airframe:0 "Single Engine Naval Helicopter"
+ small_helicopter_naval_bomber_airframe_0:0 "Basic Single Engine Naval Helicopter"
+ small_helicopter_naval_bomber_airframe_1:0 "Improved Single Engine Naval Helicopter"
+ small_helicopter_naval_bomber_airframe_2:0 "Advanced Single Engine Naval Helicopter"
+
+ large_helicopter_airframe:0 "Twin Engine Gunship Helicopter"
+ large_helicopter_airframe_0:0 "Basic Twin Engine Gunship Helicopter"
+ large_helicopter_airframe_1:0 "Improved Twin Engine Gunship Helicopter"
+ large_helicopter_airframe_2:0 "Advanced Twin Engine Gunship Helicopter"
+
+ large_helicopter_fighter_airframe:0 "Twin Engine Attack Helicopter"
+ large_helicopter_fighter_airframe_0:0 "Basic Twin Engine Attack Helicopter"
+ large_helicopter_fighter_airframe_1:0 "Improved Twin Engine Attack Helicopter"
+ large_helicopter_fighter_airframe_2:0 "Advanced Twin Engine Attack Helicopter"
+
+ large_helicopter_scout_plane_airframe:0 "Twin Engine Observation Helicopter"
+ large_helicopter_scout_plane_airframe_0:0 "Basic Twin Engine Observation Helicopter"
+ large_helicopter_scout_plane_airframe_1:0 "Improved Twin Engine Observation Helicopter"
+ large_helicopter_scout_plane_airframe_2:0 "Advanced Twin Engine Observation Helicopter"
+
  jet_engines:0 "Jet Engines"
  JET_ENGINES_SPECIAL:0 "The development of Jet Engines is an essential prerequisite for the development of jet powered aircraft. This must be researched before you can research advanced aircraft"
  jet_engines_desc:0 "A breakthrough in propulsion technology, the Jet Engine will enable the development of an entirely new generation of aircraft."
