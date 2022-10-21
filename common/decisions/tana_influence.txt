@@ -1,0 +1,1753 @@
+tana_influence = {
+	AFR_tana_leverage_1 = {	## arming enemies in idle
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 9
+			}
+			else = {
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = decision_cost_leverage
+
+		days_remove = 15
+
+		available = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_equipment = {
+					infantry_equipment > 250
+				}
+			}
+			else = {
+				has_equipment = {
+					infantry_equipment > 400
+				}
+			}
+			check_variable = {
+				var = AFR.tana_leverage
+				value = 2
+				compare = less_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = leverage_not_at_max_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -10
+				add_to_variable = { AFR.tana_arms = 250 }
+			}
+			else = {
+				add_political_power = -25
+				add_to_variable = { AFR.tana_arms = 400 }
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			add_to_variable = { AFR.tana_leverage = 1 }
+			custom_effect_tooltip = nile_increases_leverage
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_tana_leverage_2 = {	## embargo and isolate
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 9
+			}
+			else = {
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = decision_cost_leverage
+
+		days_remove = 25
+
+		available = {
+			AND = {
+				check_variable = {
+					var = AFR.nuer_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = AFR.khartoum_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = AFR.beja_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = AFR.solomon_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			check_variable = {
+				var = JUD.khartoum_leverage
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = JUD.khartoum_allegiance
+				value = 0
+				compare = greater_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = nile_isolate_requirements
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -10
+			}
+			else = {
+				add_political_power = -25
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_isolation
+					days = 25
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			if = {
+				limit = {
+					check_variable = {
+						var = JUD.tana_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { JUD.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_allegiance
+			}
+			else = {
+				subtract_from_variable = { JUD.tana_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = AFR.tana_leverage
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { AFR.tana_leverage = 1 }
+				custom_effect_tooltip = nile_increases_leverage
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_tana_allegiance_1 = {	## sending economic support
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
+		days_remove = 15
+
+		available = {
+			check_variable = {
+				var = AFR.tana_allegiance
+				value = 2
+				compare = less_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = allegiance_not_at_max_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
+			AFR = {
+				add_timed_idea = {
+					idea = nile_sending_economic_support
+					days = 30
+				}
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_recieving_economic_support
+					days = 30
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			add_to_variable = { AFR.tana_allegiance = 1 }
+			custom_effect_tooltip = nile_increases_allegiance
+			TAC = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_tana_allegiance_2 = {	## supporting political policy and enforcing ban on judaist parties
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = AFR
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
+		days_remove = 35
+
+		available = {
+			check_variable = {
+				var = AFR.tana_allegiance
+				value = 0
+				compare = greater_than
+			}
+			OR = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 0
+					compare = greater_than
+				}
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 0
+					compare = greater_than
+				}
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = JUD_and_AFR_influence_tooltip
+			if = {
+				limit = {
+					AFR = { has_completed_focus = AFR_deutscher_nil }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_banned_political_activity
+					days = 35
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			if = {
+				limit = {
+					check_variable = {
+						var = JUD.tana_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { JUD.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_allegiance
+			}
+			else = {
+				subtract_from_variable = { JUD.tana_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_JUD_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = AFR.tana_allegiance
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { AFR.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_increases_allegiance
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	AFR_tana_pressure = {	## starts civil wars, puppets, annexations, alliances
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			tag = AFR
+			OR = {
+				has_completed_focus = AFR_the_nil_wars
+				has_completed_focus = AFR_nazi_reclamation
+				has_completed_focus = AFR_deutscher_nil
+				has_global_flag = khartoum_pressured
+				has_global_flag = solomon_pressured
+				has_global_flag = nuer_pressured
+				has_global_flag = beja_pressured
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+
+		available = {
+			OR = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+			check_variable = {
+				var = AFR_pressuring
+				value = 0
+				compare = equals
+			}
+			NOT = { has_global_flag = tana_pressured }
+			OR = {
+				has_completed_focus = AFR_the_nil_wars
+				has_completed_focus = AFR_nazi_reclamation
+				has_completed_focus = AFR_deutscher_nil
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = nile_pressure_requirements
+			set_variable = { AFR_pressuring = 1 }
+			TAC = { JUD = { country_event = nile.1 } }
+		}
+		remove_effect = {
+			set_global_flag = tana_pressured
+			set_variable = { AFR_pressuring = 0 }
+			custom_effect_tooltip = nile_pressure_JUD
+			# if AFR Hi Lev, Lo Aleg, and JUD Lo Lev, Lo Aleg, AFR PUPPETS
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				AFR = { puppet = TAC }
+			}
+			# if AFR Lo Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ALLIES AND PARTY CHANGE
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				TAC = {
+					set_politics = {
+						ruling_party = fascism
+					}
+					give_guarantee = AFR
+				}
+				AFR = { give_guarantee = TAC }
+			}
+			# if AFR Med Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ALLIES
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 1
+								compare = less_than
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				TAC = { give_guarantee = AFR }
+				AFR = { give_guarantee = TAC }
+			}
+			# if AFR Hi Lev, Hi Alleg, and JUD Lo Lev, Lo Alleg, AFR ANNEX
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				AFR = {
+					annex_country = {
+						target = TAC
+						transfer_troops = yes
+					}
+				}
+			}
+			# if AFR Hi, and JUD Hi, CIVIL WAR, with tags set based on Annex, Puppet, Ally
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						OR = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+					}
+				}
+				TAC = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = JUD.tana_arms
+					}
+					start_civil_war = {
+						ideology = fascism
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = JUD_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = JUD_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = JUD.tana_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = JUD.tana_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = AFR.tana_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = AFR.tana_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = JUD_annex
+					}
+				}
+				every_country_with_original_tag = {
+					limit = {
+						NOT = { has_country_flag = JUD_puppet }
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = AFR.tana_arms
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = AFR.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = AFR.tana_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = AFR_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = AFR.tana_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = AFR.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = AFR_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = AFR.tana_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = AFR.tana_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = JUD.tana_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = JUD.tana_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = AFR_annex
+					}
+				}
+				 ### If JUD and AFR both want to annex, all out war starts
+				if = {
+					limit = {
+						AND = {
+							AND = {
+								check_variable = {
+									var = AFR.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = AFR.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+					}
+					AFR = {
+						declare_war_on = {
+							target = JUD
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = TAC
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+
+	################ TACRTOUM JUDEA INFLUENCE #######################################################
+
+
+	JUD_tana_leverage_1 = {	## arming enemies in idle
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = JUD
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		cost = 25
+
+		days_remove = 15
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 400
+			}
+			check_variable = {
+				var = JUD.tana_leverage
+				value = 2
+				compare = less_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = leverage_not_at_max_tooltip
+			add_political_power = -25
+			add_to_variable = { JUD.tana_arms = 400 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			add_to_variable = { JUD.tana_leverage = 1 }
+			custom_effect_tooltip = nile_increases_leverage
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	JUD_tana_leverage_2 = {	## embargo and isolate
+		icon = {
+			key = GFX_decisions_nile_leverage_none
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_medium
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_leverage_high
+			trigger = {
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = JUD
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				has_political_power > 9
+			}
+			else = {
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = decision_cost_leverage
+
+		days_remove = 25
+
+		available = {
+			AND = {
+				check_variable = {
+					var = JUD.nuer_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = JUD.beja_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = JUD.solomon_allegiance
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			check_variable = {
+				var = JUD.khartoum_leverage
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = JUD.khartoum_allegiance
+				value = 0
+				compare = greater_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = nile_isolate_requirements
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				add_political_power = -10
+			}
+			else = {
+				add_political_power = -25
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_isolation
+					days = 25
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			if = {
+				limit = {
+					check_variable = {
+						var = AFR.tana_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { AFR.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_AFR_allegiance
+			}
+			else = {
+				subtract_from_variable = { AFR.tana_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_AFR_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = JUD.tana_leverage
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { JUD.tana_leverage = 1 }
+				custom_effect_tooltip = nile_increases_leverage
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	JUD_tana_allegiance_1 = {	## sending economic support
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = JUD
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
+		days_remove = 15
+
+		available = {
+			check_variable = {
+				var = JUD.tana_allegiance
+				value = 2
+				compare = less_than
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = allegiance_not_at_max_tooltip
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
+			JUD = {
+				add_timed_idea = {
+					idea = nile_sending_economic_support
+					days = 30
+				}
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_recieving_economic_support
+					days = 30
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			add_to_variable = { JUD.tana_allegiance = 1 }
+			custom_effect_tooltip = nile_increases_allegiance
+			TAC = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	JUD_tana_allegiance_2 = {	## supporting political policy and enforcing ban on judaist parties
+		icon = {
+			key = GFX_decisions_nile_allegiance_none
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_medium
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		icon = {
+			key = GFX_decisions_nile_allegiance_high
+			trigger = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		visible = {
+			tag = JUD
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		custom_cost_trigger = {
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				has_political_power > 19
+			}
+			else = {
+				has_political_power > 39
+			}
+		}
+		custom_cost_text = decision_cost_allegiance
+
+		days_remove = 35
+
+		available = {
+			check_variable = {
+				var = JUD.tana_allegiance
+				value = 0
+				compare = greater_than
+			}
+			OR = {
+				check_variable = {
+					var = AFR.tana_allegiance
+					value = 0
+					compare = greater_than
+				}
+				check_variable = {
+					var = AFR.tana_leverage
+					value = 0
+					compare = greater_than
+				}
+			}
+			NOT = { has_global_flag = tana_pressured }
+		}
+		complete_effect = {
+			custom_effect_tooltip = JUD_and_AFR_influence_tooltip
+			if = {
+				limit = {
+					JUD = { has_completed_focus = JUD_allies_on_the_nile }
+				}
+				add_political_power = -20
+			}
+			else = {
+				add_political_power = -40
+			}
+			TAC = {
+				add_timed_idea = {
+					idea = nile_banned_political_activity
+					days = 35
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = nile_influence_amounts_TAC
+			if = {
+				limit = {
+					check_variable = {
+						var = AFR.tana_allegiance
+						value = 0
+						compare = greater_than
+					}
+				}
+				subtract_from_variable = { AFR.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_decreases_AFR_allegiance
+			}
+			else = {
+				subtract_from_variable = { AFR.tana_leverage = 1 }
+				custom_effect_tooltip = nile_decreases_AFR_leverage
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = JUD.tana_allegiance
+						value = 2
+						compare = less_than
+					}
+				}
+				add_to_variable = { JUD.tana_allegiance = 1 }
+				custom_effect_tooltip = nile_increases_allegiance
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	JUD_tana_pressure = {	## starts civil wars, puppets, annexations, alliances
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			tag = JUD
+			OR = {
+				has_completed_focus = JUD_solidify_jerusalem_accords
+				has_global_flag = khartoum_pressured
+				has_global_flag = solomon_pressured
+				has_global_flag = nuer_pressured
+				has_global_flag = beja_pressured
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 861 }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+
+		available = {
+			OR = {
+				check_variable = {
+					var = JUD.tana_allegiance
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = JUD.tana_leverage
+					value = 2
+					compare = equals
+				}
+			}
+			check_variable = {
+				var = JUD_pressuring
+				value = 0
+				compare = equals
+			}
+			NOT = { has_global_flag = tana_pressured }
+			OR = {
+				has_completed_focus = JUD_solidify_jerusalem_accords
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = nile_pressure_requirements
+			set_variable = { JUD_pressuring = 1 }
+			TAC = { AFR = { country_event = nile.2 } }
+		}
+		remove_effect = {
+			set_global_flag = tana_pressured
+			set_variable = { JUD_pressuring = 0 }
+			custom_effect_tooltip = nile_pressure_JUD
+			# if JUD Hi Lev, Lo Aleg, and AFR Lo Lev, Lo Aleg, JUD PUPPETS
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				JUD = { puppet = TAC }
+			}
+			# if JUD Lo Lev, Hi Alleg, and AFR Lo Lev, Lo Alleg, JUD ALLIES AND PARTY CHANGE
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				TAC = {
+					set_politics = {
+						ruling_party = fascism
+					}
+					give_guarantee = JUD
+				}
+				JUD = { give_guarantee = TAC }
+			}
+			# if JUD Med Lev, Hi Alleg, and AFR Lo Lev, Lo Alleg, JUD ALLIES
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 1
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				TAC = { give_guarantee = JUD }
+				JUD = { give_guarantee = TAC }
+			}
+			# if JUD Hi Lev, Hi Alleg, and AFR Lo Lev, Lo Alleg, JUD ANNEX
+			if = {
+				limit = {
+					AND = {
+						AND = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						AND = {
+							check_variable = {
+								var = AFR.tana_leverage
+								value = 2
+								compare = less_than
+							}
+							check_variable = {
+								var = AFR.tana_allegiance
+								value = 2
+								compare = less_than
+							}
+						}
+					}
+				}
+				JUD = {
+					annex_country = {
+						target = TAC
+						transfer_troops = yes
+					}
+				}
+			}
+			# if JUD Hi, and AFR Hi, CIVIL WAR, with tags set based on Annex, Puppet, Ally
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+						OR = {
+							check_variable = {
+								var = JUD.tana_leverage
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = JUD.tana_allegiance
+								value = 2
+								compare = equals
+							}
+						}
+					}
+				}
+				TAC = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = JUD.tana_arms
+					}
+					start_civil_war = {
+						ideology = fascism
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = JUD_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = JUD_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = AFR.tana_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = AFR.tana_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = JUD.tana_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = JUD.tana_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = JUD_annex
+					}
+				}
+				every_country_with_original_tag = {
+					limit = {
+						NOT = { has_country_flag = JUD_puppet }
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = JUD.tana_arms
+					}
+					 ### Post Civil War Results
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = less_than
+								}
+							}
+						}
+						set_country_flag = JUD_puppet
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = less_than
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+						set_country_flag = JUD_ally
+					}
+					if = {
+						limit = {
+							AND = {
+								AND = {
+									check_variable = {
+										var = JUD.tana_leverage
+										value = 2
+										compare = equals
+									}
+									check_variable = {
+										var = JUD.tana_allegiance
+										value = 2
+										compare = equals
+									}
+								}
+								OR = {
+									check_variable = {
+										var = AFR.tana_leverage
+										value = 2
+										compare = less_than
+									}
+									check_variable = {
+										var = AFR.tana_allegiance
+										value = 2
+										compare = less_than
+									}
+								}
+							}
+						}
+						set_country_flag = JUD_annex
+					}
+				}
+				 ### If AFR and JUD both want to annex, all out war starts
+				if = {
+					limit = {
+						AND = {
+							AND = {
+								check_variable = {
+									var = JUD.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = JUD.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+							AND = {
+								check_variable = {
+									var = AFR.tana_leverage
+									value = 2
+									compare = equals
+								}
+								check_variable = {
+									var = AFR.tana_allegiance
+									value = 2
+									compare = equals
+								}
+							}
+						}
+					}
+					JUD = {
+						declare_war_on = {
+							target = AFR
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = TAC
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

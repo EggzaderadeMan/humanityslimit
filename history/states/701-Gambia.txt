@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = MLK
+		add_core_of = MLK
 		victory_points = {
 			4989 1 
 		}

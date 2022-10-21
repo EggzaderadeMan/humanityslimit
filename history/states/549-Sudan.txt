@@ -4,17 +4,14 @@ state={
 	name="STATE_549"
 	manpower = 3694293
 	resources={
-		oil=15
-		rations=30
+		rations=17
 	}
 	state_category = rural
 	
 	
 	history={
-		owner = UNC
-		victory_points = {
-			2096 1
-		}
+		owner = KHR
+		add_core_of = KHR
 		victory_points = {
 			12806 3
 		}
@@ -26,6 +23,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1914 2016 4961 7925 10743 10784 10795 12806 12881 
+		10743 10784 12806 12881 
 	}
 }

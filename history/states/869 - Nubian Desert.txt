@@ -1,0 +1,21 @@
+state=
+{
+	id=869
+	name="STATE_869"
+	manpower = 600600
+	state_category = rural
+	impassable = yes
+	
+	history=
+	{
+		add_core_of = RED
+		owner = RED
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	local_supplies=0.0
+	provinces={
+		10902 
+	}
+}

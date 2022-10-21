@@ -15,8 +15,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = UNC
-
+		owner = MOS
+		add_core_of = MOS
 		victory_points = {
 
 			10836 1

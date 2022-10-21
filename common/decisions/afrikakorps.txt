@@ -1,3 +1,86 @@
+AFR_egypt_mission_category = {
+	AFR_egypt_mission = {
+		activation = {
+			always = no
+		}
+		available = {
+			447 = { controller = { tag = AFR } }
+			446 = { controller = { tag = AFR } }
+			457 = { controller = { tag = AFR } }
+			456 = { controller = { tag = AFR } }
+			452 = { controller = { tag = AFR } }
+			552 = { controller = { tag = AFR } }
+		}
+		icon = GFX_decision_hol_exchange_intelligence_data
+		days_mission_timeout = 120
+
+		complete_effect = {
+			add_stability = 0.15
+			add_political_power = 75
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_stability < 0.26
+				}
+				complete_national_focus = AFR_generals_rule_no_more
+			}
+			add_stability = -0.05
+			add_political_power = -10
+			if = {
+				limit = {
+					has_completed_focus = AFR_continue_the_kempf_generalship
+				}
+				activate_mission = AFR_egypt_mission_kempf
+			}
+			else = {
+				activate_mission = AFR_egypt_mission
+			}
+		}
+	}
+	AFR_egypt_mission_kempf = {
+		activation = {
+			always = no
+		}
+		available = {
+			447 = { controller = { tag = AFR } }
+			446 = { controller = { tag = AFR } }
+			457 = { controller = { tag = AFR } }
+			456 = { controller = { tag = AFR } }
+			452 = { controller = { tag = AFR } }
+			552 = { controller = { tag = AFR } }
+		}
+		icon = GFX_decision_hol_exchange_intelligence_data
+		days_mission_timeout = 60
+
+		complete_effect = {
+			add_stability = 0.15
+			add_political_power = 75
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_stability < 0.26
+				}
+				complete_national_focus = AFR_generals_rule_no_more
+			}
+			add_stability = -0.05
+			add_political_power = -10
+			if = {
+				limit = {
+					has_completed_focus = AFR_continue_the_kempf_generalship
+				}
+				activate_mission = AFR_egypt_mission_kempf
+			}
+			else = {
+				activate_mission = AFR_egypt_mission
+			}
+		}
+	}
+}
+
 AFR_mending_wounds = {
 	AFR_government_criticisms = {
 		icon = GFX_decision_hol_exchange_intelligence_data
@@ -322,15 +405,21 @@ AFR_religious_support_decisions = {
 
 		cost = 10
 		days_re_enable = 90
+		days_remove = 45
 
 		available = {
 			command_power > 20
+			NOT = { has_country_flag = AFR_taking_religious_support }
 		}
 		complete_effect = {
+			set_country_flag = AFR_taking_religious_support
 			custom_effect_tooltip = AFR_current_religious_support
 			add_command_power = -20
 			add_to_variable = { AFR_religious_support = 1 }
 			custom_effect_tooltip = AFR_increases_religious_support
+		}
+		remove_effect = {
+			clr_country_flag = AFR_taking_religious_support
 		}
 	}
 	AFR_bribe_influential_cultists = {
@@ -341,8 +430,14 @@ AFR_religious_support_decisions = {
 
 		cost = 20
 		days_re_enable = 90
+		days_remove = 45
+
+		available = {
+			NOT = { has_country_flag = AFR_taking_religious_support }
+		}
 
 		complete_effect = {
+			set_country_flag = AFR_taking_religious_support
 			custom_effect_tooltip = AFR_current_religious_support
 			random_list = {
 				90 = {
@@ -356,6 +451,9 @@ AFR_religious_support_decisions = {
 				}
 			}
 		}
+		remove_effect = {
+			clr_country_flag = AFR_taking_religious_support
+		}
 	}
 	AFR_save_leader_from_excommunication = {
 		icon = GFX_decision_hol_exchange_intelligence_data
@@ -365,8 +463,14 @@ AFR_religious_support_decisions = {
 
 		cost = 15
 		days_re_enable = 180
+		days_remove = 90
+
+		available = {
+			NOT = { has_country_flag = AFR_taking_religious_support }
+		}
 
 		complete_effect = {
+			set_country_flag = AFR_taking_religious_support
 			custom_effect_tooltip = AFR_current_religious_support
 			random_list = {
 				95 = {
@@ -379,6 +483,9 @@ AFR_religious_support_decisions = {
 					custom_effect_tooltip = AFR_decreases_religious_support_10
 				}
 			}
+		}
+		remove_effect = {
+			clr_country_flag = AFR_taking_religious_support
 		}
 	}
 }
@@ -649,18 +756,16 @@ AFR_baida_decisions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_railway_level = {
-						state = 450
-						level = 4
-					}
-					has_railway_level = {
-						state = 450
-						level = 5
-					}
-					450 = {
-						infrastructure > 4
-					}
+				has_railway_level = {
+					state = 450
+					level = 4
+				}
+				has_railway_level = {
+					state = 450
+					level = 5
+				}
+				450 = {
+					infrastructure > 4
 				}
 			}
 			check_variable = {
@@ -670,6 +775,8 @@ AFR_baida_decisions = {
 			}
 		}
 		complete_effect = {
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 			custom_effect_tooltip = baida_works_tooltip
 			set_variable = { baida_works_in_progress = 1 }
 		}
@@ -728,6 +835,8 @@ AFR_baida_decisions = {
 			}
 		}
 		complete_effect = {
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 			custom_effect_tooltip = baida_works_tooltip
 			set_variable = { baida_works_in_progress = 1 }
 		}
@@ -766,6 +875,8 @@ AFR_baida_decisions = {
 			}
 		}
 		complete_effect = {
+			subtract_from_variable = { religious_support = 1 }
+			custom_effect_tooltip = AFR_decreases_religious_support
 			custom_effect_tooltip = baida_works_tooltip
 			set_variable = { baida_works_in_progress = 1 }
 		}

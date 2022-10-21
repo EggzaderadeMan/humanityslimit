@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = ASH
+		add_core_of = ASH
 		victory_points = {
 			10862 1 
 		}

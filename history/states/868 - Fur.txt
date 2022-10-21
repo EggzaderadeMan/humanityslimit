@@ -1,0 +1,25 @@
+
+state={
+	id=868
+	name="STATE_868"
+	manpower = 3694293
+	resources={
+		rations=5
+	}
+	state_category = rural
+	
+	
+	history={
+		owner = BAG
+		add_core_of = BAG
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		1473 5060 
+	}
+}

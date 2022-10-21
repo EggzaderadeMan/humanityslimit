@@ -4,21 +4,21 @@ state=
 	name="STATE_550"
 	manpower = 600600
 	resources={
-		tungsten=16
+		tungsten=5
 	}
 	state_category = rural
 	
 	history=
 	{
-		add_core_of = ETH
-		owner = UNC
+		add_core_of = RED
+		owner = RED
 		buildings = {
 			infrastructure = 4
-			air_base = 3
+			air_base = 1
 		}
 	}
 	local_supplies=0.0
 	provinces={
-		2088 5017 5047 10902 12723 
+		2088 5047 
 	}
 }

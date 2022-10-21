@@ -1,0 +1,26 @@
+
+state={
+	id=860
+	name="STATE_860"
+	manpower = 3694293
+	resources={
+		oil=8
+		rations=19
+	}
+	state_category = rural
+	
+	
+	history={
+		owner = NUE
+		add_core_of = NUE
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		4033 12744 12800 12887 
+	}
+}

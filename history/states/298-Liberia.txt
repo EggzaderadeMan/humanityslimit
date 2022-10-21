@@ -13,7 +13,8 @@ state=
 	
 
 	history= {
-		owner = UNC
+		owner = LRA
+		add_core_of = LRA
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

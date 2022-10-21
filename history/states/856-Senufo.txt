@@ -13,7 +13,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = UNC
+		owner = SSE
+		add_core_of = SSE
 		buildings = {
 			infrastructure = 3
 		}

@@ -10,7 +10,8 @@ state={
 		aluminium=15
 	}
 	history={
-		owner = UNC
+		owner = FUL
+		add_core_of = FUL
 		victory_points = {
 			12891 1
 		}

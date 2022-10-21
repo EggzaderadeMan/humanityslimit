@@ -5,7 +5,7 @@ state=
 	manpower = 10000000
 	resources={
 		tungsten=10
-		rations=22
+		rations=12
 	}
 	
 	state_category = town
@@ -21,11 +21,11 @@ state=
 		victory_points = { 
 			1984 1.0 
 		}
-		add_core_of = ETH
-		owner = UNC
+		add_core_of = TAC
+		owner = TAC
 	}
 
 	local_supplies=0.0
 	provinces=
-	{ 1984 2040 4918 4954 12862 13137  	}
+	{ 1984 2040 4954 13137  	}
 }

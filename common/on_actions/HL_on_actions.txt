@@ -1,11 +1,13 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			set_variable = { khartoum_AFR_leverage = 1 }
-			set_variable = { khartoum_JUD_allegiance = 1 }
-			set_variable = { solomon_JUD_allegiance = 1 }
-			set_variable = { leverage_cost = 25 }
-			set_variable = { allegiance_cost = 40 }
+			set_variable = { AFR.khartoum_leverage = 1 }
+			set_variable = { JUD.khartoum_allegiance = 1 }
+			set_variable = { JUD.solomon_allegiance = 1 }
+			set_variable = { AFR.leverage_cost = 25 }
+			set_variable = { AFR.allegiance_cost = 40 }
+			set_variable = { JUD.leverage_cost = 25 }
+			set_variable = { JUD.allegiance_cost = 40 }
 		}
 	}
 	on_declare_war = {
@@ -22,6 +24,22 @@ on_actions = {
 					}
 				}
 				set_global_flag = nilkrieg
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = AFR_annex
+				}
+				## AFR annexes FROM + plus Event
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_annex
+				}
+				## JUD annexes FROM + plus Event
 			}
 		}
 	}

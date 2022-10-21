@@ -1031,10 +1031,14 @@ focus_tree = {
 			focus = AFR_forming_a_new_generalship
 		}
 		completion_reward = {
+			custom_effect_tooltip = AFR_kempf_mission_tooltip
+			add_days_mission_timeout = {
+				mission = AFR_egypt_mission
+				days = -60
+			}
 			add_ideas = AFR_command_disobedience
-			add_political_power = -100
-			add_stability = 0.10
-			 ### Set a tigher mission for reconquering Egypt
+			add_political_power = 100
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -1093,8 +1097,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlocks_nile_pressure
-			set_variable = { leverage_cost = 10 }
-			set_variable = { allegiance_cost = 20 }
+			custom_effect_tooltip = decreases_leverage_cost
+			custom_effect_tooltip = decreases_allegiance_cost
+			set_variable = { AFR.leverage_cost = 10 }
+			set_variable = { AFR.allegiance_cost = 20 }
 			build_railway = {
 				path = { 12044 7073 1028 12771 8105 }
 			}
@@ -1677,17 +1683,8 @@ focus_tree = {
 		}
 
 		available = {
-			check_variable = {
-				var = religious_support
-				value = 25
-				compare = less_than
-			}
-			check_variable = {
-				var = upper_class_support
-				value = 10
-				compare = less_than
-			}
-			 ### Activated by Event - if Core States controlled, and low RS<30, UPS<15 (if upper class focus taken)
+			always = no
+			### Activated by Egypt Mission Timer eventually
 		}
 		completion_reward = {
 			 ### civil war

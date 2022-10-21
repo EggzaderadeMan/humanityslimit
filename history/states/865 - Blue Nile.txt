@@ -1,0 +1,27 @@
+state=
+{
+	id=865
+	name="STATE_865"
+	manpower = 10000000
+	resources={
+		rations=10
+	}
+	
+	state_category = rural
+
+	history=
+	{
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = TAC
+		owner = TAC
+	}
+
+	local_supplies=0.0
+	provinces=
+	{ 4918 12862  	}
+}
