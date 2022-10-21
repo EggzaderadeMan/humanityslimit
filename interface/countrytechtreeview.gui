@@ -2840,23 +2840,23 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "iw_large_airframe_tree"
-				position = { x = 235 y = 32 }
+				position = { x = 430 y = 32 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
 			gridboxtype = {
-				name = "basic_small_helicopter_tree"
-				position = { x = 715 y = 32 }
+				name = "basic_small_helicopter_airframe_tree"
+				position = { x = 560 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 60 height = 70 }
 				format = "UP"
 			}
 
 			gridboxtype = {
-				name = "basic_large_helicopter_tree"
-				position = { x = 850 y = 32 }
+				name = "basic_large_helicopter_airframe_tree"
+				position = { x = 790 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 60 height = 70 }
 				format = "UP"
@@ -2864,7 +2864,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_bombs_tree"
-				position = { x =935 y = 32 }
+				position = { x =950 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2872,7 +2872,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "aa_lmg_tree"
-				position = { x = 1235 y = 32 }
+				position = { x = 1360 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2880,7 +2880,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "engines_1_tree"
-				position = { x = 1605 y = 32 }
+				position = { x = 1770 y = 32 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

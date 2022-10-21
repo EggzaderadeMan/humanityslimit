@@ -33,13 +33,65 @@ on_actions = {
 				limit = {
 					has_country_flag = AFR_annex
 				}
-				## AFR annexes FROM + plus Event
+				AFR = {
+					annex_country = {
+						target = FROM
+						transfer_troops = yes
+					}
+				}
 			}
 			if = {
 				limit = {
 					has_country_flag = JUD_annex
 				}
-				## JUD annexes FROM + plus Event
+				JUD = {
+					annex_country = {
+						target = FROM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = AFR_puppet
+				}
+				AFR = { puppet = FROM }
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_puppet
+				}
+				JUD = { puppet = FROM }
+			}
+			if = {
+				limit = {
+					has_country_flag = AFR_ally
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					AFR = { add_to_faction = FROM }
+				}
+				else = {
+					AFR = { give_guarantee = FROM }
+					FROM = { give_guarantee = AFR }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_ally
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					JUD = { add_to_faction = FROM }
+				}
+				else = {
+					JUD = { give_guarantee = FROM }
+					FROM = { give_guarantee = JUD }
+				}
 			}
 		}
 	}
