@@ -11,8 +11,8 @@ state={
 	state_category = enclave
 
 	history={
-		add_core_of = ETH
-		owner = UNC
+		add_core_of = HPS
+		owner = HPS
 		victory_points = {
 			8124 1
 		}

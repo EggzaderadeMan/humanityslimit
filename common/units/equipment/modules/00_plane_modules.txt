@@ -1186,6 +1186,24 @@ equipment_modules = {
 ##    ## ##        ##       ##    ##  ##  ##     ## ##          ##     ## ##     ## ##     ## ##     ## ##       ##       ##    ##               ##       ##     ## ##    ##  ##    ##  ##       
  ######  ##        ########  ######  #### ##     ## ########    ##     ## ########   #######   #######  ######## ########  ######                ######## ##     ## ##     ##  ######   ######## 
 
+	transport_bay = {
+		abbreviation = "tpb"
+		category = plane_special_module_transport
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -10
+			air_agility = -10
+			build_cost_ic = 3
+			weight = 20
+		}
+
+		allow_mission_type = {
+			paradrop
+			air_supply
+		}
+	}
+
 	armor_plate_large = {
 		abbreviation = "apl"
 		category = plane_special_module_large
@@ -2078,7 +2096,7 @@ equipment_modules = {
 		parent = bomb_sights_1
 
 		add_stats = {
-			air_bombing = 6
+			air_bombing = 8
 			build_cost_ic = 2
 			weight = 1
 		}

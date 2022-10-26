@@ -742,25 +742,25 @@ units = {
 
 air_wings = {
 	451 = {
-		fighter_equipment_1 = {
+		small_plane_airframe_0 = {
 			owner = "AFR"
 			amount = 100
 		}
-		tac_bomber_equipment_1 = {
+		small_plane_cas_airframe_0 = {
 			owner = "AFR"
 			amount = 50
 		}
-		CAS_equipment_1 = {
+		small_helicopter_cas_airframe_0 = {
 			owner = "AFR"
 			amount = 100
 		}
 	}
 	118 = {
-		fighter_equipment_1 = {
+		small_plane_airframe_0 = {
 			owner = "AFR"
 			amount = 250
 		}
-		CAS_equipment_1 = {
+		small_helicopter_cas_airframe_0 = {
 			owner = "AFR"
 			amount = 150
 		}

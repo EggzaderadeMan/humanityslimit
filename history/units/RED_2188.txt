@@ -1,0 +1,90 @@
+division_template = {
+	name = "Tajnid almalik Hadendowa" # King of Hadendowa's Levy
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Tajnid almalik Bajatan" # King of Beja's Levy
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Murtaziqat Tighray" # Tigray Mercenaries
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5047
+		division_template = "Tajnid almalik Bajatan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2088
+		division_template = "Tajnid almalik Bajatan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5017
+		division_template = "Tajnid almalik Hadendowa"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12723
+		division_template = "Murtaziqat Tighray"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RED"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

@@ -656,7 +656,7 @@ technologies = {
 		}
 	}
 
-	improved_fire_control_system = {
+	improved_fire_control_system = { 
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_2

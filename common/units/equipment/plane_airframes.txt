@@ -481,6 +481,7 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_medium
 					plane_special_module_defense_turret
+					plane_special_module_transport
 				}
 			}
 
@@ -721,6 +722,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					mine_warfare_defense
+					plane_special_module_transport
 				}
 			}
 
@@ -843,6 +845,7 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_medium
 					mine_warfare_defense
+					plane_special_module_transport
 				}
 			}
 
@@ -969,6 +972,9 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_type
 					twin_plane_engine_type
+					plane_jet_engine_type
+					twin_plane_jet_engine_type
+					plane_rocket_engine_type
 				}
 			}
 
@@ -1168,6 +1174,9 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_type
 					twin_plane_engine_type
+					plane_jet_engine_type
+					twin_plane_jet_engine_type
+					plane_rocket_engine_type
 				}
 			}
 
@@ -1798,6 +1807,7 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_large
 					mine_warfare_defense
+					plane_special_module_transport
 				}
 			}
 
@@ -2029,6 +2039,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					mine_warfare_defense
+					plane_special_module_transport
 				}
 			}
 
@@ -2176,6 +2187,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					mine_warfare_defense
+					plane_special_module_transport
 				}
 			}
 
