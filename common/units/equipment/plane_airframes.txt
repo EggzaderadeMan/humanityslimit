@@ -422,10 +422,9 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					cas_weapon
+					tac_weapon
 					fighter_weapon
 					recon_camera
-					nav_bomber_weapon
 				}
 			}
 
@@ -434,6 +433,7 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_offense
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -444,6 +444,7 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_offense
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -454,6 +455,7 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_offense
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -657,10 +659,9 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					cas_weapon
+					tac_weapon
 					fighter_weapon
 					recon_camera
-					nav_bomber_weapon
 				}
 			}
 
@@ -668,6 +669,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -678,6 +680,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -688,6 +691,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -781,10 +785,9 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					cas_weapon
+					tac_weapon
 					fighter_weapon
 					recon_camera
-					nav_bomber_weapon
 				}
 			}
 
@@ -792,6 +795,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -802,6 +806,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -812,6 +817,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
