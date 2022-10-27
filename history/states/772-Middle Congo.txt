@@ -5,9 +5,7 @@ state={
 
 	name="STATE_772" # Middle Congo (Brazzaville)
 	resources = {
-		rubber=8
-		oil=15
-		rations=2
+		rations=4
 	}
 
 	manpower = 746415

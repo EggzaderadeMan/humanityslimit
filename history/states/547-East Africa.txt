@@ -4,7 +4,8 @@ state={
 	name="STATE_547" #Kenya
 	manpower = 3392000
 	resources={
-		rations=9
+		rations=14
+		noble=5
 	}
 	state_category = rural
 
@@ -16,16 +17,10 @@ state={
 			5210 = {
 				naval_base = 2
 			}
-#			2196 = {
-#				naval_base = 2
-#			}
 		}
 		victory_points = {
 			5210 1
 		}
-#		victory_points = {
-#			2196 1
-#		}
 		victory_points = {
 			1939 2
 		}

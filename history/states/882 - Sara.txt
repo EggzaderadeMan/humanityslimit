@@ -5,7 +5,7 @@ state={
 		1993 
 	}
 	resources={
-		
+		rations=2
 	}
 	history={
 		owner = SAR

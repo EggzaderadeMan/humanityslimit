@@ -4,8 +4,7 @@ state={
 
 	state_category = rural
 	resources={
-		oil=10
-		rations=22
+		rations=8
 	}
 	history={
 		owner = UGA

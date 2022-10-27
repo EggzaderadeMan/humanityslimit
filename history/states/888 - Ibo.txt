@@ -5,13 +5,13 @@ state={
 		12900 1992 13247 13246 
 	}
 	resources={
-		
+		rations=23
 	}
 	history={
 		owner = IBO
 		add_core_of = IBO
 		buildings = {
-			
+			infrastructure=2
 		}
 	}
 	manpower=2435858

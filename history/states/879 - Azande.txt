@@ -5,12 +5,12 @@ state={
 		1953 2034 10764 11934 12719 3165 
 	}
 	resources={
-		
+		rations=5
 	}
 	history={
 		owner = AZA
 		buildings = {
-			
+			infrastructure=1
 		}
 	}
 	manpower=2435858

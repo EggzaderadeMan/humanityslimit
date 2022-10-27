@@ -5,12 +5,12 @@ state={
 		10917 10805 10780 
 	}
 	resources={
-		
+		rations=5
 	}
 	history={
 		owner = UNC
 		buildings = {
-			
+			infrastructure = 1
 		}
 	}
 	manpower=2435858

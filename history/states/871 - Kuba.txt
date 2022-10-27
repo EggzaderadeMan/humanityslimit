@@ -5,12 +5,12 @@ state={
 		7161 10858 1731 10766 8016 
 	}
 	resources={
-		
+		rations=2
 	}
 	history={
 		owner = TKK
 		buildings = {
-			
+			infrastructure=2
 		}
 	}
 	manpower=2435858

@@ -5,8 +5,9 @@ state={
 		1929 1516 4515 1817 191
 	}
 	resources={
-		rations=3.000
-		noble=8.000
+		rations=2
+		noble=13
+		chromium=4
 	}
 	history={
 		owner = TKK

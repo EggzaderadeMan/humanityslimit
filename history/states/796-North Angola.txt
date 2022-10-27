@@ -1,4 +1,10 @@
 state={
+
+	resources = {
+		rations=1
+		noble=6
+	}
+
 	id=796
 	name="STATE_796"
 	history={

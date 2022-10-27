@@ -6,13 +6,12 @@ state={
 	
 	state_category = wasteland
 	resources={
-		rations=4
-		noble=4
+		rations=2
 	}
 	history={
 		owner = TKK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 
 		add_core_of = TKK

@@ -5,13 +5,13 @@ state={
 		13262 13263 5054 
 	}
 	resources={
-		
+		rations=6
 	}
 	history={
 		owner = BNE
 		add_core_of = BNE
 		buildings = {
-			
+			infrastructure=1
 		}
 	}
 	manpower=2435858

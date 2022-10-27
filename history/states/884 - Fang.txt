@@ -5,12 +5,12 @@ state={
 		13264 10948 13308 
 	}
 	resources={
-		
+		rations=2
 	}
 	history={
 		owner = FAN
 		buildings = {
-			
+			infrastructure=1
 		}
 	}
 	manpower=2435858

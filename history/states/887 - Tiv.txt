@@ -5,13 +5,13 @@ state={
 		4889 7978 13256 6039 9137 2025 4938 10820 13245 
 	}
 	resources={
-		
+		rations=35
 	}
 	history={
 		owner = TIV
 		add_core_of = TIV
 		buildings = {
-			
+			infrastructure=2
 		}
 	}
 	manpower=2435858

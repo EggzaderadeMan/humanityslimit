@@ -5,7 +5,7 @@ state={
 	manpower = 3694293
 	resources={
 		tungsten=10
-		rations=8
+		rations=13
 	}
 	state_category = rural
 	

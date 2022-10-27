@@ -4,8 +4,8 @@ state={
 
 	name="STATE_777"
 	resources = {
-		tungsten=5
-		rations=8
+		tungsten=6
+		rations=4
 	}
 
 
@@ -14,18 +14,9 @@ state={
 		owner = ALC
 		add_core_of = ALC
 
-#		victory_points = {
-#			1951 1
-#		}
-
 		buildings = {
 
 			infrastructure = 3
-
-#			1951 = {
-#				naval_base = 1
-#			}
-
 
 		}
 

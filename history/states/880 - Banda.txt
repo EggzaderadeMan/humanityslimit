@@ -5,12 +5,12 @@ state={
 		13269 5084 
 	}
 	resources={
-		
+		rations=1
 	}
 	history={
 		owner = BND
 		buildings = {
-			
+			infrastructure=1
 		}
 	}
 	manpower=2435858

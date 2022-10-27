@@ -6,13 +6,12 @@ state={
 	
 	state_category = pastoral
 	resources={
-		rations=36
+		oil=15
+		rubber=8
+		rations=1
 	}
 	history={
 		owner = BMR
-#		victory_points = {
-#			12830 1
-#		}
 		buildings = {
 			infrastructure = 2
 		}

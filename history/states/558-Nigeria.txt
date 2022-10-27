@@ -6,11 +6,9 @@ state={
 	
 	state_category = rural
 	resources={
-		rubber=10
-		steel=30
-		tungsten=15
-		oil=25
-		rations=52
+		rubber=12
+		oil=30
+		rations=16
 	}
 	history={
 		owner = ALC
@@ -22,17 +20,11 @@ state={
 			2050 = {
 				naval_base = 3
 			}
-#			10919 = {
-#				naval_base = 1
-#			}
 
 		}
 		victory_points = {
 			2050 1
 		}
-#		victory_points = {
-#			10919 1
-#		}
 
 
 	}

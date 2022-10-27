@@ -5,12 +5,15 @@ state={
 		12830 8078 1974 11108 
 	}
 	resources={
-		
+		rations=3
 	}
 	history={
 		owner = BAA
+		victory_points = {
+			12830 1
+		}
 		buildings = {
-			
+			infrastructure = 1
 		}
 	}
 	manpower=2435858

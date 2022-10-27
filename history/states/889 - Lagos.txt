@@ -5,12 +5,12 @@ state={
 		13241 
 	}
 	resources={
-		
+		steel=25
 	}
 	history={
 		owner = ALC
 		buildings = {
-			
+			infrastructure=3
 		}
 	}
 	manpower=2435858

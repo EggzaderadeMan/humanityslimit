@@ -5,12 +5,12 @@ state={
 		13258 11194 13259 
 	}
 	resources={
-		
+		rations=5
 	}
 	history={
 		owner = FLN
 		buildings = {
-			
+			infrastructure = 1
 		}
 	}
 	manpower=2435858

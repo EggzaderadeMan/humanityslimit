@@ -5,13 +5,13 @@ state={
 		5224 2206 11017 10860 
 	}
 	resources={
-		
+		rations=15
 	}
 	history={
 		owner = MSL
 		add_core_of = MSL
 		buildings = {
-			
+			infrastructure=2
 		}
 	}
 	manpower=2435858

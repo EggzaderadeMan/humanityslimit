@@ -5,12 +5,24 @@ state={
 		10919 1951 
 	}
 	resources={
-		
+		rations=3
+		tungsten=4
 	}
 	history={
 		owner = SGF
+		victory_points = {
+			1951 1
+		}
+		victory_points = {
+			10919 1
+		}
 		buildings = {
-			
+			1951 = {
+				naval_base = 1
+			}
+			10919 = {
+				naval_base = 1
+			}
 		}
 	}
 	manpower=2435858

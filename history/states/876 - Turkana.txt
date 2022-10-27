@@ -5,13 +5,13 @@ state={
 		5160 5079 2066 11145 2096 
 	}
 	resources={
-		
+		rations=7
 	}
 	history={
 		owner = TRK
 		add_core_of = TRK
 		buildings = {
-			
+			infrastructure=1
 		}
 	}
 	manpower=2435858

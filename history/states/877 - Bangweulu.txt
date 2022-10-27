@@ -5,12 +5,12 @@ state={
 		1846 10594 10930 
 	}
 	resources={
-		
+		rations=1
 	}
 	history={
 		owner = PES
 		buildings = {
-			
+			infrastructure=0
 		}
 	}
 	manpower=2435858

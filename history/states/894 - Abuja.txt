@@ -5,12 +5,12 @@ state={
 		13253 13243 8021 13244 
 	}
 	resources={
-		
+		rations=28
 	}
 	history={
 		owner = ALC
 		buildings = {
-			
+			infrastructure=2
 		}
 	}
 	manpower=2435858
