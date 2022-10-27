@@ -1,0 +1,20 @@
+state={
+	id=892
+	name="STATE_892"
+	provinces={
+		5028 13255 4972 13250 13251 
+	}
+	resources={
+		rations=16
+	}
+	history={
+		owner = ALC
+		buildings = {
+			infrastructure=2
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

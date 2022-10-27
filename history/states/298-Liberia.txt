@@ -13,7 +13,8 @@ state=
 	
 
 	history= {
-		owner = UNC
+		owner = LRA
+		add_core_of = LRA
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -28,6 +29,6 @@ state=
 	}
 	local_supplies=0.0
 	provinces={
-		7959 
+		7959 13298 13297 
 	}
 }

@@ -1,0 +1,186 @@
+division_template = {
+	name = "Hawiya Overseas Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Somali Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5074
+		division_template = "Hawiya Overseas Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8124
+		division_template = "Hawiya Overseas Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10833
+		division_template = "Hawiya Overseas Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8164
+		division_template = "Somali Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8164
+		division_template = "Somali Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8164
+		division_template = "Somali Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12991
+		division_template = "Somali Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12991
+		division_template = "Somali Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	fleet = {
+		name = "Qabsato"
+		naval_base = 12991
+		task_force = {
+			name = "Qabsato"
+			location = 12991
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+		}
+	}
+	fleet = {
+		name = "Badda Cas"
+		naval_base = 10833
+		task_force = {
+			name = "Badda Cas"
+			location = 10833
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = HPS version_name = "Jillaab Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HPS"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_corvette_1
+			creator = "HPS"
+			version_name = "Jillaab Class"
+		}
+		name = "Socotra"
+		requested_factories = 2
+		progress = 0.15
+		amount = 1
+	}
+}

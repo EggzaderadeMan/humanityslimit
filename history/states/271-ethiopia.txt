@@ -4,8 +4,8 @@ state=
 	name="STATE_271"
 	manpower = 10000000
 	resources={
-		tungsten=15
-		rations=18
+		tungsten=10
+		rations=12
 	}
 	
 	state_category = town
@@ -17,9 +17,6 @@ state=
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 1
-			12766 = {
-				naval_base = 3
-			}
 		}
 		victory_points = { 
 			5010 5 
@@ -27,15 +24,12 @@ state=
 		victory_points = { 
 			7980 1.0 
 		}
-		victory_points = {
-			12766 1
-		}
-		add_core_of = ETH
-		owner = UNC
+		add_core_of = KSO
+		owner = KSO
 	}
 
 	local_supplies=0.0
 	provinces=
 	{
-2009 2072 5010 5041 5091 5097 7944 7980 8043 12766 12856 	}
+2009 5010 5097 7980 12856 13289 13290 13291  	}
 }

@@ -15,8 +15,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = UNC
-
+		owner = MOS
+		add_core_of = MOS
 		victory_points = {
 
 			10836 1
@@ -35,7 +35,7 @@ state={
 	local_supplies=0.0
 	provinces={
 
-		10836 12851
+		10836 12851 13294 7950 2001 12874 
 
 	}
 

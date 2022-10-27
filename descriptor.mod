@@ -4,6 +4,6 @@ tags={
 	"Map"
 }
 name="Thousand Year Reich"
-supported_version="1.12.3"
+supported_version="1.12.4"
 replace_path="history/states"
 replace_path="map/strategicregions"

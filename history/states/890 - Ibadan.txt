@@ -1,0 +1,21 @@
+state={
+	id=890
+	name="STATE_890"
+	provinces={
+		13240 13254 12731 
+	}
+	resources={
+		tungsten=17
+		steel=13
+	}
+	history={
+		owner = ALC
+		buildings = {
+			infrastructure=2
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

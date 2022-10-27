@@ -110,13 +110,7 @@ technologies = {
 			small_helicopter_airframe_2
 			small_helicopter_cas_airframe_2
 			small_helicopter_naval_bomber_airframe_2
-		}
-	
-		path = {
-			leads_to_tech = advanced_small_airframe
-			research_cost_coeff = 1
-		}
-				
+		}				
 
 		research_cost = 2
 		start_year = 2163
@@ -766,11 +760,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2136
+		start_year = 2164
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 4 }
+			position = { x = -2 y = 8 }
 		}
 
 		categories = {

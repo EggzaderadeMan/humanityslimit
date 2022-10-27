@@ -4,19 +4,21 @@ state={
 
 	name="STATE_775" # BET - Borkou-Ennedi-Tibesti region
 	resources = {
-		oil=15
+		oil=24
 	}
 
 
 	state_category = wasteland
 
 	history={
-
-		owner = DRO
-		add_core_of = DRO
+		victory_points = {
+			2081 1
+		}
+		owner = ALC
+		add_core_of = ALC
 		buildings = {
 
-			infrastructure = 0
+			infrastructure = 2
 
 		}
 
@@ -26,7 +28,7 @@ state={
 	local_supplies=0.0
 	provinces={
 
-		1956 5136 10893
+		1956 5136 3123 2081 
 
 	}
 

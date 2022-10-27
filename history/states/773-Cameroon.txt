@@ -7,7 +7,7 @@ state={
 	resources = {
 		rubber=7
 		aluminium=10
-		rations=20
+		rations=10
 	}
 
 	manpower = 2945782
@@ -18,8 +18,8 @@ state_category = rural
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
+		owner = BMR
+		add_core_of = BMR
 		victory_points = {
 
 			2080 1
@@ -27,24 +27,16 @@ state_category = rural
 		}
 
 		buildings = {
-
 			infrastructure = 3
-
 			industrial_complex = 1
-
 			air_base = 1
-
 		}
-
-
 	}
 
 
 	local_supplies=0.0
 	provinces={
-
-		2080 5036 5054 
- 
+		2080 5036 13260 13261 
 	}
 
 }

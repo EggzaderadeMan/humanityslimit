@@ -1,0 +1,26 @@
+
+state={
+	id=866
+	name="STATE_866"
+	manpower = 3694293
+	resources={
+		tungsten=10
+		rations=13
+	}
+	state_category = rural
+	
+	
+	history={
+		owner = NUE
+		add_core_of = NUE
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		7912 10877 10859 10908 
+	}
+}

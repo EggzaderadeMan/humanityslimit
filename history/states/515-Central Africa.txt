@@ -9,8 +9,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = DRO
-		add_core_of = DRO
+		owner = UNC
 		buildings = {
 			infrastructure = 1
 
@@ -20,7 +19,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		7939 4913 10917 
+		7939 4913 
 	}
 	manpower=1456356
 	buildings_max_level_factor=1.000

@@ -11,7 +11,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = UNC
+		owner = BAM
+		add_core_of = BAM
 		victory_points = {
 			4927 1
 		}

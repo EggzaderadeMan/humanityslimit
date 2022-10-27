@@ -1,0 +1,23 @@
+state={
+	id=881
+	name="STATE_881"
+	provinces={
+		12830 8078 1974 11108 
+	}
+	resources={
+		rations=3
+	}
+	history={
+		owner = BAA
+		victory_points = {
+			12830 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

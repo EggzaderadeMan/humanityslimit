@@ -1,20 +1,17 @@
-
 state={
 	id=859
 	name="STATE_859"
 	manpower = 3694293
 	resources={
-		rations=13
+		rations=11
 		oil=7
 	}
 	state_category = rural
 	
 	
 	history={
-		owner = UNC
-		victory_points = {
-			2096 1
-		}
+		owner = BAG
+		add_core_of = BAG
 		buildings = {
 			infrastructure = 3
 		}
@@ -23,6 +20,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1473 5060 8052 8084 10739 10827 10851 
+		8052 8084 10739 10827 10851 13307 10857 
 	}
 }

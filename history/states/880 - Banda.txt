@@ -1,0 +1,20 @@
+state={
+	id=880
+	name="STATE_880"
+	provinces={
+		13269 5084 
+	}
+	resources={
+		rations=1
+	}
+	history={
+		owner = BND
+		buildings = {
+			infrastructure=1
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

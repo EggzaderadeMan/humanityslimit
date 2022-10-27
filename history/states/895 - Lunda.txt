@@ -1,0 +1,24 @@
+
+state={
+	id=895
+	name="STATE_895"
+	resources={
+		
+	}
+
+	history={
+		owner = PES
+		buildings = {
+			
+		}
+
+	}
+
+	provinces={
+		1968 7548 10025 12795 13276 13277 13278 
+	}
+	manpower=3540948
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

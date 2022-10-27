@@ -1,11 +1,13 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			set_variable = { khartoum_AFR_leverage = 1 }
-			set_variable = { khartoum_JUD_allegiance = 1 }
-			set_variable = { solomon_JUD_allegiance = 1 }
-			set_variable = { leverage_cost = 25 }
-			set_variable = { allegiance_cost = 40 }
+			set_variable = { AFR.khartoum_leverage = 1 }
+			set_variable = { JUD.khartoum_allegiance = 1 }
+			set_variable = { JUD.solomon_allegiance = 1 }
+			set_variable = { AFR.leverage_cost = 25 }
+			set_variable = { AFR.allegiance_cost = 40 }
+			set_variable = { JUD.leverage_cost = 25 }
+			set_variable = { JUD.allegiance_cost = 40 }
 		}
 	}
 	on_declare_war = {
@@ -22,6 +24,74 @@ on_actions = {
 					}
 				}
 				set_global_flag = nilkrieg
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = AFR_annex
+				}
+				AFR = {
+					annex_country = {
+						target = FROM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_annex
+				}
+				JUD = {
+					annex_country = {
+						target = FROM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = AFR_puppet
+				}
+				AFR = { puppet = FROM }
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_puppet
+				}
+				JUD = { puppet = FROM }
+			}
+			if = {
+				limit = {
+					has_country_flag = AFR_ally
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					AFR = { add_to_faction = FROM }
+				}
+				else = {
+					AFR = { give_guarantee = FROM }
+					FROM = { give_guarantee = AFR }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = JUD_ally
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					JUD = { add_to_faction = FROM }
+				}
+				else = {
+					JUD = { give_guarantee = FROM }
+					FROM = { give_guarantee = JUD }
+				}
 			}
 		}
 	}

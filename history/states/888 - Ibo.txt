@@ -1,0 +1,21 @@
+state={
+	id=888
+	name="STATE_888"
+	provinces={
+		12900 1992 13247 13246 
+	}
+	resources={
+		rations=23
+	}
+	history={
+		owner = IBO
+		add_core_of = IBO
+		buildings = {
+			infrastructure=2
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

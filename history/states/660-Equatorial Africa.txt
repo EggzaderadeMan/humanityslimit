@@ -6,14 +6,12 @@ state={
 	
 	state_category = pastoral
 	resources={
-		rations=36
+		oil=15
+		rubber=8
+		rations=1
 	}
 	history={
-		owner = DRO
-		add_core_of = COG
-		victory_points = {
-			12830 1
-		}
+		owner = BMR
 		buildings = {
 			infrastructure = 2
 		}
@@ -22,6 +20,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1974 8078 11108 12830 1883 1993 3181 4897 4978 9152 13211 6039 7963 9137 11194 7978 4889 10820 4938 8109 
+		11012 13268 
 	}
 }

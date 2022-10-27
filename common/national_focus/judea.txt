@@ -107,7 +107,8 @@ focus_tree = {
 			focus = JUD_provoke_shoahite_revenge
 		}
 		completion_reward = {
-			### unlocks nile influence decisions with easy allegiance
+			custom_effect_tooltip = decreases_allegiance_cost
+			set_variable = { JUD.allegiance_cost = 20 }
 		}
 	}
 	focus = {
@@ -125,7 +126,7 @@ focus_tree = {
 			focus = JUD_allies_on_the_nile
 		}
 		completion_reward = {
-			### decisions: unlocks Pressure for nile influence
+			custom_effect_tooltip = unlocks_nile_pressure
 			### those who you pressure into allies join faction as well as guarantee
 			create_faction = jerusalem_accords
 		}
@@ -163,7 +164,7 @@ focus_tree = {
 		available = {
 			check_variable = {
 				var = JUD_num_of_three_year_plan_decisions
-				value = 3
+				value = 2
 				compare = greater_than
 			}
 		}

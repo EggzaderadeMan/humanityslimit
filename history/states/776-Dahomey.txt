@@ -6,7 +6,7 @@ state={
 	name="STATE_776" # Benin/Dahomey
 	resources = {
 		tungsten=10
-		rations=51
+		rations=23
 	}
 
 	manpower = 1351563
@@ -16,13 +16,11 @@ state={
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
-		victory_points = {
-
-			2056 1
-
-		}
+		owner = ALC
+		add_core_of = ALC
+#		victory_points = {
+#			2056 1
+#		}
 
 		buildings = {
 
@@ -35,9 +33,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-
-		1891 1932 1969 2025 12874 12762
- 2056 12707 2001 7950 13212 
+		12817 1932 12762 13242
 	}
 
 }

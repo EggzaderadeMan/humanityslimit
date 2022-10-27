@@ -1,0 +1,30 @@
+﻿capital = 274
+
+oob = "ASH_2188"
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+	tech_support = 1
+	ship_hull_corvette_1 = 1
+	basic_battery = 1
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	fascism = 45
+	neutrality = 50
+	communism = 5
+}

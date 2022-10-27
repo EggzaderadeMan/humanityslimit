@@ -4,16 +4,15 @@ state={
 
 	state_category = rural
 	resources={
-		oil=10
-		rations=22
+		rations=8
 	}
 	history={
-		owner = DRO
+		owner = UGA
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = DRO
+		add_core_of = UGA
 		victory_points = {
 			12989 1
 		}
@@ -21,7 +20,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		7133 8223 12929 2066 5079 5160 11145 13135 3165 5084 12719 2096 7996 10908 1953 10764 10857 1960 7919 
+		12989 12929 8223 7133 
 	}
 	manpower=3515625
 	buildings_max_level_factor=1.000

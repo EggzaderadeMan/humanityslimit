@@ -1,0 +1,57 @@
+capital = 295
+
+oob = "TKK_2188"
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_engineering = 1
+	infantry_at = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	amphibious_mechanized_infantry = 1
+	armored_car1 = 1
+	marines = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	artillery1 = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	amphibious_tank_chassis = 1
+	main_battle_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	electronic_mechanical_engineering = 1
+	radio_detection = 1
+	radio = 1
+	mechanical_computing = 1
+	experimental_rockets = 1
+	atomic_research = 1
+	basic_fire_control_system = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	construction1 = 1
+	excavation1 = 1
+	fuel_refining = 1
+	synth_oil_experiments = 1
+	dispersed_industry1 = 1
+	specialized_production1 = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2136.1.1"
+	election_frequency = 12
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	neutrality = 0
+	communism = 0
+}

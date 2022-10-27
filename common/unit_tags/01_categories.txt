@@ -3,4 +3,6 @@ sub_unit_categories = {
 	category_auto
 	category_scout_auto
 	category_helicopter
+	category_attack_helicopter
+	category_gunship_helicopter
 }

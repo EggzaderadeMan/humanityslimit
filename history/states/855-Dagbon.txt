@@ -7,7 +7,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = DGB
+		add_core_of = DGB
 		buildings = {
 			infrastructure = 2
 		}
@@ -16,7 +17,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		7983 8096 
+		7983 8096 13212
 	}
 	manpower=3163600
 	buildings_max_level_factor=1.000

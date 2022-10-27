@@ -1,0 +1,21 @@
+state={
+	id=873
+	name="STATE_873"
+	provinces={
+		10988 12907 2176 2220 4941 
+	}
+	resources={
+		rations=12
+		noble=15
+	}
+	history={
+		owner = TKK
+		buildings = {
+			infrastructure=2
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

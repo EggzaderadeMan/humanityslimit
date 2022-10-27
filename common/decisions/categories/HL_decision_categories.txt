@@ -1,16 +1,97 @@
-nile_influence = {
+AFR_egypt_mission_category = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		NOT = {
+			OR = {
+				has_country_flag = AFR_egypt_success
+				has_country_flag = AFR_egypt_failure
+			}
+		}
+	}
+}
+khartoum_influence = {
 	icon = generic_prospect_for_resources
 
 	visible = {
 		OR = {
 			original_tag = JUD
 			original_tag = AFR
-		}	
+		}
+		NOT = { has_global_flag = khartoum_pressured }
 	}
 
 	on_map_area = {
 		state = 549
-		name = AFR_nile_influence_map
+		name = nile_influence_map
+		zoom = 250
+	}
+}
+beja_influence = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		OR = {
+			original_tag = JUD
+			original_tag = AFR
+		}
+		NOT = { has_global_flag = beja_pressured }
+	}
+
+	on_map_area = {
+		state = 550
+		name = nile_influence_map
+		zoom = 250
+	}
+}
+nuer_influence = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		OR = {
+			original_tag = JUD
+			original_tag = AFR
+		}
+		NOT = { has_global_flag = nuer_pressured }
+	}
+
+	on_map_area = {
+		state = 860
+		name = nile_influence_map
+		zoom = 250
+	}
+}
+tana_influence = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		OR = {
+			original_tag = JUD
+			original_tag = AFR
+		}
+		NOT = { has_global_flag = tana_pressured }
+	}
+
+	on_map_area = {
+		state = 861
+		name = nile_influence_map
+		zoom = 250
+	}
+}
+solomon_influence = {
+	icon = generic_prospect_for_resources
+
+	visible = {
+		OR = {
+			original_tag = JUD
+			original_tag = AFR
+		}
+		NOT = { has_global_flag = solomon_pressured }
+	}
+
+	on_map_area = {
+		state = 271
+		name = nile_influence_map
 		zoom = 250
 	}
 }
@@ -43,6 +124,12 @@ JUD_three_year_plan = {
 
 	visible = {
 		has_completed_focus = JUD_rebuilding_the_hebrew_people
+		NOT = {
+			OR = {
+				has_country_flag = three_year_plan_success
+				has_country_flag = three_year_plan_failure
+			}
+		}
 	}
 }
 JUD_prepare_armed_forces = {
@@ -147,6 +234,12 @@ AFR_integrating_egypt = {
 
 	visible = {
 		has_completed_focus = AFR_egyptian_integration_department
+
+		EGY = {
+			all_core_state = {
+				compliance > 70
+			}
+		}
 	}
 }
 JUD_integrating_egypt = {

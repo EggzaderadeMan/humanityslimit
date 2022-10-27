@@ -7,7 +7,8 @@ state={
 	}
 	state_category = rural
 	history = {
-		owner = UNC
+		owner = AFR
+		add_core_of = KHR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -16,6 +17,6 @@ state={
 	}
 	local_supplies=0.0
 	provinces={
-		2046 4963 7989 8105 10745 12796 12826 4138 12836 
+		2046 4963 7989 8105 10745 12796 12826 4138 12836 13287 13292 
 	}
 }

@@ -7,7 +7,7 @@ state={
 
 	manpower = 543817
 	resources = {
-		rations=5
+		rations=29
 	}
 	
 	state_category = pastoral
@@ -15,12 +15,10 @@ state={
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
+		owner = ALC
+		add_core_of = ALC
 		buildings = {
-
 			infrastructure = 3
-
 		}
 
 	}
@@ -29,7 +27,7 @@ state={
 	local_supplies=0.0
 	provinces={
 
-		10758 8028 
+		10758 8028 2056 1891 1969 13252 
 
 	}
 

@@ -10,7 +10,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = UNC
+		owner = SNG
+		add_core_of = SNG
 		victory_points = {
 			4948 5 
 		}
@@ -25,6 +26,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		4948 8015 12710 
+		4948 8015 12710 13303 13304 13302 
 	}
 }

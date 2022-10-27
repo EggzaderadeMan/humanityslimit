@@ -1176,3 +1176,12 @@
  armored_car1:0 "Armored Car"
  armored_car2:0 "Infiltration Droid"
  armored_car3:0 "Pre-emptive Suppression Droid"
+
+ basic_small_helicopter_airframe:0 "Basic Single Engine Helicopter"
+ improved_small_helicopter_airframe:0 "Improved Single Engine Helicopter"
+ advanced_small_helicopter_airframe:0 "Advanced Single Engine Helicopter"
+ basic_large_helicopter_airframe:0 "Basic Twin Engine Helicopter"
+ improved_large_helicopter_airframe:0 "Improved Twin Engine Helicopter"
+ advanced_large_helicopter_airframe:0 "Advanced Twin Engine Helicopter"
+ cluster_missiles_tech:0 "Cluster Missiles"
+ stealth_tech:0 "Stealth Technology"

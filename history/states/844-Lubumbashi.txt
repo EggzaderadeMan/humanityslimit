@@ -2,20 +2,24 @@ state={
 	id=844
 	name="STATE_844"
 	provinces={
-		191 1817 1846 4515 10594 10930 13173
+		1929 1516 4515 1817 191
 	}
 	resources={
-		rations=3.000
-		noble=8.000
+		rations=2
+		noble=13
+		chromium=4
 	}
 	history={
-		owner = PES
-		add_core_of = PES
+		owner = TKK
+		add_core_of = TKK
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 
+		}
+		victory_points = {
+			191 1 
 		}
 
 	}

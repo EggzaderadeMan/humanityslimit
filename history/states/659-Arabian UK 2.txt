@@ -9,7 +9,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = UNC
+		owner = HPS
+		add_core_of = HPS
 		victory_points = {
 			5074 1 
 		}

@@ -1,0 +1,46 @@
+﻿capital = 559
+
+oob = "HPS_2188"
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+	tech_support = 1
+	ship_hull_corvette_1 = 1
+	basic_battery = 1
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	fascism = 45
+	neutrality = 50
+	communism = 5
+}
+
+create_equipment_variant = {
+	name = "Jillaab Class"
+	type = ship_hull_corvette_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = empty
+		front_1_custom_slot = empty
+	}
+}

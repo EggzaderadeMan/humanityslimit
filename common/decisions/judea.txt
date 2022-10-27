@@ -1,4 +1,30 @@
 JUD_three_year_plan = {
+	JUD_three_year_mission = {
+		activation = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+		available = {
+			has_completed_focus = JUD_rebuilding_the_hebrew_people
+		}
+		icon = GFX_decision_hol_exchange_intelligence_data
+		days_mission_timeout = 1096
+		complete_effect = {
+			custom_effect_tooltip = three_year_mission_explanation
+			if = {
+				limit = {
+					num_of_civilian_factories > 34
+				}
+				add_stability = 0.10
+				add_political_power = 25
+				set_country_flag = three_year_plan_success
+			}
+			else = {
+				add_stability = -0.05
+				add_political_power = -50
+				set_country_flag = three_year_plan_failure
+			}
+		}
+	}
 	JUD_land_of_manna = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
@@ -11,8 +37,10 @@ JUD_three_year_plan = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
+			NOT=  { has_country_flag = developing_hebrews }
 		}
 		complete_effect = {
+			set_country_flag = developing_hebrews
 			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
 			add_timed_idea = {
 				idea = JUD_three_year_plan_manna
@@ -20,6 +48,7 @@ JUD_three_year_plan = {
 			}
 		}
 		remove_effect = {
+			clr_country_flag = developing_hebrews
 			add_resource = {
 				type = rations
 				amount = 3
@@ -37,7 +66,8 @@ JUD_three_year_plan = {
 			}
 		}
 	}
-	JUD_new_universities_of_tel_aviv = d		icon = GFX_decision_hol_exchange_intelligence_data
+	JUD_new_universities_of_tel_aviv = {
+		icon = GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			has_completed_focus = JUD_rebuilding_the_hebrew_people
 		}
@@ -48,8 +78,10 @@ JUD_three_year_plan = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
+			NOT = { has_country_flag = developing_hebrews }
 		}
 		complete_effect = {
+			set_country_flag = developing_hebrews
 			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
 			add_timed_idea = {
 				idea = JUD_three_year_plan_education
@@ -57,6 +89,7 @@ JUD_three_year_plan = {
 			}
 		}
 		remove_effect = {
+			clr_country_flag = developing_hebrews
 			add_research_slot = 1
 		}
 	}
@@ -71,9 +104,11 @@ JUD_three_year_plan = {
 		days_re_enable = 180
 
 		available = {
+			NOT = { has_country_flag = developing_hebrews }
 			num_of_civilian_factories_available_for_projects > 1
 		}
 		complete_effect = {
+			set_country_flag = developing_hebrews
 			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
 			add_timed_idea = {
 				idea = JUD_three_year_plan_entrepreneurship
@@ -81,6 +116,7 @@ JUD_three_year_plan = {
 			}
 		}
 		remove_effect = {
+			clr_country_flag = developing_hebrews
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -103,9 +139,11 @@ JUD_three_year_plan = {
 		days_re_enable = 180
 
 		available = {
+			NOT = { has_country_flag = developing_hebrews }
 			num_of_civilian_factories_available_for_projects > 1
 		}
 		complete_effect = {
+			set_country_flag = developing_hebrews
 			add_to_variable = { JUD_num_of_three_year_plan_decisions = 1 }
 			add_timed_idea = {
 				idea = JUD_three_year_plan_national_defense
@@ -113,6 +151,7 @@ JUD_three_year_plan = {
 			}
 		}
 		remove_effect = {
+			clr_country_flag = developing_hebrews
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -393,7 +432,8 @@ JUD_prepare_to_cross_the_nile = {
 
 		fire_only_once = yes
 		cost = 50
-		days_remove = 60
+		days_remove = 20
+		war_with_on_remove = AFR
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
@@ -405,6 +445,8 @@ JUD_prepare_to_cross_the_nile = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = JUD_required_preparations
+		}
+		remove_effect = {
 			declare_war_on = {
 				target = AFR
 				type = annex_everything
