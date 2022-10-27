@@ -8,25 +8,17 @@ state={
 	}
 
 	history={
-		owner = DRO
-		add_core_of = DRO
-		victory_points = {
-			5139 1 
-		}
+		owner = GAB
+		add_core_of = GAB
 		buildings = {
-			infrastructure = 3
-			5139 = {
-				naval_base = 1
-
-			}
-
+			infrastructure = 1
 		}
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		5139 8207 10948 13210 
+		8207 13267 13266 
 	}
 	manpower=409752
 	buildings_max_level_factor=1.000

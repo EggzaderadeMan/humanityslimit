@@ -13,8 +13,8 @@ state={
 		rations=52
 	}
 	history={
-		owner = DRO
-		add_core_of = DRO
+		owner = ALC
+		add_core_of = ALC
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
@@ -22,27 +22,23 @@ state={
 			2050 = {
 				naval_base = 3
 			}
-			10919 = {
-
-				naval_base = 1
-
-			}
+#			10919 = {
+#				naval_base = 1
+#			}
 
 		}
 		victory_points = {
 			2050 1
 		}
-		victory_points = {
-
-			10919 1
-
-		}
+#		victory_points = {
+#			10919 1
+#		}
 
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		1992 2050 4952 8021 8034 10831 12731 12817 12900 10919 
+		10831 8034 13248 13249 4952 2050
 	}
 }

@@ -11,13 +11,11 @@ state={
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
+		owner = ALC
+		add_core_of = ALC
 
 		victory_points = {
-
 			2081 1
-
 		}
 
 		buildings = {
@@ -32,9 +30,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-
-		2081 3123 13138 4972 4997 5028 10780 10805 
- 
+		7963 13257 4997 8109 
 	}
 
 	manpower=1442456

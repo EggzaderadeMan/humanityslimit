@@ -12,8 +12,8 @@ state={
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
+		owner = ALC
+		add_core_of = ALC
 		buildings = {
 
 			infrastructure = 0
@@ -26,7 +26,7 @@ state={
 	local_supplies=0.0
 	provinces={
 
-		1956 5136 10893
+		1956 5136 3123 2081 
 
 	}
 

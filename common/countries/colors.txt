@@ -468,15 +468,15 @@ BND = {
 	color = rgb { 137 68 117 }
 	color_ui = rgb { 137 68 117 }
 }
-BAG = {
-	color = rgb { 193 77 112 }
-	color_ui = rgb { 193 77 112 }
+BGR = {
+	color = rgb { 102 51 66 }
+	color_ui = rgb { 102 51 66 }
 }
 SAR = {
 	color = rgb { 211 50 85 }
 	color_ui = rgb { 211 50 85 }
 }
-FUL = {
+FLN = {
 	color = rgb { 26 84 27 }
 	color_ui = rgb { 26 84 27 }
 }
@@ -493,36 +493,36 @@ IBO = {
 	color_ui = rgb { 124 214 209 }
 }
 TMI = {
-	color = rgb { 119 21 23 }
-	color_ui = rgb { 119 21 23 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 STM = {
-	color = rgb { 160 19 21 }
-	color_ui = rgb { 160 19 21 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 CHS = {
-	color = rgb { 81 3 4 }
-	color_ui = rgb { 81 3 4 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 TKK = {
 	color = rgb { 127 0 0 }
 	color_ui = rgb { 127 0 0 }
 }
 AIE = {
-	color = rgb { 163 42 44 }
-	color_ui = rgb { 163 42 44 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 BMR = {
-	color = rgb { 40 7 7 }
-	color_ui = rgb { 40 7 7 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 SGF = {
-	color = rgb { 107 54 55 }
-	color_ui = rgb { 107 54 55 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 ALC = {
-	color = rgb { 73 0 0 }
-	color_ui = rgb { 73 0 0 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 YOR = {
 	color = rgb { 139 208 224 }

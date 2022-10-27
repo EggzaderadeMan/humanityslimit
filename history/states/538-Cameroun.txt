@@ -10,27 +10,16 @@ state={
 		noble=4
 	}
 	history={
-		owner = DRO
+		owner = TKK
 		buildings = {
 			infrastructure = 1
-			10968 = {
-				naval_base = 1
-			}
-		}
-		victory_points = {
-			5117 3 
-		}
-		victory_points = {
-
-			8193 2
-
 		}
 
-		add_core_of = DRO
+		add_core_of = TKK
 	}
 
 	local_supplies=0.0
 	provinces={
-		988 7219 7931 8016 8048 10071 10883 10951 12741 12775 12824 12925 5117 10968 8193 
+		10071 7931 988 
 	}
 }

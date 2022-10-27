@@ -17,8 +17,8 @@ state_category = pastoral
 
 	history={
 
-		owner = DRO
-		add_core_of = DRO
+		owner = RCG
+		add_core_of = RCG
 
 		buildings = {
 
@@ -32,9 +32,7 @@ state_category = pastoral
 
 	local_supplies=0.0
 	provinces={
-
-		2192 3109 6008 12975 11012 
- 
+		12975 2192 3109 6008 
 	}
 
 }

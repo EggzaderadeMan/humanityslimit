@@ -1,0 +1,21 @@
+state={
+	id=876
+	name="STATE_876"
+	provinces={
+		5160 5079 2066 11145 2096 
+	}
+	resources={
+		
+	}
+	history={
+		owner = TRK
+		add_core_of = TRK
+		buildings = {
+			
+		}
+	}
+	manpower=2435858
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

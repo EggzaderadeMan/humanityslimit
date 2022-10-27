@@ -2,20 +2,29 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = DRO
+		owner = TKK
 		buildings = {
 			infrastructure = 1
 			2115 = {
+				naval_base = 1
+			}
+			10968 = {
 				naval_base = 1
 			}
 		}
 		victory_points = {
 			2115 1 
 		}
-		add_core_of = DRO
+		victory_points = {
+			5117 3 
+		}
+		victory_points = {
+			8193 2
+		}
+		add_core_of = TKK
 	}
 	provinces={
-		2115 
+		2115 10968 12925 5117 8193 
 	}
 	manpower=25000
 	buildings_max_level_factor=1.000
