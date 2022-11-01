@@ -18,9 +18,9 @@ state={
 
 		owner = ALC
 		add_core_of = ALC
-#		victory_points = {
-#			2056 1
-#		}
+		victory_points = {
+			12817 3
+		}
 
 		buildings = {
 

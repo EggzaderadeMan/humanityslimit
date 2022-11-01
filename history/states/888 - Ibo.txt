@@ -13,6 +13,12 @@ state={
 		buildings = {
 			infrastructure=2
 		}
+		victory_points = {
+			13246 3
+		}
+		victory_points = {
+			13247 5
+		}
 	}
 	manpower=2435858
 	state_category = town

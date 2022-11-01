@@ -11,6 +11,12 @@ state={
 		owner = ALC
 		buildings = {
 			infrastructure=3
+			13241 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			13241 10
 		}
 	}
 	manpower=2435858

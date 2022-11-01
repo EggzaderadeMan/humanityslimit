@@ -19,7 +19,9 @@ state={
 			dockyard = 1
 
 		}
-
+		victory_points = {
+			2120 1	
+		}
 	}
 	manpower=2145674
 	state_category = town
