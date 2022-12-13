@@ -2,12 +2,12 @@
 state={
 	id=860
 	name="STATE_860"
-	manpower = 3694293
+	manpower = 709100
 	resources={
 		oil=8
 		rations=21
 	}
-	state_category = rural
+	state_category = city
 	
 	
 	history={
@@ -15,6 +15,8 @@ state={
 		add_core_of = NUE
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
 		}
 
 	}

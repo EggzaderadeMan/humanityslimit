@@ -10,12 +10,15 @@ state={
 	history={
 		owner = TKK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			dockyard = 2
 			2115 = {
-				naval_base = 1
+				naval_base = 4
 			}
 			10968 = {
-				naval_base = 1
+				naval_base = 4
 			}
 		}
 		victory_points = {
@@ -32,9 +35,9 @@ state={
 	provinces={
 		2115 10968 12925 5117 8193 
 	}
-	manpower=25000
+	manpower=1452000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = metropolis
 
 	local_supplies=0.0 
 }

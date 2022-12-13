@@ -1,4 +1,4 @@
-capital = 295
+capital = 886
 
 oob = "FLN_2188"
 set_technology = {

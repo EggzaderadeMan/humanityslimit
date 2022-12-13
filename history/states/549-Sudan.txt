@@ -2,11 +2,11 @@
 state={
 	id=549
 	name="STATE_549"
-	manpower = 3694293
+	manpower = 663000
 	resources={
 		rations=17
 	}
-	state_category = rural
+	state_category = city
 	
 	
 	history={
@@ -16,7 +16,9 @@ state={
 			12806 3
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
 		}
 
 	}

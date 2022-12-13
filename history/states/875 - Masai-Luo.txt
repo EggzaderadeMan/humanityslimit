@@ -11,7 +11,9 @@ state={
 		owner = MSL
 		add_core_of = MSL
 		buildings = {
-			infrastructure=2
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			2206 3
@@ -20,8 +22,8 @@ state={
 			10860 1
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower = 556100
+	state_category = city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

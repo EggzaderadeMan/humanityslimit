@@ -14,11 +14,14 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
-
+			arms_factory = 1
+			8246 = {
+				naval_base = 1
+			}
 		}
 
 	}
-	manpower=1535948
+	manpower = 464400
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

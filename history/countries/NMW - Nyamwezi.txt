@@ -1,4 +1,4 @@
-capital = 295
+capital = 546
 
 oob = "NMW_2188"
 set_technology = {

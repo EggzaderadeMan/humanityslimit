@@ -2,8 +2,8 @@ state=
 {
 	id=869
 	name="STATE_869"
-	manpower = 600600
-	state_category = rural
+	manpower = 2350
+	state_category = enclave
 	impassable = yes
 	
 	history=

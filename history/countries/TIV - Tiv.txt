@@ -1,4 +1,4 @@
-capital = 295
+capital = 887
 
 oob = "TIV_2188"
 set_technology = {

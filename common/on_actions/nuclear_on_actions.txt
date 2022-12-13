@@ -16,7 +16,18 @@ on_actions = {
 			}
 			every_state = {
 				limit = {
-					state = 542
+					OR = {
+						state = 542
+						state = 847
+						state = 843
+						state = 771
+						state = 877
+						state = 770
+						state = 848
+						state = 540
+						state = 895
+						state = 849
+					}
 				}
 				add_dynamic_modifier = { modifier = biological_devastation}
 			}

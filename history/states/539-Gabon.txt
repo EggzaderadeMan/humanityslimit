@@ -10,6 +10,7 @@ state={
 		add_core_of = GAB
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 
 	}
@@ -18,7 +19,7 @@ state={
 	provinces={
 		8207 13267 13266 
 	}
-	manpower=409752
+	manpower=61000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category = pastoral
 }

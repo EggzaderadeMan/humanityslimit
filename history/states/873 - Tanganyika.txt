@@ -11,13 +11,15 @@ state={
 	history={
 		owner = TKK
 		buildings = {
-			infrastructure=2
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			2220 3
 		}
 	}
-	manpower=2435858
+	manpower = 604500
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

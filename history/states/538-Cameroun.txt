@@ -4,7 +4,7 @@ state={
 	name="STATE_538" # Central Congo
 	manpower = 1693974
 	
-	state_category = wasteland
+	state_category = town
 	resources={
 		rations=2
 	}
@@ -12,6 +12,8 @@ state={
 		owner = TKK
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 
 		add_core_of = TKK

@@ -1946,7 +1946,12 @@ technologies = {
 		enable_equipments = {
 			auto_mechanized_equipment_1
 		}
-		
+
+		enable_equipment_modules = { # Redundancy, so Droid Nations also get this Module
+			tank_half_track_suspension
+			tank_wheeled_suspension
+		}
+
 		path = {
 			leads_to_tech = mechanised_infantry3
 			research_cost_coeff = 1
@@ -2086,6 +2091,28 @@ technologies = {
 			maximum_speed = 1.25 #TODO_TA for testing only, remove
 		}
 	}
+
+	 ############# Pestland Units ########################
+	genetically_modified_infantry = {
+	 	research_cost = 1
+	 	allow = {
+	 		always = no
+	 	}
+	 	enable_subunits = {
+	 		gm_infantry
+	 	}
+	}
+	chemical_induced_suicide_brigades = {
+		research_cost = 1
+	 	allow = {
+	 		always = no
+	 	}
+	 	enable_subunits = {
+	 		suicide_drug_unit
+	 	}
+	}
+
+
 ################### MOVED TECHNOLOGIES ##################
 	night_vision = {
 

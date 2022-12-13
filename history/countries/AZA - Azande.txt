@@ -1,4 +1,4 @@
-capital = 295
+capital = 879
 
 oob = "AZA_2188"
 set_technology = {

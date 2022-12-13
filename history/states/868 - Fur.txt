@@ -2,7 +2,7 @@
 state={
 	id=868
 	name="STATE_868"
-	manpower = 3694293
+	manpower = 239000
 	resources={
 		rations=7
 	}
@@ -13,7 +13,8 @@ state={
 		owner = BAG
 		add_core_of = BAG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
+			industrial_complex = 1
 		}
 
 	}

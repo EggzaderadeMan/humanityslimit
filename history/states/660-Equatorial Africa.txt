@@ -2,9 +2,9 @@
 state={
 	id=660
 	name="STATE_660"
-	manpower = 1136921
+	manpower = 119800
 	
-	state_category = pastoral
+	state_category = large_town
 	resources={
 		oil=15
 		rubber=8
@@ -14,6 +14,8 @@ state={
 		owner = BMR
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
 		}
 
 	}

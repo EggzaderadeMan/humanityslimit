@@ -1,0 +1,53 @@
+division_template = {
+	name = "Cape Town Volunteer Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12589
+		division_template = "Cape Town Volunteer Regiment"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12589
+		division_template = "Cape Town Volunteer Regiment"
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CPT"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CPT"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

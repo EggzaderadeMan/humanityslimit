@@ -10,10 +10,16 @@ state={
 
 	history={
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 2
 			dockyard = 2
 			arms_factory = 1
+			2202 = {
+				naval_base = 3
+			}
+			12944 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = IOT
 		owner = IOT
@@ -28,8 +34,8 @@ state={
 	provinces={
 		2159 2202 2217 8182 8201 10972 12944 
 	}
-	manpower=3125000
+	manpower = 609100
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category = city
 	local_supplies=0.000
 }

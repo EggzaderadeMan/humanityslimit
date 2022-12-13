@@ -12,14 +12,12 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
 	trench_warfare = 1
 	fuel_silos = 1
+	basic_machine_tools = 1
+	concentrated_industry = 1
 }
 
 

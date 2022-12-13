@@ -1,4 +1,4 @@
-capital = 295
+capital = 876
 
 oob = "TRK_2188"
 set_technology = {

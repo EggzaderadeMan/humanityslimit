@@ -1,4 +1,4 @@
-capital = 295
+capital = 885
 
 oob = "BNE_2188"
 set_technology = {

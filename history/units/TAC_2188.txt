@@ -155,7 +155,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_helicopter_airframe_0
+			type = small_helicopter_cas_airframe_0
 			creator = "TAC"
 		}
 		requested_factories = 1

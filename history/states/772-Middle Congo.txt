@@ -8,10 +8,9 @@ state={
 		rations=4
 	}
 
-	manpower = 746415
+	manpower = 612100
 
-	
-state_category = pastoral
+	state_category = large_town
 
 	history={
 
@@ -19,9 +18,9 @@ state_category = pastoral
 		add_core_of = RCG
 
 		buildings = {
-
 			infrastructure = 2
-
+			industrial_complex = 2
+			arms_factory = 2
 		}
 
 

@@ -1,0 +1,29 @@
+state={
+	id=896
+	name="STATE_896"
+	provinces={
+		2025 4938 10820 13245 
+	}
+	resources={
+		rations=19
+	}
+	history={
+		owner = TIV
+		add_core_of = TIV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		victory_points = {
+			10820 1
+		}
+		victory_points = {
+			6039 3
+		}
+	}
+	manpower = 376600
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

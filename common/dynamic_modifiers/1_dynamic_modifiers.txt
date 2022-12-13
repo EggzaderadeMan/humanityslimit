@@ -33,12 +33,9 @@ biological_devastation = {
 
 	icon = GFX_modifiers_sabotaged_resource
 	
-	state_resource_rations = -0.90
-	recruitable_population_factor = -0.5
-	local_building_slots_factor = -0.60
-	resistance_growth = -0.30
+	army_attack_factor = -0.25
+	resistance_target = -0.30
 	attrition = 0.05
-	supply_consumption_factor = 0.1
 }
 construction_battalions = {
 	enable = { always = yes }

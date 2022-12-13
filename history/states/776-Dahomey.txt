@@ -3,16 +3,16 @@ state={
 
 	id=776
 
-	name="STATE_776" # Benin/Dahomey
+	name="STATE_776"
 	resources = {
 		tungsten=10
 		rations=23
 	}
 
-	manpower = 1351563
+	manpower = 750000
 	
 
-	state_category = pastoral
+	state_category = large_city
 
 	history={
 
@@ -23,9 +23,9 @@ state={
 		}
 
 		buildings = {
-
 			infrastructure = 3
-
+			industrial_complex = 2
+			arms_factory = 4
 		}
 
 	}

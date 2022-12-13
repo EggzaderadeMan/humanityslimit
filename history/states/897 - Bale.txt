@@ -1,0 +1,30 @@
+
+state={
+	id=897
+	name="STATE_897"
+	resources={
+		rations=12
+	}
+
+	history={
+		add_core_of = FRO
+		owner = FRO
+		victory_points = {
+			5068 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		5068 8036 10775 12714 
+	}
+	manpower=917800
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

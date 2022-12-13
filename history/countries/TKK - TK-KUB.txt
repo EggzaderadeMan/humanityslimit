@@ -1,47 +1,69 @@
-capital = 295
+capital = 796
 
 oob = "TKK_2188"
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	infantry_engineering = 1
-	infantry_at = 1
-	motorised_infantry = 1
-	mechanised_infantry = 1
-	amphibious_mechanized_infantry = 1
-	armored_car1 = 1
-	marines = 1
-	paratroopers = 1
-	tech_mountaineers = 1
-	gw_artillery = 1
-	artillery1 = 1
-	interwar_antitank = 1
-	interwar_antiair = 1
-	rocket_artillery = 1
-	gwtank_chassis = 1
-	basic_light_tank_chassis = 1
-	amphibious_tank_chassis = 1
-	main_battle_tank_chassis = 1
-	armor_tech_1 = 1
+	mechanised_infantry2 = 1
+	amphibious_mechanized_infantry_2 = 1
+	armored_car2 = 1
+	tech_support = 1
+	tech_engineers2 = 1
+	tech_logistics_company = 1
+	tech_recon2 = 1
+	basic_scout_auto_tank_chassis = 1
+	frauto = 1
+	recon_system_tech = 1
 	engine_tech_1 = 1
+	engine_tech_2 = 1
+	armor_tech_1 = 1
+	armor_tech_2 = 1
+	improved_ship_hull_corvette = 1
+	improved_ship_hull_light = 1
+	improved_ship_hull_cruiser = 1
+	automatic_converted_carrier = 1
+	improved_ship_hull_carrier = 1
+	improved_ship_hull_submarine = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	improved_ship_torpedo_launcher = 1
+	mtg_transport = 1
 	electronic_mechanical_engineering = 1
 	radio_detection = 1
 	radio = 1
 	mechanical_computing = 1
-	experimental_rockets = 1
-	atomic_research = 1
+	computing_machine = 1
+	improved_computing_machine = 1
 	basic_fire_control_system = 1
-	basic_machine_tools = 1
 	fuel_silos = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
 	construction1 = 1
-	excavation1 = 1
-	fuel_refining = 1
-	synth_oil_experiments = 1
-	dispersed_industry1 = 1
-	specialized_production1 = 1
+	dispersed_industry = 1
+	advanced_small_helicopter_airframe = 1
+	advanced_large_helicopter_airframe = 1
+	improved_small_airframe = 1
+	improved_large_airframe = 1
+	aa_lmg = 1
+	aa_hmg = 1
+	aa_cannon_1 = 1
+	early_bombs = 1
+	engines_1 = 1
+	engines_2 = 1
+	range_improvements = 1
+	aircraft_construction = 1
+	gw_artillery = 1
+	artillery1 = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	rocket_artillery = 1
+	infantry_weapons = 1
 }
 
-set_convoys = 10
+set_convoys = 50
 
 set_politics = {
 	ruling_party = fascism
@@ -54,4 +76,116 @@ set_popularities = {
 	fascism = 100
 	neutrality = 0
 	communism = 0
+}
+
+create_equipment_variant = {
+	name = "Recon Droid - Self-Defense Capable"
+	type = scout_auto_tank_chassis_0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = recon_system
+	}
+}
+create_equipment_variant = {
+	name = "Recon Droid - Firepower Redesignated Self-Defense Capable"
+	type = scout_auto_tank_chassis_0
+	modules = {
+		main_armament_slot = tank_auto_cannon
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = recon_system
+		special_type_slot_2 = secondary_turret_hmg
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = additional_machine_guns
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 1
+	}
+}
+create_equipment_variant = {
+	name = "Missile Assault Droid"
+	type = scout_auto_tank_artillery_chassis_0
+	modules = {
+		main_armament_slot = tank_rocket_launcher
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 1
+	}
+}
+create_equipment_variant = {
+	name = "Siege Droidan"
+	type = auto_tank_chassis_0
+	modules = {
+		main_armament_slot = tank_medium_howitzer
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_composite_armor
+		engine_type_slot = tank_diesel_engine
+		special_type_slot_1 = secondary_turret_hmg
+		special_type_slot_2 = secondary_turret_hmg
+		special_type_slot_3 = secondary_turret_hmg
+		special_type_slot_4 = wet_ammo_storage
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 7
+		tank_nsb_armor_upgrade = 4
+	}
+}
+create_equipment_variant = {
+	name = "Flying Droid - Bombing Designation"
+	type = small_helicopter_cas_airframe_2
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = bomb_locks
+		fixed_auxiliary_weapon_slot_2 = bomb_locks
+		engine_type_slot = helicopter_engine_2_1x
+		special_type_slot_1 = drop_tanks
+	}
+}
+create_equipment_variant = {
+	name = "Flying Droid - Multirole Designation"
+	type = small_helicopter_airframe_2
+	modules = {
+		fixed_main_weapon_slot = aircraft_cannon_1_2x
+		fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+		fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+		engine_type_slot = helicopter_engine_2_1x
+		special_type_slot_1 = drop_tanks
+	}
+}
+create_equipment_variant = {
+	name = "Floating Droid - Pirate Defense Capable"
+	type = ship_hull_corvette_3
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "Floating Droid - Full Defense Redesignation"
+	type = ship_hull_corvette_3
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		front_1_custom_slot = ship_depth_charge_2
+		mid_1_custom_slot = ship_depth_charge_2
+		mid_2_custom_slot = ship_depth_charge_2
+	}
 }

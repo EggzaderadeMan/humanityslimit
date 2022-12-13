@@ -3,26 +3,45 @@
 oob = "SUA_2188"
 
 set_stability = 0.6
-set_war_support = 0.1
+set_war_support = 0.3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
+	motorised_infantry = 1
 	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	artillery1 = 1
+	tech_support = 1
+	gwtank_chassis = 1
+	armor_tech_1 = 1
+	electronic_mechanical_engineering = 1
+	radio_detection = 1
+	radio = 1
+	mechanical_computing = 1
+	basic_machine_tools = 1
 	fuel_silos = 1
+	basic_small_helicopter_airframe = 1
+	iw_small_airframe = 1
+	early_bombs = 1
+	aa_lmg = 1
+	aa_hmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	early_ship_hull_corvette = 1
+	basic_battery = 1
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	converted_carrier_tech = 1
+	basic_cruiser_armor_scheme = 1
+	early_ship_hull_submarine = 1
+	basic_torpedo = 1
+	basic_naval_mines = 1
+	mtg_transport = 1
+	concentrated_industry = 1
+	interwar_antiair = 1
+	tech_recon = 1
+	tech_engineers = 1
+	basic_light_tank_chassis = 1
 }
 
 if = {
@@ -58,4 +77,51 @@ set_popularities = {
 	fascism = 75
 	democratic = 20
 	communism = 5
+}
+
+create_equipment_variant = {
+	name = "Cheetah II"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_christie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = additional_machine_guns
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "B5 Bull's Loins"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_auto_cannon
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_cast_armor
+		engine_type_slot = tank_diesel_engine
+		special_type_slot_1 = auto_loader
+		special_type_slot_2 = sloped_armor
+		special_type_slot_3 = armor_skirts
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 9
+		tank_nsb_armor_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Swart Aasvoel"
+	type = small_helicopter_cas_airframe_0
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = bomb_locks
+		engine_type_slot = helicopter_engine_1_1x
+		special_type_slot_1 = lmg_defense_turret_2x
+	}
 }

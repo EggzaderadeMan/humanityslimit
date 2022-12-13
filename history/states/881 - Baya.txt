@@ -9,15 +9,17 @@ state={
 	}
 	history={
 		owner = BAA
+		add_core_of = BAA
 		victory_points = {
 			12830 1
 		}
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower = 99500
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

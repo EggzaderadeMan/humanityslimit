@@ -2,7 +2,7 @@ state=
 {
 	id=870
 	name="STATE_870"
-	manpower = 600600
+	manpower = 87000
 	resources={
 		tungsten=11
 	}
@@ -13,8 +13,9 @@ state=
 		add_core_of = RED
 		owner = RED
 		buildings = {
-			infrastructure = 4
-			air_base = 1
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 	local_supplies=0.0

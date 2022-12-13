@@ -1,4 +1,4 @@
-capital = 295
+capital = 883
 
 oob = "BGR_2188"
 set_technology = {

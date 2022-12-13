@@ -10,10 +10,12 @@ state={
 	history={
 		owner = AZA
 		buildings = {
-			infrastructure=1
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 		}
 	}
-	manpower=2435858
+	manpower = 184000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

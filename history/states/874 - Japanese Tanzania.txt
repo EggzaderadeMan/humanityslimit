@@ -11,7 +11,10 @@ state={
 	history={
 		owner = STM
 		buildings = {
-			infrastructure=2
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 2
 			2196 = {
 				naval_base = 2
 			}
@@ -26,8 +29,8 @@ state={
 			13282 5
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower = 709000
+	state_category = large_city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

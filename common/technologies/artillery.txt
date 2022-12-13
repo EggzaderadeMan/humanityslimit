@@ -30,7 +30,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		enable_equipment_modules = {
-			ship_anti_air_1
 			tank_small_cannon
 			secondary_turret_small_cannon
 		}
@@ -619,7 +618,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_anti_air_2
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_cannon
@@ -691,10 +689,6 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 		tech_air_damage_factor = -0.02
-
-		enable_equipment_modules = {
-			ship_anti_air_3
-		}
 
 		path = {
 			leads_to_tech = antiair2
@@ -793,7 +787,6 @@ technologies = {
 		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
-			ship_anti_air_4
 			tank_anti_air_cannon_2
 			tank_auto_cannon_2
 		}

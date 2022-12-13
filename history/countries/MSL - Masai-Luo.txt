@@ -1,4 +1,4 @@
-capital = 295
+capital = 875
 
 oob = "MSL_2188"
 set_technology = {

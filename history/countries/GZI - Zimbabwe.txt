@@ -1,6 +1,11 @@
-﻿capital = 545
+﻿capital = 838
 
 oob = "GZI_2188"
+
+add_ideas = {
+	extensive_conscription
+	partial_economic_mobilisation
+}
 
 set_stability = 0.6
 set_war_support = 0.1
@@ -9,34 +14,22 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
+	artillery1 = 1
 	electronic_mechanical_engineering = 1
 	basic_machine_tools = 1
 	tech_support = 1
-	ship_hull_corvette_1 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	early_ship_hull_corvette = 1
 	basic_battery = 1
+	engines_1 = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	main_battle_tank_chassis = 1
+	marines = 1
+	motorised_infantry = 1
 }
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_destroyer = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
-	}
-}
-
 
 set_convoys = 25
 set_politics = {
@@ -49,4 +42,45 @@ set_popularities = {
 	fascism = 75
 	democratic = 20
 	communism = 5
+}
+
+create_equipment_variant = { # FROM SOUTH AMERICA
+	name = "A2 Melro Canhao (foreign redesign)"
+	type = modern_tank_artillery_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_howitzer
+		turret_type_slot = tank_modern_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = auto_loader
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = additional_machine_guns
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 8
+		tank_nsb_armor_upgrade = 4
+	}
+}
+create_equipment_variant = { # LOCAL CHEAP STOPGAP
+	name = "New Rhodesia II"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = wet_ammo_storage
+		special_type_slot_2 = secondary_turret_hmg
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = easy_maintenance
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 7
+		tank_nsb_armor_upgrade = 4
+	}
 }

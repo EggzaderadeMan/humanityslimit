@@ -8,24 +8,20 @@ state={
 		rations=7
 		noble=13
 	}
-state_category = pastoral
-
+	state_category = city
 
 	history={
 
 		owner = SUA
 		add_core_of = SUA
 		victory_points = {
-
 			9962 1
-
 		}
 
 		buildings = {
-
 			infrastructure = 2
-
-
+			industrial_complex = 3
+			arms_factory = 1
 		}
 
 	}
@@ -33,12 +29,10 @@ state_category = pastoral
 
 	local_supplies=0.0
 	provinces={
-
 		4584 4822 10697 
- 
 	}
 
-	manpower=1716564
+	manpower = 2387100
 
 	buildings_max_level_factor=1.000
 }

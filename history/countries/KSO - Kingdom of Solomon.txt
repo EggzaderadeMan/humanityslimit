@@ -12,7 +12,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	basic_machine_tools = 1
 	tech_support = 1
-	ship_hull_corvette_1 = 1
+	early_ship_hull_corvette = 1
 	basic_battery = 1
 }
 

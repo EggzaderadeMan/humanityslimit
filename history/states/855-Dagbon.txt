@@ -11,6 +11,8 @@ state={
 		add_core_of = DGB
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 
 	}
@@ -19,7 +21,7 @@ state={
 	provinces={
 		7983 8096 13212
 	}
-	manpower=3163600
+	manpower=291000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
