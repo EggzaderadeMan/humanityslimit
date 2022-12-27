@@ -4,7 +4,7 @@ state={
 	name="STATE_386"
 	manpower = 1563395
 	resources={
-		rations=5
+		rations=3
 	}
 	state_category = large_town
 
@@ -21,11 +21,8 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = CHR
-		owner = UNC
-		victory_points = {
-			1690 1 
-		}
+		add_core_of = CAS
+		owner = CAS
 		victory_points = {
 			7315 10 
 		}
@@ -36,6 +33,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1320 1690 4296 4398 4747 7255 7315 7386 7414 7442 10155 10157 10198 10242 10271 10327 10687 10690 10693 12155 12214 12673 3513 10183 12211 
+		1320 4296 4398 7255 7315 7386 7414 7442 10155 10157 10198 10242 10271 10690 12155 12214 3513 10183 12211 12183 
 	}
 }

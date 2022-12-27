@@ -1,8 +1,14 @@
 capital = 884
 
+add_ideas = {
+	service_by_requirement
+	closed_economy
+}
+
 oob = "FAN_2188"
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 }
 
 set_convoys = 10

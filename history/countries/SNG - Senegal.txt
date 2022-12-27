@@ -1,5 +1,10 @@
 ﻿capital = 272
 
+add_ideas = {
+	service_by_requirement
+	export_focus
+}
+
 oob = "SNG_2188"
 
 set_stability = 0.6

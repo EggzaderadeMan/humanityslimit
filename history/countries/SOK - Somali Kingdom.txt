@@ -2,6 +2,11 @@
 
 oob = "SOK_2188"
 
+add_ideas = {
+	service_by_requirement
+	limited_exports
+}
+
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech

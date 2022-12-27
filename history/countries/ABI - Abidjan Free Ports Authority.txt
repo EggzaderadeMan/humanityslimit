@@ -1,5 +1,10 @@
 ﻿capital = 863
 
+add_ideas = {
+	service_by_requirement
+	closed_economy
+}
+
 oob = "ABI_2188"
 
 set_stability = 0.6

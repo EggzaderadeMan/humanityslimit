@@ -5,7 +5,7 @@ oob = "PES_2188"
 add_ideas = {
 	closed_economy
 	service_by_requirement
-	war_economy
+	isolation
 	PES_land_exploitation
 	PES_local_overmen_bands
 }

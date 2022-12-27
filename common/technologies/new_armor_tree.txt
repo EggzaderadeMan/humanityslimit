@@ -83,7 +83,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2132
 		folder = {
 			name = nsb_armour_folder
@@ -163,7 +163,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -264,7 +264,7 @@ technologies = {
 			light_tank_aa_chassis_2
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2163
 
 		folder = {
@@ -335,7 +335,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 4.0
 		start_year = 2162
 
 		folder = {
@@ -395,7 +395,7 @@ technologies = {
 			scout_auto_tank_chassis_1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 
 		folder = {
@@ -464,7 +464,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 
 		folder = {
@@ -582,7 +582,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 3.5
 		start_year = 2158
 
 		folder = {
@@ -629,7 +629,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 3
 		start_year = 2160
 
 		folder = {
@@ -671,7 +671,7 @@ technologies = {
 #			modern_tank_aa_chassis_3
 		}
 
-		research_cost = 2.5
+		research_cost = 3
 		start_year = 2163
 
 		folder = {
@@ -740,7 +740,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 4
 		start_year = 2162
 		folder = {
 			name = nsb_armour_folder
@@ -786,7 +786,7 @@ technologies = {
 			
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 		folder = {
 			name = nsb_armour_folder
@@ -841,7 +841,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -896,7 +896,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2159
 		folder = {
 			name = nsb_armour_folder
@@ -947,7 +947,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 3
 		start_year = 2165
 		folder = {
 			name = nsb_armour_folder
@@ -1000,7 +1000,7 @@ technologies = {
 			custom_effect_tooltip = engine_tech_1_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -1055,7 +1055,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2159
 		folder = {
 			name = nsb_armour_folder
@@ -1103,7 +1103,7 @@ technologies = {
 			custom_effect_tooltip = engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 2163
 		folder = {
 			name = nsb_armour_folder

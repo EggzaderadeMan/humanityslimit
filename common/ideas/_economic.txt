@@ -13,7 +13,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				rations_factor = 0.50
+				rations_factor = 1.0
 				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = -0.50
 				production_speed_arms_factory_factor = -0.5
@@ -45,7 +45,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				rations_factor = 0.50
+				rations_factor = 1.0
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
@@ -75,7 +75,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.35
-				rations_factor = 0.25
+				rations_factor = 0.50
 				production_speed_industrial_complex_factor = 0.20
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
@@ -109,6 +109,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				rations_factor = 0.10
 				consumer_goods_factor = 0.3
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = -0.1
@@ -149,7 +150,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.25
-				rations_factor = -0.10
+				rations_factor = -0.20
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 				fuel_gain_factor = -0.1
@@ -196,7 +197,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.2
-				rations_factor = -0.25
+				rations_factor = -0.50
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
@@ -313,7 +314,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.10
 				conscription = -0.03
-				rations_factor = -0.25
+				rations_factor = -0.50
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
@@ -459,7 +460,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0.8
-				rations_factor = 0.50
+				rations_factor = 1.00
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
@@ -525,7 +526,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0.5
-				rations_factor = 0.25
+				rations_factor = 0.75
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
@@ -609,7 +610,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0.25
-				rations_factor = 0.10
+				rations_factor = 0.50
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05

@@ -4,13 +4,14 @@ state={
 	name="STATE_381"
 	manpower = 225564
 	resources={
-		oil=11
-		rations=12
+		oil=5
+		rations=17
 	}
 	state_category = rural
 	
 	history={
-		owner = UNC
+		owner = WYO
+		add_core_of = WYO
 		buildings = {
 			infrastructure = 2
 		}
@@ -18,7 +19,7 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
+		4610 4723 4794 4820 10640 10711 7780 11772 3613 4749 4760 
 	}
 	
 }

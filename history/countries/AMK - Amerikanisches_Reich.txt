@@ -89,12 +89,12 @@ set_convoys = 500
 
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = communism
 	last_election = "2932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	fascism = 99
-	democratic = 1
+	fascism = 80
+	democratic = 20
 }

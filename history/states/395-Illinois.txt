@@ -4,7 +4,7 @@ state={
 	name="STATE_395"
 	manpower = 7630651
 	resources={
-		rations=19
+		rations=21
 	}
 	state_category = megalopolis
 
@@ -20,11 +20,14 @@ state={
 		victory_points = {
 			9450 30.0
 		}
+		victory_points = {
+			4569 10 
+		}
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		720 954 1604 1655 4508 7611 7626 7831 9450 9682 10457 10461 12305 12312 12497 12697 
+		720 954 1604 1655 4508 7611 7626 7831 9450 9682 10457 10461 12305 12312 12365 12368 12497 12697 1523 4569 
 	}
 }

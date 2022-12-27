@@ -6,6 +6,10 @@ state={
 	}
 	state_category = town
 	
+	resources = {
+		rations=2
+	}
+
 	history={
 		add_core_of = ABI
 		owner = ABI

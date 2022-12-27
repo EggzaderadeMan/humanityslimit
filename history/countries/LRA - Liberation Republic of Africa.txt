@@ -1,5 +1,10 @@
 ﻿capital = 298
 
+add_ideas = {
+	service_by_requirement
+	limited_exports
+}
+
 oob = "LRA_2188"
 
 set_stability = 0.6
@@ -27,4 +32,13 @@ set_popularities = {
 	fascism = 45
 	neutrality = 50
 	communism = 5
+}
+
+declare_war_on = {
+		target = TEN
+		type = annex_everything
+}
+declare_war_on = {
+		target = SUS
+		type = annex_everything
 }

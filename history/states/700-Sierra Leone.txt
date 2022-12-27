@@ -21,6 +21,9 @@ state={
 			2038 = {
 				naval_base = 3
 			}
+			13299 = {
+				bunker = 3
+			}
 		}
 
 	}

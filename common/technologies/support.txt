@@ -24,28 +24,24 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		path = {
-			leads_to_tech = tech_satellite_strike
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tech_underground_strike
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = tech_CBRN_company
 			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = tech_recon
 			research_cost_coeff = 1
-		}	
-		path = {
-			leads_to_tech = tech_field_hospital
-			research_cost_coeff = 1
-		}					
-
+		}
 		path = {
 			leads_to_tech = tech_logistics_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_electronic
+			research_cost_coeff = 1
+		}
+		######## moved support upgrades ###############
+		path = {
+			leads_to_tech = tech_maintenance_company
 			research_cost_coeff = 1
 		}
 		path = {
@@ -53,14 +49,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = tech_signal_company
+			leads_to_tech = tech_field_hospital
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_maintenance_company
-			research_cost_coeff = 1
-		}
-		######## moved support upgrades ###############
 		path = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
@@ -97,12 +88,80 @@ technologies = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_logistics_company3
+			research_cost_coeff = 1
+		}
 
-		research_cost = 1.0
+		research_cost = 2.0
 		start_year = 2132
 		folder = {
 			name = support_folder
 			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1939.1.1"
+			}
+		}
+	}
+	tech_electronic = {
+		enable_equipments = {
+			electronic_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers2
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = tech_satellite_strike
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_underground_strike
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_CBRN_company2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_recon2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_logistics_company2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_signal_company
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.5
+		start_year = 2132
+		folder = {
+			name = support_folder
+			position = { x = 2 y = 0 }
 		}
 		
 		categories = {
@@ -136,11 +195,11 @@ technologies = {
 			auto_satellite_strike
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2160
 		folder = {
 			name = support_folder
-			position = { x = 1 y = -4 }
+			position = { x = 4 y = -2 }
 		}
 		
 		categories = {
@@ -169,11 +228,11 @@ technologies = {
 			auto_underground_strike
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2160
 		folder = {
 			name = support_folder
-			position = { x = 3 y = -2 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
@@ -201,11 +260,11 @@ technologies = {
 			leads_to_tech = tech_CBRN_company2
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = 3 y = 2 }
+			position = { x = -1 y = 4 }
 		}
 		
 		categories = {
@@ -231,6 +290,10 @@ technologies = {
 
 		enable_subunits = {
 			auto_CBRN_company
+		}
+		dependencies = {
+			tech_electronic = 1
+			atomic_research = 1
 		}
 
 		CBRN_company = {
@@ -272,11 +335,11 @@ technologies = {
 			}
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2162
 		folder = {
 			name = support_folder
-			position = { x = 3 y = 6 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
@@ -312,11 +375,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = -3 y = 2 }
+			position = { x = -1 y = -4 }
 		}
 		
 		categories = {
@@ -361,12 +424,15 @@ technologies = {
 		enable_equipment_modules = {
 			easy_maintenance
 		}
+		dependencies = {
+			tech_electronic = 1
+		}
 
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 2162
 		folder = {
 			name = support_folder
-			position = { x = -3 y = 6 }
+			position = { x = 3 y = -4 }
 		}
 		
 		categories = {
@@ -429,7 +495,7 @@ technologies = {
 			}
 		}	
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -494,7 +560,7 @@ technologies = {
 				attack = 0.10
 			}
 		}
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -529,7 +595,6 @@ technologies = {
 	tech_recon = {
 
 		enable_subunits = {
-			recon
 			mot_recon
 			armored_car_recon
 			light_tank_recon
@@ -540,11 +605,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = -1 y = 4 }
+			position = { x = 0 y = -2 }
 		}
 		
 		categories = {
@@ -590,12 +655,15 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+		dependencies = {
+			tech_electronic = 1
+		}
 
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 2161
 		folder = {
 			name = support_folder
-			position = { x = -1 y = 6 }
+			position = { x = 2 y = -2 }
 		}
 		
 		categories = {
@@ -629,7 +697,7 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -666,7 +734,7 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -704,11 +772,11 @@ technologies = {
 			military_police
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = -1 y = -4 }
+			position = { x = 0 y = 9 }
 		}
 		
 		categories = {
@@ -1194,7 +1262,6 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
-			auto_logistics_company
 		}
 		
 		path = {
@@ -1206,11 +1273,11 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = -3 y = -2 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
@@ -1249,18 +1316,19 @@ technologies = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
-		
-		
-		path = {
-			leads_to_tech = tech_logistics_company3
-			research_cost_coeff = 1
+		enable_subunits = {
+			auto_logistics_company
+		}
+		dependencies = {
+			tech_electronic = 1
+			motorised_infantry = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 9 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1393,11 +1461,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 4 }
+			position = { x = 4 y = 0 }
 		}
 		
 		categories = {
@@ -1431,11 +1499,11 @@ technologies = {
 			hard_attack = 0.05
 		}
 
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 2163
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 6 }
+			position = { x = 6 y = 0 }
 		}
 		
 		categories = {

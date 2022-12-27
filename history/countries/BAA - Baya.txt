@@ -1,8 +1,15 @@
 capital = 881
 
+add_ideas = {
+	service_by_requirement
+	closed_economy
+	isolation
+}
+
 oob = "BAA_2188"
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 }
 
 set_convoys = 10

@@ -20,8 +20,8 @@ AMC = {
 }
 
 AMK = {
-	color = rgb { 127 127 127 }
-	color_ui = rgb { 127 127 127 }
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
 }
 
 ATH = {
@@ -531,4 +531,80 @@ YOR = {
 HAU = {
 	color = rgb { 244 242 127 }
 	color_ui = rgb { 244 242 127 }
+}
+NVJ = {
+	color = rgb { 0 38 255 }
+	color_ui = rgb { 0 38 255 }
+}
+DES = {
+	color = rgb { 255 216 0 }
+	color_ui = rgb { 255 216 0 }
+}
+CLO = {
+	color = rgb { 0 148 255 }
+	color_ui = rgb { 0 148 255 }
+}
+IDA = {
+	color = rgb { 255 106 0 }
+	color_ui = rgb { 255 106 0 }
+}
+CAS = {
+	color = rgb { 0 255 255 }
+	color_ui = rgb { 0 255 255 }
+}
+WYO = {
+	color = rgb { 230 255 168 }
+	color_ui = rgb { 230 255 168 }
+}
+NEB = {
+	color = rgb { 215 255 117 }
+	color_ui = rgb { 215 255 117 }
+}
+KAN = {
+	color = rgb { 0 255 0 }
+	color_ui = rgb { 0 255 0 }
+}
+OKL = {
+	color = rgb { 0 137 16 }
+	color_ui = rgb { 0 137 16 }
+}
+IND = {
+	color = rgb { 127 255 197 }
+	color_ui = rgb { 127 255 197 }
+}
+DAK = {
+	color = rgb { 91 127 0 }
+	color_ui = rgb { 91 127 0 }
+}
+MNA = {
+	color = rgb { 243 255 214 }
+	color_ui = rgb { 243 255 214 }
+}
+ABT = {
+	color = rgb { 127 44 0 }
+	color_ui = rgb { 127 44 0 }
+}
+SAS = {
+	color = rgb { 127 88 0 }
+	color_ui = rgb { 127 88 0 }
+}
+MTB = {
+	color = rgb { 127 112 0 }
+	color_ui = rgb { 127 112 0 }
+}
+CPU = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+IOW = {
+	color = rgb { 182 255 0 }
+	color_ui = rgb { 182 255 0 }
+}
+KKK = {
+	color = rgb { 70 0 0 }
+	color_ui = rgb { 70 0 0 }
+}
+CAL = {
+	color = rgb { 73 162 153 }
+	color_ui = rgb { 73 162 153 }
 }

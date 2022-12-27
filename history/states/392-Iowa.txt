@@ -4,7 +4,7 @@ state={
 	name="STATE_392"
 	manpower = 2470938
 	resources={
-		rations=40
+		rations=33
 	}
 	state_category = city
 
@@ -13,8 +13,8 @@ state={
 			infrastructure = 3
 			industrial_complex = 3
 		}
-		add_core_of = AMK
-		owner = UNC
+		add_core_of = IOW
+		owner = IOW
 		victory_points = {
 			1770 3 
 		}
@@ -23,6 +23,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1586 1678 1770 1831 4691 7306 7458 7539 9892 9910 10478 10666 11788 11971 12418 12646 1527 4590 6737 10339 10393 11589 12365 12368 
+		1586 1678 1770 1831 4691 7306 7458 7536 7539 9892 9910 10478 11788 11971 12418 1527 4590 6737 10339 10393 7449 7607 10333 10516 
 	}
 }

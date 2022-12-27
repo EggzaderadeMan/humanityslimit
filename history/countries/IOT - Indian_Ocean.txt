@@ -4,7 +4,7 @@ oob = "IOT_2188"
 
 add_ideas = {
 	extensive_conscription
-	partial_economic_mobilisation
+	civilian_economy
 }
 
 set_stability = 0.6

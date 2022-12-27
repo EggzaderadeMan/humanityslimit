@@ -41,7 +41,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 2132
 		folder = {
 			name = infantry_folder
@@ -76,7 +76,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 
-		research_cost = 1.5
+		research_cost = 3.0
 		start_year = 2158
 		folder = {
 			name = infantry_folder
@@ -135,7 +135,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 2159
 		folder = {
 			name = infantry_folder
@@ -181,7 +181,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2161
 		folder = {
 			name = infantry_folder
@@ -222,7 +222,7 @@ technologies = {
 			infantry_equipment_3
 		}	
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2164
 		folder = {
 			name = infantry_folder
@@ -403,7 +403,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2162
 		folder = {
 			name = infantry_folder
@@ -465,7 +465,7 @@ technologies = {
 			breakthrough = 0.3
 		}
 
-		research_cost = 2
+		research_cost = 4
 		start_year = 2165
 		folder = {
 			name = infantry_folder
@@ -508,7 +508,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = infantry_folder
@@ -551,7 +551,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 2159
 		folder = {
 			name = infantry_folder
@@ -594,7 +594,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 2162
 		folder = {
 			name = infantry_folder
@@ -633,7 +633,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 2164
 		folder = {
 			name = infantry_folder
@@ -675,7 +675,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2159
 		folder = {
 			name = infantry_folder
@@ -712,7 +712,7 @@ technologies = {
 			SMG_2
 		}	
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2164
 		folder = {
 			name = infantry_folder
@@ -831,7 +831,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2132
 		folder = {
 			name = infantry_folder
@@ -886,7 +886,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 2160
 		folder = {
 			name = infantry_folder
@@ -930,7 +930,7 @@ technologies = {
 		}
 		
 
-		research_cost = 2.0
+		research_cost = 3.0
 		start_year = 2163
 		folder = {
 			name = infantry_folder
@@ -984,7 +984,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2132
 		folder = {
 			name = infantry_folder
@@ -1022,7 +1022,7 @@ technologies = {
 		}
 		
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = infantry_folder
@@ -1056,7 +1056,7 @@ technologies = {
 			hard_attack = 0.05
 		}
 
-		research_cost = 2.0
+		research_cost = 3.0
 		start_year = 2161
 		folder = {
 			name = infantry_folder
@@ -1105,7 +1105,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2132
 		folder = {
 			name = infantry_folder
@@ -1134,7 +1134,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = infantry_folder
@@ -1158,7 +1158,7 @@ technologies = {
 			hard_attack = 0.10
 		}
 
-		research_cost = 2.0
+		research_cost = 3.0
 		start_year = 2161
 		folder = {
 			name = infantry_folder
@@ -1232,7 +1232,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.5
 		start_year = 2159
 		folder = {
 			name = infantry_folder
@@ -1268,7 +1268,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 
-		research_cost = 2
+		research_cost = 2.5
 		start_year = 2161
 		folder = {
 			name = infantry_folder
@@ -1296,7 +1296,7 @@ technologies = {
 			fuel_consumption_factor = -0.1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 		folder = {
 			name = infantry_folder
@@ -1348,7 +1348,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.5
 		start_year = 2159
 		folder = {
 			name = infantry_folder
@@ -1378,7 +1378,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2161
 		folder = {
 			name = infantry_folder
@@ -1403,7 +1403,7 @@ technologies = {
 		}
 		terrain_penalty_reduction = 0.30
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 		folder = {
 			name = infantry_folder

@@ -61,6 +61,8 @@ set_technology = {
 	interwar_antitank = 1
 	rocket_artillery = 1
 	infantry_weapons = 1
+	excavation1 = 1
+	excavation2 = 1
 }
 
 set_convoys = 10
@@ -76,4 +78,54 @@ set_popularities = {
 	fascism = 100
 	neutrality = 0
 	communism = 0
+}
+
+create_equipment_variant = {
+	name = "Area Occupation Droid"
+	type = scout_auto_tank_chassis_0
+	modules = {
+		main_armament_slot = tank_auto_cannon
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_petrol_electric_engine
+		special_type_slot_1 = secondary_turret_hmg
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = additional_machine_guns
+	}
+}
+create_equipment_variant = {
+	name = "Missile Assault Droid"
+	type = auto_tank_artillery_chassis_0
+	modules = {
+		main_armament_slot = tank_rocket_launcher
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = stabilizer
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = recon_system
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 6
+		tank_nsb_armor_upgrade = 7
+	}
+}
+create_equipment_variant = {
+	name = "Fire Support Droid"
+	type = scout_auto_tank_artillery_chassis_0
+	modules = {
+		main_armament_slot = tank_close_support_gun
+		turret_type_slot = tank_auto_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = additional_machine_guns
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = additional_machine_guns
+	}
 }

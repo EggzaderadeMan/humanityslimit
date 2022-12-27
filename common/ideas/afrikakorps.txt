@@ -5,15 +5,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				resistance_target = 0.10
+				resistance_target = 0.20
 				political_advisor_cost_factor = -0.20
 				research_speed_factor = -0.10
 				mobilization_laws_cost_factor = -0.50
 				tank_manufacturer_cost_factor = -0.25
 				high_command_cost_factor = -0.50
 				army_chief_cost_factor = -0.25
-				party_popularity_stability_factor = 0.5
-				offensive_war_stability_factor = -0.50
+				party_popularity_stability_factor = -0.50
+				offensive_war_stability_factor = 0.15
 				war_support_factor = 0.15
 			}
 		}
@@ -26,8 +26,8 @@ ideas = {
 				tank_manufacturer_cost_factor = -0.25
 				high_command_cost_factor = -0.50
 				army_chief_cost_factor = -0.25
-				party_popularity_stability_factor = 0.5
-				offensive_war_stability_factor = -0.25
+				party_popularity_stability_factor = -0.50
+				offensive_war_stability_factor = 0.15
 				war_support_factor = 0.10
 				compliance_gain = 0.02
 			}
@@ -38,20 +38,20 @@ ideas = {
 
 			modifier = {
 				resistance_target = 0.15
-				resistance_garrison_penetration_chance = -0.75
-				resistance_activity = -0.50
-				resistance_damage_to_garrison = -0.50
+				resistance_garrison_penetration_chance = -0.50
+				resistance_activity = -0.25
+				resistance_damage_to_garrison = -0.25
 				operation_cost = -0.25
 				operative_slot = 1
-				compliance_gain = -0.02
+				compliance_gain = -0.03
 				political_advisor_cost_factor = -0.50
 				research_speed_factor = -0.10
 				mobilization_laws_cost_factor = -0.50
 				tank_manufacturer_cost_factor = -0.25
 				high_command_cost_factor = -0.50
 				army_chief_cost_factor = -0.25
-				party_popularity_stability_factor = 0.5
-				offensive_war_stability_factor = -0.50
+				party_popularity_stability_factor = -0.50
+				offensive_war_stability_factor = 0.15
 				war_support_factor = 0.15
 			}
 		}
@@ -61,20 +61,20 @@ ideas = {
 
 			modifier = {
 				resistance_target = 0.15
-				resistance_garrison_penetration_chance = -0.75
-				resistance_activity = -0.50
-				resistance_damage_to_garrison = -0.50
+				resistance_garrison_penetration_chance = -0.50
+				resistance_activity = -0.25
+				resistance_damage_to_garrison = -0.25
 				operation_cost = -0.25
 				operative_slot = 1
-				compliance_gain = -0.02
+				compliance_gain = -0.03
 				political_power_gain = 0.25
 				research_speed_factor = -0.10
 				conscription_factor = 0.25
 				mobilization_speed = 0.50
 				justify_war_goal_time = -0.25
 				surrender_limit = 0.10
-				party_popularity_stability_factor = 0.5
-				offensive_war_stability_factor = -0.50
+				party_popularity_stability_factor = -0.50
+				offensive_war_stability_factor = 0.15
 				war_support_factor = 0.15
 			}
 		}
@@ -90,8 +90,8 @@ ideas = {
 				tank_manufacturer_cost_factor = -0.25
 				high_command_cost_factor = -0.75
 				army_chief_cost_factor = -0.50
-				party_popularity_stability_factor = 0.5
-				offensive_war_stability_factor = -0.75
+				party_popularity_stability_factor = -0.50
+				offensive_war_stability_factor = 0.20
 				war_support_factor = 0.15
 				army_leader_start_level = 1
 				skill_bonus_factor = 0.25
@@ -522,16 +522,16 @@ ideas = {
 
 			}
 			traits = { infantry_equipment_manufacturer }
-#			equipment_bonus = {
-#				SMG_1 = {
-#					soft_attack = 0.10
-#					breakthrough = 0.10
-#				}
-#				SMG_2 = {
-#					soft_attack = 0.10
-#					breakthrough = 0.10
-#				}
-#			}
+			equipment_bonus = {
+				SMG_1 = {
+					soft_attack = 0.10
+					breakthrough = 0.10
+				}
+				SMG_2 = {
+					soft_attack = 0.10
+					breakthrough = 0.10
+				}
+			}
 		}
 	}
 }

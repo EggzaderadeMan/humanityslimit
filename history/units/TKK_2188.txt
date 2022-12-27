@@ -197,7 +197,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = auto_armored_car_equipment_1
-			creator = "AFR"
+			creator = "TKK"
 		}
 		requested_factories = 4
 		progress = 0.1

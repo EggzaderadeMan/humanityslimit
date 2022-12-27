@@ -1,0 +1,27 @@
+
+state={
+	id=902
+	name="STATE_902"
+	manpower = 2563952
+	state_category = city
+
+	resources={
+		steel=70
+		rations=18
+	}
+
+	history={
+		owner = CPU
+		add_core_of = CPU
+		add_core_of = AMK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+	}
+
+	local_supplies=0.0
+	provinces={
+		703 926 1560 1760 1849 3699 4029 4738 4834 7776 7829 9678 10341 10526 12456 10599 709 751 4854 5205 11589 
+	}
+}

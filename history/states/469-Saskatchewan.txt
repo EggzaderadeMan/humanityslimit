@@ -4,13 +4,14 @@ state={
 	name="STATE_469"
 	manpower = 865605
 	resources={
-		oil=21
+		oil=14
 		rations=18
 	}
 	state_category = rural
 
 	history={
-		owner = UNC
+		owner = SAS
+		add_core_of = SAS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -19,6 +20,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		736 1788 3481 3498 3769 4739 9669 10552 10611 10656 11440 12593 12603 12663 
+		736 1788 3481 3498 3769 4739 9669 10552 10611 10656 11440 12593 12603 12663 1671 7883 
 	}
 }
