@@ -1,0 +1,13 @@
+leader_traits = {
+	criticized_from_all_sides = {
+		random = no
+		political_power_factor = -0.25
+		planning_speed = -0.25
+		offensive_war_stability_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
