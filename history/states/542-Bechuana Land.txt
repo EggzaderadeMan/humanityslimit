@@ -10,8 +10,8 @@ state={
 		owner = BWA
 		add_core_of = BWA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
+			industrial_complex = 3
 			arms_factory = 3
 			10525 = {
 				bunker = 5
@@ -24,15 +24,16 @@ state={
 		PES = {
 			set_province_controller = 1580
 			set_province_controller = 12963
+			set_province_controller = 13313
 		}
 
 	}
 
 	provinces={
-		1580 10525 12963 
+		1580 10525 12963 13313 
 	}
-	manpower=234000
+	manpower=699000
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category = city
 	local_supplies=0.000
 }

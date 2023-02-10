@@ -39,10 +39,14 @@ set_technology = {
 	aircraft_construction = 1
 	armored_car1 = 1
 	basic_train = 1
+	excavation1 = 1
+	excavation2 = 1
 }
 
 add_ideas = {
 	AFR_cult_of_rommel
+	AFR_aryanism_1
+	AFR_doctrine_of_perpetual_impurity_1
 	extensive_conscription
 	war_economy
 }

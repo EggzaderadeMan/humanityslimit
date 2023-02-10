@@ -4,8 +4,8 @@ state={
 	provinces={
 		4556 
 	}
-	manpower=290000
-	state_category = rural
+	manpower = 1872300
+	state_category = city
 	resources={
 		steel=4.000
 		rations=1.000
@@ -16,8 +16,7 @@ state={
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 1
-
+			industrial_complex = 4
 		}
 		add_core_of = LES
 

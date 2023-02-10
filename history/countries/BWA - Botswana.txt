@@ -2,8 +2,13 @@
 
 oob = "BWA_2188"
 
+add_ideas = {
+	extensive_conscription
+	war_economy
+}
+
 set_stability = 0.6
-set_war_support = 0.1
+set_war_support = 0.6
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -14,10 +19,6 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 	trench_warfare = 1
 	fuel_silos = 1
 }

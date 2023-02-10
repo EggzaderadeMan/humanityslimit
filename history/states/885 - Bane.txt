@@ -11,11 +11,15 @@ state={
 		owner = BNE
 		add_core_of = BNE
 		buildings = {
-			infrastructure=1
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			13263 1
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower = 76000
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

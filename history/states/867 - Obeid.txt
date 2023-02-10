@@ -2,19 +2,21 @@
 state={
 	id=867
 	name="STATE_867"
-	manpower = 3694293
+	manpower = 297000
 	resources={
 		oil=15
 		rations=13
 	}
-	state_category = rural
+	state_category = town
 	
 	
 	history={
 		owner = KHR
 		add_core_of = KHR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 
 	}

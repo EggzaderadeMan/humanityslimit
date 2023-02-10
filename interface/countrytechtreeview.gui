@@ -510,7 +510,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_support_tree"
-				position = { x = 400 y = 460 }
+				position = { x = 400 y = 250 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -529,7 +529,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_train_tree"
-				position = { x = 100 y = 1180 }
+				position = { x = 100 y = 800 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -3198,7 +3198,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
-				position = { x = 320 y = 172 }
+				position = { x = 420 y = 172 }
 				size = { width = 520 height = 800 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3214,15 +3214,23 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fuel_silos_tree"
-				position = { x = 1050 y = 172 }
+				position = { x = 1150 y = 172 }
 				size = { width =72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
+#			gridboxtype = {
+#				name = "construction1_tree"
+#				position = { x = 894 y = 312 }
+#				size = { width = 72 height = 650 }
+#				slotsize = { width = 70 height = 70 }
+#				format = "UP"
+#			}
+
 			gridboxtype = {
-				name = "construction1_tree"
-				position = { x = 894 y = 312 }
+				name = "excavation1_tree"
+				position = { x = 200 y = 172 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

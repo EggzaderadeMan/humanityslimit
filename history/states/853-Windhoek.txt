@@ -8,14 +8,14 @@ state={
 		owner = WIN
 		add_core_of = WIN
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 3
 
 		}
 
 	}
-	manpower=1294809
+	manpower=949300
 	state_category= city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

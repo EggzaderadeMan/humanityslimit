@@ -26,7 +26,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2132
 		folder = {
 			name = industry_folder
@@ -59,7 +59,7 @@ technologies = {
 			specialized_production1
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2158
 		
 		folder = {
@@ -131,7 +131,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		folder = {
 			name = industry_folder
@@ -165,7 +165,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2162
+		start_year = 2163
 		
 		folder = {
 			name = industry_folder
@@ -231,7 +231,7 @@ technologies = {
 			improved_machine_tools
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 2158
 		
 		folder = {
@@ -299,7 +299,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		folder = {
 			name = industry_folder
@@ -332,7 +332,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2162
+		start_year = 2163
 		
 		folder = {
 			name = industry_folder
@@ -508,7 +508,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		folder = {
 			name = industry_folder
@@ -550,7 +550,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2162
+		start_year = 2163
 		
 		folder = {
 			name = industry_folder
@@ -737,7 +737,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		folder = {
 			name = industry_folder
@@ -778,7 +778,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2162
+		start_year = 2163
 		
 		folder = {
 			name = industry_folder
@@ -881,7 +881,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2158
+		start_year = 2132
 		
 		categories = {
 			industry
@@ -966,7 +966,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2159
+		start_year = 2158
 		
 		categories = {
 			industry
@@ -1019,7 +1019,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		categories = {
 			industry
@@ -1054,7 +1054,7 @@ technologies = {
 
 	excavation3 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.20
 		
 		path = {
 			leads_to_tech = excavation4
@@ -1062,7 +1062,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2160
+		start_year = 2161
 		
 		categories = {
 			industry
@@ -1072,7 +1072,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1120,7 +1120,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2162
+		start_year = 2163
 		
 		categories = {
 			industry
@@ -1144,7 +1144,7 @@ technologies = {
 
 	excavation4 = {
 		
-		local_resources_factor = 0.05
+		local_resources_factor = 0.10
 		
 		path = {
 			leads_to_tech = excavation5
@@ -1152,7 +1152,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2162
+		start_year = 2163
 		
 		categories = {
 			industry
@@ -1162,7 +1162,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1256,8 +1256,8 @@ technologies = {
 
 	excavation5 = {
 		
-		local_resources_factor = 0.10
-		min_export = -1.0
+		local_resources_factor = 0.15
+		min_export = -0.2
 		
 		path = {
 			research_cost_coeff = 1
@@ -1274,7 +1274,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1531,7 +1531,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 3
-		start_year = 2160
+		start_year = 2161
 		folder = {
 			name = industry_folder
 			position = { x = 3 y = 6 }
@@ -1808,7 +1808,7 @@ technologies = {
 			}
 		}
 
-		start_year = 2162
+		start_year = 2163
 
 		path = {
 			leads_to_tech = food_processing2

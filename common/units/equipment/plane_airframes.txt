@@ -551,6 +551,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = dive_brakes_small
+			count < 1
+		}
+
+		module_count_limit = {
 			module = recon_camera
 			count < 2
 		}

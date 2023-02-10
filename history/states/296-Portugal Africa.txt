@@ -2,9 +2,9 @@
 state={
 	id=296
 	name="STATE_296" # Guinea-Bissau
-	manpower = 364900
+	manpower = 270000
 	
-	state_category = enclave
+	state_category = town
 	resources={
 		rations=4
 		aluminium=15
@@ -17,6 +17,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 			12891 ={
 				naval_base = 1
 			}

@@ -10,14 +10,14 @@ state={
 	history={
 		owner = SUA
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			industrial_complex = 2
-			air_base = 1
+			arms_factory = 1
+			dockyard = 2
+			air_base = 2
 			4696 = {
-				naval_base = 2
-
+				naval_base = 3
 			}
-
 		}
 		victory_points = {
 			4696 1 
@@ -29,8 +29,8 @@ state={
 	provinces={
 		1833 4696 10415 10442 12419 12547 12692 
 	}
-	manpower=1637178
+	manpower = 4141300
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = city
 	local_supplies=0.000
 }

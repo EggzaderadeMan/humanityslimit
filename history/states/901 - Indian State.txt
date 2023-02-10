@@ -1,0 +1,33 @@
+
+state={
+	id=901
+	name="STATE_901"
+	manpower = 2396039
+	
+	state_category = city
+	
+	resources={
+		oil=10
+		rations=15
+	}
+
+
+	history={
+		owner = IND
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = IND
+		victory_points = {
+			1806 1 
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		1618 1806 2043 6803 7945 8025 9822
+	}
+}

@@ -12,24 +12,22 @@ state={
 
 	manpower = 2945782
 
-	
-state_category = rural
-
+	state_category = city
 
 	history={
 
 		owner = BMR
 		add_core_of = BMR
 		victory_points = {
-
 			2080 1
-
 		}
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			air_base = 1
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 2
+			air_base = 5
 		}
 	}
 

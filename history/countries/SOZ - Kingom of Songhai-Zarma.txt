@@ -1,5 +1,10 @@
 ﻿capital = 857
 
+add_ideas = {
+	service_by_requirement
+	limited_exports
+}
+
 oob = "SOZ_2188"
 
 set_stability = 0.6
@@ -7,10 +12,12 @@ set_war_support = 0.1
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	gw_artillery = 1
 	electronic_mechanical_engineering = 1
 	basic_machine_tools = 1
 	tech_support = 1
+	camelry = 1
 }
 
 

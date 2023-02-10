@@ -39,6 +39,8 @@ set_technology = {
 	engines_1 = 1
 	range_improvements = 1
 	aircraft_construction = 1
+	excavation1 = 1
+	excavation2 = 1
 }
 add_ideas = {
 	limited_conscription

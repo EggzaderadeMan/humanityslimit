@@ -8,13 +8,12 @@ state={
 		owner = PES
 		add_core_of = PES
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 0
 		}
 
 	}
-	manpower=1453214
-	state_category = rural
+	manpower = 149900
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

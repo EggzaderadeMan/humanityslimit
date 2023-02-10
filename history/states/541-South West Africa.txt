@@ -9,8 +9,9 @@ state={
 
 	history={
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			4879 1 
@@ -23,8 +24,8 @@ state={
 	provinces={
 		8136 8202 10957 10978 12391 12921 12985 
 	}
-	manpower=462000
+	manpower=651000
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=town
 	local_supplies=0.000
 }

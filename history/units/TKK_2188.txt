@@ -1,0 +1,233 @@
+division_template = {
+	name = "Rebel Fighting Formation"
+
+	regiments = {
+		auto_armored_car = { x = 0 y = 0 }
+		auto_armored_car = { x = 0 y = 1 }
+		auto_armored_car = { x = 0 y = 2 }
+		auto_armored_car = { x = 0 y = 3 }
+		auto_armored_car = { x = 1 y = 0 }
+		auto_armored_car = { x = 1 y = 1 }
+		auto_armored_car = { x = 1 y = 2 }
+		auto_armored_car = { x = 1 y = 3 }
+		auto_armored_car = { x = 2 y = 0 }
+		auto_armored_car = { x = 2 y = 1 }
+		auto_armored_car = { x = 2 y = 2 }
+		auto_armored_car = { x = 2 y = 3 }
+	}
+}
+division_template = {
+	name = "Seige and Attack Formation"
+
+	regiments = {
+		auto_mechanized = { x = 0 y = 0 }
+		auto_mechanized = { x = 0 y = 1 }
+		auto_mechanized = { x = 0 y = 2 }
+		auto_brigade = { x = 1 y = 0 }
+		auto_brigade = { x = 1 y = 1 }
+		auto_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		auto_engineer = { x = 0 y = 0 }
+		auto_artillery = { x = 0 y = 1 }
+		auto_CBRN_company = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Reconnaissance Formation"
+
+	regiments = {
+		scout_auto_brigade = { x = 0 y = 0 }
+		scout_auto_brigade = { x = 0 y = 1 }
+		scout_auto_brigade = { x = 1 y = 0 }
+		scout_auto_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		auto_tank_recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Regional Defense Formation"
+
+	regiments = {
+		auto_mechanized = { x = 0 y = 0 }
+		auto_mechanized = { x = 0 y = 1 }
+		auto_mechanized = { x = 0 y = 2 }
+		auto_mechanized = { x = 1 y = 0 }
+		auto_mechanized = { x = 1 y = 1 }
+		auto_mechanized = { x = 1 y = 2 }
+	}
+	support = {
+		auto_engineer = { x = 0 y = 0 }
+	}
+}
+
+units = { # 3 Attack Divisions, 5 Recon Divisions, 8 Defense Divisions
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7931
+		division_template = "Seige and Attack Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2220
+		division_template = "Seige and Attack Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4941
+		division_template = "Seige and Attack Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10988
+		division_template = "Reconnaissance Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 191
+		division_template = "Reconnaissance Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9986
+		division_template = "Reconnaissance Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 8048
+		division_template = "Reconnaissance Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2115
+		division_template = "Reconnaissance Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5117
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8193
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10968
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10071
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10766
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13271
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 7716
+		division_template = "Regional Defense Formation"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 12896
+		division_template = "Regional Defense Formation"
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = auto_armored_car_equipment_1
+			creator = "TKK"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = auto_tank_chassis_0
+			creator = "TKK"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = scout_auto_tank_chassis_0
+			creator = "TKK"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = auto_mechanized_equipment_1
+			creator = "TKK"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

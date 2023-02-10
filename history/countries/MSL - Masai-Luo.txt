@@ -1,8 +1,15 @@
-capital = 295
+capital = 875
 
 oob = "MSL_2188"
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+add_ideas = {
+	service_by_requirement
+	closed_economy
+	isolation
 }
 
 set_convoys = 10

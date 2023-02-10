@@ -2,11 +2,11 @@
 state={
 	id=659
 	name="STATE_659"
-	manpower = 891505
+	manpower = 359700
 	resources = {
 		rations=1
 	}
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = HPS
@@ -15,7 +15,10 @@ state={
 			5074 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
 			air_base = 4
 			5074 = {
 				naval_base = 3

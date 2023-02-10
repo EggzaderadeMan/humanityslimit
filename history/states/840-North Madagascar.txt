@@ -10,18 +10,18 @@ state={
 		add_core_of = MGS
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
+			dockyard = 3
 			industrial_complex = 1
+			arms_factory = 1
 			5222 = {
-				naval_base = 2
-
+				naval_base = 5
 			}
 
 		}
 
 	}
-	manpower=954802
+	manpower = 714500
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = large_town
 	local_supplies=0.000
 }

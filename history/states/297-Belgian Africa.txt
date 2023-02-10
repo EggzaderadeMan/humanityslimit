@@ -2,13 +2,13 @@ state=
 {
 	id=297
 	name="STATE_297" # Equatorial Guinea
-	manpower = 185000
+	manpower = 262000
 	resources={
 		rubber=14
 		oil=19
 		rations=1
 	}
-	state_category = enclave
+	state_category = town
 	
 	history=
 	{
@@ -21,7 +21,7 @@ state=
 			5139 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			1903 = {
 				naval_base = 1
 			}
@@ -30,8 +30,10 @@ state=
 			}
 			5139 = {
 				naval_base = 1
-
 			}
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
 		}
 	}
 	local_supplies=0.0

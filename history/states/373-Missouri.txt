@@ -8,25 +8,24 @@ state={
 	
 	resources={
 		steel=15
-		rations=3
+		rations=16
 	}
 
 
 	history={
-		owner = AMK
+		owner = KKK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
 		}
-		add_core_of = AMK
+		add_core_of = KKK
 		victory_points = {
-			10370 1 
+			10370 3
 		}
-
 	}
 
 	local_supplies=0.0
 	provinces={
-		1534 1564 4449 4540 10370 12346 12463 9802 
+		1534 1564 10370 12346 12463 1441 1621 12361 4567 4597 7586 10477 
 	}
 }

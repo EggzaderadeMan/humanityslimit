@@ -132,7 +132,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
-			count < 2
+			count < 1
 		}
 		module_count_limit = {
 			module = stabilizer
@@ -341,7 +341,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
-			count < 2
+			count < 1
 		}
 		module_count_limit = {
 			module = stabilizer

@@ -18,17 +18,9 @@ technologies = {
 
 		enable_equipments = {
 			light_tank_chassis_0
-			medium_tank_chassis_0
-			heavy_tank_chassis_0
 			light_tank_destroyer_chassis_0
-			medium_tank_destroyer_chassis_0
-			heavy_tank_destroyer_chassis_0
 			light_tank_artillery_chassis_0
-			medium_tank_artillery_chassis_0
-			heavy_tank_artillery_chassis_0
 			light_tank_aa_chassis_0
-			medium_tank_aa_chassis_0
-			heavy_tank_aa_chassis_0
 		}
 		enable_equipment_modules = {
 			tank_torsion_bar_suspension
@@ -41,15 +33,6 @@ technologies = {
 			tank_light_two_man_tank_turret
 			tank_light_three_man_tank_turret
 			tank_light_fixed_superstructure_turret
-			tank_medium_one_man_tank_turret
-			tank_medium_two_man_tank_turret
-			tank_medium_three_man_tank_turret
-			tank_medium_fixed_superstructure_turret
-			tank_heavy_two_man_tank_turret
-			tank_heavy_three_man_tank_turret
-			tank_heavy_fixed_superstructure_turret
-			tank_super_heavy_four_man_tank_turret
-			tank_super_heavy_three_man_tank_turret
 			tank_modern_tank_turret
 			sloped_armor
 			extra_ammo_storage
@@ -58,8 +41,6 @@ technologies = {
 		}
 		enable_subunits = {
 			light_armor
-			medium_armor
-			heavy_armor
 		}
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
@@ -102,7 +83,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2132
 		folder = {
 			name = nsb_armour_folder
@@ -182,7 +163,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -283,7 +264,7 @@ technologies = {
 			light_tank_aa_chassis_2
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2163
 
 		folder = {
@@ -354,7 +335,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 4.0
 		start_year = 2162
 
 		folder = {
@@ -414,7 +395,7 @@ technologies = {
 			scout_auto_tank_chassis_1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 
 		folder = {
@@ -483,7 +464,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 2158
 
 		folder = {
@@ -601,7 +582,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 3.5
 		start_year = 2158
 
 		folder = {
@@ -648,7 +629,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 3
 		start_year = 2160
 
 		folder = {
@@ -690,7 +671,7 @@ technologies = {
 #			modern_tank_aa_chassis_3
 		}
 
-		research_cost = 2.5
+		research_cost = 3
 		start_year = 2163
 
 		folder = {
@@ -731,15 +712,16 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_auto_tank_turret
-#			tank_small_missile
-#			tank_aa_missile
-#			tank_anti_armor_gun
-#			tank_anti_personnel_gun
-#			tank_gun_missile
-#			tank_howitzer_gun
-#			tank_high_explosive_anti_tank_gun
-#			aa_machine_gun
-#			grenade_launcher
+			tank_torsion_bar_suspension
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_diesel_engine
+			tank_petrol_electric_engine
+			tank_christie_suspension
+			sloped_armor
+			extra_ammo_storage
+			wet_ammo_storage
+			smoke_launchers
 		}
 
 		enable_subunits = {
@@ -758,7 +740,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 4
 		start_year = 2162
 		folder = {
 			name = nsb_armour_folder
@@ -804,7 +786,7 @@ technologies = {
 			
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 2165
 		folder = {
 			name = nsb_armour_folder
@@ -859,7 +841,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -914,7 +896,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2159
 		folder = {
 			name = nsb_armour_folder
@@ -965,7 +947,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 3
 		start_year = 2165
 		folder = {
 			name = nsb_armour_folder
@@ -1018,7 +1000,7 @@ technologies = {
 			custom_effect_tooltip = engine_tech_1_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 2
 		start_year = 2158
 		folder = {
 			name = nsb_armour_folder
@@ -1073,7 +1055,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 2159
 		folder = {
 			name = nsb_armour_folder
@@ -1121,7 +1103,7 @@ technologies = {
 			custom_effect_tooltip = engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 2163
 		folder = {
 			name = nsb_armour_folder

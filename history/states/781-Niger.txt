@@ -3,14 +3,14 @@ state={
 
 	id=781
 
-	name="STATE_781" # Niger
+	name="STATE_781"
 
-	manpower = 543817
+	manpower = 1222000
 	resources = {
 		rations=29
 	}
 	
-	state_category = pastoral
+	state_category = city
 
 
 	history={
@@ -18,17 +18,22 @@ state={
 		owner = ALC
 		add_core_of = ALC
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 3
 		}
-
+		victory_points = {
+			8028 3
+		}
+		victory_points = {
+			10758 1
+		}
 	}
 
 
 	local_supplies=0.0
 	provinces={
-
 		10758 8028 2056 1891 1969 13252 
-
 	}
 
 }

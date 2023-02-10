@@ -4,12 +4,14 @@ state={
 	name="STATE_390"
 	manpower = 692849
 	resources={
-		rations=38
+		rations=48
+		steel=20
 	}
 	state_category = rural
 
 	history={
-		owner = UNC
+		owner = DAK
+		add_core_of = DAK
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,6 +24,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 
+		1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 10666 12646 1867 9880 10719 12577 
 	}
 }

@@ -17,7 +17,8 @@ state={
 				naval_base = 1
 
 			}
-
+			industrial_complex = 2
+			arms_factory = 1
 		}
 
 	}
@@ -26,7 +27,7 @@ state={
 	provinces={
 		2012 2100 4989 7972 10829 10915 12834 13213 
 	}
-	manpower=199520
+	manpower=351000
 	buildings_max_level_factor=1.000
-	state_category=enclave
+	state_category = town
 }

@@ -3,6 +3,7 @@ state={
 	name="STATE_274"
 	resources={
 		aluminium=7
+		oil=8
 		rubber=5
 		rations=8
 		noble=29
@@ -17,8 +18,13 @@ state={
 		victory_points = {
 			10803 1
 		}
+		victory_points = {
+			12787 3
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
 			10862 = {
 				naval_base = 2
 
@@ -34,7 +40,7 @@ state={
 	provinces={
 		5013 8039 8122 10803 10862 12742 12787 12785 13136 
 	}
-	manpower=3163600
+	manpower=1324000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = large_city
 }

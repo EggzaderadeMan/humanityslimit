@@ -12,7 +12,8 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		owner = UNC
+		owner = CAS
+		add_core_of = CAS
 	}
 
 	local_supplies=0.0

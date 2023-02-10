@@ -15,22 +15,22 @@ on_actions = {
 			set_variable = { rations_consumption = 0 }
 
 			set_variable = { infantry_consumption = num_battalions_with_type@infantry }
-			multiply_variable = { infantry_consumption = 0.01 }
+			multiply_variable = { infantry_consumption = 0.02 }
 			set_variable = { artillery_consumption = num_battalions_with_type@artillery }
-			multiply_variable = { artillery_consumption = 0.005 }
+			multiply_variable = { artillery_consumption = 0.01 }
 			set_variable = { light_consumption = num_battalions_with_type@light_armor }
-			multiply_variable = { light_consumption = 0.005 }
+			multiply_variable = { light_consumption = 0.01 }
 			set_variable = { medium_consumption = num_battalions_with_type@medium_armor }
-			multiply_variable = { medium_consumption = 0.005 }
+			multiply_variable = { medium_consumption = 0.01 }
 			set_variable = { heavy_consumption = num_battalions_with_type@heavy_armor }
-			multiply_variable = { heavy_consumption = 0.005 }
+			multiply_variable = { heavy_consumption = 0.01 }
 			set_variable = { remaining_consumption = num_battalions }
 			subtract_from_variable = { remaining_consumption = num_battalions_with_type@infantry }
 			subtract_from_variable = { remaining_consumption = num_battalions_with_type@artillery }
 			subtract_from_variable = { remaining_consumption = num_battalions_with_type@light_armor }
 			subtract_from_variable = { remaining_consumption = num_battalions_with_type@medium_armor }
 			subtract_from_variable = { remaining_consumption = num_battalions_with_type@heavy_armor }
-			multiply_variable = { remaining_consumption = 0.01 }
+			multiply_variable = { remaining_consumption = 0.02 }
 
 			set_variable = { potential_consumption = 0 }
 			add_to_variable = { potential_consumption = infantry_consumption }

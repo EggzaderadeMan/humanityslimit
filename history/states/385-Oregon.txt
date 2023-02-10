@@ -5,6 +5,7 @@ state={
 	manpower = 953785
 	resources={
 		chromium=50
+		rations=2
 	}
 	state_category = town
 
@@ -14,6 +15,9 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 6
+			610 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = CHR
 
@@ -21,6 +25,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		505 528 4380 11495 11733 12281 
+		505 528 4380 11495 11733 12281 1414 3471 4274 4328 4347 4826 7398 10151 10305 6665 6482 3644 781 610 
 	}
 }

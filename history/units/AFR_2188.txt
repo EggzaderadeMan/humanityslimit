@@ -824,7 +824,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = mechanized_equipment
+			type = mechanized_equipment_1
 			creator = "AFR"
 		}
 		requested_factories = 3
@@ -833,7 +833,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = motorized_equipment
+			type = motorized_equipment_1
 			creator = "AFR"
 		}
 		requested_factories = 1
@@ -842,7 +842,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1
+			type = small_plane_airframe_0
 			creator = "AFR"
 		}
 		requested_factories = 2
@@ -851,7 +851,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = CAS_equipment_1
+			type = small_plane_cas_airframe_0
 			creator = "AFR"
 		}
 		requested_factories = 1

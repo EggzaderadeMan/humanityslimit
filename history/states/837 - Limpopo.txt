@@ -10,9 +10,11 @@ state={
 
 	history={
 		owner = PES
-		add_core_of = PES
+		add_core_of = SUA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 			8245 = {
 				naval_base = 1
 
@@ -27,9 +29,9 @@ state={
 	provinces={
 		1688 7900 8245 10566 
 	}
-	manpower=234000
+	manpower = 712300
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category = town
 	local_supplies=0.000
 }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

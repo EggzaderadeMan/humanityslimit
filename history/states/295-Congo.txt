@@ -11,9 +11,9 @@ state={
 		owner = TKK
 		add_core_of = TKK
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 1
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
 		}
 
 	}
@@ -21,8 +21,8 @@ state={
 	provinces={
 		12945 12896 4128 7716 2024 9986 
 	}
-	manpower=3540948
+	manpower=653000
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category = city
 	local_supplies=0.000
 }

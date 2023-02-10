@@ -1,0 +1,213 @@
+division_template = {
+	name = "Automated Counterterrorist Brigade"
+
+	regiments = {
+		auto_armored_car = { x = 0 y = 0 }
+		auto_armored_car = { x = 0 y = 1 }
+		auto_armored_car = { x = 0 y = 2 }
+		auto_armored_car = { x = 0 y = 3 }
+		auto_armored_car = { x = 1 y = 0 }
+		auto_armored_car = { x = 1 y = 1 }
+		auto_armored_car = { x = 1 y = 2 }
+		auto_armored_car = { x = 1 y = 3 }
+		auto_armored_car = { x = 2 y = 0 }
+		auto_armored_car = { x = 2 y = 1 }
+		auto_armored_car = { x = 2 y = 2 }
+		auto_armored_car = { x = 2 y = 3 }
+		auto_armored_car = { x = 3 y = 0 }
+		auto_armored_car = { x = 3 y = 1 }
+		auto_armored_car = { x = 3 y = 2 }
+		auto_armored_car = { x = 3 y = 3 }
+	}
+}
+division_template = {
+	name = "Search and Occupy Brigade"
+
+	regiments = {
+		scout_auto_brigade = { x = 0 y = 0 }
+		scout_auto_brigade = { x = 0 y = 1 }
+		scout_auto_brigade = { x = 1 y = 0 }
+		scout_auto_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		auto_tank_recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Automated Missile Assault Brigade"
+
+	regiments = {
+		auto_mechanized = { x = 0 y = 0 }
+		auto_mechanized = { x = 0 y = 1 }
+		auto_mechanized = { x = 0 y = 2 }
+		auto_sp_artillery_brigade = { x = 1 y = 1 }
+		auto_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		auto_engineer = { x = 0 y = 0 }
+		auto_artillery = { x = 0 y = 1 }
+		auto_CBRN_company = { x = 0 y = 2 }
+	}
+}
+
+units = { # 2 Missile Brigades, 6 Counterterrorist Brigades, 6 Search Brigades
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13238
+		division_template = "Automated Missile Assault Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4952
+		division_template = "Automated Missile Assault Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13241
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8021
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13254
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13242
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13250
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1932
+		division_template = "Automated Counterterrorist Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2081
+		division_template = "Search and Occupy Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8109
+		division_template = "Search and Occupy Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8028
+		division_template = "Search and Occupy Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10831
+		division_template = "Search and Occupy Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13244
+		division_template = "Search and Occupy Brigade"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12843
+		division_template = "Search and Occupy Brigade"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = auto_armored_car_equipment_1
+			creator = "ALC"
+		}
+		requested_factories = 6
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = auto_tank_artillery_chassis_0
+			creator = "ALC"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+		add_equipment_production = {
+		equipment = {
+			type = scout_auto_tank_artillery_chassis_0
+			creator = "ALC"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = scout_auto_tank_chassis_0
+			creator = "ALC"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = auto_mechanized_equipment_1
+			creator = "ALC"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

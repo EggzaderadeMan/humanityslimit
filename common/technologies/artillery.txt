@@ -30,12 +30,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		enable_equipment_modules = {
-			ship_anti_air_1
 			tank_small_cannon
 			secondary_turret_small_cannon
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 2132
 
 		folder = {
@@ -84,7 +83,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2158
 
@@ -153,7 +152,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 3
 
 		start_year = 2159
 
@@ -218,7 +217,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2160
 
@@ -267,7 +266,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 4
 
 		start_year = 2164
 
@@ -332,7 +331,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2165
 
@@ -387,7 +386,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2167
 
@@ -460,7 +459,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.5
 
 		start_year = 2158
 
@@ -503,7 +502,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2159
 
@@ -551,7 +550,7 @@ technologies = {
 			leads_to_tech = rocket_artillery4
 			research_cost_coeff = 1
 		}
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2160
 
@@ -589,7 +588,7 @@ technologies = {
 			soft_attack = 0.15
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2162
 
@@ -619,7 +618,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_anti_air_2
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_cannon
@@ -636,7 +634,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 
 		start_year = 2158
 
@@ -692,16 +690,12 @@ technologies = {
 		static_anti_air_damage_factor = 0.1
 		tech_air_damage_factor = -0.02
 
-		enable_equipment_modules = {
-			ship_anti_air_3
-		}
-
 		path = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2159
 
@@ -752,7 +746,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2160
 
@@ -793,7 +787,6 @@ technologies = {
 		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
-			ship_anti_air_4
 			tank_anti_air_cannon_2
 			tank_auto_cannon_2
 		}
@@ -803,7 +796,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 4
 
 		start_year = 2164
 
@@ -858,7 +851,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2165
 
@@ -910,7 +903,7 @@ technologies = {
 
 		tech_air_damage_factor = -0.02
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2167
 
@@ -957,7 +950,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 
 		start_year = 2158
 
@@ -1038,7 +1031,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 
 		start_year = 2159
 
@@ -1139,7 +1132,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 3.0
 
 		start_year = 2160
 
@@ -1203,7 +1196,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 4
 
 		start_year = 2164
 
@@ -1299,7 +1292,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 3
 
 		start_year = 2165
 
@@ -1393,7 +1386,7 @@ technologies = {
 			ap_attack = 0.05
 		}
 
-		research_cost = 1
+		research_cost = 3
 
 		start_year = 2167
 

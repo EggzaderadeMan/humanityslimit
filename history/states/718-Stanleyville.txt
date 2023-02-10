@@ -2,7 +2,7 @@ state={
 	id=718
 	name="STATE_718"
 	
-	state_category = pastoral
+	state_category = town
 
 	resources={
 		rations=5
@@ -13,7 +13,8 @@ state={
 		owner = CHS
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		add_core_of = CHS
 	}
@@ -22,6 +23,6 @@ state={
 	provinces={
 		3854 7088 12783 2154 7996 
 	}
-	manpower=2366783
+	manpower=501200
 	buildings_max_level_factor=1.000
 }

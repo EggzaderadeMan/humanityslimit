@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		PES_land_exploitation = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 1.0
+			}
+		}
+		PES_local_overmen_bands = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				out_of_supply_factor = -0.95
+				ai_focus_aggressive_factor = -0.75
+			}
+		}
+	}
+}

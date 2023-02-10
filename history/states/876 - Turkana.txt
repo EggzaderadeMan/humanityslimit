@@ -11,10 +11,12 @@ state={
 		owner = TRK
 		add_core_of = TRK
 		buildings = {
-			infrastructure=1
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
 		}
 	}
-	manpower=2435858
+	manpower = 204300
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

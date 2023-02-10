@@ -2,12 +2,12 @@
 state={
 	id=272
 	name="STATE_272"
-	manpower = 1638000
+	manpower = 372000
 	resources={
 		rations=9
 	}
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = SNG
@@ -21,6 +21,8 @@ state={
 			4948 = {
 				naval_base = 3
 			}
+			industrial_complex = 2
+			arms_factory = 1
 		}
 	}
 

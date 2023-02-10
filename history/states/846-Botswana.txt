@@ -2,7 +2,7 @@ state={
 	id=846
 	name="STATE_846"
 	provinces={
-		2213 5217 8214 10668 
+		8214 10668 13314 
 	}
 	resources={
 		rations=1.000
@@ -11,16 +11,17 @@ state={
 		owner = PES
 		add_core_of = PES
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			8214 1 
 		}
 
 	}
-	manpower=549370
-	state_category = pastoral
+	manpower=301400
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

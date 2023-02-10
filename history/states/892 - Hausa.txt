@@ -10,11 +10,19 @@ state={
 	history={
 		owner = ALC
 		buildings = {
-			infrastructure=2
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 3
+		}
+		victory_points = {
+			13250 2
+		}
+		victory_points = {
+			13251 1
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower=957000
+	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

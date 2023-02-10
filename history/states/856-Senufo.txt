@@ -3,20 +3,22 @@ state={
 
 	id=856
 
-	name="STATE_856" # Upper Volta
+	name="STATE_856"
 	resources = {
 		rations=7
 	}
 
-	manpower = 3186184
+	manpower = 315000
 
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = SSE
 		add_core_of = SSE
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 
 	}

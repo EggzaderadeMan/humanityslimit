@@ -2,12 +2,12 @@
 state={
 	id=780
 	name="STATE_780" # Guinea
-	manpower = 195041
+	manpower = 74000
 	resources = {
 		aluminium=25
 		rations=2
 	}
-	state_category = pastoral
+	state_category = rural
 	history={
 		owner = SUS
 		add_core_of = SUS
@@ -15,7 +15,9 @@ state={
 			1909 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 			1909 = {
 				naval_base = 1
 			}

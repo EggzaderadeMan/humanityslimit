@@ -10,11 +10,22 @@ state={
 	history={
 		owner = ALC
 		buildings = {
-			infrastructure=2
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
+		}
+		victory_points = {
+			8021 10
+		}
+		victory_points = {
+			13244 2
+		}
+		victory_points = {
+			13243 1
 		}
 	}
-	manpower=2435858
-	state_category = town
+	manpower = 1358000
+	state_category = metropolis
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

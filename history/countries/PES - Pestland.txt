@@ -2,33 +2,25 @@
 
 oob = "PES_2188"
 
-set_stability = 0.6
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	isolation
+	PES_land_exploitation
+	PES_local_overmen_bands
+}
+
+set_stability = 0.1
 set_war_support = 0.1
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	genetically_modified_infantry = 1
+	chemical_induced_suicide_brigades = 1
+	tech_support = 1
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_destroyer = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
-	}
-}
 declare_war_on = {
 		target = NGO
 		type = annex_everything

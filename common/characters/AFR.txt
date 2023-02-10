@@ -7,6 +7,12 @@ characters = {
 				small=GFX_portrait_AST_leslie_morshead_small
 			}
 		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { criticized_from_all_sides }
+			expire = "2187.1.1.1"
+			id = -1
+		}
 		corps_commander={
 			traits = { cautious inflexible_strategist }
 			skill=3
@@ -24,6 +30,12 @@ characters = {
 				large="GFX_AST_leslie_morshead"
 				small=GFX_portrait_AST_leslie_morshead_small
 			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "2173.1.1.1"
+			id = -1
 		}
 		corps_commander={
 			traits = { trickster brilliant_strategist }

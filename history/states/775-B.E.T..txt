@@ -2,13 +2,13 @@ state={
 
 	id=775
 
-	name="STATE_775" # BET - Borkou-Ennedi-Tibesti region
+	name="STATE_775"
 	resources = {
 		oil=24
 	}
 
 
-	state_category = wasteland
+	state_category = town
 
 	history={
 		victory_points = {
@@ -17,9 +17,9 @@ state={
 		owner = ALC
 		add_core_of = ALC
 		buildings = {
-
 			infrastructure = 2
-
+			industrial_complex = 2
+			arms_factory = 2
 		}
 
 	}
@@ -27,12 +27,10 @@ state={
 
 	local_supplies=0.0
 	provinces={
-
 		1956 5136 3123 2081 
-
 	}
 
-	manpower=18744
+	manpower=267000
 
 	buildings_max_level_factor=1.000
 }

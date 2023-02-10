@@ -1,10 +1,10 @@
 
 state={
 	id=275
-	name="STATE_275" # Transvaal
-	manpower = 3390363
+	name="STATE_275"
+	manpower = 5501400
 	
-	state_category = city
+	state_category = metropolis
 	
 	resources={
 		steel=21.000
@@ -17,9 +17,9 @@ state={
 		owner = SUA
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			arms_factory = 3
 			industrial_complex = 5
-			air_base = 3
+			air_base = 5
 
 		}
 		add_core_of = SUA
@@ -28,6 +28,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		5231 12064 12648 
+		5231 12064 12648 13312 
 	}
 }

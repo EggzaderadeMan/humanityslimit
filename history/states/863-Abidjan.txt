@@ -4,17 +4,23 @@ state={
 	provinces={
 		8006 10762 13305 
 	}
-	state_category = rural
+	state_category = town
 	
+	resources = {
+		rations=2
+	}
+
 	history={
 		add_core_of = ABI
 		owner = ABI
 		buildings = {
-			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 2
 			air_base = 1
 		}
 	}
-	manpower=174638
+	manpower=149000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

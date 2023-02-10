@@ -5,12 +5,13 @@ state={
 	manpower = 651071
 	resources={
 		oil=8
-		rations=15
+		rations=20
 	}
 	state_category = rural
 
 	history={
-		owner = UNC
+		owner = MTB
+		add_core_of = MTB
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,6 +23,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1848 1873 3721 4218 4426 4790 4872 5119 12145 12636 12688 
+		1848 1873 3721 4218 4426 4790 4872 5119 12145 12636 12688 1870 10709 12685 1769 4775 4875 7899 
 	}
 }

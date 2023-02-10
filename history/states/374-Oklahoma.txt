@@ -7,27 +7,24 @@ state={
 	state_category = city
 	
 	resources={
-		oil=20
-		rations=30
+		oil=10
+		rations=15
 	}
 
 
 	history={
-		owner = AMC
+		owner = OKL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 2
 		}
+		add_core_of = OKL
 		add_core_of = AMC
-		victory_points = {
-			1806 1 
-		}
-
 	}
 
 	local_supplies=0.0
 	provinces={
-		1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802 12624 
+		4919 5103 7762 7904 10702 10798 11743 11802 
 	}
 }

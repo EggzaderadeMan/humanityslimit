@@ -1,0 +1,30 @@
+
+state={
+	id=898
+	name="STATE_898"
+	manpower = 423316
+	
+	state_category = rural
+	
+	resources={
+		oil=5
+		rations=1
+		tungsten=4
+	}
+
+
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = NVJ
+		owner = NVJ
+	}
+
+	local_supplies=0.0
+	provinces={
+		6897 7818 7821 7999 10573 
+	}
+	
+}
