@@ -56,14 +56,14 @@ if = {
 
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = fanatic
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	neutrality = 10
-	fascism = 90
+	fanatic = 90
 }
 
 set_convoys = 20

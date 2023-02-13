@@ -2,29 +2,32 @@
 state={
 	id=423
 	name="STATE_423" # Madurai
-	manpower = 29147500
+	manpower = 49147500
 	
-	state_category = rural
+	state_category = large_town
 	
 	resources={
 		rubber=35
 		oil=20
 		rations=31
+		steel=48
 	}
 
 	history={
-		add_core_of = DEH
-		owner = UNC
+		add_core_of = DRA
+		owner = DRA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			air_base = 1
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 2
+			air_base = 4
 			10278 = {
 				naval_base = 4
 			}
 		}
 		victory_points = {
-			10278 1 
+			10278 10 
 		}
 
 	}

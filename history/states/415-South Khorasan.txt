@@ -2,16 +2,18 @@
 state={
 	id=415
 	name="STATE_415" # Herat
-	manpower = 1632860
+	manpower = 3939000
 	resources={
 		rations=11
 	}
-	state_category = rural
+	state_category = town
 
 	history={
-		owner = UNC
+		owner = IRA
+		add_core_of = IRA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 		}
 		victory_points = {
 			4893 1 
@@ -20,6 +22,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1948 1995 2017 2062 2078 2101 4893 4949 5020 5064 8053 8090 10789 12788 12871 
+		2062 4893 8053 12871 7990 12739 
 	}
 }

@@ -2,17 +2,18 @@
 state={
 	id=291
 	name="STATE_291"
-	manpower = 2044165
+	manpower = 8621000
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		oil=30
-		rations=6
+		rations=11
 	}
 
 	history={
-		owner = UNC
+		owner = MES
+		add_core_of = MES
 		victory_points = {
 			2097 5
 		}
@@ -21,18 +22,14 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1 
-			air_base = 4
-			2089 = {
-				naval_base = 1
-			}
+			arms_factory = 2
+			industrial_complex = 4 
+			air_base = 5
 		}
-		add_core_of = PER
 	}
 
 	local_supplies=0.0
 	provinces={
-		78 2004 2089 2097 3795 7977 7994 8001 10876 12046 12726 12839 12855 
+		78 2004 2097 7977 7994 8001 10876 12046 12726 12839 12855 10793 10744 12879 
 	}
 }

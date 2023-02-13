@@ -1,5 +1,7 @@
 ﻿capital = 446
 
+oob = "EGY_2188"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

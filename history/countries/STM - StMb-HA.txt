@@ -66,14 +66,11 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = mechanical
 	last_election = "2136.1.1"
 	election_frequency = 12
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	neutrality = 0
-	communism = 0
+	mechanical = 100
 }

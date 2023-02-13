@@ -1,0 +1,31 @@
+state={
+	id=906
+	name="STATE_906"
+	resources={
+		aluminium=15
+		chromium=5
+		rations=6
+	}
+
+	history={
+		add_core_of = SAD
+		owner = SAD
+		victory_points = {
+			4516 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		1444 10358 12035 12307 
+	}
+	manpower=5574500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -74,7 +74,8 @@ equipments = {
 		reliability = 0.9
 		build_cost_ic = 1.14
 		resources = {
-			steel = 4
+			steel = 2
+			tungsten = 1
 		}
 	}
 
@@ -100,8 +101,9 @@ equipments = {
 		reliability = 0.85
 		build_cost_ic = 1.69
 		resources = {
-			steel = 4
+			steel = 2
 			chromium = 1
+			tungsten = 1
 		}
 		
 	}
@@ -130,8 +132,9 @@ equipments = {
 		reliability = 0.8
 		build_cost_ic = 2.54
 		resources = {
-			steel = 4
+			steel = 2
 			chromium = 1
+			tungsten = 1
 			noble = 1
 		}
 	}

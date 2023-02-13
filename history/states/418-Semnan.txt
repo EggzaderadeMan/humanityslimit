@@ -2,18 +2,19 @@
 state={
 	id=418
 	name="STATE_418"
-	manpower = 332362
+	manpower = 1376000
 	resources={
 		rations=3
 	}
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 		add_core_of = PER
-		owner = UNC
+		add_core_of = IRA
+		owner = IRA
 	}
 
 	local_supplies=0.0

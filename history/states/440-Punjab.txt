@@ -2,22 +2,25 @@
 state={
 	id=440
 	name="STATE_440"
-	manpower = 13665000
+	manpower = 67665000
 	resources={
 		tungsten=20
 		rations=40
 	}
-	state_category = town
+	state_category = large_city
 
 	history={
 		victory_points = {
 			10887 5
 		}
-		owner = DEH
+		owner = PAK
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
+			air_base = 3
 		}
-		add_core_of = DEH
+		add_core_of = PAK
 	}
 
 	local_supplies=0.0

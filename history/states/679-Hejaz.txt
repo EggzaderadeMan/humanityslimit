@@ -1,11 +1,11 @@
 state={
 	id=679
 	name="STATE_679"
-	manpower = 1511000
+	manpower = 19399000
 	resources = {
 		rations=7
 	}
-	state_category = pastoral
+	state_category = large_town
 
 	history={
 		victory_points = {
@@ -16,12 +16,16 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 1
+			air_base = 4
 			12883 = {
 				naval_base = 5
 			}
 		}
-		add_core_of = SAU
-		owner = UNC
+		add_core_of = ARA
+		owner = ARA
 	}
 
 	local_supplies=0.0

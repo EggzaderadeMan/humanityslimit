@@ -2,7 +2,7 @@
 state={
 	id=410
 	name="STATE_410"
-	manpower = 341053
+	manpower = 2087000
 	resources={
 		rations=2
 	}
@@ -12,9 +12,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PER
+		add_core_of = IRA
 		add_core_of = DEH
-		owner = UNC
+		owner = IRA
 	}
 
 	local_supplies=0.0

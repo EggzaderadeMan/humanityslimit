@@ -2,31 +2,35 @@
 state={
 	id=413
 	name="STATE_413"
-	manpower = 797356
+	manpower = 11400000
 	resources={
 		oil=20
 		rations=8
 	}
 	
-	state_category = rural
+	state_category = large_town
 	
 
 	history={
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 2
+			arms_factory = 1
 			5005 = {
-				naval_base = 1
+				naval_base = 4
 			}
 		}
 		victory_points = {
-			7953 1 
+			7953 3 
 		}
 		add_core_of = PER
-		owner = UNC
+		add_core_of = IRA
+		owner = IRA
 	}
 
 	local_supplies=0.0
 	provinces={
-		1922 5005 5089 7953 
+		1922 2089 5005 5089 7953 
 	}
 }

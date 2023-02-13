@@ -2,26 +2,32 @@
 state={
 	id=292
 	name="STATE_292"
-	manpower = 1440000
+	manpower = 9230000
 	
-	state_category = rural
+	state_category = large_town
 	resources={
 		oil=90
 		rations=3
+		steel=15
 	}
 
 	history={
-		owner = UNC
+		owner = ARA
+		add_core_of = ARA
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 5
+			dockyard = 1
 			12702 = {
 				naval_base = 6
 			}
 		}
 		victory_points = {
-			12727 5
+			12727 10
+		}
+		victory_points = {
+			12702 5
 		}
 	}
 

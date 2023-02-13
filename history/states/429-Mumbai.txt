@@ -2,20 +2,23 @@
 state={
 	id=429
 	name="STATE_429"
-	manpower = 17355600
-	state_category = town
+	manpower = 29855600
+	state_category = city
 	
 	resources={
-		rations=31
+		rations=42
+		steel=25
 	}
 
 	history={
-		add_core_of = DEh
-		owner = UNC
+		add_core_of = MTH
+		owner = MTH
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 3
+			dockyard = 2
+			air_base = 4
 			1349 = {
 				naval_base = 6
 			}
@@ -28,6 +31,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1349 1405 4353 7060 7119 7232 10210 10270 12142 12182 12269 
+		1349 1405 4353 7060 7119 7232 10210 10270 12142 12182 12269 7205 11993 7013 4072 10019 7177 4883 4950 10030 10872 4395 12295 
 	}
 }

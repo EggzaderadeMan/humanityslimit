@@ -1,0 +1,11 @@
+state_categories={
+	enclave = {
+		local_building_slots = 0
+		recruitable_population_factor = -0.50
+		state_resources_factor = -0.50
+		state_production_speed_buildings_factor = -0.50
+		disable_strategic_redeployment = 1
+
+		color = { 40 40 40 }
+	}
+}

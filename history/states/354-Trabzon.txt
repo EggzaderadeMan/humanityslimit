@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = TUS
+		add_core_of = TUS
 		
 		victory_points = {
 			9932 15
@@ -32,7 +33,7 @@ state={
 	}
 
 	provinces={
-		789 3714 3979 6976 6991 7454 9886 9932 10403 10472 11753 11853
+		789 3714 3979 6976 6991 9886 9932 10403 10472 11853 9954 9868 4583 12376 
 	}
 
 	local_supplies=0.0 

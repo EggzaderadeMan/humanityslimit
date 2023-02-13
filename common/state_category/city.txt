@@ -1,0 +1,9 @@
+state_categories={
+	city = {
+		local_building_slots = 12
+		state_production_speed_buildings_factor = 0.10
+	
+		color = { 0 200 0 }
+
+	}
+}

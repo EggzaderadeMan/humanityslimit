@@ -57,11 +57,11 @@ declare_war_on = {
 
 set_convoys = 25
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = horde
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	neutrality = 100
+	horde = 100
 }

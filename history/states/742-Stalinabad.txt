@@ -3,18 +3,20 @@ state = {
 	name = "STATE_742"
 
 	resources={
-		rations=3
+		rations=5
 	}
 
 	history = {
 
-		owner = UNC
+		owner = TAJ
 		victory_points = {
 			1384 1
 		}
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
 		}
 		add_core_of = TAJ
 		add_core_of = BUK
@@ -22,12 +24,12 @@ state = {
 	}
 
 	provinces = {
-		1216 1384 1919 4542 7224 8027 10187 10417 12218 12250 12430 12805 
+		1216 1384 1919 4542 7224 8027 10187 10417 12218 12250 12430 12805 7519 10781 12653 
 	}
 	
-	manpower = 230000
+	manpower = 7791000
 	buildings_max_level_factor = 1.000
-	state_category = wasteland
+	state_category = large_town
 
 	local_supplies = 0.0 
 }

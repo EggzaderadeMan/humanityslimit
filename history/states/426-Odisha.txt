@@ -2,30 +2,30 @@
 state={
 	id=426
 	name="STATE_426" # Orissa
-	manpower = 14520100
+	manpower = 18920100
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
-		steel=40
-		chromium=65
-		aluminium=50
-		rations=31
+		steel=10
+		chromium=45
+		aluminium=45
+		rations=21
 	}
 
 	history={
-		add_core_of = DEH
-		add_core_of = BIR
-		owner = UNC
+		add_core_of = ORI
+		owner = ORI
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			industrial_complex = 4
+			arms_factory = 3
 		}
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		1059 1101 1538 1579 1622 4104 4237 4513 7090 7372 7428 7465 9946 10001 10060 10088 10116 10171 10255 10428 10469 11924 11978 12063 12241 12462 12490 
+		1101 1538 4513 7090 7372 9946 10060 10088 10116 10428 10469 11924 11978 12063 12241 12462 
 	}
 }

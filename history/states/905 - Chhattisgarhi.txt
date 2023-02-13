@@ -1,0 +1,29 @@
+
+state={
+	id=905
+	name="STATE_905"
+	manpower = 14720100
+	
+	state_category = rural
+	
+	resources={
+		rations=16
+		steel=10
+	}
+
+	history={
+		add_core_of = CHH
+		owner = CHH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+	}
+
+	local_supplies=0.0
+	provinces={
+		1579 1622 4557 7497 7574 12375 12420 12490 
+	}
+}

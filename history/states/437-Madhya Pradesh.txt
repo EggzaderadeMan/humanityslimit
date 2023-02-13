@@ -4,12 +4,13 @@ state={
 	name="STATE_437" # Indore
 	manpower = 8402500
 	resources={
-		rations=31
+		rations=30
 	}
 	state_category = rural
 
 	history={
-		owner = DEH
+		owner = IHI
+		add_core_of = IHI
 		add_core_of = DEH
 		buildings = {
 			infrastructure = 2
@@ -20,6 +21,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1949 2036 2092 2105 4106 7080 7205 8076 10807 10816 11993 11995 12080 
+		1949 2036 7080 10807 11995 4045 4410 5040 5096 7938 10332 7905 4953 10801 12799 
 	}
 }

@@ -1,6 +1,9 @@
 state = {
 	id = 585
 	name = "STATE_585" #Navoiy
+	resources = {
+		rations=1
+	}
 
 	history = {
 		
@@ -19,7 +22,7 @@ state = {
 	}
 
 	provinces = {
-		1532 1554 4499 7501 7507 10420
+		1532 1554 4499 7501 7507 10420 1623 10470 12161 
 	}
 	manpower = 465174 # 9/10ths of before
 	buildings_max_level_factor = 1.000

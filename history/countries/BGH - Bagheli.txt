@@ -1,0 +1,25 @@
+capital = 436
+
+oob = "BGH_2188"
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+	excavation1 = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2136.1.1"
+	election_frequency = 12
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 20
+	neutrality = 60
+	communism = 20
+}

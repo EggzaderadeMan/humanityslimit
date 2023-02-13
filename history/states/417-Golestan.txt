@@ -2,18 +2,20 @@
 state={
 	id=417
 	name="STATE_417" # Hamadan
-	manpower = 796396
+	manpower = 6424000
 	resources={
 		rations=5
 	}
-	state_category = rural
+	state_category = town
 
 	history={
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = PER
-		owner = UNC
+		add_core_of = IRA
+		owner = IRA
 	}
 
 	local_supplies=0.0

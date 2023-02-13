@@ -2,16 +2,17 @@
 state={
 	id=414
 	name="STATE_414"
-	manpower = 486013
+	manpower = 2270000
 	resources={
 		rations=3
 	}
-	state_category = wasteland
+	state_category = rural
 
 	history={
-		owner = UNC
+		owner = IRA
+		add_core_of = IRA
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 		victory_points = {
 			10913 1 
@@ -20,6 +21,6 @@ state={
 
 	local_supplies=0.0
 	provinces={
-		1986 7990 10759 10890 10913 11249 12739 12809 12852 12895 
+		1986 10759 10890 10913 11249 12809 12852 12895 
 	}
 }

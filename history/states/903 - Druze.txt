@@ -1,0 +1,24 @@
+state={
+	id=903
+	name="STATE_903"
+	manpower = 2098100
+	resources = {
+		rations=2
+	}
+	state_category = town
+
+	history={
+		owner = DRU
+		add_core_of = DRU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+	
+	local_supplies=0.0
+	provinces={
+		1544 4440 4486 
+	}
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=904
+	name="STATE_904"
+	manpower = 155100
+	
+	state_category = rural
+
+	resources={
+		rations=1
+	}
+
+	history={
+		owner = LAZ
+		add_core_of = LAZ
+		add_core_of = TUS
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+	}
+
+	provinces={
+		7454 11753 3653 
+	}
+
+	local_supplies=0.0 
+}

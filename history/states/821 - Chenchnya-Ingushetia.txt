@@ -2,7 +2,7 @@
 state = {
 	id = 821
 	name = "STATE_821"
-	manpower = 731985
+	manpower = 1313000
 	
 	state_category = rural
 	
@@ -12,9 +12,11 @@ state = {
 	}
 
 	history = {
-		owner = UNC
+		owner = CAU
+		add_core_of = CAU
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			3672 5 

@@ -2,11 +2,18 @@ state={
 	id=587
 	name="STATE_587"
 
+	resources={
+		oil=37
+	}
+
 	history={
 		owner = UNC
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 1
+			1517 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			1517 1 

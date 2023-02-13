@@ -23,6 +23,7 @@ state={
 			}
 		}
 		add_core_of = AFR
+		add_core_of = LBA
 	}
 
 	local_supplies=0.0

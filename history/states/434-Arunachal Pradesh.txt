@@ -2,24 +2,28 @@
 state={
 	id=434
 	name="STATE_434"
-	manpower = 200000
+	manpower = 15200000
 	
-	state_category = wasteland
+	state_category = town
 	resources={
-		chromium=5
+		chromium=15
+		oil=10
+		rations=21
 	}
 
 	history={
-		owner = BIR
-		add_core_of = BIR
+		owner = ASM
+		add_core_of = ASM
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
 		}
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		1116 1996 10810 12322 12730 
+		1116 1996 10810 12322 1497 1525 1553 7455 10349 12366 12395 
 	}
 }

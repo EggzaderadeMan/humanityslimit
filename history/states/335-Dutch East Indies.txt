@@ -10,6 +10,7 @@ state={
 		rubber=50
 		oil=25
 		rations=60
+		steel=15
 	}
 
 	history={

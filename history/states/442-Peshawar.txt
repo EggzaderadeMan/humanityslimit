@@ -2,9 +2,9 @@
 state={
 	id=442
 	name="STATE_442"
-	manpower = 4684400
+	manpower = 8793200
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		victory_points = {
@@ -12,14 +12,15 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 			air_base = 3
 		}
-		add_core_of = DEH
-		owner = UNC
+		add_core_of = PAK
+		owner = PAK
 	}
 
 	local_supplies=0.0
 	provinces={
-		1978 4558 4998 12717 12763 
+		1978 4558 4998 12717 12763 5082 10826 12831 
 	}
 }

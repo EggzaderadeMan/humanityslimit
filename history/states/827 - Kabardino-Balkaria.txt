@@ -6,12 +6,13 @@ state = {
 	}
 
 	history = {
-		owner = UNC
+		owner = CAU
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = KBK
+		add_core_of = CAU
 		victory_points = {
 			11614 1
 		}
@@ -20,7 +21,7 @@ state = {
 	provinces = {
 		685 6674 9632 11614
 	}
-	manpower = 387990
+	manpower = 614500
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

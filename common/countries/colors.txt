@@ -608,3 +608,123 @@ CAL = {
 	color = rgb { 73 162 153 }
 	color_ui = rgb { 73 162 153 }
 }
+IRA = {
+	color = rgb { 153 134 100 }
+	color_ui = rgb { 153 134 100 }
+}
+ARA = {
+	color = rgb { 69 107 32 }
+	color_ui = rgb { 69 107 32 }
+}
+MES = {
+	color = rgb { 96 78 47 }
+	color_ui = rgb { 96 78 47 }
+}
+JAZ = {
+	color = rgb { 155 184 76 }
+	color_ui = rgb { 155 184 76 }
+}
+ASS = {
+	color = rgb { 255 168 76 }
+	color_ui = rgb { 255 168 76 }
+}
+NSY = {
+	color = rgb { 116 178 159 }
+	color_ui = rgb { 116 178 159 }
+}
+DRU = {
+	color = rgb { 116 196 255 }
+	color_ui = rgb { 116 196 255 }
+}
+TKS = {
+	color = rgb { 211 87 38 }
+	color_ui = rgb { 211 87 38 }
+}
+LAZ = {
+	color = rgb { 211 87 187 }
+	color_ui = rgb { 211 87 187 }
+}
+CAU = {
+	color = rgb { 38 81 0 }
+	color_ui = rgb { 38 81 0 }
+}
+HAZ = {
+	color = rgb { 63 255 224 }
+	color_ui = rgb { 63 255 224 }
+}
+MAR = {
+	color = rgb { 255 216 0 }
+	color_ui = rgb { 255 216 0 }
+}
+GUJ = {
+	color = rgb { 153 97 0 }
+	color_ui = rgb { 153 97 0 }
+}
+MAR = {
+	color = rgb { 168 167 81 }
+	color_ui = rgb { 168 167 81 }
+}
+MTH = {
+	color = rgb { 168 167 81 }
+	color_ui = rgb { 168 167 81 }
+}
+OSM = {
+	color = rgb { 125 221 81 }
+	color_ui = rgb { 125 221 81 }
+}
+DRA = {
+	color = rgb { 125 53 81 }
+	color_ui = rgb { 125 53 81 }
+}
+ORI = {
+	color = rgb { 224 84 81 }
+	color_ui = rgb { 224 84 81 }
+}
+SAD = {
+	color = rgb { 221 10 91 }
+	color_ui = rgb { 221 10 91 }
+}
+CHH = {
+	color = rgb { 221 147 91 }
+	color_ui = rgb { 221 147 91 }
+}
+BGH = {
+	color = rgb { 91 147 91 }
+	color_ui = rgb { 91 147 91 }
+}
+IHI = {
+	color = rgb { 47 134 39 }
+	color_ui = rgb { 47 134 39 }
+}
+BHO = {
+	color = rgb { 203 134 39 }
+	color_ui = rgb { 203 134 39 }
+}
+BNG = {
+	color = rgb { 0 81 50 }
+	color_ui = rgb { 0 81 50 }
+}
+KAS = {
+	color = rgb { 5 212 55 }
+	color_ui = rgb { 5 212 55 }
+}
+ASM = {
+	color = rgb { 127 51 0 }
+	color_ui = rgb { 127 51 0 }
+}
+KAC = {
+	color = rgb { 170 0 148 }
+	color_ui = rgb { 170 0 148 }
+}
+HIM = {
+	color = rgb { 193 201 143 }
+	color_ui = rgb { 193 201 143 }
+}
+SHA = {
+	color = rgb { 135 131 7 }
+	color_ui = rgb { 135 131 7 }
+}
+TAI = {
+	color = rgb { 122 84 91 }
+	color_ui = rgb { 122 84 91 }
+}

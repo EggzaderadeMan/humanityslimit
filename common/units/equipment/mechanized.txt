@@ -42,7 +42,8 @@ equipments = {
 
 		build_cost_ic = 12
 		resources = {
-			steel = 3
+			steel = 2
+			tungsten = 1
 			rubber = 1
 		}
 
@@ -100,7 +101,8 @@ equipments = {
 		build_cost_ic = 17
 		resources = {
 			noble = 1
-			steel = 3
+			steel = 2
+			tungsten = 1
 			rubber = 1
 		}
 
@@ -138,7 +140,8 @@ equipments = {
 		build_cost_ic = 19.5
 		resources = {
 			noble = 2
-			steel = 3
+			steel = 2
+			tungsten = 1
 			rubber = 1
 		}
 		fuel_consumption = 0.5

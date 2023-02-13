@@ -2,12 +2,12 @@
 state={
 	id=445
 	name="STATE_445" # Quetta
-	manpower = 405100
+	manpower = 4705100
 	resources={
 		tungsten=10
 		rations=5
 	}
-	state_category = wasteland
+	state_category = town
 
 	history={
 		victory_points = {
@@ -15,14 +15,15 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 			air_base = 4
 		}
-		add_core_of = DEH
-		owner = UNC
+		add_core_of = PAK
+		owner = PAK
 	}
 
 	local_supplies=0.0
 	provinces={
-		4990 5105 7847 7975 8044 8098 10813 
+		4990 5105 7847 7975 8044 8098 10813 5020 5064 8090 
 	}
 }

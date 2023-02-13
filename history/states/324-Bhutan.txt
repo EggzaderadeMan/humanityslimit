@@ -2,16 +2,13 @@
 state={
 	id=324
 	name="STATE_324"
-	manpower = 450000
-	
-	
+	manpower = 4650000
 	state_category = town
 	
-
 	history={
-		owner = BIR
+		owner = HIM
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2 
 		}
@@ -21,11 +18,11 @@ state={
 		add_core_of = BHU
 		add_core_of = NEP
 		add_core_of = TIB
-		add_core_of = BIR
+		add_core_of = HIM
 	}
 
 	local_supplies=0.0
 	provinces={
-		8010 12860 
+		4435 8010 12338 12730 12860 
 	}
 }

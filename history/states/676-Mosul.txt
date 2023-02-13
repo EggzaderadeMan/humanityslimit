@@ -1,27 +1,38 @@
 state={
 	id=676
 	name="STATE_676"
-	manpower = 1182741
+	manpower = 2467000
 	
 	state_category = town
 	
 	resources={
-		rations=6
+		rations=4
 	}
 
 
 	history={
-		owner = UNC
+		owner = ASS
+		add_core_of = ASS
+		add_core_of = MES
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 1
+			10106 = {
+				bunker = 3
+			}
+			10804 = {
+				bunker = 2
+			}
 		}
 		victory_points = {
-			10106 1 
+			10106 3
 		}
 	}
 	
 	local_supplies=0.0
 	provinces={
-		1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372 
+		1549 10106 10804 10811 
 	}
 }
