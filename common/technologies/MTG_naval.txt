@@ -130,6 +130,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			dd_tech
 		}
@@ -167,6 +168,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			dd_tech
 		}
@@ -300,6 +302,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			dd_tech
 		}
@@ -337,6 +340,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			dd_tech
 		}
@@ -685,6 +689,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			cl_tech
 			ca_tech
@@ -721,6 +726,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			cl_tech
 			ca_tech
@@ -989,6 +995,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			cv_tech
 		}
@@ -1102,6 +1109,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			cv_tech
 		}
@@ -1138,6 +1146,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			cv_tech
 		}
@@ -1265,6 +1274,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			ss_tech
 		}
@@ -1301,6 +1311,7 @@ technologies = {
 		}
 
 		categories = {
+			auto
 			naval_equipment
 			ss_tech
 		}

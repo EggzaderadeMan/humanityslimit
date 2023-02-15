@@ -1729,6 +1729,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			armor
 		}
@@ -1771,6 +1772,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			armor
 		}
@@ -1901,6 +1903,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1926,6 +1929,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1965,6 +1969,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1989,6 +1994,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment

@@ -65,17 +65,11 @@ political_actions = {
 	icon = generic_political_actions
 
 	allowed = {
-		always = no
+		has_completed_focus = a_new_cabinet
 	}
 
 	visible = {
-		if = {
-			limit = {
-				has_dlc = "By Blood Alone"
-			}
-			NOT = { original_tag = SWI }
-			NOT = { has_country_flag = SWI_can_use_political_actions }
-		}
+		has_completed_focus = a_new_cabinet
 	}
 }
 

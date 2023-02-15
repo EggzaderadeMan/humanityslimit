@@ -120,6 +120,8 @@ technologies = {
 		}
 		
 		categories = {
+			auto
+			drone
 			light_air
 			light_fighter
 			cas_bomber
@@ -262,6 +264,8 @@ technologies = {
 		}
 		
 		categories = {
+			auto
+			drone
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
@@ -423,6 +427,8 @@ technologies = {
 		}
 		
 		categories = {
+			auto
+			drone
 			light_air
 			light_fighter
 			cas_bomber
@@ -567,6 +573,8 @@ technologies = {
 		}
 		
 		categories = {
+			auto
+			drone
 			heavy_air
 			air_equipment
 			cat_strategic_bomber

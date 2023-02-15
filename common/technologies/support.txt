@@ -343,6 +343,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 		}
 		
@@ -436,6 +437,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 			engineers_tech
 		}
@@ -667,6 +669,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 			recon_tech
 		}
@@ -1332,6 +1335,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1469,6 +1473,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 			signal_company_tech
 			electronics
@@ -1507,6 +1512,7 @@ technologies = {
 		}
 		
 		categories = {
+			auto
 			support_tech
 			signal_company_tech
 			electronics

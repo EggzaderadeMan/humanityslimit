@@ -1,5 +1,6 @@
 technology_categories = {
 	auto
+	drone
 	fortress_auto
 	scout_auto
 	battery_auto

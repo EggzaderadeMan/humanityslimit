@@ -115,36 +115,73 @@
  AFR_the_proclamations_desc:0 "The Afrikakorps must now proclaim its religion and intentions across the world, and it must embolden its fighters to better concentrate its fights for the safety of the Cult of Rommel and the Afrikakorps."
 
  JUD_o_hear_israel:0 "O Hear, Israel"
-
  JUD_renew_the_covenant:0 "Renew the Covenant"
-
  JUD_rebuilding_the_hebrew_people:0 "Rebuilding the Hebrew People"
-
  JUD_provoke_shoahite_revenge:0 "Provoke Revenge Against the Shoahite"
-
  JUD_allies_on_the_nile:0 "Allies on the Nile"
-
  JUD_soldify_jerusalem_accords:0 "Solidify Jerusalem Accords"
-
  JUD_industrial_cooperation:0 "Industrial Cooperation"
-
  JUD_prepare_for_the_next_battle_of_egypt:0 "Prepapre for the Next Battle of Egypt"
-
  JUD_cross_the_nile:0 "Cross the Nile"
-
  JUD_the_land_of_joseph:0 "The Land of Joseph"
-
  JUD_army_of_god:0 "Army of God"
-
  JUD_ships_of_tarshish:0 "Ships of Tarshish"
-
  JUD_chariots_of_jehova:0 "Chariots of Jehova"
-
  JUD_on_silver_wings:0 "On Silver Wings"
-
  JUD_david_ii:0 "The Rule of David II"
-
  JUD_federation:0 "The Federation of Tribal Leaders"
-
  JUD_patriarch:0 "The New Patriarchs"
+
+ emergency_action_act:0 "Emergency Action Act"
+ under_the_will_of_god:0 "Under the Will of God"
+ providence:0 "Providence"
+ jihadism:0 "Jihadism"
+ martyrs_your_destiney:0 "Martyrs, Your Destiney!"
+ heathen_fighters:0 "Heathen Fighters"
+ with_the_common_guidance:0 "With the Common Guidance"
+ the_peoples_assembly:0 "The People's Assembly"
+ homeland_defense:0 "Homeland Defense"
+ nation_of_public_service:0 "Nation of Public Service"
+ productive_and_cooperative:0 "Productive and Cooperative"
+ our_glorious_leader:0 "Our Glorious Leader"
+ one_man_one_purpose:0 "One Man, One Purpose"
+ fascist_paramilitaries:0 "Fascist Paramilitaries"
+ serve_the_military_serve_the_nation:0 "Serve the Military, Serve the Nation"
+ wonderful_weapons_of_war:0 "Wonderful Weapons of War"
+ the_tightrope_of_power:0 "The Tightrope of Power"
+ a_nation_united:0 "A Nation United"
+ the_authoritys_men:0 "The Authority's Men"
+ in_service_of_the_nation:0 "In Service of the Nation"
+ development_of_the_nation:0 "Development of the Nation"
+ a_new_cabinet:0 "A New Cabinet"
+ the_executive_foreign_legion:0 "The Executive Foreign Legion"
+ reduce_executive_corruption:0 "Reduce Executive Corruption"
+ the_new_capital:0 "The New Capital"
+ new_era_new_strategies:0 "New Era, New Strategies"
+ the_soldierless_war:0 "The Soldierless War"
+ the_aerial_terror:0 "The Aerial Terror"
+ naval_missile_battle:0 "Naval Missile Battle"
+ reconstruction_bill:0 "[THIS.GetAdjective] Reconstruction Bill"
+ the_new_military_industrial_complex:0 "The New Military-Industrial Complex"
+ turmoil_protection_plan:0 "Turmoil Protection Plan"
+ expand_the_steel_industry:0 "Expand the Steel Industry"
+ foreign_weapons_market:0 "Foreign Weapons Market"
+ revive_the_digital_industry:0 "Revive the Digital Industry"
+ the_noble_pursuit:0 "The Noble Pursuit"
+ desalinization:0 "Desalinization"
+ institute_of_engineering:0 "[THIS.GetName] Institute of Engineering"
+ military_institute:0 "[THIS.GetName] Military Institute"
+ implement_foreign_methods:0 "Implement Foreign Methods"
+ border_fortifications:0 "Border Fortification"
+ urban_fortifications:0 "Urban Fortification"
+ national_militia:0 "National Militia"
+ professional_mechanised_army:0 "Professional Mechanised Army"
+ entering_the_world_stage:0 "Entering the World Stage"
+ beacon_of_light_in_darkness:0 "Beacon of Light in Darkness"
+ the_national_congress:0 "The National Congress"
+ open_border_policy:0 "Open Border Policy"
+ anti_corruption_campaign:0 "Anti-Corruption Campaign"
+ consumer_focus:0 "Consumer Focus"
+ idealist_foreign_policy:0 "Idealist Foreign Policy"
+ the_democratic_arsenal:0 "The Democratic Arsenal"
  

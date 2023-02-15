@@ -1,0 +1,313 @@
+ideas = {
+	country = {
+		emergency_action_act_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				democratic_drift = -0.03
+			}
+		}
+		under_the_will_of_god_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				fanatic_drift = 0.05
+			}
+		}
+		with_the_common_guidance_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.50
+				communism_drift = 0.05
+			}
+		}
+		our_glorious_leader_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				fascism_drift = 0.05
+			}
+		}
+		the_tightrope_of_power_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		the_executive_foreign_legion_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 5
+			}
+		}
+		reduce_executive_corruption_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		the_new_military_industrial_complex_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.05
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+		national_militia_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		professional_mechanised_army_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			equipment_bonus = {
+				cat_mechanized_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		foreign_weapons_market_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				license_purchase_cost = -0.75
+				license_production_speed = 0.5
+			}
+		}
+		the_soldierless_war_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				conscription_factor = -0.50
+			}
+		}
+		the_aerial_terror_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				air_superiority_bonus_in_combat = 0.15
+				air_cas_present_factor = 0.15
+			}
+		}
+		jihadism_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.75
+			}
+		}
+		martyrs_your_destiney_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.35
+				breakthrough_factor = 0.20
+				army_org_factor = -0.15
+			}
+		}
+		heathen_fighters_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				compliance_growth_on_our_occupied_states = -0.50
+				resistance_damage_to_garrison_on_our_occupied_states = 0.20
+				resistance_growth_on_our_occupied_states = 0.15
+			}
+		}
+		homeland_defense_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.25
+				army_core_attack_factor = 0.10
+			}
+		}
+		nation_of_public_service_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				monthly_population = 0.005
+				research_speed_factor = 0.15
+			}
+		}
+		productive_and_cooperative_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		fascist_paramilitaries_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		serve_the_military_serve_the_nation_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.10
+				experience_gain_navy = 0.10
+				experience_gain_air = 0.10
+				land_doctrine_cost_factor = -0.10
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.10
+				command_power_gain_mult = 0.50
+			}
+		}
+		wonderful_weapons_of_war_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		the_authoritys_men_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+			}
+		}
+		in_service_of_the_nation_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		development_of_the_nation_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.20
+			}
+		}
+		beacon_of_light_in_darkness_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.10
+			}
+		}
+		the_national_congress_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				political_advisor_cost_factor = -0.20
+				trade_laws_cost_factor = -0.20
+				mobilization_laws_cost_factor = -0.20
+				economy_cost_factor = -0.20
+				high_command_cost_factor = -0.20
+				air_chief_cost_factor = -0.20
+				army_chief_cost_factor = -0.20
+				navy_chief_cost_factor = -0.20
+			}
+		}
+		open_border_policy_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.0075
+				research_speed_factor = 0.15
+			}
+		}
+		consumer_focus_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				economy_cost_factor = 1
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		idealist_foreign_policy_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				join_faction_tension = -1
+				guarantee_tension = -1
+				ai_get_ally_desire_factor = 50
+				trade_opinion_factor = 0.5
+				opinion_gain_monthly_same_ideology_factor = 1.0
+			}
+		}
+		the_democratic_arsenal_idea = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 5
+				lend_lease_tension = -1
+				special_forces_cap = 0.02
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+	}
+}
