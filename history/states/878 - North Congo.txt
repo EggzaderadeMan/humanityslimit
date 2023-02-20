@@ -6,6 +6,7 @@ state={
 	}
 	resources={
 		rations=4
+		steel=12
 	}
 	history={
 		owner = COG

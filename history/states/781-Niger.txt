@@ -8,6 +8,7 @@ state={
 	manpower = 1222000
 	resources = {
 		rations=29
+		noble=23
 	}
 	
 	state_category = city

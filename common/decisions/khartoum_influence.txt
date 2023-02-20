@@ -511,6 +511,8 @@ khartoum_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { AFR_pressuring = 1 }
 			KHR = { JUD = { country_event = nile.1 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = khartoum_pressured
@@ -535,12 +537,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -567,12 +569,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -605,12 +607,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -638,12 +640,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -675,24 +677,24 @@ khartoum_influence = {
 						OR = {
 							check_variable = {
 								var = JUD.khartoum_leverage
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
 								var = JUD.khartoum_allegiance
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				KHR = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.khartoum_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -762,9 +764,7 @@ khartoum_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = KHA
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = AFR.khartoum_arms
@@ -1356,6 +1356,8 @@ khartoum_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { JUD_pressuring = 1 }
 			KHR = { AFR = { country_event = nile.2 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = khartoum_pressured
@@ -1380,12 +1382,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1412,12 +1414,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1449,13 +1451,13 @@ khartoum_influence = {
 						}
 						AND = {
 							check_variable = {
-								var = JUD.khartoum_leverage
-								value = 2
+								var = AFR.khartoum_leverage
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
-								var = JUD.khartoum_allegiance
-								value = 2
+								var = AFR.khartoum_allegiance
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1483,12 +1485,12 @@ khartoum_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.khartoum_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.khartoum_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1519,25 +1521,25 @@ khartoum_influence = {
 						}
 						OR = {
 							check_variable = {
-								var = JUD.khartoum_leverage
-								value = 2
-								compare = equals
+								var = AFR.khartoum_leverage
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
-								var = JUD.khartoum_allegiance
-								value = 2
-								compare = equals
+								var = AFR.khartoum_allegiance
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				KHR = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.khartoum_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -1607,9 +1609,7 @@ khartoum_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = KHA
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.khartoum_arms

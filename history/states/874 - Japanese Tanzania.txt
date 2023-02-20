@@ -7,6 +7,9 @@ state={
 	resources={
 		rations=16
 		noble=9
+		tungsten=8
+		aluminium=8
+		rubber=5
 	}
 	history={
 		owner = STM

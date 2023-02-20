@@ -7,6 +7,7 @@ state={
 	state_category = town
 	resources={
 		rations=2
+		rubber=5
 	}
 	history={
 		owner = TKK

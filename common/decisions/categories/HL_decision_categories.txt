@@ -18,7 +18,12 @@ khartoum_influence = {
 			original_tag = JUD
 			original_tag = AFR
 		}
-		NOT = { has_global_flag = khartoum_pressured }
+		NOT = {
+			OR = {
+				has_global_flag = khartoum_pressured
+				has_global_flag = nilkrieg_end
+			}
+		}
 	}
 
 	on_map_area = {
@@ -35,7 +40,12 @@ beja_influence = {
 			original_tag = JUD
 			original_tag = AFR
 		}
-		NOT = { has_global_flag = beja_pressured }
+		NOT = {
+			OR = {
+				has_global_flag = beja_pressured
+				has_global_flag = nilkrieg_end
+			}
+		}
 	}
 
 	on_map_area = {
@@ -52,7 +62,12 @@ nuer_influence = {
 			original_tag = JUD
 			original_tag = AFR
 		}
-		NOT = { has_global_flag = nuer_pressured }
+		NOT = {
+			OR = {
+				has_global_flag = nuer_pressured
+				has_global_flag = nilkrieg_end
+			}
+		}
 	}
 
 	on_map_area = {
@@ -69,7 +84,12 @@ tana_influence = {
 			original_tag = JUD
 			original_tag = AFR
 		}
-		NOT = { has_global_flag = tana_pressured }
+		NOT = {
+			OR = {
+				has_global_flag = tana_pressured
+				has_global_flag = nilkrieg_end
+			}
+		}
 	}
 
 	on_map_area = {
@@ -86,7 +106,12 @@ solomon_influence = {
 			original_tag = JUD
 			original_tag = AFR
 		}
-		NOT = { has_global_flag = solomon_pressured }
+		NOT = {
+			OR = {
+				has_global_flag = solomon_pressured
+				has_global_flag = nilkrieg_end
+			}
+		}
 	}
 
 	on_map_area = {
@@ -237,7 +262,7 @@ AFR_integrating_egypt = {
 
 		EGY = {
 			all_core_state = {
-				compliance > 70
+				compliance < 70
 			}
 		}
 	}

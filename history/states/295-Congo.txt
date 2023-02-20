@@ -5,6 +5,7 @@ state={
 	resources={
 		rations=4
 		noble=7
+		rubber=20
 	}
 
 	history={

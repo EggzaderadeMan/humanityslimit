@@ -2,8 +2,8 @@
 
 oob = "JUD_2188"
 
-set_convoys = 55
-starting_train_buffer = 1
+set_convoys = 85
+starting_train_buffer = 5
 
 set_technology = {	
 	fuel_silos = 1	
@@ -41,6 +41,9 @@ set_technology = {
 	aircraft_construction = 1
 	excavation1 = 1
 	excavation2 = 1
+	early_ship_hull_light = 1
+	basic_battery = 1
+	basic_torpedo = 1
 }
 add_ideas = {
 	limited_conscription
@@ -59,7 +62,6 @@ set_popularities = {
 create_equipment_variant = {
 	name = "Aharon I"
 	type = modern_tank_chassis_1
-	parent_version = 0
 	modules = {
 		main_armament_slot = tank_medium_howitzer
 		turret_type_slot = tank_modern_tank_turret
@@ -75,5 +77,4 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 4
 		tank_nsb_armor_upgrade = 1
 	}
-	obsolete = yes
 }

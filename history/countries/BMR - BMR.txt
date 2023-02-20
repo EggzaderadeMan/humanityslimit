@@ -1,5 +1,12 @@
 capital = 773
 
+add_ideas = {
+	droidekia_resources
+	droidekia_manpower
+	droidekia_economy
+}
+add_manpower = 5000
+
 oob = "BMR_2188"
 set_technology = {
 	mechanised_infantry2 = 1

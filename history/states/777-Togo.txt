@@ -6,6 +6,7 @@ state={
 	resources = {
 		tungsten=6
 		rations=4
+		noble=12
 	}
 
 

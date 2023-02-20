@@ -8,6 +8,8 @@ state={
 		rations=2
 		noble=13
 		chromium=4
+		steel=16
+		tungsten=15
 	}
 	history={
 		owner = TKK

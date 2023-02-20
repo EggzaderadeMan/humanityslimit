@@ -516,6 +516,8 @@ tana_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { AFR_pressuring = 1 }
 			TAC = { JUD = { country_event = nile.1 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = tana_pressured
@@ -540,12 +542,12 @@ tana_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.tana_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.tana_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -572,12 +574,12 @@ tana_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.tana_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.tana_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -610,12 +612,12 @@ tana_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.tana_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.tana_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -643,12 +645,12 @@ tana_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.tana_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.tana_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -680,24 +682,24 @@ tana_influence = {
 						OR = {
 							check_variable = {
 								var = JUD.tana_leverage
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
 								var = JUD.tana_allegiance
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				TAC = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.tana_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -767,9 +769,7 @@ tana_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = TAC
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = AFR.tana_arms
@@ -1377,6 +1377,8 @@ tana_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { JUD_pressuring = 1 }
 			TAC = { AFR = { country_event = nile.2 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = tana_pressured
@@ -1553,12 +1555,12 @@ tana_influence = {
 					}
 				}
 				TAC = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.tana_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -1628,9 +1630,7 @@ tana_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = TAC
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.tana_arms

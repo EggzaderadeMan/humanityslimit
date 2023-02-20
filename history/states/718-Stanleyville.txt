@@ -7,6 +7,9 @@ state={
 	resources={
 		rations=5
 		oil=14
+		noble=12
+		tungsten=8
+		steel=10
 	}
 
 	history={

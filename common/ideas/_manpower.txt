@@ -4,6 +4,34 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+		droidekia_manpower = { 
+			picture = ETH_chitet_law
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no 
+			}
+
+			ai_will_do = {
+   				factor = 0
+			}
+
+			modifier = {
+				conscription = 0
+				resistance_target = -30
+				no_compliance_gain = yes
+			}
+
+			default = yes
+
+			cancel_if_invalid = no
+		}
+
 		disarmed_nation = {
 
 			cost = 150

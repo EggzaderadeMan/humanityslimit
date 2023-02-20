@@ -31,66 +31,66 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_country_flag = AFR_annex
+					ROOT = { has_country_flag = AFR_annex }
 				}
 				AFR = {
 					annex_country = {
-						target = FROM
+						target = ROOT
 						transfer_troops = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					has_country_flag = JUD_annex
+					ROOT = { has_country_flag = JUD_annex }
 				}
 				JUD = {
 					annex_country = {
-						target = FROM
+						target = ROOT
 						transfer_troops = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					has_country_flag = AFR_puppet
+					ROOT = { has_country_flag = AFR_puppet }
 				}
-				AFR = { puppet = FROM }
+				AFR = { puppet = ROOT }
 			}
 			if = {
 				limit = {
-					has_country_flag = JUD_puppet
+					ROOT = { has_country_flag = JUD_puppet }
 				}
-				JUD = { puppet = FROM }
+				JUD = { puppet = ROOT }
 			}
 			if = {
 				limit = {
-					has_country_flag = AFR_ally
+					ROOT = { has_country_flag = AFR_ally }
 				}
 				if = {
 					limit = {
 						is_in_faction = yes
 					}
-					AFR = { add_to_faction = FROM }
+					AFR = { add_to_faction = ROOT }
 				}
 				else = {
-					AFR = { give_guarantee = FROM }
-					FROM = { give_guarantee = AFR }
+					AFR = { give_guarantee = ROOT }
+					ROOT = { give_guarantee = AFR }
 				}
 			}
 			if = {
 				limit = {
-					has_country_flag = JUD_ally
+					ROOT = { has_country_flag = JUD_ally }
 				}
 				if = {
 					limit = {
 						is_in_faction = yes
 					}
-					JUD = { add_to_faction = FROM }
+					JUD = { add_to_faction = ROOT }
 				}
 				else = {
-					JUD = { give_guarantee = FROM }
-					FROM = { give_guarantee = JUD }
+					JUD = { give_guarantee = ROOT }
+					ROOT = { give_guarantee = JUD }
 				}
 			}
 		}

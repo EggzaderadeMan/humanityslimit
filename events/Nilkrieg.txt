@@ -1,6 +1,8 @@
 add_namespace = nilkrieg
 
-#### Afrikakorps Losing, Judea Winning - Fall of Afrikakorps, Event for Afrikakorps to change government in chaos with enough support, Events for Judea getting involved
+
+#### AFRIKAKORPS LOSING #####
+
 
 country_event = {	## Losing Nilkrieg
 	id = nilkrieg.1
@@ -21,6 +23,9 @@ country_event = {	## Losing Nilkrieg
 	option = {
 		name = nilkrieg.1.a
 		custom_effect_tooltip = AFR_losing_nilkrieg
+		set_global_flag = nilkrieg_end
+		remove_ideas = the_nil_wars
+		JUD = { remove_ideas = the_nil_wars }
 		if = {				## Check if Morocco can declare independence from Afrikakorps
 			limit = {
 				MOR = {
@@ -41,7 +46,7 @@ country_event = {	## Losing Nilkrieg
 				}
 			}
 			JUD = { country_event = { id = nilkrieg.5 days = 1 } }				## Egypt
-			AFR = { country_event = { id = nilkrieg.9 days = 1 } }
+			AFR = { country_event = { id = nilkrieg.8 days = 1 } }
 		}
 		if = {				## Check if Algeria can declare independence from Afrikakorps
 			limit = {
@@ -83,10 +88,9 @@ country_event = {	## Losing Nilkrieg
 					}
 				}
 				JUD = { country_event = { id = nilkrieg.4 days = 1 } }				## Libya
-				AFR = { country_event = { id = nilkrieg.8 days = 1 } }
 			}
 
-			JUD = { country_event = { id = nilkrieg.10 days = 15 } }			## Defeat of Afrikakorps
+			JUD = { country_event = { id = nilkrieg.9 days = 15 } }			## Defeat of Afrikakorps
 		}
 	}
 }
@@ -103,6 +107,152 @@ country_event = {	## Will Judea intervene in Morocco
 		name = nilkrieg.2.a
 		add_political_power = 20
 		add_stability = 0.02
+			###### ORDER OF BATTLE FOR MOROCCO BEING LOADED ########
+		MOR = {
+			division_template = {
+				name = "Moroccan Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Morocco"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+		}
+			462 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			461 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			290 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			118 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			783 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
 		every_state = {
 			limit = {
 				is_core_of = MOR
@@ -116,6 +266,152 @@ country_event = {	## Will Judea intervene in Morocco
 	}
 	option = {					## Declare on Morocco
 		name = nilkrieg.2.b
+			###### ORDER OF BATTLE FOR MOROCCO BEING LOADED ########
+		MOR = {
+			division_template = {
+				name = "Moroccan Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Morocco"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			462 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			461 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			290 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Morocco\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			118 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+			783 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Moroccan Defense Corps\" start_experience_factor = 0.1"
+					owner = MOR
+				}
+			}
+		}
 		every_state = {														## Morocco owns Judea states, controlls Afrikakorps states
 			limit = {
 				is_core_of = MOR
@@ -148,6 +444,148 @@ country_event = {	## Will Judea intervene in Algeria
 		name = nilkrieg.3.a
 		add_political_power = 20
 		add_stability = 0.02
+		 ######## LOAD ORDER OF BATTLE FOR ALGERIA ##############
+		ALG = {
+			division_template = {
+				name = "Algerian Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Algeria"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			513 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+			460 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+			459 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = ALG
@@ -161,6 +599,148 @@ country_event = {	## Will Judea intervene in Algeria
 	}
 	option = {					## Declare on Algeria
 		name = nilkrieg.3.b
+		 ######## LOAD ORDER OF BATTLE FOR ALGERIA ##############
+		ALG = {
+			division_template = {
+				name = "Algerian Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Algeria"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			513 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+			460 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+			459 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Algerian Defense Corps\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Algeria\" start_experience_factor = 0.1"
+					owner = ALG
+				}
+			}
+		}
 		every_state = {														## Algeria owns Judea states, controlls Afrikakorps states
 			limit = {
 				is_core_of = ALG
@@ -193,6 +773,218 @@ country_event = {	## Will Judea intervene in Libya
 		name = nilkrieg.4.a
 		add_political_power = 20
 		add_stability = 0.02
+		 ########### LIBYA ORDER OF BATTLE ###########
+		LBA = {
+			division_template = {
+				name = "Libyan Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Italian Mechanized Group"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+					maintenance_company = { x = 0 y = 2 }
+					CBRN_company = { x = 0 y = 3 }
+				}
+			}
+			division_template = {
+				name = "Militia of Libya"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			458 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			665 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			448 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			661 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			449 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			662 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			450 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			451 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = LBA
@@ -206,6 +998,218 @@ country_event = {	## Will Judea intervene in Libya
 	}
 	option = {					## Declare on Libya
 		name = nilkrieg.4.b
+		 ########### LIBYA ORDER OF BATTLE ###########
+		LBA = {
+			division_template = {
+				name = "Libyan Defense Corps"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Italian Mechanized Group"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+					maintenance_company = { x = 0 y = 2 }
+					CBRN_company = { x = 0 y = 3 }
+				}
+			}
+			division_template = {
+				name = "Militia of Libya"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			458 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			665 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			448 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			661 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			449 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			662 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+			}
+			450 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+			451 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Libyan Defense Corps\" start_experience_factor = 0.2"
+					owner = LBA
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Italian Mechanized Group\" start_experience_factor = 0.3"
+					owner = LBA
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Libya\" start_experience_factor = 0.1"
+					owner = LBA
+				}
+			}
+		}
 		every_state = {														## Libya owns Judea states, controlls Afrikakorps states
 			limit = {
 				is_core_of = LBA
@@ -238,6 +1242,208 @@ country_event = {	## Will Judea intervene in Egypt
 		name = nilkrieg.5.a
 		add_political_power = 20
 		add_stability = 0.02
+		 ######### EGYPT ORDER OF BATTLE #############
+		EGY = {
+			division_template = {
+				name = "Egyptian Liberation Organization"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Egypt"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			452 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			552 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			447 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			446 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			457 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			456 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			551 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			457 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = EGY
@@ -248,10 +1454,214 @@ country_event = {	## Will Judea intervene in Egypt
 			}
 			transfer_state_to = EGY
 		}
+		663 = { transfer_state_to = JUD }
+		453 = { transfer_state_to = JUD }
 		puppet = EGY
 	}
 	option = {					## Declare on Egypt
 		name = nilkrieg.5.b
+		 ######### EGYPT ORDER OF BATTLE #############
+		EGY = {
+			division_template = {
+				name = "Egyptian Liberation Organization"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+			}
+			division_template = {
+				name = "Militia of Egypt"
+				division_names_group = GER_INF_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				priority = 0
+			}
+			452 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			552 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			447 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			446 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			457 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			456 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			551 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+			457 = {
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Egyptian Liberation Organization\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+				create_unit = {
+					allow_spawning_on_enemy_provs = yes
+					division = "name = \"Revolutionary Division\" division_template = \"Militia of Egypt\" start_experience_factor = 0.1"
+					owner = EGY
+				}
+			}
+		}
 		every_state = {														## Egypt owns Judea states, controlls Afrikakorps states
 			limit = {
 				is_core_of = EGY
@@ -317,7 +1727,7 @@ country_event = {	## Will Afrikakorps intervene in Algeria
 		}
 	}
 }
-country_event = {	## Will Afrikakorps intervene in Libya
+country_event = {	## Will Afrikakorps intervene in Egypt
 	id = nilkrieg.8
 	title = nilkrieg.8.t
 	desc = nilkrieg.8.d
@@ -325,34 +1735,13 @@ country_event = {	## Will Afrikakorps intervene in Libya
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = {					## Leave Libya Alone
+	option = {					## Leave Egypt Alone
 		name = nilkrieg.8.a
 		add_political_power = 20
 		add_stability = 0.02
 	}
-	option = {					## Declare on Libya
-		name = nilkrieg.8.b
-		declare_war_on = {
-			target = LBA
-			type = annex_everything
-		}
-	}
-}
-country_event = {	## Will Afrikakorps intervene in Egypt
-	id = nilkrieg.9
-	title = nilkrieg.9.t
-	desc = nilkrieg.9.d
-	picture = GFX_report_event_hitler_handshake
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {					## Leave Egypt Alone
-		name = nilkrieg.9.a
-		add_political_power = 20
-		add_stability = 0.02
-	}
 	option = {					## Declare on Egypt
-		name = nilkrieg.9.b
+		name = nilkrieg.8.b
 		declare_war_on = {
 			target = EGY
 			type = annex_everything
@@ -361,15 +1750,15 @@ country_event = {	## Will Afrikakorps intervene in Egypt
 }
 
 country_event = {	## Defeat of Afrikakorps
-	id = nilkrieg.10
-	title = nilkrieg.10.t
-	desc = nilkrieg.10.d
+	id = nilkrieg.9
+	title = nilkrieg.9.t
+	desc = nilkrieg.9.d
 	picture = GFX_report_event_hitler_handshake
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {					## Finish Afrikakorps
-		name = nilkrieg.10.a
+		name = nilkrieg.9.a
 		add_political_power = 50
 		add_stability = 0.05
 		annex_country = {
@@ -379,11 +1768,16 @@ country_event = {	## Defeat of Afrikakorps
 	}
 }
 
-#### Afrikakorps Winning, Judea Losing - Allows Judea to create/expand Defensive Faction, 
+
+
+#### AFRIKAKORPS WINNING ######
+
+
+
 country_event = {	## Winning Nilkrieg
-	id = nilkrieg.x
-	title = nilkrieg.x.t
-	desc = nilkrieg.x.d
+	id = nilkrieg.10
+	title = nilkrieg.10.t
+	desc = nilkrieg.10.d
 	picture = GFX_report_event_hitler_handshake
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -397,7 +1791,7 @@ country_event = {	## Winning Nilkrieg
 	}
 	mean_time_to_happen = { days = 20 }
 	option = {
-		name = nilkrieg.x.a
+		name = nilkrieg.10.a
 		complete_national_focus = AFR_end_of_the_nilkrieg
 	}
 }

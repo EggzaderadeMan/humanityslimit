@@ -511,6 +511,8 @@ solomon_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { AFR_pressuring = 1 }
 			KSO = { JUD = { country_event = nile.1 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = solomon_pressured
@@ -535,12 +537,12 @@ solomon_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.solomon_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.solomon_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -567,12 +569,12 @@ solomon_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.solomon_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.solomon_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -605,12 +607,12 @@ solomon_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.solomon_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.solomon_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -638,12 +640,12 @@ solomon_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.solomon_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.solomon_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -670,24 +672,24 @@ solomon_influence = {
 						OR = {
 							check_variable = {
 								var = JUD.solomon_leverage
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
 								var = JUD.solomon_allegiance
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				KSO = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.solomon_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -757,9 +759,7 @@ solomon_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = KSO
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = AFR.solomon_arms
@@ -1362,6 +1362,8 @@ solomon_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { JUD_pressuring = 1 }
 			KSO = { AFR = { country_event = nile.2 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = solomon_pressured
@@ -1533,12 +1535,12 @@ solomon_influence = {
 					}
 				}
 				KSO = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.solomon_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -1608,9 +1610,7 @@ solomon_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = KSO
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.solomon_arms

@@ -511,6 +511,8 @@ beja_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { AFR_pressuring = 1 }
 			RED = { JUD = { country_event = nile.1 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = beja_pressured
@@ -535,12 +537,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -567,12 +569,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -605,12 +607,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -638,12 +640,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = JUD.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = JUD.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -675,24 +677,24 @@ beja_influence = {
 						OR = {
 							check_variable = {
 								var = JUD.beja_leverage
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
 								var = JUD.beja_allegiance
-								value = 2
-								compare = equals
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				RED = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.beja_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -762,9 +764,7 @@ beja_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = RED
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = AFR.beja_arms
@@ -1367,6 +1367,8 @@ beja_influence = {
 			custom_effect_tooltip = nile_pressure_requirements
 			set_variable = { JUD_pressuring = 1 }
 			RED = { AFR = { country_event = nile.2 } }
+			AFR = { add_ideas = the_nil_wars }
+			JUD = { add_ideas = the_nil_wars }
 		}
 		remove_effect = {
 			set_global_flag = beja_pressured
@@ -1391,12 +1393,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1423,12 +1425,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1460,13 +1462,13 @@ beja_influence = {
 						}
 						AND = {
 							check_variable = {
-								var = JUD.beja_leverage
-								value = 2
+								var = AFR.beja_leverage
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
-								var = JUD.beja_allegiance
-								value = 2
+								var = AFR.beja_allegiance
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1494,12 +1496,12 @@ beja_influence = {
 						AND = {
 							check_variable = {
 								var = AFR.beja_leverage
-								value = 2
+								value = 1
 								compare = less_than
 							}
 							check_variable = {
 								var = AFR.beja_allegiance
-								value = 2
+								value = 1
 								compare = less_than
 							}
 						}
@@ -1530,25 +1532,25 @@ beja_influence = {
 						}
 						OR = {
 							check_variable = {
-								var = JUD.beja_leverage
-								value = 2
-								compare = equals
+								var = AFR.beja_leverage
+								value = 0
+								compare = greater_than
 							}
 							check_variable = {
-								var = JUD.beja_allegiance
-								value = 2
-								compare = equals
+								var = AFR.beja_allegiance
+								value = 0
+								compare = greater_than
 							}
 						}
 					}
 				}
 				RED = {
+					start_civil_war = {
+						ideology = fascism
+					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.beja_arms
-					}
-					start_civil_war = {
-						ideology = fascism
 					}
 					 ### Post Civil War Results
 					if = {
@@ -1618,9 +1620,7 @@ beja_influence = {
 					}
 				}
 				every_country_with_original_tag = {
-					limit = {
-						NOT = { has_country_flag = JUD_puppet }
-					}
+					original_tag_to_check = RED
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = JUD.beja_arms

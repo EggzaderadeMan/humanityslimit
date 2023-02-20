@@ -5,6 +5,7 @@ state={
 	name="STATE_774"
 	resources = {
 		rations=11
+		chromium=14
 	}
 
 

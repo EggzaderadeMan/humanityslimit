@@ -27,7 +27,7 @@ sub_units = {
 		need = {
 			auto_tank_chassis = 50
 		}
-		manpower = 0
+		manpower = 1
 		max_organisation = 30
 		default_morale = 0.5
 		training_time = 200
@@ -93,8 +93,9 @@ sub_units = {
 		need = {
 			scout_auto_tank_chassis = 50
 		}
-		manpower = 0
+		manpower = 1
 		max_organisation = 30
+		max_strength = 2
 		default_morale = 0.5
 		training_time = 200
 		max_strength = 2
@@ -164,7 +165,7 @@ sub_units = {
 		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 0
+		manpower = 1
 
 		#Misc Abilities
 		training_time = 120
@@ -220,7 +221,7 @@ sub_units = {
 		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 0
+		manpower = 1
 
 		#Misc Abilities
 		training_time = 120
@@ -278,8 +279,9 @@ sub_units = {
 		need = {
 			auto_armored_car_equipment = 60
 		}
-		manpower = 0
+		manpower = 1
 		max_organisation = 10
+		max_strength = 2
 		default_morale = 0.3
 		training_time = 180
 		max_strength = 2

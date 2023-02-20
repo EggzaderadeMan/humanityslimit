@@ -6,6 +6,8 @@ state={
 	}
 	resources={
 		rations=2
+		tungsten=5
+		rubber=5
 	}
 	history={
 		owner = TKK

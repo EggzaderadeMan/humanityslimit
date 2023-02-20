@@ -9,6 +9,7 @@ state={
 		rubber=12
 		oil=30
 		rations=16
+		aluminium=16
 	}
 	history={
 		owner = ALC

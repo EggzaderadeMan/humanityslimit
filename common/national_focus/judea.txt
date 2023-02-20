@@ -69,6 +69,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = JUD_required_three_year_plan_decisions_focus
 			unlock_decision_category_tooltip = JUD_three_year_plan
+			activate_mission = JUD_three_year_mission
 		}
 	}
 	focus = {

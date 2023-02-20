@@ -6,6 +6,7 @@ state={
 	}
 	resources={
 		rations=2
+		rubber=10
 	}
 	history={
 		owner = TKK

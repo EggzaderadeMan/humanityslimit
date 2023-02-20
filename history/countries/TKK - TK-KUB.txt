@@ -1,5 +1,12 @@
 capital = 796
 
+add_ideas = {
+	droidekia_resources
+	droidekia_manpower
+	droidekia_economy
+}
+add_manpower = 5000
+
 oob = "TKK_2188"
 set_technology = {
 	mechanised_infantry2 = 1
@@ -65,7 +72,8 @@ set_technology = {
 	excavation2 = 1
 }
 
-set_convoys = 50
+set_convoys = 100
+starting_train_buffer = 5
 
 set_politics = {
 	ruling_party = mechanical
