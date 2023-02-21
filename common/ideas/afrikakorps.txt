@@ -523,14 +523,20 @@ ideas = {
 			}
 			traits = { infantry_equipment_manufacturer }
 			equipment_bonus = {
-				SMG_1 = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
 					soft_attack = 0.10
-					breakthrough = 0.10
+					breakthrough = 0.25
+					reliability = -0.15
 				}
-				SMG_2 = {
-					soft_attack = 0.10
-					breakthrough = 0.10
-				}
+#				SMG_1 = {		## Cant get equipment bonus to work with SMGs
+#					soft_attack = 0.10
+#					breakthrough = 0.10
+#				}
+#				SMG_2 = {
+#					soft_attack = 0.10
+#					breakthrough = 0.10
+#				}
 			}
 		}
 	}

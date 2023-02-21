@@ -563,6 +563,7 @@ instant_effect = {
 		equipment = {
 			type = modern_tank_chassis_1
 			creator = "JUD"
+			version_name = "Aharon I"
 		}
 		requested_factories = 2
 		progress = 0.1

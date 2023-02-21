@@ -781,6 +781,7 @@ instant_effect = {
 		equipment = {
 			type = modern_tank_chassis_1
 			creator = "AFR"
+			version_name = "Rommel III-B"
 		}
 		requested_factories = 4
 		progress = 0.1

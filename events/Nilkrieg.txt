@@ -1774,27 +1774,26 @@ country_event = {	## Defeat of Afrikakorps
 
 
 
-country_event = {	## Winning Nilkrieg
-	id = nilkrieg.10
-	title = nilkrieg.10.t
-	desc = nilkrieg.10.d
-	picture = GFX_report_event_hitler_handshake
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	trigger = {
-		EGY = {
-			all_core_state = {
-				controller = { tag = AFR }
-			}
-		}
-	}
-	mean_time_to_happen = { days = 20 }
-	option = {
-		name = nilkrieg.10.a
-		complete_national_focus = AFR_end_of_the_nilkrieg
-	}
-}
+#country_event = {	## Winning Nilkrieg
+#	id = nilkrieg.10
+#	title = nilkrieg.10.t
+#	desc = nilkrieg.10.d
+#	picture = GFX_report_event_hitler_handshake
+#	fire_only_once = yes
+#
+#	trigger = {
+#		EGY = {
+#			all_core_state = {
+#				controller = { tag = AFR }
+#			}
+#		}
+#	}
+#	mean_time_to_happen = { days = 20 }
+#	option = {
+#		name = nilkrieg.10.a
+#		complete_national_focus = AFR_end_of_the_nilkrieg
+#	}
+#}
 
 
 #### White Peaces - Judea with Sinai, Judea with Egypt, based on Mean Times (also add decisions for Tobruk and Sinai forts, to help make these reasonable)

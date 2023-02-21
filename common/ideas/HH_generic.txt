@@ -1,7 +1,18 @@
 ideas = {
+	hidden_ideas = {
+		remove_non_human_ideologies = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				mechanical_drift = -1
+				horde_drift = -1
+			}
+		}
+	}
 	country = {
 		emergency_action_act_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -10,7 +21,7 @@ ideas = {
 			}
 		}
 		under_the_will_of_god_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -19,7 +30,7 @@ ideas = {
 			}
 		}
 		with_the_common_guidance_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -28,7 +39,7 @@ ideas = {
 			}
 		}
 		our_glorious_leader_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -37,7 +48,7 @@ ideas = {
 			}
 		}
 		the_tightrope_of_power_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -45,7 +56,7 @@ ideas = {
 			}
 		}
 		the_executive_foreign_legion_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -54,7 +65,7 @@ ideas = {
 			}
 		}
 		reduce_executive_corruption_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -62,7 +73,7 @@ ideas = {
 			}
 		}
 		the_new_military_industrial_complex_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -75,7 +86,7 @@ ideas = {
 			}
 		}
 		national_militia_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			equipment_bonus = {
@@ -85,17 +96,17 @@ ideas = {
 			}
 		}
 		professional_mechanised_army_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			equipment_bonus = {
-				cat_mechanized_equipment = {
+				motorized_equipment = {
 					build_cost_ic = -0.10
 				}
 			}
 		}
 		foreign_weapons_market_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -104,7 +115,7 @@ ideas = {
 			}
 		}
 		the_soldierless_war_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -114,7 +125,7 @@ ideas = {
 			}
 		}
 		the_aerial_terror_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -123,7 +134,7 @@ ideas = {
 			}
 		}
 		jihadism_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -131,7 +142,7 @@ ideas = {
 			}
 		}
 		martyrs_your_destiney_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -141,7 +152,7 @@ ideas = {
 			}
 		}
 		heathen_fighters_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -151,7 +162,7 @@ ideas = {
 			}
 		}
 		homeland_defense_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -160,7 +171,7 @@ ideas = {
 			}
 		}
 		nation_of_public_service_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -170,7 +181,7 @@ ideas = {
 			}
 		}
 		productive_and_cooperative_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -180,7 +191,7 @@ ideas = {
 			}
 		}
 		fascist_paramilitaries_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -188,7 +199,7 @@ ideas = {
 			}
 		}
 		serve_the_military_serve_the_nation_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -202,7 +213,7 @@ ideas = {
 			}
 		}
 		wonderful_weapons_of_war_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -210,7 +221,7 @@ ideas = {
 			}
 		}
 		the_authoritys_men_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -225,7 +236,7 @@ ideas = {
 			}
 		}
 		in_service_of_the_nation_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -235,7 +246,7 @@ ideas = {
 			}
 		}
 		development_of_the_nation_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -243,7 +254,7 @@ ideas = {
 			}
 		}
 		beacon_of_light_in_darkness_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -252,7 +263,7 @@ ideas = {
 			}
 		}
 		the_national_congress_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -268,7 +279,7 @@ ideas = {
 			}
 		}
 		open_border_policy_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -277,7 +288,7 @@ ideas = {
 			}
 		}
 		consumer_focus_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -286,7 +297,7 @@ ideas = {
 			}
 		}
 		idealist_foreign_policy_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {
@@ -298,7 +309,7 @@ ideas = {
 			}
 		}
 		the_democratic_arsenal_idea = {
-			allowed_civil_war = { always = yes }
+			allowed_civil_war = { always = no }
 			removal_cost = -1
 
 			modifier = {

@@ -8,6 +8,17 @@ on_actions = {
 			set_variable = { AFR.allegiance_cost = 40 }
 			set_variable = { JUD.leverage_cost = 25 }
 			set_variable = { JUD.allegiance_cost = 40 }
+			every_possible_country = {
+				limit = {
+					NOT = {
+						OR = {
+							has_government = mechanical
+							has_government = horde
+						}
+					}
+				}
+				add_ideas = remove_non_human_ideologies
+			}
 		}
 	}
 	on_declare_war = {

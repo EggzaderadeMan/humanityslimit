@@ -1034,8 +1034,10 @@
 				add_building_construction = {
 					type = bunker
 					level = 2
-					limit_to_border = yes
 					instant_build = yes
+					province = {
+						limit_to_border = yes
+					}
 				}
 			}
 		}
@@ -1054,8 +1056,10 @@
 				add_building_construction = {
 					type = bunker
 					level = 2
-					limit_to_victory_point = yes
 					instant_build = yes
+					province = {
+						limit_to_victory_point = yes
+					}
 				}
 			}
 			add_stability = -0.05
