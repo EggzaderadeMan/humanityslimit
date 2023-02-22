@@ -1,0 +1,36 @@
+state=
+{
+	id=911
+	name="STATE_911"
+	manpower = 1689800
+	resources={
+		rubber=10
+		oil=15
+		rations=4
+	}
+	state_category = town
+
+	history=
+	{
+		owner = UNC
+		victory_points = {
+			10212 1
+		}
+		buildings = {
+			industrial_complex = 2
+			dockyard = 1
+			infrastructure = 3
+			10212 = {
+				naval_base = 2
+			}
+			12228 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	local_supplies=0.0
+	provinces={
+		1306 4282 4338 7358 10143 10199 10212 10240 12171 12186 12228 
+	}
+}

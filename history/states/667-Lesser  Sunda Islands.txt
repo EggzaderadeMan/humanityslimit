@@ -2,36 +2,32 @@ state={
 	id=667
 	name="STATE_667"
 	resources={
-		rubber=15
+		rubber=6
 		rations=3
 	}
 
 	history={
-		owner = UNC
+		owner = INO
+		add_core_of = INO
+		victory_points = {
+			4273 1
+		}
 		buildings = {
 			infrastructure = 3
-			1355 = {
-				naval_base = 1
-
+			industrial_complex = 1
+			dockyard = 1
+			4273 = {
+				naval_base = 2
 			}
-			10175 = {
-				naval_base = 1
-
-			}
-			12234 = {
-				naval_base = 1
-
-			}
-
 		}
 
 	}
 
 	local_supplies=0.0
 	provinces={
-		1298 1339 1355 4273 4301 4358 7293 7321 10175 10191 10219 12151 12162 12219 12234 
+		4273 7293 10191 12162 
 	}
-	manpower=3460200
+	manpower=11460200
 	buildings_max_level_factor=1
 	state_category="town"
 }

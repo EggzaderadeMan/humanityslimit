@@ -2,9 +2,9 @@
 state={
 	id=335
 	name="STATE_335" # Java
-	manpower = 41718200
+	manpower = 125718200
 	
-	state_category = city
+	state_category = metropolis
 	
 	resources={
 		rubber=50
@@ -14,24 +14,38 @@ state={
 	}
 
 	history={
-		owner = UNC
+		owner = INO
+		add_core_of = INO
 		victory_points = {
-			7381 5
+			7381 15
 		}
 		victory_points = {
-			4608 3 
+			4608 8 
+		}
+		victory_points = {
+			7421 4 
+		}
+		victory_points = {
+			12277 3
+		}
+		victory_points = {
+			10135 1
+		}
+		victory_points = {
+			10479 1
 		}
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			dockyard = 1
-			air_base = 3
+			industrial_complex = 8
+			arms_factory = 8
+			dockyard = 4
+			air_base = 6
 			7381 = {
-				naval_base = 6
+				naval_base = 8
 			}
 			4608 = {
-				naval_base = 3
+				naval_base = 4
 			}
 		}
 	}

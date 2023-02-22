@@ -10,9 +10,22 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
 }
 
 units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1909
+		division_template = "Susu Levy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -27,7 +40,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "SUS"
 		}
 		requested_factories = 1

@@ -1,22 +1,26 @@
 state={
 	id=673
 	name="STATE_673"
-	manpower = 4232000
+	manpower = 5232000
 	resources={
 		rubber=20
 		rations=40
+		noble=16
 	}
 
 	state_category = town
 
 
 	history= {
-		owner = UNC
+		owner = INO
+		add_core_of = INO
 		victory_points = {
 			10263 3 
 		}
 
 		buildings = {
+			industrial_complex = 3
+			dockyard = 1
 			infrastructure = 3
 			air_base = 4
 			10153 = {

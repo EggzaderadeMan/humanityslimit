@@ -2,13 +2,15 @@
 state={
 	id=668
 	name="STATE_668"
-	manpower = 579100
+	manpower = 779100
 	
-	state_category = pastoral
+	state_category = rural
 
 	history={
-		owner = UNC
+		owner = INO
+		add_core_of = INO
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 3
 			1574 = {
 				naval_base = 1

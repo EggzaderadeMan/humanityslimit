@@ -2,7 +2,7 @@
 state={
 	id=780
 	name="STATE_780" # Guinea
-	manpower = 74000
+	manpower = 148000
 	resources = {
 		aluminium=25
 		rations=2
