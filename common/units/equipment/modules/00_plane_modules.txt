@@ -908,8 +908,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 8
-			build_cost_ic = 2
+			air_defence = 24
+			build_cost_ic = 10
 			weight = 2
 		}
 
@@ -926,8 +926,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_agility = 5
-			build_cost_ic = 10
+			air_agility = 10
+			air_defence = 5
+			build_cost_ic = 12
 			weight = 6
 			night_penalty = 0.15
 		}
@@ -1020,7 +1021,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				naval_strike_targetting = 6
-				air_defence = 6
+				air_defence = 8
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
@@ -1060,8 +1061,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 12
-			build_cost_ic = 6
+			air_defence = 36
+			build_cost_ic = 30
 			weight = 6
 		}
 		multiply_stats = {
@@ -1210,8 +1211,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 16
-			build_cost_ic = 10
+			air_defence = 48
+			build_cost_ic = 50
 			weight = 15
 		}
 		multiply_stats = {
