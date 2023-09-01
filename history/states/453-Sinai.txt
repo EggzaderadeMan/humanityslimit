@@ -16,6 +16,9 @@ state={
 		}
 
 		add_core_of = EGY
+		start_resistance = EGY
+		set_resistance = 5
+		set_compliance = 50
 	}
 
 	local_supplies=0.0

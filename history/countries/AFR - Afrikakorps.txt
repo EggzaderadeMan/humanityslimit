@@ -1,6 +1,7 @@
 ﻿capital = 448
 
 oob = "AFR_2188"
+set_naval_oob = "AFR_2188_naval_mtg"
 
 # Starting tech
 set_technology = {
@@ -43,9 +44,17 @@ set_technology = {
 	excavation2 = 1
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_corvette = 1
+	early_ship_hull_cruiser = 1
+	sonar = 1
 	basic_battery = 1
 	basic_torpedo = 1
 	basic_depth_charges = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	mtg_transport = 1
 }
 
 add_ideas = {
@@ -76,7 +85,7 @@ recruit_character = AFR_feldmarschallwest_advisor_1
 recruit_character = AFR_feldmarschallwest_advisor_2
 
 set_convoys = 85
-starting_train_buffer = 5
+starting_train_buffer = 1.5
 
 set_politics = {
 	ruling_party = fascism
@@ -116,7 +125,7 @@ create_equipment_variant = {
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_1 = additional_machine_guns
 		special_type_slot_2 = additional_machine_guns
-		special_type_slot_3 = additional_machine_guns
+		special_type_slot_3 = sloped_armor
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 6
@@ -148,7 +157,7 @@ create_equipment_variant = {
 	name = "Erbe Kudige C"
 	type = small_plane_airframe_0
 	modules = {
-		fixed_main_weapon_slot = aircraft_cannon_2_2x
+		fixed_main_weapon_slot = aircraft_cannon_1_2x
 		engine_type_slot = jet_engine_2x
 		special_type_slot_1 = dive_brakes_small
 	}
@@ -171,5 +180,61 @@ create_equipment_variant = {
 		fixed_auxiliary_weapon_slot_1 = small_bomb_bay
 		engine_type_slot = jet_engine_2x
 		special_type_slot_1 = dive_brakes_small
+	}
+}
+
+
+create_equipment_variant = {
+	name = "KM-CO 23"
+	type = ship_hull_corvette_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = ship_torpedo_1
+		front_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "KM-UB 57"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		front_1_custom_slot = ship_torpedo_sub_1
+		mid_2_custom_slot = ship_torpedo_sub_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+create_equipment_variant = {
+	name = "KM-UB 41"
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		front_1_custom_slot = ship_torpedo_sub_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+create_equipment_variant = {
+	name = "KR 43"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot =  ship_armor_cruiser_1
+		rear_1_custom_slot = ship_depth_charge_1 
+		front_1_custom_slot = ship_anti_air_1
 	}
 }

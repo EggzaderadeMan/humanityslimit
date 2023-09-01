@@ -20,8 +20,10 @@ state={
 			arms_factory = 2
 			air_base = 1
 		}
-		add_core_of = SYR
-		add_core_of = JUD	
+		add_core_of = NSY
+		start_resistance = NSY
+		set_resistance = 5
+		set_compliance = 70
 
 	}
 

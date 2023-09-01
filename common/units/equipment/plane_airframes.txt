@@ -979,8 +979,6 @@ equipments = {
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_type
-					twin_plane_engine_type
 					plane_jet_engine_type
 					twin_plane_jet_engine_type
 					plane_rocket_engine_type
@@ -1803,8 +1801,8 @@ equipments = {
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					quad_large_plane_engine_type
-					large_plane_engine_type
+					quad_large_plane_jet_engine_type
+					large_plane_jet_engine_type
 				}
 			}
 

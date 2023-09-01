@@ -1,13 +1,15 @@
 ﻿capital = 680
 
 oob = "JUD_2188"
+set_naval_oob = "JUD_2188_naval_mtg"
 
 set_convoys = 85
-starting_train_buffer = 5
+starting_train_buffer = 1.5
 
 set_technology = {	
 	fuel_silos = 1	
 	tech_engineers = 1
+	tech_CBRN_company = 1
 	tech_mountaineers = 1
 	early_fighter = 1
 	infantry_weapons = 1
@@ -44,9 +46,19 @@ set_technology = {
 	early_ship_hull_light = 1
 	basic_battery = 1
 	basic_torpedo = 1
+	basic_depth_charges = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	mtg_transport = 1
+	early_ship_hull_corvette = 1
+	early_ship_hull_cruiser = 1
+	sonar = 1
+	improved_sonar = 1
 }
 add_ideas = {
 	limited_conscription
+	limited_exports
 	war_economy
 }
 set_politics = {
@@ -76,5 +88,92 @@ create_equipment_variant = {
 	upgrades = {
 		tank_nsb_engine_upgrade = 4
 		tank_nsb_armor_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Eitam E-50"
+	type = small_plane_cas_airframe_0
+	modules = {
+		fixed_main_weapon_slot = small_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+		engine_type_slot = jet_engine_2x
+		special_type_slot_1 = dive_brakes_small
+		special_type_slot_2 = armor_plate_small
+	}
+}
+create_equipment_variant = {
+	name = "MR Sheikh"
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = aircraft_cannon_1_2x
+		fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+		engine_type_slot = jet_engine_2x
+		special_type_slot_1 = dive_brakes_small
+		special_type_slot_2 = armor_plate_small
+	}
+}
+create_equipment_variant = {
+	name = "Haganah E-2"
+	type = large_helicopter_fighter_airframe_0
+	modules = {
+		fixed_main_weapon_slot = aircraft_cannon_1_1x
+		fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+		fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+		fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+		engine_type_slot = helicopter_engine_1_2x
+		special_type_slot_1 = armor_plate_medium
+		special_type_slot_2 = armor_plate_medium
+		special_type_slot_3 = fuel_tanks_medium
+		special_type_slot_4 = fuel_tanks_medium
+	}
+}
+
+
+create_equipment_variant = {
+	name = "Submarine Hunter"
+	type = ship_hull_corvette_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_2
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_depth_charge_1 
+		mid_1_custom_slot = ship_depth_charge_1 
+		front_1_custom_slot = ship_depth_charge_1 
+	}
+}
+create_equipment_variant = {
+	name = "Haifa Class"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot =  ship_armor_cruiser_1
+		rear_1_custom_slot = ship_depth_charge_1 
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_depth_charge_1
+		mid_2_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "Sa'ar Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		front_1_custom_slot = ship_light_battery_1
+		mid_1_custom_slot = ship_light_battery_1
+		mid_2_custom_slot = ship_light_battery_1
 	}
 }

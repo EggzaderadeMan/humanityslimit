@@ -558,6 +558,131 @@ units = {
 	}
 }
 
+air_wings = {
+	446 = {
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "MR Sheikh"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+		large_helicopter_fighter_airframe_0 = {
+			owner = "JUD"
+			amount = 25
+			version_name = "Haganah E-2"
+		}
+	}
+}
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

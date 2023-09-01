@@ -5,17 +5,24 @@ state={
 	
 	state_category = rural
 	resources = {
-		rations=3
+		rations = 3
 	}
 	
 	history={
 		owner = JUD
 		add_core_of = EGY
+		start_resistance = EGY
+		set_resistance = 5
+		set_compliance = 40
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			12049 = {
-				naval_base = 2
+				naval_base = 4
+				bunker = 5
+			}
+			4073 = {
+				bunker = 5
 			}
 		}
 		victory_points = {

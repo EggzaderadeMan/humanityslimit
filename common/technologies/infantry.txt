@@ -498,7 +498,17 @@ technologies = {
 
 	infantry_at = {
 
-		category_all_infantry = {
+		category_light_infantry = {
+			hard_attack = 0.25
+			ap_attack = 2
+		}
+		
+		cavalry = {
+			hard_attack = 0.25
+			ap_attack = 2
+		}
+		
+		motorized = {
 			hard_attack = 0.25
 			ap_attack = 2
 		}
@@ -541,7 +551,17 @@ technologies = {
 	
 	infantry_at2 = {
 
-		category_all_infantry = {
+		category_light_infantry = {
+			hard_attack = 0.75
+			ap_attack = 1.5
+		}
+		
+		cavalry = {
+			hard_attack = 0.75
+			ap_attack = 1.5
+		}
+		
+		motorized = {
 			hard_attack = 0.75
 			ap_attack = 1.5
 		}
@@ -584,7 +604,17 @@ technologies = {
 
 	infantry_at3 = {
 
-		category_all_infantry = {
+		category_light_infantry = {
+			hard_attack = 0.5
+			ap_attack = 0.5
+		}
+		
+		cavalry = {
+			hard_attack = 0.5
+			ap_attack = 0.5
+		}
+		
+		motorized = {
 			hard_attack = 0.5
 			ap_attack = 0.5
 		}

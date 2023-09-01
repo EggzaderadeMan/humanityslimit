@@ -1,0 +1,649 @@
+division_template = {
+	name = "Yemeni Old Guard"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }	## with Yemen Light Tank variant
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Omani Old Guard"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Gulf Guard"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }	# Defensive Gulf Tank
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		CBRN_company = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Saudi National Guard"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		CBRN_company = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Arab Jihad Legion"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }	## Offensive Modern Tank
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_armor = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		CBRN_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Arab Militia"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Arab Old Guard"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10840
+		division_template = "Yemeni Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Yemeni Armored Weapons Platform" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10752
+		division_template = "Yemeni Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Improvised Armored Vehicle" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1920
+		division_template = "Yemeni Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Improvised Armored Vehicle" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1973
+		division_template = "Yemeni Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Yemeni Armored Weapons Platform" }
+		}
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10760
+		division_template = "Omani Old Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5049
+		division_template = "Omani Old Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7960
+		division_template = "Gulf Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "The Prince's Guard" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10904
+		division_template = "Gulf Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "The Prince's Guard" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8051
+		division_template = "Gulf Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "The Prince's Guard" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12702
+		division_template = "Gulf Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "The Prince's Guard" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8085
+		division_template = "Gulf Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "The Prince's Guard" }
+		}
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8085
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12749
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5058
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4974
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12101
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11976
+		division_template = "Saudi National Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8085
+		division_template = "Arab Jihad Legion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Ghadir Khumm" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10760
+		division_template = "Arab Jihad Legion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Ghadir Khumm" }
+		}
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12883
+		division_template = "Arab Jihad Legion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			modern_tank_chassis_1 = { owner = "ARA" version_name = "Ghadir Khumm" }
+		}
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12883
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10840
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10760
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7960
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8051
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12702
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8085
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12727
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5006
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12758
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4968
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5037
+		division_template = "Arab Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4562
+		division_template = "Arab Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10901
+		division_template = "Arab Old Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+}
+
+air_wings = {
+	679 = {
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		small_helicopter_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Fora'a A"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Dominator A-12 (Arabian Variant)"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Dominator A-12 (Arabian Variant)"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Dominator A-12 (Arabian Variant)"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 = {
+			owner = "ARA"
+			amount = 25
+			version_name = "Dominator A-12 (Arabian Variant)"
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = modern_tank_chassis_1
+			creator = "ARA"
+			version_name = "Ghadir Khumm"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mechanized_equipment_1
+			creator = "ARA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_2
+			creator = "ARA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ARA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "ARA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

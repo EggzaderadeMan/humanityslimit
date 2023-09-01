@@ -18,9 +18,17 @@ set_technology = {
 	excavation1 = 1
 	excavation2 = 1
 	concentrated_industry = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_CBRN_company = 1
+	mechanised_infantry = 1
 }
 
-set_convoys = 10
+add_ideas = {
+	volunteer_only
+	civilian_economy
+	limited_exports
+}
 
 set_politics = {
 	ruling_party = democratic

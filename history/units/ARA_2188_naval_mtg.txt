@@ -1,0 +1,81 @@
+units = {
+	fleet = {
+		name = "The Great Arabian Fleet"
+		naval_base = 12702
+		task_force = {
+			name = "Carrier Task Force 1"
+			location = 12702
+			ship = { name = "" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ARA version_name = "Khobar Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARA version_name = "Jazan Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARA version_name = "Jazan Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+		}
+		task_force = {
+			name = "Light Task Force 1"
+			location = 12883
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARA version_name = "Jazan Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARA version_name = "Jazan Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+		}
+	}
+
+	fleet = {
+		name = "Peninsular Escort Fleet"
+		naval_base = 10760
+		task_force = {
+			name = "Eastern Escort Force"
+			location = 10760
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+		}
+		task_force = {
+			name = "Western Escort Force"
+			location = 10840
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = ARA version_name = "Khaimah Class" } } }
+		}
+	}
+}

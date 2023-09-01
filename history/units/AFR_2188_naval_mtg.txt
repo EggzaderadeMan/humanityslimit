@@ -1,0 +1,91 @@
+units = {
+	fleet = {
+		name = "Western Mediterranean Fleet"
+		naval_base = 9994
+		task_force = {
+			name = "Gibraltar Raiders"
+			location = 4135
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+		}
+		task_force = {
+			name = "Western Strike Force"
+			location = 9994
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFR version_name = "KR 43" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+		}
+	}
+
+	fleet = {
+		name = "Eastern Mediterranean Fleet"
+		naval_base = 1149
+		task_force = {
+			name = "Red Suez Raiders"
+			location = 1130
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 57" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AFR version_name = "KM-UB 41" } } }
+		}
+		task_force = {
+			name = "Eastern Strike Force"
+			location = 1149
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFR version_name = "KR 43" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFR version_name = "KR 43" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = AFR version_name = "KM-CO 23" } } }
+		}
+	}
+}

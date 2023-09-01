@@ -41,9 +41,32 @@ set_technology = {
 	excavation2 = 1
 	concentrated_industry = 1
 	specialized_production1 = 1
+	tech_support = 1
+	early_ship_hull_light = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	basic_small_helicopter_airframe = 1
+	basic_large_helicopter_airframe = 1
+	iw_small_airframe = 1
+	iw_large_airframe = 1
+	early_bombs = 1
+	aa_lmg = 1
+	aa_hmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	range_improvements = 1
+	aircraft_construction = 1
+	basic_train = 1
 }
 
-set_convoys = 10
+add_ideas = {
+	limited_conscription
+	free_trade
+	low_economic_mobilisation
+}
+
+set_convoys = 100
+starting_train_buffer = 1.5
 
 set_politics = {
 	ruling_party = neutrality
@@ -56,4 +79,67 @@ set_popularities = {
 	fanatic = 50
 	neutrality = 40
 	communism = 5
+}
+
+create_equipment_variant = {
+	name = "K-80 Infantry"
+	type = modern_tank_chassis_1
+	modules = {
+		main_armament_slot = tank_medium_cannon
+		turret_type_slot = tank_modern_tank_turret
+		suspension_type_slot = tank_hydropneumatic_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_petrol_electric_engine
+		special_type_slot_1 = auto_loader
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = stabilizer
+		special_type_slot_4 = additional_machine_guns
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 5
+		tank_nsb_armor_upgrade = 9
+	}
+}
+create_equipment_variant = {
+	name = "K-19V Cavalry"
+	type = light_tank_chassis_1
+	modules = {
+		main_armament_slot = tank_close_support_gun
+		turret_type_slot = tank_light_three_man_tank_turret
+		suspension_type_slot = tank_hydropneumatic_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_diesel_engine
+		special_type_slot_1 = additional_machine_guns
+		special_type_slot_2 = wet_ammo_storage
+		special_type_slot_3 = auto_loader
+		special_type_slot_4 = stabilizer
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 9
+		tank_nsb_armor_upgrade = 9
+	}
+}
+
+
+create_equipment_variant = {
+	name = "MR Tabriz P-2"
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = aircraft_cannon_2_2x
+		fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+		engine_type_slot = jet_engine_2x
+		special_type_slot_1 = dive_brakes_small
+		special_type_slot_2 = armor_plate_small
+	}
+}
+create_equipment_variant = {
+	name = "SP Tabriz H-13"
+	type = small_helicopter_cas_airframe_0
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = bomb_locks
+		engine_type_slot = helicopter_engine_1_1x
+		special_type_slot_1 = drop_tanks
+		special_type_slot_2 = armor_plate_small
+	}
 }

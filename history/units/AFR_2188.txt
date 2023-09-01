@@ -744,25 +744,123 @@ air_wings = {
 	451 = {
 		small_plane_airframe_0 = {
 			owner = "AFR"
-			amount = 100
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
 		}
 		small_plane_cas_airframe_0 = {
 			owner = "AFR"
-			amount = 50
+			amount = 25
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
 		}
 		small_helicopter_cas_airframe_0 = {
 			owner = "AFR"
-			amount = 100
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
 		}
 	}
 	118 = {
 		small_plane_airframe_0 = {
 			owner = "AFR"
-			amount = 250
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
+		}
+		small_plane_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+			version_name = "Erbe Kudige C"
 		}
 		small_helicopter_cas_airframe_0 = {
 			owner = "AFR"
-			amount = 150
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
+		}
+		small_helicopter_cas_airframe_0 = {
+			owner = "AFR"
+			amount = 25
 		}
 	}
 }

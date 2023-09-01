@@ -1,0 +1,97 @@
+units = {
+	fleet = {
+		name = "Tel Aviv Strike Force"
+		naval_base = 4206
+		task_force = {
+			name = "Tel Aviv Strike Force"
+			location = 4206
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JUD version_name = "Haifa Class" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+		}
+	}
+
+	fleet = {
+		name = "Alexandria Escort Force"
+		naval_base = 4076
+		task_force = {
+			name = "Alexandria Escort Force"
+			location = 4076
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+			ship = { name = "" definition = corvette equipment = { ship_hull_corvette_1 = { amount = 1 owner = JUD version_name = "Submarine Hunter" } } }
+		}
+	}
+
+	fleet = {
+		name = "Red Sea Forward Task Force"
+		naval_base = 12725
+		task_force = {
+			name = "Red Sea Forward Task Force"
+			location = 12725
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_destroyer_1 = { amount = 1 owner = JUD version_name = "Sa'ar Class" } } }
+		}
+	}
+}
