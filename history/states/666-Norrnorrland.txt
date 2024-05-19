@@ -20,8 +20,8 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = SWE
-		owner = UNC
+		add_core_of = JOZ
+		owner = JOZ
 	}
 
 	local_supplies=0.0

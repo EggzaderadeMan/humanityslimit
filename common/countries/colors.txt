@@ -732,3 +732,31 @@ INO = {
 	color = rgb { 163 96 45 }
 	color_ui = rgb { 163 96 45 }
 }
+DNM = {
+	color = rgb { 226 16 0 }
+	color_ui = rgb { 226 16 0 }
+}
+SHO = {
+	color = rgb { 112 224 196 }
+	color_ui = rgb { 112 224 196 }
+}
+BVA = {
+	color = rgb { 55 205 213 }
+	color_ui = rgb { 55 205 213 }
+}
+NWY = {
+	color = rgb { 168 63 63 }
+	color_ui = rgb { 168 63 63 }
+}
+SED = {
+	color = rgb { 80 109 252 }
+	color_ui = rgb { 80 109 252 }
+}
+JOZ = {
+	color = rgb { 111 111 111 }
+	color_ui = rgb { 111 111 111 }
+}
+ASR = {
+	color = rgb { 183 183 183 }
+	color_ui = rgb { 183 183 183 }
+}

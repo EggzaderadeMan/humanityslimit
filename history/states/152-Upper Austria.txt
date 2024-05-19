@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = NSD
+		owner = ASR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
@@ -32,6 +32,8 @@ state={
 		#	11612 3
 		#}
 		add_core_of = NSD
+		add_core_of = POG
+		add_core_of = ASR
 	}
 
 	local_supplies=0.0

@@ -8,8 +8,8 @@ state=
 	
 	history=
 	{
-		owner = NSD
-		add_core_of = SWE
+		owner = POG
+		add_core_of = SED
 		buildings = {
 			infrastructure = 3
 			408 = {

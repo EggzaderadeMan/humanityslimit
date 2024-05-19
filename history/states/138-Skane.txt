@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = NSD
+		owner = DNM
 		victory_points = {
 			9279 5 
 		}
@@ -30,7 +30,8 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = NSD
+		add_core_of = DNM
+		add_core_of = SED
 	}
 
 	local_supplies=0.0

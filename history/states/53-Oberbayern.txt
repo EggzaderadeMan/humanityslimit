@@ -10,11 +10,13 @@ state={
 	state_category = city
 
 	history={
-		owner = NSD
+		owner = BVA
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = NSD
+		add_core_of = BVA
+		add_core_of = POG
 		victory_points = {
 			9515 3
 		}

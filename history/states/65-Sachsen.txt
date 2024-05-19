@@ -12,7 +12,7 @@ state={
 
 
 	history={
-		owner = NSD
+		owner = POG
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
@@ -25,6 +25,7 @@ state={
 			3535 5 
 		}
 		add_core_of = NSD
+		add_core_of = POG
 	}
 
 	local_supplies=0.0

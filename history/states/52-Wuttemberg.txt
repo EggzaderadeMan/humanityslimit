@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = NSD
+		owner = BVA
 		victory_points = {
 			692 20
 		}
@@ -24,6 +24,8 @@ state={
 			air_base = 10
 		}
 		add_core_of = NSD
+		add_core_of = POG
+		add_core_of = BVA
 	}
 
 	local_supplies=0.0

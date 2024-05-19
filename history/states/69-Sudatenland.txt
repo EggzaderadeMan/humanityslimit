@@ -1,64 +1,29 @@
-state=
-{
+
+state={
 	id=69
 	name="STATE_69"
-	manpower = 2830000
-	
-	state_category = town
-	
 	resources={
-		rations=2
+		rations=2.000
 	}
-	
+
 	history={
-		victory_points = {
-			3585 3
-		}
-		#victory_points = {
-		#	11432 1
-		#}
-		victory_points = {
-			11401 3
-		}
-		owner = NSD
+		owner = BVA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 3
 			anti_air_building = 1
-			424 =
-			{
-				bunker = 1
-			}
-			469 =
-			{
-				bunker = 1
-			}
-			3585 =
-			{
-				bunker = 1
-			}
-			5283 =
-			{
-				bunker = 1
-			}
-			6470 =
-			{
-				bunker = 1
-			}
-			9555 =
-			{
-				bunker = 1
-			}
-			11432 =
-			{
-				bunker = 1
-			}
 
 		}
+		add_core_of = BVA
 		add_core_of = NSD
+		add_core_of = POG
+
 	}
-	local_supplies=0.0
-	provinces=
-	{
-424 469 543 3418 3585 5283 6418 6440 6470 6592 7857 9414 9541 9555 11401 11432 11525 	}
+
+	provinces={
+		424 543 5283 6418 6470 6592 7857 9541 9555 11525 
+	}
+	manpower=630000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,0 +1,30 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		469 3418 3585 6440 9414 11401 11432 
+	}
+
+	history={
+		victory_points = {
+			3585 3 
+		}
+		victory_points = {
+			11401 3 
+		}
+		owner = POG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			anti_air_building = 1
+
+		}
+		add_core_of = NSD
+		add_core_of = POG
+
+	}
+	manpower=260000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

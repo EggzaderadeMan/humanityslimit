@@ -2,12 +2,9 @@
 state={
 	id=59
 	name="STATE_59"
-	manpower = 2438286
 	resources={
-		rations=4
+		rations=4.000
 	}
-	
-	state_category = large_city
 
 	history={
 		owner = NSD
@@ -19,19 +16,23 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 2
 			6325 = {
 				naval_base = 1
+
 			}
 
 		}
 		add_core_of = NSD
+
 	}
 
-	local_supplies=0.0
 	provinces={
-		374 526 3271 3326 3395 6218 6263 6298 6325 6349 6377 6513 9238 9264 9375 11402 11468 11493 
+		374 526 3271 3326 3395 6218 6263 6298 6349 6377 6513 9238 9264 9375 11402 11468 11493 
 	}
+	manpower=2438286
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

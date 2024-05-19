@@ -10,7 +10,7 @@ state= {
 
 	history=
 	{
-		owner = NSD
+		owner = DNM
 		victory_points = { 
 			6287 20 
 		}
@@ -33,7 +33,7 @@ state= {
 				naval_base = 1
 			}
 		}
-		add_core_of = NSD
+		add_core_of = DNM
 	}
 
 	local_supplies=0.0
